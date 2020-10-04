@@ -1,0 +1,115 @@
+﻿@using Data.ViewModel;
+@using DataLayer;
+
+
+@model CategoryAddViewModel
+@using (Html.BeginForm("CategoryAddEdit", "Category", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    @Html.AntiForgeryToken()
+    <div class="form-horizontal">
+
+        @Html.ValidationSummary(true)
+
+        @Html.HiddenFor(x => x.Category.categoryID)
+
+        @if (Model.Category != null)
+        {
+
+            @Html.HiddenFor(model => model.Category.statusID)
+
+        }
+        
+        @Html.HiddenFor(s=> s.parentID)
+       
+
+        <div class="form-group">
+            <label>
+                @MasterWebApp.Resource.Category.categoryNameAr
+            </label>
+
+            @Html.TextBoxFor(model => model.Category.categoryNameAr, new { @class = "form-control col-12" })
+            @Html.ValidationMessageFor(model => model.Category.categoryNameAr)
+
+        </div>
+
+        <div class="form-group">
+            <label>
+                @MasterWebApp.Resource.Category.categoryNameEn
+            </label>
+
+            @Html.TextBoxFor(model => model.Category.categoryNameEn, new { @class = "form-control col-12" })
+            @Html.ValidationMessageFor(model => model.Category.categoryNameEn)
+
+        </div>
+
+        <div class="form-group">
+            <label>
+                @MasterWebApp.Resource.Category.parentID
+            </label>
+
+            @Html.DropDownListFor(s => s.Category.parentID, (SelectList)ViewBag.CategoryV, MasterWebApp.Resource.CommonMessage.selectItem,new { @class = "form-control col-12"  })
+            @Html.ValidationMessageFor(model => model.Category.parentID)
+
+        </div>
+        @{
+            string fileName = "";
+            string filePath = "";
+            string fullName = "";
+            Boolean haveImage = false;
+            if (Model.Category.categoryID != 0)
+            {
+                fileName = "CA" + Model.Category.categoryID + ".png";
+                filePath = ImagesServices.getPath("Categories/");
+                @*<input id="txtProfileID" name="txtProfileID" type="hidden" value="@TempData["profileID"]" />*@
+
+            if (ImagesServices.fileExists((filePath + fileName)))
+            {
+                fullName = filePath + fileName;
+                haveImage = true;
+            }
+            else
+            {
+                fullName = filePath + "noImage.png";
+                haveImage = false;
+            }
+
+
+
+        }
+        else
+        {
+            fullName = filePath + "noImage.png";
+            haveImage = false;
+        }
+
+
+        string query = string.Format(GlobalVariable.httpBase + "AImages?folder={0}&imageName={1}", "Categories", fileName);
+
+
+        }
+
+        <div class="form-group col-md-12 col-xs-12">
+            <img src="@query" alt="NoImage"  class="img-rounded" style="width:200px;height:auto;" />
+            <div class="form-group">
+                <label>
+                    اختر الصورة يفضل 200× 200
+                </label>
+                <input type="file" name="file" accept=".jpg, .png, .gif"  />
+
+            </div>
+
+        </div>
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <button  type="submit" 
+                       class="btn btn-primary">
+
+                    <i class="far fa-save"></i>
+                    @MasterWebApp.Resource.CommonMessage.btnSave
+                    </button>
+                
+            </div>
+        </div>
+    </div>
+}
+

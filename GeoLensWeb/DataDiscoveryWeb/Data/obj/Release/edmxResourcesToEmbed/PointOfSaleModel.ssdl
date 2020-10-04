@@ -1,0 +1,827 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="pointOfSaleModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="AboutUS">
+    <Key>
+      <PropertyRef Name="aboutID" />
+    </Key>
+    <Property Name="aboutID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="aboutText" Type="nvarchar(max)" />
+    <Property Name="aboutTextEn" Type="nvarchar(max)" />
+    <Property Name="statusID" Type="int" />
+  </EntityType>
+  <EntityType Name="Addresses">
+    <Key>
+      <PropertyRef Name="addressID" />
+    </Key>
+    <Property Name="addressID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="recevierName" Type="nvarchar" MaxLength="200" />
+    <Property Name="customerID" Type="int" />
+    <Property Name="tel" Type="nvarchar" MaxLength="20" />
+    <Property Name="cityName" Type="nvarchar" MaxLength="50" />
+    <Property Name="areaName" Type="nvarchar" MaxLength="50" />
+    <Property Name="fullAddress" Type="nvarchar" MaxLength="300" />
+    <Property Name="landMark" Type="nvarchar" MaxLength="250" />
+    <Property Name="statusID" Type="int" />
+  </EntityType>
+  <EntityType Name="Branches">
+    <Key>
+      <PropertyRef Name="branchID" />
+    </Key>
+    <Property Name="branchID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="companyID" Type="int" />
+    <Property Name="countryID" Type="int" />
+    <Property Name="cityID" Type="int" />
+    <Property Name="branchNameEn" Type="nvarchar" MaxLength="150" />
+    <Property Name="branchNameAr" Type="nvarchar" MaxLength="150" />
+    <Property Name="tel1" Type="nvarchar" MaxLength="20" />
+    <Property Name="tel2" Type="nvarchar" MaxLength="20" />
+    <Property Name="fax" Type="nvarchar" MaxLength="20" />
+    <Property Name="mail1" Type="nvarchar" MaxLength="200" />
+    <Property Name="mail2" Type="nvarchar" MaxLength="200" />
+    <Property Name="latitude" Type="float" />
+    <Property Name="longitude" Type="float" />
+    <Property Name="address" Type="nvarchar" MaxLength="250" />
+    <Property Name="dateAdd" Type="date" />
+    <Property Name="statusID" Type="int" />
+  </EntityType>
+  <EntityType Name="Brands">
+    <Key>
+      <PropertyRef Name="brandID" />
+    </Key>
+    <Property Name="brandID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="brandNameEn" Type="nvarchar" MaxLength="250" />
+    <Property Name="brandNameAr" Type="nvarchar" MaxLength="250" />
+    <Property Name="staffID" Type="int" />
+    <Property Name="dateAdd" Type="date" />
+    <Property Name="statusID" Type="int" />
+  </EntityType>
+  <EntityType Name="Category">
+    <Key>
+      <PropertyRef Name="categoryID" />
+    </Key>
+    <Property Name="categoryID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="staffID" Type="int" />
+    <Property Name="categoryNameEn" Type="nvarchar" MaxLength="200" />
+    <Property Name="categoryNameAr" Type="nvarchar" MaxLength="200" />
+    <Property Name="parentID" Type="int" />
+    <Property Name="dateAdd" Type="date" />
+    <Property Name="statusID" Type="int" />
+  </EntityType>
+  <EntityType Name="Cities">
+    <Key>
+      <PropertyRef Name="cityID" />
+    </Key>
+    <Property Name="cityID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="countryID" Type="int" />
+    <Property Name="cityNameEn" Type="nvarchar" MaxLength="100" />
+    <Property Name="cityNameAr" Type="nvarchar" MaxLength="100" />
+    <Property Name="parentID" Type="int" />
+    <Property Name="levelID" Type="int" />
+    <Property Name="deliveryCost" Type="float" />
+    <Property Name="statusID" Type="int" />
+  </EntityType>
+  <EntityType Name="Companies">
+    <Key>
+      <PropertyRef Name="companyID" />
+    </Key>
+    <Property Name="companyID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="companyNameEn" Type="nvarchar" MaxLength="150" />
+    <Property Name="companyNameAr" Type="nvarchar" MaxLength="150" />
+    <Property Name="location" Type="nvarchar" MaxLength="50" />
+    <Property Name="tel1" Type="nvarchar" MaxLength="30" />
+    <Property Name="tel2" Type="nvarchar" MaxLength="30" />
+    <Property Name="fax" Type="nvarchar" MaxLength="30" />
+    <Property Name="email" Type="nvarchar" MaxLength="200" />
+    <Property Name="website" Type="nvarchar" MaxLength="200" />
+    <Property Name="descriptionEn" Type="nvarchar(max)" />
+    <Property Name="descriptionAr" Type="nvarchar(max)" />
+    <Property Name="dateAdd" Type="date" />
+    <Property Name="statusID" Type="int" />
+  </EntityType>
+  <EntityType Name="Conditions">
+    <Key>
+      <PropertyRef Name="conditionID" />
+    </Key>
+    <Property Name="conditionID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="consitionText" Type="nvarchar(max)" />
+    <Property Name="consitionTextEn" Type="nvarchar(max)" />
+    <Property Name="rowOrder" Type="int" />
+    <Property Name="statusID" Type="int" />
+  </EntityType>
+  <EntityType Name="Countries">
+    <Key>
+      <PropertyRef Name="countryID" />
+    </Key>
+    <Property Name="countryID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="countryNameEn" Type="nvarchar" MaxLength="100" />
+    <Property Name="countryNameAr" Type="nvarchar" MaxLength="100" />
+    <Property Name="counteyCode" Type="nvarchar" MaxLength="10" />
+    <Property Name="orderID" Type="int" />
+    <Property Name="telLength" Type="int" />
+    <Property Name="showCity" Type="bit" Nullable="false" />
+    <Property Name="currencyNameEn" Type="nvarchar" MaxLength="50" />
+    <Property Name="currencyNameAr" Type="nvarchar" MaxLength="50" />
+    <Property Name="statusID" Type="int" />
+  </EntityType>
+  <EntityType Name="Currency">
+    <Key>
+      <PropertyRef Name="currencyID" />
+    </Key>
+    <Property Name="currencyID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="currencyEn" Type="nvarchar" MaxLength="100" />
+    <Property Name="currencyAr" Type="nvarchar" MaxLength="100" />
+    <Property Name="statusID" Type="int" />
+  </EntityType>
+  <EntityType Name="Customers">
+    <Key>
+      <PropertyRef Name="customerID" />
+    </Key>
+    <Property Name="customerID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="titleID" Type="int" />
+    <Property Name="firstName" Type="nvarchar" MaxLength="50" />
+    <Property Name="lastName" Type="nvarchar" MaxLength="50" />
+    <Property Name="latitude" Type="float" />
+    <Property Name="longitude" Type="float" />
+    <Property Name="tel1" Type="nvarchar" MaxLength="20" />
+    <Property Name="mail" Type="nvarchar" MaxLength="150" />
+    <Property Name="password" Type="nvarchar" MaxLength="50" />
+    <Property Name="statusID" Type="int" />
+    <Property Name="birthDate" Type="date" />
+    <Property Name="dateAdd" Type="date" />
+    <Property Name="nationalityID" Type="int" />
+    <Property Name="countryID" Type="int" />
+    <Property Name="cityID" Type="int" />
+    <Property Name="countForgetPassword" Type="int" />
+  </EntityType>
+  <EntityType Name="Delivery">
+    <Key>
+      <PropertyRef Name="deliveryID" />
+    </Key>
+    <Property Name="deliveryID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="companyID" Type="int" />
+    <Property Name="branchID" Type="int" />
+    <Property Name="deliveryName" Type="nvarchar" MaxLength="250" />
+    <Property Name="civilID" Type="nvarchar" MaxLength="20" />
+    <Property Name="tel1" Type="nvarchar" MaxLength="20" />
+    <Property Name="tel2" Type="nvarchar" MaxLength="20" />
+    <Property Name="address" Type="nvarchar" MaxLength="250" />
+    <Property Name="dateAdd" Type="date" />
+    <Property Name="statusID" Type="int" />
+  </EntityType>
+  <EntityType Name="DeliveryType">
+    <Key>
+      <PropertyRef Name="deliveryTypeID" />
+    </Key>
+    <Property Name="deliveryTypeID" Type="int" Nullable="false" />
+    <Property Name="nameEn" Type="nvarchar" MaxLength="100" />
+    <Property Name="nameAr" Type="nvarchar" MaxLength="100" />
+    <Property Name="statusID" Type="int" />
+  </EntityType>
+  <EntityType Name="InvoiceDetalis">
+    <Key>
+      <PropertyRef Name="invoiceDetailsID" />
+    </Key>
+    <Property Name="invoiceDetailsID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="invoiceID" Type="int" />
+    <Property Name="productID" Type="int" />
+    <Property Name="quantity" Type="float" />
+    <Property Name="price" Type="float" />
+    <Property Name="discount" Type="float" />
+    <Property Name="statusID" Type="int" />
+  </EntityType>
+  <EntityType Name="Invoices">
+    <Key>
+      <PropertyRef Name="invoiveID" />
+    </Key>
+    <Property Name="invoiveID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="invoiceNo" Type="nvarchar" MaxLength="50" />
+    <Property Name="customerID" Type="int" />
+    <Property Name="invoiceDate" Type="datetime" />
+    <Property Name="companyID" Type="int" />
+    <Property Name="branchID" Type="int" />
+    <Property Name="countryID" Type="int" />
+    <Property Name="deliveryTypeID" Type="int" />
+    <Property Name="deliveryDate" Type="datetime" />
+    <Property Name="deliveryID" Type="int" />
+    <Property Name="deliveryCost" Type="int" />
+    <Property Name="total" Type="float" />
+    <Property Name="discount" Type="float" />
+    <Property Name="addressID" Type="int" />
+    <Property Name="invoiceStatusID" Type="int" />
+    <Property Name="paymentTypeID" Type="int" />
+    <Property Name="statusID" Type="int" />
+  </EntityType>
+  <EntityType Name="InvoiceStatus">
+    <Key>
+      <PropertyRef Name="invoiceStatusID" />
+    </Key>
+    <Property Name="invoiceStatusID" Type="int" Nullable="false" />
+    <Property Name="invoiceStatusAr" Type="nvarchar" MaxLength="150" />
+    <Property Name="invoiceStatusEn" Type="nvarchar" MaxLength="150" />
+  </EntityType>
+  <EntityType Name="Nationality">
+    <Key>
+      <PropertyRef Name="nationalityID" />
+    </Key>
+    <Property Name="nationalityID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="nationalityNameEn" Type="nvarchar" MaxLength="100" />
+    <Property Name="nationalityNameAr" Type="nvarchar" MaxLength="100" />
+    <Property Name="statusID" Type="int" />
+  </EntityType>
+  <EntityType Name="PaymentType">
+    <Key>
+      <PropertyRef Name="paymentTypeID" />
+    </Key>
+    <Property Name="paymentTypeID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="paymentNameEn" Type="nvarchar" MaxLength="50" />
+    <Property Name="paymentNameAr" Type="nvarchar" MaxLength="50" />
+    <Property Name="statusID" Type="int" />
+  </EntityType>
+  <EntityType Name="Premission">
+    <Key>
+      <PropertyRef Name="permissionID" />
+    </Key>
+    <Property Name="permissionID" Type="int" Nullable="false" />
+    <Property Name="descriptionEn" Type="nvarchar" MaxLength="250" />
+    <Property Name="descriptionAr" Type="nvarchar" MaxLength="250" />
+    <Property Name="statusID" Type="int" />
+  </EntityType>
+  <EntityType Name="products">
+    <Key>
+      <PropertyRef Name="productID" />
+    </Key>
+    <Property Name="productID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="productNo" Type="nvarchar" MaxLength="255" />
+    <Property Name="productBarcode" Type="nvarchar" MaxLength="255" />
+    <Property Name="categoryID" Type="int" />
+    <Property Name="companyID" Type="int" />
+    <Property Name="branchID" Type="int" />
+    <Property Name="productNameEn" Type="nvarchar" MaxLength="300" />
+    <Property Name="productNameAr" Type="nvarchar" MaxLength="300" />
+    <Property Name="brandID" Type="int" />
+    <Property Name="price" Type="float" />
+    <Property Name="price2" Type="float" />
+    <Property Name="price3" Type="float" />
+    <Property Name="buyPrice" Type="float" />
+    <Property Name="buyPrice2" Type="float" />
+    <Property Name="buyPrice3" Type="float" />
+    <Property Name="productTax1" Type="float" />
+    <Property Name="productTax2" Type="float" />
+    <Property Name="discount" Type="float" />
+    <Property Name="priceAfterDiscount" Type="float" />
+    <Property Name="descriptionEn" Type="nvarchar" MaxLength="500" />
+    <Property Name="descriptionAr" Type="nvarchar" MaxLength="500" />
+    <Property Name="unitID" Type="int" />
+    <Property Name="size" Type="nvarchar" MaxLength="50" />
+    <Property Name="viewCount" Type="int" />
+    <Property Name="avgRate" Type="float" />
+    <Property Name="inStock" Type="int" />
+    <Property Name="quantity" Type="float" />
+    <Property Name="available" Type="bit" />
+    <Property Name="minCount" Type="float" />
+    <Property Name="ProductInitial" Type="float" />
+    <Property Name="dateAdd" Type="date" />
+    <Property Name="staffID" Type="int" />
+    <Property Name="statusID" Type="int" />
+    <Property Name="storeID" Type="int" />
+  </EntityType>
+  <EntityType Name="PropertiesField">
+    <Key>
+      <PropertyRef Name="propertyFieldID" />
+    </Key>
+    <Property Name="propertyFieldID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="propertyTypeID" Type="int" />
+    <Property Name="categoryID" Type="int" Nullable="false" />
+    <Property Name="propertyNameEn" Type="nvarchar" MaxLength="250" />
+    <Property Name="propertyNameAr" Type="nvarchar" MaxLength="250" />
+    <Property Name="staffID" Type="int" />
+    <Property Name="statusID" Type="int" />
+  </EntityType>
+  <EntityType Name="PropertyType">
+    <Key>
+      <PropertyRef Name="propertyTypeID" />
+    </Key>
+    <Property Name="propertyTypeID" Type="int" Nullable="false" />
+    <Property Name="propertyNameEn" Type="nvarchar" MaxLength="50" />
+    <Property Name="propertyNameAr" Type="nvarchar" MaxLength="50" />
+    <Property Name="statusID" Type="int" />
+  </EntityType>
+  <EntityType Name="PropertyValue">
+    <Key>
+      <PropertyRef Name="propertyValueID" />
+    </Key>
+    <Property Name="propertyValueID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="propertyFieldID" Type="int" />
+    <Property Name="productID" Type="int" />
+    <Property Name="valueNameEn" Type="nvarchar" MaxLength="250" />
+    <Property Name="valueNameAr" Type="nvarchar" MaxLength="250" />
+    <Property Name="statusID" Type="int" />
+  </EntityType>
+  <EntityType Name="RowStatus">
+    <Key>
+      <PropertyRef Name="statusID" />
+    </Key>
+    <Property Name="statusID" Type="int" Nullable="false" />
+    <Property Name="rowStatusNameEn" Type="nvarchar" MaxLength="100" />
+    <Property Name="rowStatusNameAr" Type="nvarchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="Staff">
+    <Key>
+      <PropertyRef Name="staffID" />
+    </Key>
+    <Property Name="staffID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="companyID" Type="int" />
+    <Property Name="fullName" Type="nvarchar" MaxLength="200" />
+    <Property Name="userName" Type="nvarchar" MaxLength="100" />
+    <Property Name="password" Type="nvarchar" MaxLength="50" />
+    <Property Name="permissionID" Type="int" />
+    <Property Name="statusID" Type="int" />
+  </EntityType>
+  <EntityType Name="Stores">
+    <Key>
+      <PropertyRef Name="storeID" />
+    </Key>
+    <Property Name="storeID" Type="int" Nullable="false" />
+    <Property Name="storeNumber" Type="int" />
+    <Property Name="storeNameAr" Type="nvarchar" MaxLength="250" />
+    <Property Name="storeNameEn" Type="nvarchar" MaxLength="250" />
+    <Property Name="storeAddress" Type="nvarchar" MaxLength="300" />
+    <Property Name="statusID" Type="int" />
+    <Property Name="storePrimery" Type="bit" />
+    <Property Name="stutas" Type="tinyint" />
+    <Property Name="companyID" Type="int" />
+    <Property Name="userID" Type="int" />
+    <Property Name="dateAdd" Type="datetime" />
+  </EntityType>
+  <EntityType Name="Title">
+    <Key>
+      <PropertyRef Name="titleID" />
+    </Key>
+    <Property Name="titleID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="titleNameEn" Type="nvarchar" MaxLength="50" />
+    <Property Name="tilteNameAr" Type="nvarchar" MaxLength="50" />
+    <Property Name="statusID" Type="int" />
+  </EntityType>
+  <EntityType Name="Units">
+    <Key>
+      <PropertyRef Name="unitID" />
+    </Key>
+    <Property Name="unitID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="unitNameEn" Type="nvarchar" MaxLength="50" />
+    <Property Name="unitNameAr" Type="nvarchar" MaxLength="50" />
+    <Property Name="statusID" Type="int" />
+  </EntityType>
+  <Association Name="FK_Cities_Countries">
+    <End Role="Countries" Type="Self.Countries" Multiplicity="0..1" />
+    <End Role="Cities" Type="Self.Cities" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Countries">
+        <PropertyRef Name="countryID" />
+      </Principal>
+      <Dependent Role="Cities">
+        <PropertyRef Name="countryID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Customers_Cities">
+    <End Role="Cities" Type="Self.Cities" Multiplicity="0..1" />
+    <End Role="Customers" Type="Self.Customers" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Cities">
+        <PropertyRef Name="cityID" />
+      </Principal>
+      <Dependent Role="Customers">
+        <PropertyRef Name="cityID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Customers_Countries">
+    <End Role="Countries" Type="Self.Countries" Multiplicity="0..1" />
+    <End Role="Customers" Type="Self.Customers" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Countries">
+        <PropertyRef Name="countryID" />
+      </Principal>
+      <Dependent Role="Customers">
+        <PropertyRef Name="countryID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Customers_Nationality">
+    <End Role="Nationality" Type="Self.Nationality" Multiplicity="0..1" />
+    <End Role="Customers" Type="Self.Customers" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Nationality">
+        <PropertyRef Name="nationalityID" />
+      </Principal>
+      <Dependent Role="Customers">
+        <PropertyRef Name="nationalityID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Customers_RowStatus">
+    <End Role="RowStatus" Type="Self.RowStatus" Multiplicity="0..1" />
+    <End Role="Customers" Type="Self.Customers" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="RowStatus">
+        <PropertyRef Name="statusID" />
+      </Principal>
+      <Dependent Role="Customers">
+        <PropertyRef Name="statusID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Customers_Title">
+    <End Role="Title" Type="Self.Title" Multiplicity="0..1" />
+    <End Role="Customers" Type="Self.Customers" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Title">
+        <PropertyRef Name="titleID" />
+      </Principal>
+      <Dependent Role="Customers">
+        <PropertyRef Name="titleID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Invoices_Addresses">
+    <End Role="Addresses" Type="Self.Addresses" Multiplicity="0..1" />
+    <End Role="Invoices" Type="Self.Invoices" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Addresses">
+        <PropertyRef Name="addressID" />
+      </Principal>
+      <Dependent Role="Invoices">
+        <PropertyRef Name="addressID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Invoices_Branches">
+    <End Role="Branches" Type="Self.Branches" Multiplicity="0..1" />
+    <End Role="Invoices" Type="Self.Invoices" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Branches">
+        <PropertyRef Name="branchID" />
+      </Principal>
+      <Dependent Role="Invoices">
+        <PropertyRef Name="branchID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Invoices_Companies">
+    <End Role="Companies" Type="Self.Companies" Multiplicity="0..1" />
+    <End Role="Invoices" Type="Self.Invoices" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Companies">
+        <PropertyRef Name="companyID" />
+      </Principal>
+      <Dependent Role="Invoices">
+        <PropertyRef Name="companyID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Invoices_Countries">
+    <End Role="Countries" Type="Self.Countries" Multiplicity="0..1" />
+    <End Role="Invoices" Type="Self.Invoices" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Countries">
+        <PropertyRef Name="countryID" />
+      </Principal>
+      <Dependent Role="Invoices">
+        <PropertyRef Name="countryID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Invoices_Customers">
+    <End Role="Customers" Type="Self.Customers" Multiplicity="0..1" />
+    <End Role="Invoices" Type="Self.Invoices" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Customers">
+        <PropertyRef Name="customerID" />
+      </Principal>
+      <Dependent Role="Invoices">
+        <PropertyRef Name="customerID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Invoices_Delivery">
+    <End Role="Delivery" Type="Self.Delivery" Multiplicity="0..1" />
+    <End Role="Invoices" Type="Self.Invoices" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Delivery">
+        <PropertyRef Name="deliveryID" />
+      </Principal>
+      <Dependent Role="Invoices">
+        <PropertyRef Name="deliveryID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Invoices_DeliveryType">
+    <End Role="DeliveryType" Type="Self.DeliveryType" Multiplicity="0..1" />
+    <End Role="Invoices" Type="Self.Invoices" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DeliveryType">
+        <PropertyRef Name="deliveryTypeID" />
+      </Principal>
+      <Dependent Role="Invoices">
+        <PropertyRef Name="deliveryTypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Invoices_InvoiceStatus">
+    <End Role="InvoiceStatus" Type="Self.InvoiceStatus" Multiplicity="0..1" />
+    <End Role="Invoices" Type="Self.Invoices" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="InvoiceStatus">
+        <PropertyRef Name="invoiceStatusID" />
+      </Principal>
+      <Dependent Role="Invoices">
+        <PropertyRef Name="invoiceStatusID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Invoices_PaymentType">
+    <End Role="PaymentType" Type="Self.PaymentType" Multiplicity="0..1" />
+    <End Role="Invoices" Type="Self.Invoices" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PaymentType">
+        <PropertyRef Name="paymentTypeID" />
+      </Principal>
+      <Dependent Role="Invoices">
+        <PropertyRef Name="paymentTypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_products_Branches">
+    <End Role="Branches" Type="Self.Branches" Multiplicity="0..1" />
+    <End Role="products" Type="Self.products" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Branches">
+        <PropertyRef Name="branchID" />
+      </Principal>
+      <Dependent Role="products">
+        <PropertyRef Name="branchID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_products_Brands">
+    <End Role="Brands" Type="Self.Brands" Multiplicity="0..1" />
+    <End Role="products" Type="Self.products" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Brands">
+        <PropertyRef Name="brandID" />
+      </Principal>
+      <Dependent Role="products">
+        <PropertyRef Name="brandID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_products_Category">
+    <End Role="Category" Type="Self.Category" Multiplicity="0..1" />
+    <End Role="products" Type="Self.products" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Category">
+        <PropertyRef Name="categoryID" />
+      </Principal>
+      <Dependent Role="products">
+        <PropertyRef Name="categoryID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_products_Companies">
+    <End Role="Companies" Type="Self.Companies" Multiplicity="0..1" />
+    <End Role="products" Type="Self.products" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Companies">
+        <PropertyRef Name="companyID" />
+      </Principal>
+      <Dependent Role="products">
+        <PropertyRef Name="companyID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_products_Staff">
+    <End Role="Staff" Type="Self.Staff" Multiplicity="0..1" />
+    <End Role="products" Type="Self.products" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Staff">
+        <PropertyRef Name="staffID" />
+      </Principal>
+      <Dependent Role="products">
+        <PropertyRef Name="staffID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_products_Stores">
+    <End Role="Stores" Type="Self.Stores" Multiplicity="0..1" />
+    <End Role="products" Type="Self.products" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Stores">
+        <PropertyRef Name="storeID" />
+      </Principal>
+      <Dependent Role="products">
+        <PropertyRef Name="storeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_products_Units">
+    <End Role="Units" Type="Self.Units" Multiplicity="0..1" />
+    <End Role="products" Type="Self.products" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Units">
+        <PropertyRef Name="unitID" />
+      </Principal>
+      <Dependent Role="products">
+        <PropertyRef Name="unitID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PropertiesField_Category">
+    <End Role="Category" Type="Self.Category" Multiplicity="1" />
+    <End Role="PropertiesField" Type="Self.PropertiesField" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Category">
+        <PropertyRef Name="categoryID" />
+      </Principal>
+      <Dependent Role="PropertiesField">
+        <PropertyRef Name="categoryID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PropertiesField_PropertyType">
+    <End Role="PropertyType" Type="Self.PropertyType" Multiplicity="0..1" />
+    <End Role="PropertiesField" Type="Self.PropertiesField" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PropertyType">
+        <PropertyRef Name="propertyTypeID" />
+      </Principal>
+      <Dependent Role="PropertiesField">
+        <PropertyRef Name="propertyTypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PropertiesField_Staff">
+    <End Role="Staff" Type="Self.Staff" Multiplicity="0..1" />
+    <End Role="PropertiesField" Type="Self.PropertiesField" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Staff">
+        <PropertyRef Name="staffID" />
+      </Principal>
+      <Dependent Role="PropertiesField">
+        <PropertyRef Name="staffID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PropertyValue_PropertiesField">
+    <End Role="PropertiesField" Type="Self.PropertiesField" Multiplicity="0..1" />
+    <End Role="PropertyValue" Type="Self.PropertyValue" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PropertiesField">
+        <PropertyRef Name="propertyFieldID" />
+      </Principal>
+      <Dependent Role="PropertyValue">
+        <PropertyRef Name="propertyFieldID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Function Name="GetLastBranch" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="GetTree" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="cityID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="GetTreeCategory" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="categoryID" Type="int" Mode="In" />
+  </Function>
+  <EntityContainer Name="pointOfSaleModelStoreContainer">
+    <EntitySet Name="AboutUS" EntityType="Self.AboutUS" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Addresses" EntityType="Self.Addresses" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Branches" EntityType="Self.Branches" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Brands" EntityType="Self.Brands" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Category" EntityType="Self.Category" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Cities" EntityType="Self.Cities" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Companies" EntityType="Self.Companies" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Conditions" EntityType="Self.Conditions" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Countries" EntityType="Self.Countries" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Currency" EntityType="Self.Currency" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Customers" EntityType="Self.Customers" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Delivery" EntityType="Self.Delivery" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DeliveryType" EntityType="Self.DeliveryType" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="InvoiceDetalis" EntityType="Self.InvoiceDetalis" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Invoices" EntityType="Self.Invoices" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="InvoiceStatus" EntityType="Self.InvoiceStatus" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Nationality" EntityType="Self.Nationality" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PaymentType" EntityType="Self.PaymentType" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Premission" EntityType="Self.Premission" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="products" EntityType="Self.products" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PropertiesField" EntityType="Self.PropertiesField" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PropertyType" EntityType="Self.PropertyType" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PropertyValue" EntityType="Self.PropertyValue" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RowStatus" EntityType="Self.RowStatus" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Staff" EntityType="Self.Staff" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Stores" EntityType="Self.Stores" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Title" EntityType="Self.Title" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Units" EntityType="Self.Units" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_Cities_Countries" Association="Self.FK_Cities_Countries">
+      <End Role="Countries" EntitySet="Countries" />
+      <End Role="Cities" EntitySet="Cities" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Customers_Cities" Association="Self.FK_Customers_Cities">
+      <End Role="Cities" EntitySet="Cities" />
+      <End Role="Customers" EntitySet="Customers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Customers_Countries" Association="Self.FK_Customers_Countries">
+      <End Role="Countries" EntitySet="Countries" />
+      <End Role="Customers" EntitySet="Customers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Customers_Nationality" Association="Self.FK_Customers_Nationality">
+      <End Role="Nationality" EntitySet="Nationality" />
+      <End Role="Customers" EntitySet="Customers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Customers_RowStatus" Association="Self.FK_Customers_RowStatus">
+      <End Role="RowStatus" EntitySet="RowStatus" />
+      <End Role="Customers" EntitySet="Customers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Customers_Title" Association="Self.FK_Customers_Title">
+      <End Role="Title" EntitySet="Title" />
+      <End Role="Customers" EntitySet="Customers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Invoices_Addresses" Association="Self.FK_Invoices_Addresses">
+      <End Role="Addresses" EntitySet="Addresses" />
+      <End Role="Invoices" EntitySet="Invoices" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Invoices_Branches" Association="Self.FK_Invoices_Branches">
+      <End Role="Branches" EntitySet="Branches" />
+      <End Role="Invoices" EntitySet="Invoices" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Invoices_Companies" Association="Self.FK_Invoices_Companies">
+      <End Role="Companies" EntitySet="Companies" />
+      <End Role="Invoices" EntitySet="Invoices" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Invoices_Countries" Association="Self.FK_Invoices_Countries">
+      <End Role="Countries" EntitySet="Countries" />
+      <End Role="Invoices" EntitySet="Invoices" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Invoices_Customers" Association="Self.FK_Invoices_Customers">
+      <End Role="Customers" EntitySet="Customers" />
+      <End Role="Invoices" EntitySet="Invoices" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Invoices_Delivery" Association="Self.FK_Invoices_Delivery">
+      <End Role="Delivery" EntitySet="Delivery" />
+      <End Role="Invoices" EntitySet="Invoices" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Invoices_DeliveryType" Association="Self.FK_Invoices_DeliveryType">
+      <End Role="DeliveryType" EntitySet="DeliveryType" />
+      <End Role="Invoices" EntitySet="Invoices" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Invoices_InvoiceStatus" Association="Self.FK_Invoices_InvoiceStatus">
+      <End Role="InvoiceStatus" EntitySet="InvoiceStatus" />
+      <End Role="Invoices" EntitySet="Invoices" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Invoices_PaymentType" Association="Self.FK_Invoices_PaymentType">
+      <End Role="PaymentType" EntitySet="PaymentType" />
+      <End Role="Invoices" EntitySet="Invoices" />
+    </AssociationSet>
+    <AssociationSet Name="FK_products_Branches" Association="Self.FK_products_Branches">
+      <End Role="Branches" EntitySet="Branches" />
+      <End Role="products" EntitySet="products" />
+    </AssociationSet>
+    <AssociationSet Name="FK_products_Brands" Association="Self.FK_products_Brands">
+      <End Role="Brands" EntitySet="Brands" />
+      <End Role="products" EntitySet="products" />
+    </AssociationSet>
+    <AssociationSet Name="FK_products_Category" Association="Self.FK_products_Category">
+      <End Role="Category" EntitySet="Category" />
+      <End Role="products" EntitySet="products" />
+    </AssociationSet>
+    <AssociationSet Name="FK_products_Companies" Association="Self.FK_products_Companies">
+      <End Role="Companies" EntitySet="Companies" />
+      <End Role="products" EntitySet="products" />
+    </AssociationSet>
+    <AssociationSet Name="FK_products_Staff" Association="Self.FK_products_Staff">
+      <End Role="Staff" EntitySet="Staff" />
+      <End Role="products" EntitySet="products" />
+    </AssociationSet>
+    <AssociationSet Name="FK_products_Stores" Association="Self.FK_products_Stores">
+      <End Role="Stores" EntitySet="Stores" />
+      <End Role="products" EntitySet="products" />
+    </AssociationSet>
+    <AssociationSet Name="FK_products_Units" Association="Self.FK_products_Units">
+      <End Role="Units" EntitySet="Units" />
+      <End Role="products" EntitySet="products" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PropertiesField_Category" Association="Self.FK_PropertiesField_Category">
+      <End Role="Category" EntitySet="Category" />
+      <End Role="PropertiesField" EntitySet="PropertiesField" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PropertiesField_PropertyType" Association="Self.FK_PropertiesField_PropertyType">
+      <End Role="PropertyType" EntitySet="PropertyType" />
+      <End Role="PropertiesField" EntitySet="PropertiesField" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PropertiesField_Staff" Association="Self.FK_PropertiesField_Staff">
+      <End Role="Staff" EntitySet="Staff" />
+      <End Role="PropertiesField" EntitySet="PropertiesField" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PropertyValue_PropertiesField" Association="Self.FK_PropertyValue_PropertiesField">
+      <End Role="PropertiesField" EntitySet="PropertiesField" />
+      <End Role="PropertyValue" EntitySet="PropertyValue" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

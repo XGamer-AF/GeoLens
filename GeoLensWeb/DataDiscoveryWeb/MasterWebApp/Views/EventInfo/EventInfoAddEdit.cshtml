@@ -1,0 +1,28 @@
+﻿
+<div class="container">
+    <div class="card border-dark">
+        <div class="card-header bg-dark text-white">
+            <div class="d-flex justify-content-between">
+                <span class="center_line">
+                    @MasterWebApp.Resource.EventInfo.editEvent
+                </span>
+
+                <span>
+                    <a href="@Url.Action("Index", "EventInfo")" class="btn btn_card">
+
+                        <i class="fa fa-list-alt"></i>
+                        @MasterWebApp.Resource.EventInfo.title
+                    </a>
+
+                </span>
+            </div>
+        </div>
+
+        <div class="card-body">
+            @Html.Partial("_EventInfoAddEdit")
+        </div>
+    </div>
+
+    
+
+</div>

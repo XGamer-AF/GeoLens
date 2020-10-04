@@ -1,0 +1,46 @@
+﻿@charset "UTF-8";
+@import url(http://fonts.googleapis.com/earlyaccess/droidarabickufi.css);
+@import url(https://fonts.googleapis.com/earlyaccess/droidarabickufi.css);
+
+/*@import url(http://fonts.googleapis.com/earlyaccess/droidarabicnaskh.css);*/
+
+
+.use-hand{
+    cursor: pointer !important;
+}
+
+
+body {
+     font-family: 'Droid Arabic Kufi', sans-serif;
+   
+    position: relative;
+    color: #878787;
+        }
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+a {
+	text-decoration: none;
+	color: inherit;
+	outline: none;
+	transition: 0.5s ease;
+	-o-transition: 0.5s ease;
+	-webkit-transition: 0.5s ease;
+}
+
+    a:hover {
+        color: #1e7abd;
+        background-color: inherit;
+        text-decoration: none;
+    }
+
+.form-control {padding:2px 12px }
+/*.btn-primary {
+  color: #fff;
+  background-color: #754eb9;
+  border-color: #777;
+}*/
+

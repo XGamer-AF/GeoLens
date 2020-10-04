@@ -1,0 +1,90 @@
+﻿@using Data.ViewModel;
+@using DataLayer;
+@using PagedList
+@using PagedList.Mvc;
+@model IPagedList<EventInfoViewModel>
+
+
+
+
+
+
+@{
+    string lang = FunServices.getLang("lang");
+}
+
+<div style="padding-top:5px;">
+
+    <table id="mTable" class="table table-striped table-bordered table-hover table-responsive">
+
+        <thead>
+            <tr>
+                <td style="width:50%">
+                    @MasterWebApp.Resource.EventInfo.eventNameAr
+                    <br />
+                    @MasterWebApp.Resource.EventInfo.eventNameEn
+
+               
+                    
+                </td>
+                <td style="width:20%">
+                    @MasterWebApp.Resource.EventInfo.eventTypeID
+                </td>
+                <td style="width:10%">
+                    @MasterWebApp.Resource.EventInfo.countryID
+                </td>
+
+                <td style="width:10%">
+                </td>
+
+
+              
+
+                <td style="width:10%"></td>
+
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+
+            <tr>
+                <td>
+                    @item.eventNameAr
+                    <br />
+                    @item.eventNameEn
+                    <br />
+                    @item.eventDate
+                </td>
+                   
+                <td>
+                    @item.EventTypes.eventTypeNameAr
+                    <br />
+                    @item.EventTypes.eventTypeNameEn
+                </td>
+                <td>
+                    @item.Countries.countryNameAr
+                    <br />
+                    @item.Countries.countryNameEn
+
+                </td>
+
+               
+                <td>
+                    <a href="@Url.Action("EventInfoAddEdit", new { id = item.countryID })" style="padding:10px;">
+                        <i class="far fa-edit"></i>
+                    </a>
+                </td>
+
+                <td>
+                    <a href="@Url.Action("ChangeStatus", new { id = item.countryID, statusID = 0 })" style="padding:10px;" onclick="return confirm('@MasterWebApp.Resource.CommonMessage.confirmDelete')">
+                        <i class="fas fa-minus-circle"></i>
+                    </a>
+                </td>
+            </tr>
+
+            }
+        </tbody>
+    </table>
+
+</div>

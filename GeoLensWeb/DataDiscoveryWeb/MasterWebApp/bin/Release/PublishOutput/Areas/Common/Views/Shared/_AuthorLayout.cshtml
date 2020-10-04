@@ -1,0 +1,117 @@
+﻿@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/Common/Views/Shared/_Layout.cshtml";
+}
+
+<style>
+    html, body {
+        height: 100%;
+        margin: 0px;
+        padding: 0px;
+    }
+</style>
+<div class="container">
+    <div class="flex-row justify-content-start pt-3">
+        <div class="col-lg-3 col-12 m-0 p-0" id="authorMenu">
+            <ul>
+                <li>
+                    <a href="@Url.Action("Profile", "Authors", new { area = "Common" })" class="">
+                        <i class="fas fa-id-card-alt"></i>
+                        @MasterWebApp.Resource.Authors.menuProfile
+                    </a>
+
+                </li>
+                <li>
+                    <a href="@Url.Action("ChangePrimaryEmail", "Authors", new { area = "Common" })">
+                        <i class="fas fa-at"></i>
+                        @MasterWebApp.Resource.Authors.menuEmail
+                    </a>
+                </li>
+                <li>
+                    <a href="@Url.Action("Index", "AuthorAddresses", new { area = "Common" })">
+                        <i class="fas fa-map-pin"></i>
+                        @MasterWebApp.Resource.Authors.menuAddress
+                    </a>
+                </li>
+                <li>
+                    <a href="@Url.Action("Index", "authorJobs", new { area = "Common" })">
+                        <i class="fas fa-user-tie"></i>
+                        @MasterWebApp.Resource.Authors.menuEmployment
+                    </a>
+                </li>
+                <li>
+                    <a href="@Url.Action("Index", "AuthorCertifications", new { area = "Common" })">
+                        <i class="fas fa-graduation-cap"></i>
+                        @MasterWebApp.Resource.Authors.menuCertifications
+                    </a>
+                </li>
+                <li>
+                    <a href="@Url.Action("Index", "AuthorEducations", new { area = "Common" })">
+                        <i class="fas fa-university"></i>
+                        @MasterWebApp.Resource.Authors.menuUniversities
+                    </a>
+                </li>
+                <li>
+                    <a href="@Url.Action("Index", "AuthorInterest", new { area = "Common" })">
+                        <i class="fas fa-info"></i>
+                        @MasterWebApp.Resource.Authors.menuTechnical
+                    </a>
+                </li>
+                <li>
+                    <a href="@Url.Action("AuthorConferences", "Authors", new { area = "Common" })">
+                        <i class="fas fa-suitcase"></i>
+                        @MasterWebApp.Resource.Authors.menuConference
+                    </a>
+                </li>
+                <li>
+                    <a href="@Url.Action("Profile", "Authors", new { area = "Common" })">
+                        <i class="fas fa-newspaper"></i>
+                        @MasterWebApp.Resource.Authors.menuJornals
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="col-lg-9 col-12 ">
+            @RenderBody()
+        </div>
+    </div>
+</div>
+
+<div class=" modal" id="contractPause" tabindex="-1">
+    <div class=" modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body" id="divBody">
+
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+
+    $(function () {
+        $('#authorMenu li a').each(function () {
+            debugger
+            $current = location.href;
+            $target = $(this).attr('href');
+            if ($current.includes($target)) {
+                $(this).parent().addClass('mAuthorActive');
+                $(this).addClass('mmAuthorActive');
+                debugger
+            }
+        });
+    });
+
+
+</script>
+
+<style>
+    .mAuthorActive {
+        background-color: #6da0b5!important;
+        
+    }
+
+    .mmAuthorActive {
+        color: #fff !important;
+        font-weight:800;
+    }
+</style>

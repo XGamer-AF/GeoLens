@@ -1,0 +1,104 @@
+﻿@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/Common/Views/Shared/_Layout.cshtml";
+}
+
+<style>
+    html, body {
+        height: 100%;
+        margin: 0px;
+        padding: 0px;
+    }
+</style>
+
+<div class="container">
+
+    <div class="flex-row justify-content-start pt-3">
+        <div class="col-lg-3 col-12 m-0 p-0" id="authorMenu">
+            <ul>
+                <li>
+                    <a  href="@Url.Action("Overview", "Conferences", new { area = "Common",conferenceID = Request.QueryString["conferenceID"] })" class="conf">
+                        <i class="far fa-eye"></i>
+                        @MasterWebApp.Resource.Conferences.overview
+                    </a>
+
+                </li>
+                <li>
+                    <a href="@Url.Action("submitter", "Conferences", new { area = "Common",conferenceID = Request.QueryString["conferenceID"] })" class="conf">
+                        <i class="far fa-registered"></i>
+                        @MasterWebApp.Resource.Conferences.submitter
+                    </a>
+                </li>
+                <li>
+                    <a href="@Url.Action("conferenceData", "Conferences", new { area = "Common",conferenceID = Request.QueryString["conferenceID"] })" class="conf">
+                        <i class="fas fa-server"></i>
+                        @MasterWebApp.Resource.Conferences.conferenceData
+                    </a>
+                </li>
+                <li>
+                    <a href="@Url.Action("technicalProgram", "Conferences", new { area = "Common",conferenceID = Request.QueryString["conferenceID"] })" class="conf">
+
+                        <i class="fas fa-cogs"></i>
+                        @MasterWebApp.Resource.Conferences.technicalProgram
+                    </a>
+                </li>
+                <li>
+                    <a href="@Url.Action("Index", "ConferenceAddresses", new { area = "Common",conferenceID = Request.QueryString["conferenceID"] })" class="conf">
+                        <i class="fas fa-thumbtack"></i>
+                        @MasterWebApp.Resource.Conferences.conferenceLoacations
+                    </a>
+                </li>
+                <li class="">
+                    <a href="@Url.Action("Index", "ConferenceContacts", new { area = "Common",conferenceID = Request.QueryString["conferenceID"] })" class="conf">
+                        <i class="far fa-id-card"></i>
+                        @MasterWebApp.Resource.Conferences.conferenceContacts
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+        <div class="col-lg-9 col-12 ">
+            @RenderBody()
+        </div>
+    </div>
+
+    <div class=" modal" id="contractPause" tabindex="-1">
+        <div class=" modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body" id="divBody">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<script>
+
+    $(function () {
+        $('#authorMenu li a').each(function () {
+            debugger
+            $current = location.href;
+            $target = $(this).attr('href');
+            if ($current.includes($target)) {
+                $(this).parent().addClass('mConfActive');
+                $(this).addClass('mmConfActive');
+                debugger
+            }
+        });
+    });
+
+   
+</script>
+
+<style>
+    .mConfActive {
+        background-color: #6da0b5 !important;
+    }
+
+    .mmConfActive {
+        color: #fff !important;
+        font-weight: 800;
+    }
+</style>

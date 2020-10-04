@@ -1,0 +1,67 @@
+﻿@using Data.ViewModel;
+@using DataLayer;
+
+
+@model EventRefrencesAddViewModel
+@using (Html.BeginForm("EventRefrencesAddEdit", "EventRefrences", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    @Html.AntiForgeryToken()
+    <div class="form-horizontal">
+
+        @Html.ValidationSummary(true)
+
+        @Html.HiddenFor(x => x.EventRefrences.eventRefrencesID)
+
+        @if (Model.EventRefrences != null)
+        {
+
+            @Html.HiddenFor(model => model.EventRefrences.statusID)
+
+        }
+       <input type="hidden" id="eventName" name="eventName" value="@ViewBag.eventName" />
+        
+      @Html.HiddenFor(x=> x.eventID)
+
+
+        <div class="form-group">
+            <label>
+                @MasterWebApp.Resource.EventRefrences.eventURL
+            </label>
+
+            @Html.TextBoxFor(model => model.EventRefrences.eventURL, new { @class = "form-control col-12 en" })
+            @Html.ValidationMessageFor(model => model.EventRefrences.eventURL)
+
+        </div>
+
+        <div class="form-group">
+            <label>
+                @MasterWebApp.Resource.EventRefrences.orderID
+            </label>
+
+            @Html.TextBoxFor(model => model.EventRefrences.orderID, new { @class = "form-control col-12 ar" })
+            @Html.ValidationMessageFor(model => model.EventRefrences.orderID)
+
+        </div>
+
+   
+
+
+
+
+      
+
+    
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <button  type="submit" 
+                       class="btn btn-primary">
+
+                    <i class="far fa-save"></i>
+                    @MasterWebApp.Resource.CommonMessage.btnSave
+                    </button>
+                
+            </div>
+        </div>
+    </div>
+}
+

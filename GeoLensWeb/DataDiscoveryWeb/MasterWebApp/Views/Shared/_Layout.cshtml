@@ -1,0 +1,235 @@
+﻿@using DataLayer;
+@using System.Globalization;
+@using System.Resources;
+
+<!DOCTYPE html>
+<html dir="@(FunServices.getLang("dir"))">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link href="~/Content/Site.css" rel="stylesheet" />
+
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+    <link href="~/Content/alertifyjs/alertify.min.css" rel="stylesheet" />
+    <script src="~/Scripts/alertify.min.js"></script>
+    <link href="~/Content/jquery-ui.min.css" rel="stylesheet" />
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    @*<script src="~/Scripts/jquery-3.0.0.js"></script>*@
+    <script src="~/Scripts/jquery-ui-1.11.4.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    @*----------------/ Google Fonts Arabic ---------------/------*@
+    <link href="https://fonts.googleapis.com/css2?family=Cairo&display=swap" rel="stylesheet"> 
+
+    <style>
+        .navbar-nav > li { float:none;  }
+        .navbar-nav > li > img {   display:none;  }
+
+        @@media (min-width: 768px) {
+        .navbar-nav > li { float: @FunServices.getLang("float");  }
+        .navbar-nav > li > img {   display:block;  }
+        }
+
+        .ui-front { z-index: 1500 !important; }
+
+        .dropdown-menu > li > a {
+        display: block;
+        padding: 3px 20px;
+        clear: both;
+        font-weight: normal;
+        line-height: 1.42857143;
+        color: #333;
+        white-space: nowrap;
+        text-align:@FunServices.getLang("float") ;
+        }
+
+        .col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12
+        {
+            float: @FunServices.getLang("float") ;
+        }
+
+    </style>
+
+    @*<title>@ViewBag.Title</title>*@
+    <title>Data Discovery For Earth & Science</title>
+    @*@Styles.Render("~/Content/css")
+        @Scripts.Render("~/bundles/modernizr")*@
+</head>
+
+<body dir="@(FunServices.getLang("dir"))">
+
+    <div class="p-0">
+        <!-- Header -->
+        <div class="navbar-dark bg-menu ">
+            <nav class="container navbar navbar-expand-lg  justify-content-between">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse bg-menu" id="navbarSupportedContent">
+                    <a class="navbar-brand logo" href="#" >
+
+        <img src="~/Content/images/Logo.png"  />
+    </a>
+
+                    <ul class="navbar-nav mr-auto pr-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="@Url.Action("Index", "MainAdmin")">
+                                <i class="fa fa-home"></i>
+                             @MasterWebApp.Resource.Admin.home
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="@Url.Action("Index", "Countries")">
+                                <i class="fa fa-globe-americas"></i>
+                                @MasterWebApp.Resource.Admin.countries
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="@Url.Action("Index", "EventInfo")">
+                                <i class="fa fa-list-alt "></i>
+                                @MasterWebApp.Resource.Admin.eventinfo
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="@Url.Action("Index", "EventTypes")">
+                                <i class="fa fa-tag "></i>
+                                @MasterWebApp.Resource.Admin.eventType
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="@Url.Action("Index", "AboutUs")">
+                                <i class="fa fa-info-circle"></i>
+                                @MasterWebApp.Resource.Admin.aboutUs
+                            </a>
+                        </li>
+
+
+                    </ul>
+                </div>
+
+                <div style="display:flex;">
+                    @{
+                        string lang = System.Threading.Thread.CurrentThread.CurrentCulture.ToString();
+                        if (lang == "en")
+                        {
+                            <div>
+                                <a href="#" class="fas fa-globe " onclick="changeLang('ar')" title="عربي" style="font-size: x-large; color: #f5f5f5; Background: transparent;padding:0 20px;">
+                                    <i style="font-size:small">
+                                    </i>
+                                </a>
+                            </div>
+                        }
+                        else
+                        {
+                            <div>
+                                <a href="#" onclick="changeLang('en')" class="fas fa-globe " title="En" style="font-size: x-large; color: #f5f5f5; Background: transparent;padding:0 20px;">
+                                    <i style="font-size:small">
+                                    </i>
+                                </a>
+                            </div>
+                        }
+                    }
+                    <a href="@Url.Action("Logout", "Login")" class="fas fa-sign-out-alt " style="font-size: x-large; color: #f5f5f5; Background: transparent;">
+                        <i style="font-size:small">
+                        </i>
+                    </a>
+                </div>
+            </nav>
+        </div>
+        <!-- /Header -->
+
+        <!-- Body -->
+        <div id="Content"  class="mt-2">
+            @RenderBody()
+        </div>
+        <!-- /Body -->
+
+        <!-- Footer -->
+        <footer class="nav navbar-dark bg-menu text-center font-small fadeIn mt-2"  id="Footer">
+            <div class="col-lg-12 p-2">
+                <span style=" vertical-align: central; ">Copyright &copy;  @DateTime.Now.Year NASA Space Apps </span>
+            </div>
+        </footer>
+        <!-- /Footer -->
+    </div>
+
+    <div class=" modal" id="contractPause" tabindex="-1">
+        <div class=" modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-body" id="divBody">
+                    <!-- Body -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    @*<script src="~/Scripts/jquery-3.0.0.js"></script>*@
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+
+    @*@Scripts.Render("~/bundles/jquery")
+        @Scripts.Render("~/bundles/bootstrap")*@
+
+    @RenderSection("scripts", required: false)
+</body>
+</html>
+
+
+
+<script>
+
+    $(function () {
+        $('#navbarSupportedContent ul li a').each(function () {
+            
+            $current = location.href;
+            $target = $(this).attr('href');
+            if ($current.includes($target)) {
+                $(this).parent().parent().addClass('mActive');
+                $(this).addClass('mmActive');
+                
+            }
+        });
+    });
+
+
+    $(function () {
+        var save = '@TempData["saveOk"]'
+        var error = '@TempData["error"]'
+        if (save != '') {
+            alertify.success(save)
+        }
+        if (error != '') {
+            alertify.error(error);
+        }
+    });
+
+    function changeLang(lang) {
+        $.ajax({
+            type: "Get",
+            url: "/Language/SetLanguage",
+            data: { 'lang': lang },
+
+            success: function (data) {
+                location.reload();
+            },
+            error: function () {
+             
+                alert('خطأ اثناء التحويل');
+            }
+        })
+    }
+
+    function Login() {
+        debugger
+        var url = "/Admin/Authors/SignIn?id=0";
+        $('#divBody').load(url, function () {
+            $('#contractPause').modal({ backdrop: 'static', keyboard: false});
+        })
+    }
+
+</script>

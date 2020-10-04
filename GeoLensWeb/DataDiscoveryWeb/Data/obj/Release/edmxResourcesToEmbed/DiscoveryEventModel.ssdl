@@ -1,0 +1,208 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DiscoveryEventModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="AboutUs">
+    <Key>
+      <PropertyRef Name="aboutUsID" />
+    </Key>
+    <Property Name="aboutUsID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="aboutUsDescEn" Type="nvarchar(max)" />
+    <Property Name="aboutUsDescAr" Type="nvarchar(max)" />
+    <Property Name="statusID" Type="int" />
+  </EntityType>
+  <EntityType Name="Countries">
+    <Key>
+      <PropertyRef Name="countryID" />
+    </Key>
+    <Property Name="countryID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="countryNameEn" Type="nvarchar" MaxLength="150" />
+    <Property Name="countryNameAr" Type="nvarchar" MaxLength="150" />
+    <Property Name="orderID" Type="int" />
+    <Property Name="statusID" Type="int" />
+  </EntityType>
+  <EntityType Name="EventImage">
+    <Key>
+      <PropertyRef Name="eventImageID" />
+    </Key>
+    <Property Name="eventImageID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="eventID" Type="int" />
+    <Property Name="statusID" Type="int" />
+  </EntityType>
+  <EntityType Name="EventInfo">
+    <Key>
+      <PropertyRef Name="eventID" />
+    </Key>
+    <Property Name="eventID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="eventNameEn" Type="nvarchar" MaxLength="200" />
+    <Property Name="eventNameAr" Type="nvarchar" MaxLength="200" />
+    <Property Name="eventDescEn" Type="nvarchar(max)" />
+    <Property Name="eventDescAr" Type="nvarchar(max)" />
+    <Property Name="latitude" Type="float" />
+    <Property Name="longitude" Type="float" />
+    <Property Name="eventTypeID" Type="int" />
+    <Property Name="countryID" Type="int" />
+    <Property Name="eventDate" Type="datetime" />
+    <Property Name="userID" Type="int" />
+    <Property Name="statusID" Type="int" />
+    <Property Name="eventImage" Type="nvarchar" MaxLength="100" />
+    <Property Name="dateAdd" Type="datetime" />
+  </EntityType>
+  <EntityType Name="EventRefrences">
+    <Key>
+      <PropertyRef Name="eventRefrencesID" />
+    </Key>
+    <Property Name="eventRefrencesID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="orderID" Type="int" />
+    <Property Name="eventURL" Type="nvarchar" MaxLength="250" />
+    <Property Name="eventID" Type="int" />
+    <Property Name="statusID" Type="int" />
+  </EntityType>
+  <EntityType Name="EventTypes">
+    <Key>
+      <PropertyRef Name="eventTypeID" />
+    </Key>
+    <Property Name="eventTypeID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="eventTypeNameEn" Type="nvarchar" MaxLength="150" />
+    <Property Name="eventTypeNameAr" Type="nvarchar" MaxLength="150" />
+    <Property Name="statusID" Type="int" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <EntityType Name="Users">
+    <Key>
+      <PropertyRef Name="userID" />
+    </Key>
+    <Property Name="userID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="userNameEn" Type="nvarchar" MaxLength="150" />
+    <Property Name="userNameAR" Type="nvarchar" MaxLength="150" />
+    <Property Name="userTel" Type="nvarchar" MaxLength="50" />
+    <Property Name="userEmail" Type="nvarchar" MaxLength="100" />
+    <Property Name="userTypeID" Type="int" />
+    <Property Name="statusID" Type="int" />
+    <Property Name="username" Type="nvarchar" MaxLength="100" />
+    <Property Name="password" Type="nvarchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="UserType">
+    <Key>
+      <PropertyRef Name="userTypeID" />
+    </Key>
+    <Property Name="userTypeID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="userTypeDescEn" Type="nvarchar" MaxLength="100" />
+    <Property Name="userTypeDescAr" Type="nvarchar" MaxLength="100" />
+    <Property Name="statusID" Type="int" />
+  </EntityType>
+  <Association Name="FK_EventImage_EventInfo">
+    <End Role="EventInfo" Type="Self.EventInfo" Multiplicity="0..1" />
+    <End Role="EventImage" Type="Self.EventImage" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EventInfo">
+        <PropertyRef Name="eventID" />
+      </Principal>
+      <Dependent Role="EventImage">
+        <PropertyRef Name="eventID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EventInfo_Countries">
+    <End Role="Countries" Type="Self.Countries" Multiplicity="0..1" />
+    <End Role="EventInfo" Type="Self.EventInfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Countries">
+        <PropertyRef Name="countryID" />
+      </Principal>
+      <Dependent Role="EventInfo">
+        <PropertyRef Name="countryID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EventInfo_EventTypes">
+    <End Role="EventTypes" Type="Self.EventTypes" Multiplicity="0..1" />
+    <End Role="EventInfo" Type="Self.EventInfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EventTypes">
+        <PropertyRef Name="eventTypeID" />
+      </Principal>
+      <Dependent Role="EventInfo">
+        <PropertyRef Name="eventTypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EventInfo_Users">
+    <End Role="Users" Type="Self.Users" Multiplicity="0..1" />
+    <End Role="EventInfo" Type="Self.EventInfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="userID" />
+      </Principal>
+      <Dependent Role="EventInfo">
+        <PropertyRef Name="userID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EventRefrences_EventInfo">
+    <End Role="EventInfo" Type="Self.EventInfo" Multiplicity="0..1" />
+    <End Role="EventRefrences" Type="Self.EventRefrences" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EventInfo">
+        <PropertyRef Name="eventID" />
+      </Principal>
+      <Dependent Role="EventRefrences">
+        <PropertyRef Name="eventID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Users_UserType">
+    <End Role="UserType" Type="Self.UserType" Multiplicity="0..1" />
+    <End Role="Users" Type="Self.Users" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UserType">
+        <PropertyRef Name="userTypeID" />
+      </Principal>
+      <Dependent Role="Users">
+        <PropertyRef Name="userTypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="DiscoveryEventModelStoreContainer">
+    <EntitySet Name="AboutUs" EntityType="Self.AboutUs" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Countries" EntityType="Self.Countries" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="EventImage" EntityType="Self.EventImage" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="EventInfo" EntityType="Self.EventInfo" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="EventRefrences" EntityType="Self.EventRefrences" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="EventTypes" EntityType="Self.EventTypes" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Users" EntityType="Self.Users" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="UserType" EntityType="Self.UserType" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_EventImage_EventInfo" Association="Self.FK_EventImage_EventInfo">
+      <End Role="EventInfo" EntitySet="EventInfo" />
+      <End Role="EventImage" EntitySet="EventImage" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EventInfo_Countries" Association="Self.FK_EventInfo_Countries">
+      <End Role="Countries" EntitySet="Countries" />
+      <End Role="EventInfo" EntitySet="EventInfo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EventInfo_EventTypes" Association="Self.FK_EventInfo_EventTypes">
+      <End Role="EventTypes" EntitySet="EventTypes" />
+      <End Role="EventInfo" EntitySet="EventInfo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EventInfo_Users" Association="Self.FK_EventInfo_Users">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="EventInfo" EntitySet="EventInfo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EventRefrences_EventInfo" Association="Self.FK_EventRefrences_EventInfo">
+      <End Role="EventInfo" EntitySet="EventInfo" />
+      <End Role="EventRefrences" EntitySet="EventRefrences" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Users_UserType" Association="Self.FK_Users_UserType">
+      <End Role="UserType" EntitySet="UserType" />
+      <End Role="Users" EntitySet="Users" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

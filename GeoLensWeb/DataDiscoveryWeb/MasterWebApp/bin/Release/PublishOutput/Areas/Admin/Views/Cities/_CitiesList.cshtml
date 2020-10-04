@@ -1,0 +1,96 @@
+﻿@using Data.ViewModel;
+@using DataLayer;
+@model CitiesAddViewModel
+@{ 
+    string lang = FunServices.getLang("lang");
+
+}
+<div class="d-flex flex-row justify-content-between bg-info p-1">
+    <label>
+       @foreach (var tt in Model.tree)
+       {
+        <a href="@Url.Action("Index", "Cities",new {  countryID = Request.QueryString["countryID"],  parentID = tt.parentID })" class="btn btn-primary">
+            @if(lang == "ar")
+            {
+                <span> @tt.cityNameAr</span>
+                <span> /</span>
+
+            }
+            else
+            {
+                <span> @tt.cityNameEn</span>
+                <span> /</span>
+            }
+
+        </a>
+       }
+    </label>
+    <a href="@Url.Action("CitiesAddEdit", "Cities",new {  countryID = Request.QueryString["countryID"],  parentID = Request.QueryString["parentID"] })" class="btn btn-primary">
+
+        <i class="fas fa-plus-circle"></i>
+        @MasterWebApp.Resource.CommonMessage.btnNew
+    </a>
+    </div>
+
+
+
+    <div style="padding-top:5px;">
+
+        <div id="mTable" class="table table-striped table-bordered table-hover ">
+
+
+            <div class="d-flex flex-row justify-content-between bg-dark text-white p-2">
+                <div class="col-lg-10">
+                    @MasterWebApp.Resource.Cities.cityNameAr
+
+                    @MasterWebApp.Resource.Cities.cityNameEn
+
+                </div>
+                <div class="col-lg-2 col-2 ">
+                    action
+
+                </div>
+            </div>
+
+
+            @foreach (var item in Model.CitiesAll)
+            {
+
+                <div class="col-lg-10 col-12 ">
+
+                  @if (lang == "ar")
+                  {
+                    <a href="@Url.Action("Index", new { countryID = Request.QueryString["countryID"], parentID =item.cityID,cityName =item.cityNameAr })" style="padding:10px;" )">
+
+                        @item.cityNameAr
+                        /
+                        @item.cityNameEn
+                    </a>
+                  }
+                  else
+                  {
+                    <a href="@Url.Action("Index", new { countryID = Request.QueryString["countryID"], parentID =item.cityID,cityName = item.cityNameEn  })" style="padding:10px;" )">
+
+                        @item.cityNameAr
+                        /
+                        @item.cityNameEn
+                    </a>
+                  }
+                </div>
+
+
+                <div class="col-lg-2 col-2 ">
+                    <a href="@Url.Action("CitiesAddEdit", new { id = item.cityID , countryID = Request.QueryString["countryID"],  parentID = Request.QueryString["parentID"],cityName = Request.QueryString["cityName"] })" style="padding:10px;">
+                        <i class="far fa-edit"></i>
+                    </a>
+
+                    <a href="@Url.Action("ChangeStatus", new { id = item.cityID, statusID = 0 })" style="padding:10px;" onclick="return confirm('@MasterWebApp.Resource.CommonMessage.confirmDelete')">
+                        <i class="fas fa-minus-circle"></i>
+                    </a>
+                </div>
+
+            }
+
+        </div>
+
+    </div>

@@ -1,0 +1,570 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="DiscoveryEventModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="AboutUs">
+          <Key>
+            <PropertyRef Name="aboutUsID" />
+          </Key>
+          <Property Name="aboutUsID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="aboutUsDescEn" Type="nvarchar(max)" />
+          <Property Name="aboutUsDescAr" Type="nvarchar(max)" />
+          <Property Name="statusID" Type="int" />
+        </EntityType>
+        <EntityType Name="Countries">
+          <Key>
+            <PropertyRef Name="countryID" />
+          </Key>
+          <Property Name="countryID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="countryNameEn" Type="nvarchar" MaxLength="150" />
+          <Property Name="countryNameAr" Type="nvarchar" MaxLength="150" />
+          <Property Name="orderID" Type="int" />
+          <Property Name="statusID" Type="int" />
+        </EntityType>
+        <EntityType Name="EventImage">
+          <Key>
+            <PropertyRef Name="eventImageID" />
+          </Key>
+          <Property Name="eventImageID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="eventID" Type="int" />
+          <Property Name="statusID" Type="int" />
+        </EntityType>
+        <EntityType Name="EventInfo">
+          <Key>
+            <PropertyRef Name="eventID" />
+          </Key>
+          <Property Name="eventID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="eventNameEn" Type="nvarchar" MaxLength="200" />
+          <Property Name="eventNameAr" Type="nvarchar" MaxLength="200" />
+          <Property Name="eventDescEn" Type="nvarchar(max)" />
+          <Property Name="eventDescAr" Type="nvarchar(max)" />
+          <Property Name="latitude" Type="float" />
+          <Property Name="longitude" Type="float" />
+          <Property Name="eventTypeID" Type="int" />
+          <Property Name="countryID" Type="int" />
+          <Property Name="eventDate" Type="datetime" />
+          <Property Name="userID" Type="int" />
+          <Property Name="statusID" Type="int" />
+          <Property Name="eventImage" Type="nvarchar" MaxLength="100" />
+          <Property Name="dateAdd" Type="datetime" />
+        </EntityType>
+        <EntityType Name="EventRefrences">
+          <Key>
+            <PropertyRef Name="eventRefrencesID" />
+          </Key>
+          <Property Name="eventRefrencesID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="orderID" Type="int" />
+          <Property Name="eventURL" Type="nvarchar" MaxLength="250" />
+          <Property Name="eventID" Type="int" />
+          <Property Name="statusID" Type="int" />
+        </EntityType>
+        <EntityType Name="EventTypes">
+          <Key>
+            <PropertyRef Name="eventTypeID" />
+          </Key>
+          <Property Name="eventTypeID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="eventTypeNameEn" Type="nvarchar" MaxLength="150" />
+          <Property Name="eventTypeNameAr" Type="nvarchar" MaxLength="150" />
+          <Property Name="statusID" Type="int" />
+        </EntityType>
+        <EntityType Name="sysdiagrams">
+          <Key>
+            <PropertyRef Name="diagram_id" />
+          </Key>
+          <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+          <Property Name="principal_id" Type="int" Nullable="false" />
+          <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="version" Type="int" />
+          <Property Name="definition" Type="varbinary(max)" />
+        </EntityType>
+        <EntityType Name="Users">
+          <Key>
+            <PropertyRef Name="userID" />
+          </Key>
+          <Property Name="userID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="userNameEn" Type="nvarchar" MaxLength="150" />
+          <Property Name="userNameAR" Type="nvarchar" MaxLength="150" />
+          <Property Name="userTel" Type="nvarchar" MaxLength="50" />
+          <Property Name="userEmail" Type="nvarchar" MaxLength="100" />
+          <Property Name="userTypeID" Type="int" />
+          <Property Name="statusID" Type="int" />
+          <Property Name="username" Type="nvarchar" MaxLength="100" />
+          <Property Name="password" Type="nvarchar" MaxLength="100" />
+        </EntityType>
+        <EntityType Name="UserType">
+          <Key>
+            <PropertyRef Name="userTypeID" />
+          </Key>
+          <Property Name="userTypeID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="userTypeDescEn" Type="nvarchar" MaxLength="100" />
+          <Property Name="userTypeDescAr" Type="nvarchar" MaxLength="100" />
+          <Property Name="statusID" Type="int" />
+        </EntityType>
+        <Association Name="FK_EventImage_EventInfo">
+          <End Role="EventInfo" Type="Self.EventInfo" Multiplicity="0..1" />
+          <End Role="EventImage" Type="Self.EventImage" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="EventInfo">
+              <PropertyRef Name="eventID" />
+            </Principal>
+            <Dependent Role="EventImage">
+              <PropertyRef Name="eventID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_EventInfo_Countries">
+          <End Role="Countries" Type="Self.Countries" Multiplicity="0..1" />
+          <End Role="EventInfo" Type="Self.EventInfo" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Countries">
+              <PropertyRef Name="countryID" />
+            </Principal>
+            <Dependent Role="EventInfo">
+              <PropertyRef Name="countryID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_EventInfo_EventTypes">
+          <End Role="EventTypes" Type="Self.EventTypes" Multiplicity="0..1" />
+          <End Role="EventInfo" Type="Self.EventInfo" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="EventTypes">
+              <PropertyRef Name="eventTypeID" />
+            </Principal>
+            <Dependent Role="EventInfo">
+              <PropertyRef Name="eventTypeID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_EventInfo_Users">
+          <End Role="Users" Type="Self.Users" Multiplicity="0..1" />
+          <End Role="EventInfo" Type="Self.EventInfo" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Users">
+              <PropertyRef Name="userID" />
+            </Principal>
+            <Dependent Role="EventInfo">
+              <PropertyRef Name="userID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_EventRefrences_EventInfo">
+          <End Role="EventInfo" Type="Self.EventInfo" Multiplicity="0..1" />
+          <End Role="EventRefrences" Type="Self.EventRefrences" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="EventInfo">
+              <PropertyRef Name="eventID" />
+            </Principal>
+            <Dependent Role="EventRefrences">
+              <PropertyRef Name="eventID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Users_UserType">
+          <End Role="UserType" Type="Self.UserType" Multiplicity="0..1" />
+          <End Role="Users" Type="Self.Users" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="UserType">
+              <PropertyRef Name="userTypeID" />
+            </Principal>
+            <Dependent Role="Users">
+              <PropertyRef Name="userTypeID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="DiscoveryEventModelStoreContainer">
+          <EntitySet Name="AboutUs" EntityType="Self.AboutUs" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Countries" EntityType="Self.Countries" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="EventImage" EntityType="Self.EventImage" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="EventInfo" EntityType="Self.EventInfo" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="EventRefrences" EntityType="Self.EventRefrences" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="EventTypes" EntityType="Self.EventTypes" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Users" EntityType="Self.Users" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="UserType" EntityType="Self.UserType" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK_EventImage_EventInfo" Association="Self.FK_EventImage_EventInfo">
+            <End Role="EventInfo" EntitySet="EventInfo" />
+            <End Role="EventImage" EntitySet="EventImage" />
+          </AssociationSet>
+          <AssociationSet Name="FK_EventInfo_Countries" Association="Self.FK_EventInfo_Countries">
+            <End Role="Countries" EntitySet="Countries" />
+            <End Role="EventInfo" EntitySet="EventInfo" />
+          </AssociationSet>
+          <AssociationSet Name="FK_EventInfo_EventTypes" Association="Self.FK_EventInfo_EventTypes">
+            <End Role="EventTypes" EntitySet="EventTypes" />
+            <End Role="EventInfo" EntitySet="EventInfo" />
+          </AssociationSet>
+          <AssociationSet Name="FK_EventInfo_Users" Association="Self.FK_EventInfo_Users">
+            <End Role="Users" EntitySet="Users" />
+            <End Role="EventInfo" EntitySet="EventInfo" />
+          </AssociationSet>
+          <AssociationSet Name="FK_EventRefrences_EventInfo" Association="Self.FK_EventRefrences_EventInfo">
+            <End Role="EventInfo" EntitySet="EventInfo" />
+            <End Role="EventRefrences" EntitySet="EventRefrences" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Users_UserType" Association="Self.FK_Users_UserType">
+            <End Role="UserType" EntitySet="UserType" />
+            <End Role="Users" EntitySet="Users" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="DiscoveryEventModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="AboutUs">
+          <Key>
+            <PropertyRef Name="aboutUsID" />
+          </Key>
+          <Property Name="aboutUsID" Type="Int32" Nullable="false" />
+          <Property Name="aboutUsDescEn" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="aboutUsDescAr" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="statusID" Type="Int32" />
+        </EntityType>
+        <EntityType Name="Countries">
+          <Key>
+            <PropertyRef Name="countryID" />
+          </Key>
+          <Property Name="countryID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="countryNameEn" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Name="countryNameAr" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Name="orderID" Type="Int32" />
+          <Property Name="statusID" Type="Int32" />
+          <NavigationProperty Name="EventInfo" Relationship="DiscoveryEventModel.FK_EventInfo_Countries" FromRole="Countries" ToRole="EventInfo" />
+        </EntityType>
+        <EntityType Name="EventTypes">
+          <Key>
+            <PropertyRef Name="eventTypeID" />
+          </Key>
+          <Property Name="eventTypeID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="eventTypeNameEn" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Name="eventTypeNameAr" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Name="statusID" Type="Int32" />
+          <NavigationProperty Name="EventInfo" Relationship="DiscoveryEventModel.FK_EventInfo_EventTypes" FromRole="EventTypes" ToRole="EventInfo" />
+        </EntityType>
+        <EntityType Name="sysdiagrams">
+          <Key>
+            <PropertyRef Name="diagram_id" />
+          </Key>
+          <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="principal_id" Type="Int32" Nullable="false" />
+          <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="version" Type="Int32" />
+          <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="Users">
+          <Key>
+            <PropertyRef Name="userID" />
+          </Key>
+          <Property Name="userID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="userNameEn" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Name="userNameAR" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Name="userTel" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="userEmail" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="userTypeID" Type="Int32" />
+          <Property Name="statusID" Type="Int32" />
+          <NavigationProperty Name="UserType" Relationship="Self.FK_Users_UserType" FromRole="Users" ToRole="UserType" />
+          <Property Name="username" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="password" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="EventInfo" Relationship="DiscoveryEventModel.FK_EventInfo_Users" FromRole="Users" ToRole="EventInfo" />
+        </EntityType>
+        <EntityType Name="UserType">
+          <Key>
+            <PropertyRef Name="userTypeID" />
+          </Key>
+          <Property Name="userTypeID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="userTypeDescEn" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="userTypeDescAr" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="statusID" Type="Int32" />
+          <NavigationProperty Name="Users" Relationship="Self.FK_Users_UserType" FromRole="UserType" ToRole="Users" />
+        </EntityType>
+        <Association Name="FK_Users_UserType">
+          <End Role="UserType" Type="Self.UserType" Multiplicity="0..1" />
+          <End Role="Users" Type="Self.Users" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="UserType">
+              <PropertyRef Name="userTypeID" />
+            </Principal>
+            <Dependent Role="Users">
+              <PropertyRef Name="userTypeID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="DiscoveryEventEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="AboutUs" EntityType="Self.AboutUs" />
+          <EntitySet Name="Countries" EntityType="Self.Countries" />
+          <EntitySet Name="EventTypes" EntityType="Self.EventTypes" />
+          <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" />
+          <EntitySet Name="Users" EntityType="Self.Users" />
+          <EntitySet Name="UserType" EntityType="Self.UserType" />
+          <AssociationSet Name="FK_Users_UserType" Association="Self.FK_Users_UserType">
+            <End Role="UserType" EntitySet="UserType" />
+            <End Role="Users" EntitySet="Users" />
+          </AssociationSet>
+          <EntitySet Name="EventRefrences" EntityType="DiscoveryEventModel.EventRefrences" />
+          <EntitySet Name="EventImage" EntityType="DiscoveryEventModel.EventImage" />
+          <EntitySet Name="EventInfo" EntityType="DiscoveryEventModel.EventInfo" />
+          <AssociationSet Name="FK_EventInfo_Countries" Association="DiscoveryEventModel.FK_EventInfo_Countries">
+            <End Role="Countries" EntitySet="Countries" />
+            <End Role="EventInfo" EntitySet="EventInfo" />
+          </AssociationSet>
+          <AssociationSet Name="FK_EventImage_EventInfo" Association="DiscoveryEventModel.FK_EventImage_EventInfo">
+            <End Role="EventInfo" EntitySet="EventInfo" />
+            <End Role="EventImage" EntitySet="EventImage" />
+          </AssociationSet>
+          <AssociationSet Name="FK_EventInfo_EventTypes" Association="DiscoveryEventModel.FK_EventInfo_EventTypes">
+            <End Role="EventTypes" EntitySet="EventTypes" />
+            <End Role="EventInfo" EntitySet="EventInfo" />
+          </AssociationSet>
+          <AssociationSet Name="FK_EventInfo_Users" Association="DiscoveryEventModel.FK_EventInfo_Users">
+            <End Role="Users" EntitySet="Users" />
+            <End Role="EventInfo" EntitySet="EventInfo" />
+          </AssociationSet>
+          <AssociationSet Name="FK_EventRefrences_EventInfo" Association="DiscoveryEventModel.FK_EventRefrences_EventInfo">
+            <End Role="EventInfo" EntitySet="EventInfo" />
+            <End Role="EventRefrences" EntitySet="EventRefrences" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="EventRefrences">
+          <Key>
+            <PropertyRef Name="eventRefrencesID" />
+          </Key>
+          <Property Name="eventRefrencesID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="orderID" Type="Int32" />
+          <Property Name="eventURL" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="eventID" Type="Int32" />
+          <Property Name="statusID" Type="Int32" />
+          <NavigationProperty Name="EventInfo" Relationship="DiscoveryEventModel.FK_EventRefrences_EventInfo" FromRole="EventRefrences" ToRole="EventInfo" />
+        </EntityType>
+        <EntityType Name="EventImage">
+          <Key>
+            <PropertyRef Name="eventImageID" />
+          </Key>
+          <Property Name="eventImageID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="eventID" Type="Int32" />
+          <Property Name="statusID" Type="Int32" />
+          <NavigationProperty Name="EventInfo" Relationship="DiscoveryEventModel.FK_EventImage_EventInfo" FromRole="EventImage" ToRole="EventInfo" />
+        </EntityType>
+        <EntityType Name="EventInfo">
+          <Key>
+            <PropertyRef Name="eventID" />
+          </Key>
+          <Property Name="eventID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="eventNameEn" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="eventNameAr" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="eventDescEn" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="eventDescAr" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="latitude" Type="Double" />
+          <Property Name="longitude" Type="Double" />
+          <Property Name="eventTypeID" Type="Int32" />
+          <Property Name="countryID" Type="Int32" />
+          <Property Name="eventDate" Type="DateTime" Precision="3" />
+          <Property Name="userID" Type="Int32" />
+          <Property Name="statusID" Type="Int32" />
+          <Property Name="eventImage" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Countries" Relationship="DiscoveryEventModel.FK_EventInfo_Countries" FromRole="EventInfo" ToRole="Countries" />
+          <NavigationProperty Name="EventImage1" Relationship="DiscoveryEventModel.FK_EventImage_EventInfo" FromRole="EventInfo" ToRole="EventImage" />
+          <NavigationProperty Name="EventTypes" Relationship="DiscoveryEventModel.FK_EventInfo_EventTypes" FromRole="EventInfo" ToRole="EventTypes" />
+          <NavigationProperty Name="Users" Relationship="DiscoveryEventModel.FK_EventInfo_Users" FromRole="EventInfo" ToRole="Users" />
+          <NavigationProperty Name="EventRefrences" Relationship="DiscoveryEventModel.FK_EventRefrences_EventInfo" FromRole="EventInfo" ToRole="EventRefrences" />
+          <Property Name="dateAdd" Type="DateTime" Precision="3" />
+        </EntityType>
+        <Association Name="FK_EventInfo_Countries">
+          <End Type="DiscoveryEventModel.Countries" Role="Countries" Multiplicity="0..1" />
+          <End Type="DiscoveryEventModel.EventInfo" Role="EventInfo" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Countries">
+              <PropertyRef Name="countryID" />
+            </Principal>
+            <Dependent Role="EventInfo">
+              <PropertyRef Name="countryID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_EventImage_EventInfo">
+          <End Type="DiscoveryEventModel.EventInfo" Role="EventInfo" Multiplicity="0..1" />
+          <End Type="DiscoveryEventModel.EventImage" Role="EventImage" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="EventInfo">
+              <PropertyRef Name="eventID" />
+            </Principal>
+            <Dependent Role="EventImage">
+              <PropertyRef Name="eventID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_EventInfo_EventTypes">
+          <End Type="DiscoveryEventModel.EventTypes" Role="EventTypes" Multiplicity="0..1" />
+          <End Type="DiscoveryEventModel.EventInfo" Role="EventInfo" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="EventTypes">
+              <PropertyRef Name="eventTypeID" />
+            </Principal>
+            <Dependent Role="EventInfo">
+              <PropertyRef Name="eventTypeID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_EventInfo_Users">
+          <End Type="DiscoveryEventModel.Users" Role="Users" Multiplicity="0..1" />
+          <End Type="DiscoveryEventModel.EventInfo" Role="EventInfo" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Users">
+              <PropertyRef Name="userID" />
+            </Principal>
+            <Dependent Role="EventInfo">
+              <PropertyRef Name="userID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_EventRefrences_EventInfo">
+          <End Type="DiscoveryEventModel.EventInfo" Role="EventInfo" Multiplicity="0..1" />
+          <End Type="DiscoveryEventModel.EventRefrences" Role="EventRefrences" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="EventInfo">
+              <PropertyRef Name="eventID" />
+            </Principal>
+            <Dependent Role="EventRefrences">
+              <PropertyRef Name="eventID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="DiscoveryEventModelStoreContainer" CdmEntityContainer="DiscoveryEventEntities">
+          <EntitySetMapping Name="AboutUs">
+            <EntityTypeMapping TypeName="DiscoveryEventModel.AboutUs">
+              <MappingFragment StoreEntitySet="AboutUs">
+                <ScalarProperty Name="aboutUsID" ColumnName="aboutUsID" />
+                <ScalarProperty Name="aboutUsDescEn" ColumnName="aboutUsDescEn" />
+                <ScalarProperty Name="aboutUsDescAr" ColumnName="aboutUsDescAr" />
+                <ScalarProperty Name="statusID" ColumnName="statusID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Countries">
+            <EntityTypeMapping TypeName="DiscoveryEventModel.Countries">
+              <MappingFragment StoreEntitySet="Countries">
+                <ScalarProperty Name="countryID" ColumnName="countryID" />
+                <ScalarProperty Name="countryNameEn" ColumnName="countryNameEn" />
+                <ScalarProperty Name="countryNameAr" ColumnName="countryNameAr" />
+                <ScalarProperty Name="orderID" ColumnName="orderID" />
+                <ScalarProperty Name="statusID" ColumnName="statusID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="EventTypes">
+            <EntityTypeMapping TypeName="DiscoveryEventModel.EventTypes">
+              <MappingFragment StoreEntitySet="EventTypes">
+                <ScalarProperty Name="eventTypeID" ColumnName="eventTypeID" />
+                <ScalarProperty Name="eventTypeNameEn" ColumnName="eventTypeNameEn" />
+                <ScalarProperty Name="eventTypeNameAr" ColumnName="eventTypeNameAr" />
+                <ScalarProperty Name="statusID" ColumnName="statusID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="sysdiagrams">
+            <EntityTypeMapping TypeName="DiscoveryEventModel.sysdiagrams">
+              <MappingFragment StoreEntitySet="sysdiagrams">
+                <ScalarProperty Name="name" ColumnName="name" />
+                <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+                <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+                <ScalarProperty Name="version" ColumnName="version" />
+                <ScalarProperty Name="definition" ColumnName="definition" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Users">
+            <EntityTypeMapping TypeName="DiscoveryEventModel.Users">
+              <MappingFragment StoreEntitySet="Users">
+                <ScalarProperty Name="password" ColumnName="password" />
+                <ScalarProperty Name="username" ColumnName="username" />
+                <ScalarProperty Name="userID" ColumnName="userID" />
+                <ScalarProperty Name="userNameEn" ColumnName="userNameEn" />
+                <ScalarProperty Name="userNameAR" ColumnName="userNameAR" />
+                <ScalarProperty Name="userTel" ColumnName="userTel" />
+                <ScalarProperty Name="userEmail" ColumnName="userEmail" />
+                <ScalarProperty Name="userTypeID" ColumnName="userTypeID" />
+                <ScalarProperty Name="statusID" ColumnName="statusID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="UserType">
+            <EntityTypeMapping TypeName="DiscoveryEventModel.UserType">
+              <MappingFragment StoreEntitySet="UserType">
+                <ScalarProperty Name="userTypeID" ColumnName="userTypeID" />
+                <ScalarProperty Name="userTypeDescEn" ColumnName="userTypeDescEn" />
+                <ScalarProperty Name="userTypeDescAr" ColumnName="userTypeDescAr" />
+                <ScalarProperty Name="statusID" ColumnName="statusID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="EventRefrences">
+            <EntityTypeMapping TypeName="DiscoveryEventModel.EventRefrences">
+              <MappingFragment StoreEntitySet="EventRefrences">
+                <ScalarProperty Name="statusID" ColumnName="statusID" />
+                <ScalarProperty Name="eventID" ColumnName="eventID" />
+                <ScalarProperty Name="eventURL" ColumnName="eventURL" />
+                <ScalarProperty Name="orderID" ColumnName="orderID" />
+                <ScalarProperty Name="eventRefrencesID" ColumnName="eventRefrencesID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="EventImage">
+            <EntityTypeMapping TypeName="DiscoveryEventModel.EventImage">
+              <MappingFragment StoreEntitySet="EventImage">
+                <ScalarProperty Name="statusID" ColumnName="statusID" />
+                <ScalarProperty Name="eventID" ColumnName="eventID" />
+                <ScalarProperty Name="eventImageID" ColumnName="eventImageID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="EventInfo">
+            <EntityTypeMapping TypeName="DiscoveryEventModel.EventInfo">
+              <MappingFragment StoreEntitySet="EventInfo">
+                <ScalarProperty Name="dateAdd" ColumnName="dateAdd" />
+                <ScalarProperty Name="eventImage" ColumnName="eventImage" />
+                <ScalarProperty Name="statusID" ColumnName="statusID" />
+                <ScalarProperty Name="userID" ColumnName="userID" />
+                <ScalarProperty Name="eventDate" ColumnName="eventDate" />
+                <ScalarProperty Name="countryID" ColumnName="countryID" />
+                <ScalarProperty Name="eventTypeID" ColumnName="eventTypeID" />
+                <ScalarProperty Name="longitude" ColumnName="longitude" />
+                <ScalarProperty Name="latitude" ColumnName="latitude" />
+                <ScalarProperty Name="eventDescAr" ColumnName="eventDescAr" />
+                <ScalarProperty Name="eventDescEn" ColumnName="eventDescEn" />
+                <ScalarProperty Name="eventNameAr" ColumnName="eventNameAr" />
+                <ScalarProperty Name="eventNameEn" ColumnName="eventNameEn" />
+                <ScalarProperty Name="eventID" ColumnName="eventID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

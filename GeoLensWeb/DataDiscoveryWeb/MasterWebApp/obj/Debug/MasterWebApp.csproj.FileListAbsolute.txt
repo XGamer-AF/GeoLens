@@ -1,0 +1,1029 @@
+C:\Users\m.rizk\Dropbox\ADL\AdlWeb\MasterWebApp\bin\MasterWebApp.dll.config
+C:\Users\m.rizk\Dropbox\ADL\AdlWeb\MasterWebApp\bin\MasterWebApp.dll
+C:\Users\m.rizk\Dropbox\ADL\AdlWeb\MasterWebApp\bin\MasterWebApp.pdb
+C:\Users\m.rizk\Dropbox\ADL\AdlWeb\MasterWebApp\bin\en\MasterWebApp.resources.dll
+C:\Users\m.rizk\Dropbox\ADL\AdlWeb\MasterWebApp\bin\roslyn\csc.exe
+C:\Users\m.rizk\Dropbox\ADL\AdlWeb\MasterWebApp\bin\roslyn\csc.exe.config
+C:\Users\m.rizk\Dropbox\ADL\AdlWeb\MasterWebApp\bin\roslyn\csc.rsp
+C:\Users\m.rizk\Dropbox\ADL\AdlWeb\MasterWebApp\bin\roslyn\csi.exe
+C:\Users\m.rizk\Dropbox\ADL\AdlWeb\MasterWebApp\bin\roslyn\csi.rsp
+C:\Users\m.rizk\Dropbox\ADL\AdlWeb\MasterWebApp\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\m.rizk\Dropbox\ADL\AdlWeb\MasterWebApp\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\m.rizk\Dropbox\ADL\AdlWeb\MasterWebApp\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\m.rizk\Dropbox\ADL\AdlWeb\MasterWebApp\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\m.rizk\Dropbox\ADL\AdlWeb\MasterWebApp\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\m.rizk\Dropbox\ADL\AdlWeb\MasterWebApp\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\m.rizk\Dropbox\ADL\AdlWeb\MasterWebApp\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\m.rizk\Dropbox\ADL\AdlWeb\MasterWebApp\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\m.rizk\Dropbox\ADL\AdlWeb\MasterWebApp\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\m.rizk\Dropbox\ADL\AdlWeb\MasterWebApp\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\m.rizk\Dropbox\ADL\AdlWeb\MasterWebApp\bin\roslyn\System.AppContext.dll
+C:\Users\m.rizk\Dropbox\ADL\AdlWeb\MasterWebApp\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\m.rizk\Dropbox\ADL\AdlWeb\MasterWebApp\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\m.rizk\Dropbox\ADL\AdlWeb\MasterWebApp\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\m.rizk\Dropbox\ADL\AdlWeb\MasterWebApp\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\m.rizk\Dropbox\ADL\AdlWeb\MasterWebApp\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\m.rizk\Dropbox\ADL\AdlWeb\MasterWebApp\bin\roslyn\vbc.exe
+C:\Users\m.rizk\Dropbox\ADL\AdlWeb\MasterWebApp\bin\roslyn\vbc.exe.config
+C:\Users\m.rizk\Dropbox\ADL\AdlWeb\MasterWebApp\bin\roslyn\vbc.rsp
+C:\Users\m.rizk\Dropbox\ADL\AdlWeb\MasterWebApp\bin\roslyn\VBCSCompiler.exe
+C:\Users\m.rizk\Dropbox\ADL\AdlWeb\MasterWebApp\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\m.rizk\Dropbox\ADL\AdlWeb\MasterWebApp\bin\Antlr3.Runtime.dll
+C:\Users\m.rizk\Dropbox\ADL\AdlWeb\MasterWebApp\bin\Data.dll
+C:\Users\m.rizk\Dropbox\ADL\AdlWeb\MasterWebApp\bin\DataLayer.dll
+C:\Users\m.rizk\Dropbox\ADL\AdlWeb\MasterWebApp\bin\EntityFramework.dll
+C:\Users\m.rizk\Dropbox\ADL\AdlWeb\MasterWebApp\bin\EntityFramework.SqlServer.dll
+C:\Users\m.rizk\Dropbox\ADL\AdlWeb\MasterWebApp\bin\FluentValidation.dll
+C:\Users\m.rizk\Dropbox\ADL\AdlWeb\MasterWebApp\bin\FluentValidation.ValidatorAttribute.dll
+C:\Users\m.rizk\Dropbox\ADL\AdlWeb\MasterWebApp\bin\FluentValidation.WebApi.dll
+C:\Users\m.rizk\Dropbox\ADL\AdlWeb\MasterWebApp\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\m.rizk\Dropbox\ADL\AdlWeb\MasterWebApp\bin\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\m.rizk\Dropbox\ADL\AdlWeb\MasterWebApp\bin\Microsoft.IdentityModel.Logging.dll
+C:\Users\m.rizk\Dropbox\ADL\AdlWeb\MasterWebApp\bin\Microsoft.IdentityModel.Tokens.dll
+C:\Users\m.rizk\Dropbox\ADL\AdlWeb\MasterWebApp\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\m.rizk\Dropbox\ADL\AdlWeb\MasterWebApp\bin\Newtonsoft.Json.dll
+C:\Users\m.rizk\Dropbox\ADL\AdlWeb\MasterWebApp\bin\Ninject.dll
+C:\Users\m.rizk\Dropbox\ADL\AdlWeb\MasterWebApp\bin\Ninject.Web.Common.dll
+C:\Users\m.rizk\Dropbox\ADL\AdlWeb\MasterWebApp\bin\Ninject.Web.Common.WebHost.dll
+C:\Users\m.rizk\Dropbox\ADL\AdlWeb\MasterWebApp\bin\Ninject.Web.WebApi.dll
+C:\Users\m.rizk\Dropbox\ADL\AdlWeb\MasterWebApp\bin\Ninject.Web.WebApi.WebHost.dll
+C:\Users\m.rizk\Dropbox\ADL\AdlWeb\MasterWebApp\bin\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\m.rizk\Dropbox\ADL\AdlWeb\MasterWebApp\bin\System.Net.Http.Formatting.dll
+C:\Users\m.rizk\Dropbox\ADL\AdlWeb\MasterWebApp\bin\System.Web.Helpers.dll
+C:\Users\m.rizk\Dropbox\ADL\AdlWeb\MasterWebApp\bin\System.Web.Http.dll
+C:\Users\m.rizk\Dropbox\ADL\AdlWeb\MasterWebApp\bin\System.Web.Http.WebHost.dll
+C:\Users\m.rizk\Dropbox\ADL\AdlWeb\MasterWebApp\bin\System.Web.Mvc.dll
+C:\Users\m.rizk\Dropbox\ADL\AdlWeb\MasterWebApp\bin\System.Web.Optimization.dll
+C:\Users\m.rizk\Dropbox\ADL\AdlWeb\MasterWebApp\bin\System.Web.Razor.dll
+C:\Users\m.rizk\Dropbox\ADL\AdlWeb\MasterWebApp\bin\System.Web.WebPages.Deployment.dll
+C:\Users\m.rizk\Dropbox\ADL\AdlWeb\MasterWebApp\bin\System.Web.WebPages.dll
+C:\Users\m.rizk\Dropbox\ADL\AdlWeb\MasterWebApp\bin\System.Web.WebPages.Razor.dll
+C:\Users\m.rizk\Dropbox\ADL\AdlWeb\MasterWebApp\bin\WebActivatorEx.dll
+C:\Users\m.rizk\Dropbox\ADL\AdlWeb\MasterWebApp\bin\WebGrease.dll
+C:\Users\m.rizk\Dropbox\ADL\AdlWeb\MasterWebApp\bin\DataLayer.pdb
+C:\Users\m.rizk\Dropbox\ADL\AdlWeb\MasterWebApp\bin\DataLayer.dll.config
+C:\Users\m.rizk\Dropbox\ADL\AdlWeb\MasterWebApp\bin\Data.pdb
+C:\Users\m.rizk\Dropbox\ADL\AdlWeb\MasterWebApp\bin\Data.dll.config
+C:\Users\m.rizk\Dropbox\ADL\AdlWeb\MasterWebApp\bin\EntityFramework.xml
+C:\Users\m.rizk\Dropbox\ADL\AdlWeb\MasterWebApp\bin\EntityFramework.SqlServer.xml
+C:\Users\m.rizk\Dropbox\ADL\AdlWeb\MasterWebApp\bin\FluentValidation.xml
+C:\Users\m.rizk\Dropbox\ADL\AdlWeb\MasterWebApp\bin\FluentValidation.WebApi.xml
+C:\Users\m.rizk\Dropbox\ADL\AdlWeb\MasterWebApp\bin\Microsoft.IdentityModel.JsonWebTokens.xml
+C:\Users\m.rizk\Dropbox\ADL\AdlWeb\MasterWebApp\bin\Microsoft.IdentityModel.Logging.xml
+C:\Users\m.rizk\Dropbox\ADL\AdlWeb\MasterWebApp\bin\Microsoft.IdentityModel.Tokens.xml
+C:\Users\m.rizk\Dropbox\ADL\AdlWeb\MasterWebApp\bin\Ninject.xml
+C:\Users\m.rizk\Dropbox\ADL\AdlWeb\MasterWebApp\bin\Ninject.Web.Common.xml
+C:\Users\m.rizk\Dropbox\ADL\AdlWeb\MasterWebApp\bin\Ninject.Web.Common.WebHost.xml
+C:\Users\m.rizk\Dropbox\ADL\AdlWeb\MasterWebApp\bin\Ninject.Web.WebApi.xml
+C:\Users\m.rizk\Dropbox\ADL\AdlWeb\MasterWebApp\bin\Ninject.Web.WebApi.WebHost.xml
+C:\Users\m.rizk\Dropbox\ADL\AdlWeb\MasterWebApp\bin\System.IdentityModel.Tokens.Jwt.xml
+C:\Users\m.rizk\Dropbox\ADL\AdlWeb\MasterWebApp\bin\System.Net.Http.Formatting.xml
+C:\Users\m.rizk\Dropbox\ADL\AdlWeb\MasterWebApp\bin\System.Web.Http.xml
+C:\Users\m.rizk\Dropbox\ADL\AdlWeb\MasterWebApp\bin\System.Web.Http.WebHost.xml
+C:\Users\m.rizk\Dropbox\ADL\AdlWeb\MasterWebApp\bin\Newtonsoft.Json.xml
+C:\Users\m.rizk\Dropbox\ADL\AdlWeb\MasterWebApp\bin\System.Web.Helpers.xml
+C:\Users\m.rizk\Dropbox\ADL\AdlWeb\MasterWebApp\bin\System.Web.Mvc.xml
+C:\Users\m.rizk\Dropbox\ADL\AdlWeb\MasterWebApp\bin\System.Web.Optimization.xml
+C:\Users\m.rizk\Dropbox\ADL\AdlWeb\MasterWebApp\bin\System.Web.Razor.xml
+C:\Users\m.rizk\Dropbox\ADL\AdlWeb\MasterWebApp\bin\System.Web.WebPages.xml
+C:\Users\m.rizk\Dropbox\ADL\AdlWeb\MasterWebApp\bin\System.Web.WebPages.Deployment.xml
+C:\Users\m.rizk\Dropbox\ADL\AdlWeb\MasterWebApp\bin\System.Web.WebPages.Razor.xml
+C:\Users\m.rizk\Dropbox\ADL\AdlWeb\MasterWebApp\bin\Antlr3.Runtime.pdb
+C:\Users\m.rizk\Dropbox\ADL\AdlWeb\MasterWebApp\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\m.rizk\Dropbox\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.csprojAssemblyReference.cache
+C:\Users\m.rizk\Dropbox\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.AuthorCertifications.resources
+C:\Users\m.rizk\Dropbox\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.authorJobs.resources
+C:\Users\m.rizk\Dropbox\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.Authors.resources
+C:\Users\m.rizk\Dropbox\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.AuthorSuffix.resources
+C:\Users\m.rizk\Dropbox\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.AuthorTitle.resources
+C:\Users\m.rizk\Dropbox\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.Certifications.resources
+C:\Users\m.rizk\Dropbox\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.Cities.resources
+C:\Users\m.rizk\Dropbox\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.Common.resources
+C:\Users\m.rizk\Dropbox\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.Conferences.resources
+C:\Users\m.rizk\Dropbox\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.Countries.resources
+C:\Users\m.rizk\Dropbox\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.Genders.resources
+C:\Users\m.rizk\Dropbox\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.JobBusinesss.resources
+C:\Users\m.rizk\Dropbox\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.jobFunctions.resources
+C:\Users\m.rizk\Dropbox\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.jobResponsibilitys.resources
+C:\Users\m.rizk\Dropbox\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.JobTitles.resources
+C:\Users\m.rizk\Dropbox\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.JobTypes.resources
+C:\Users\m.rizk\Dropbox\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.Journals.resources
+C:\Users\m.rizk\Dropbox\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.MainAdmin.resources
+C:\Users\m.rizk\Dropbox\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.Members.resources
+C:\Users\m.rizk\Dropbox\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.Months.resources
+C:\Users\m.rizk\Dropbox\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.PaperAuthors.resources
+C:\Users\m.rizk\Dropbox\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.PaperCategory.resources
+C:\Users\m.rizk\Dropbox\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.PaperReviewer.resources
+C:\Users\m.rizk\Dropbox\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.Papers.resources
+C:\Users\m.rizk\Dropbox\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.PaperStatus.resources
+C:\Users\m.rizk\Dropbox\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.PaperSubCategory.resources
+C:\Users\m.rizk\Dropbox\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.PaperType.resources
+C:\Users\m.rizk\Dropbox\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.PrivilegeGroup.resources
+C:\Users\m.rizk\Dropbox\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.Users.resources
+C:\Users\m.rizk\Dropbox\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.Years.resources
+C:\Users\m.rizk\Dropbox\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.AuthorCertifications.en.resources
+C:\Users\m.rizk\Dropbox\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.authorJobs.en.resources
+C:\Users\m.rizk\Dropbox\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.Authors.en.resources
+C:\Users\m.rizk\Dropbox\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.AuthorSuffix.en.resources
+C:\Users\m.rizk\Dropbox\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.AuthorTitle.en.resources
+C:\Users\m.rizk\Dropbox\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.Certifications.en.resources
+C:\Users\m.rizk\Dropbox\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.Cities.en.resources
+C:\Users\m.rizk\Dropbox\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.Common.en.resources
+C:\Users\m.rizk\Dropbox\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.Conferences.en.resources
+C:\Users\m.rizk\Dropbox\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.Countries.en.resources
+C:\Users\m.rizk\Dropbox\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.Genders.en.resources
+C:\Users\m.rizk\Dropbox\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.JobBusinesss.en.resources
+C:\Users\m.rizk\Dropbox\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.jobFunctions.en.resources
+C:\Users\m.rizk\Dropbox\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.jobResponsibilitys.en.resources
+C:\Users\m.rizk\Dropbox\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.JobTitles.en.resources
+C:\Users\m.rizk\Dropbox\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.JobTypes.en.resources
+C:\Users\m.rizk\Dropbox\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.Journals.en.resources
+C:\Users\m.rizk\Dropbox\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.MainAdmin.en.resources
+C:\Users\m.rizk\Dropbox\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.Members.en.resources
+C:\Users\m.rizk\Dropbox\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.Months.en.resources
+C:\Users\m.rizk\Dropbox\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.PaperAuthors.en.resources
+C:\Users\m.rizk\Dropbox\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.PaperCategory.en.resources
+C:\Users\m.rizk\Dropbox\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.PaperReviewer.en.resources
+C:\Users\m.rizk\Dropbox\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.Papers.en.resources
+C:\Users\m.rizk\Dropbox\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.PaperStatus.en.resources
+C:\Users\m.rizk\Dropbox\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.PaperSubCategory.en.resources
+C:\Users\m.rizk\Dropbox\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.PaperType.en.resources
+C:\Users\m.rizk\Dropbox\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.PrivilegeGroup.en.resources
+C:\Users\m.rizk\Dropbox\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.Users.en.resources
+C:\Users\m.rizk\Dropbox\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.Years.en.resources
+C:\Users\m.rizk\Dropbox\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.csproj.GenerateResource.cache
+C:\Users\m.rizk\Dropbox\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.csproj.CoreCompileInputs.cache
+C:\Users\m.rizk\Dropbox\ADL\AdlWeb\MasterWebApp\obj\Debug\en\MasterWebApp.resources.dll
+C:\Users\m.rizk\Dropbox\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.csproj.CopyComplete
+C:\Users\m.rizk\Dropbox\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.dll
+C:\Users\m.rizk\Dropbox\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.pdb
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\MasterWebApp\bin\MasterWebApp.dll.config
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\MasterWebApp\bin\MasterWebApp.dll
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\MasterWebApp\bin\MasterWebApp.pdb
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\MasterWebApp\bin\en\MasterWebApp.resources.dll
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\MasterWebApp\bin\roslyn\csc.exe
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\MasterWebApp\bin\roslyn\csc.exe.config
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\MasterWebApp\bin\roslyn\csc.rsp
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\MasterWebApp\bin\roslyn\csi.exe
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\MasterWebApp\bin\roslyn\csi.rsp
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\MasterWebApp\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\MasterWebApp\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\MasterWebApp\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\MasterWebApp\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\MasterWebApp\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\MasterWebApp\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\MasterWebApp\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\MasterWebApp\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\MasterWebApp\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\MasterWebApp\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\MasterWebApp\bin\roslyn\System.AppContext.dll
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\MasterWebApp\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\MasterWebApp\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\MasterWebApp\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\MasterWebApp\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\MasterWebApp\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\MasterWebApp\bin\roslyn\vbc.exe
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\MasterWebApp\bin\roslyn\vbc.exe.config
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\MasterWebApp\bin\roslyn\vbc.rsp
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\MasterWebApp\bin\roslyn\VBCSCompiler.exe
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\MasterWebApp\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\MasterWebApp\bin\Antlr3.Runtime.dll
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\MasterWebApp\bin\Data.dll
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\MasterWebApp\bin\DataLayer.dll
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\MasterWebApp\bin\EntityFramework.dll
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\MasterWebApp\bin\EntityFramework.SqlServer.dll
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\MasterWebApp\bin\FluentValidation.dll
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\MasterWebApp\bin\FluentValidation.ValidatorAttribute.dll
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\MasterWebApp\bin\FluentValidation.WebApi.dll
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\MasterWebApp\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\MasterWebApp\bin\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\MasterWebApp\bin\Microsoft.IdentityModel.Logging.dll
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\MasterWebApp\bin\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\MasterWebApp\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\MasterWebApp\bin\Ninject.dll
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\MasterWebApp\bin\Ninject.Web.Common.dll
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\MasterWebApp\bin\Ninject.Web.Common.WebHost.dll
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\MasterWebApp\bin\Ninject.Web.WebApi.dll
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\MasterWebApp\bin\Ninject.Web.WebApi.WebHost.dll
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\MasterWebApp\bin\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\MasterWebApp\bin\System.Net.Http.Formatting.dll
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\MasterWebApp\bin\System.Web.Helpers.dll
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\MasterWebApp\bin\System.Web.Http.dll
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\MasterWebApp\bin\System.Web.Http.WebHost.dll
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\MasterWebApp\bin\System.Web.Mvc.dll
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\MasterWebApp\bin\System.Web.Optimization.dll
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\MasterWebApp\bin\System.Web.Razor.dll
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\MasterWebApp\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\MasterWebApp\bin\System.Web.WebPages.dll
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\MasterWebApp\bin\System.Web.WebPages.Razor.dll
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\MasterWebApp\bin\WebActivatorEx.dll
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\MasterWebApp\bin\WebGrease.dll
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\MasterWebApp\bin\DataLayer.pdb
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\MasterWebApp\bin\Data.pdb
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\MasterWebApp\bin\EntityFramework.xml
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\MasterWebApp\bin\EntityFramework.SqlServer.xml
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\MasterWebApp\bin\FluentValidation.xml
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\MasterWebApp\bin\FluentValidation.WebApi.xml
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\MasterWebApp\bin\Microsoft.IdentityModel.JsonWebTokens.xml
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\MasterWebApp\bin\Microsoft.IdentityModel.Logging.xml
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\MasterWebApp\bin\Microsoft.IdentityModel.Tokens.xml
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\MasterWebApp\bin\Ninject.xml
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\MasterWebApp\bin\Ninject.Web.Common.xml
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\MasterWebApp\bin\Ninject.Web.Common.WebHost.xml
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\MasterWebApp\bin\Ninject.Web.WebApi.xml
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\MasterWebApp\bin\Ninject.Web.WebApi.WebHost.xml
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\MasterWebApp\bin\System.IdentityModel.Tokens.Jwt.xml
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\MasterWebApp\bin\System.Net.Http.Formatting.xml
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\MasterWebApp\bin\System.Web.Http.xml
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\MasterWebApp\bin\System.Web.Http.WebHost.xml
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\MasterWebApp\bin\System.Web.Helpers.xml
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\MasterWebApp\bin\System.Web.Mvc.xml
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\MasterWebApp\bin\System.Web.Optimization.xml
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\MasterWebApp\bin\System.Web.Razor.xml
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\MasterWebApp\bin\System.Web.WebPages.xml
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\MasterWebApp\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\MasterWebApp\bin\System.Web.WebPages.Razor.xml
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\MasterWebApp\bin\Antlr3.Runtime.pdb
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\MasterWebApp\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.csprojResolveAssemblyReference.cache
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.AuthorCertifications.resources
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.authorJobs.resources
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.Authors.resources
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.AuthorSuffix.resources
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.AuthorTitle.resources
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.Certifications.resources
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.Cities.resources
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.Common.resources
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.Conferences.resources
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.Countries.resources
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.Genders.resources
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.JobBusinesss.resources
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.jobFunctions.resources
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.jobResponsibilitys.resources
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.JobTitles.resources
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.JobTypes.resources
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.Journals.resources
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.MainAdmin.resources
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.Members.resources
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.Months.resources
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.PaperAuthors.resources
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.PaperCategory.resources
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.PaperReviewer.resources
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.Papers.resources
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.PaperStatus.resources
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.PaperSubCategory.resources
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.PaperType.resources
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.PrivilegeGroup.resources
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.Users.resources
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.Years.resources
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.AuthorCertifications.en.resources
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.authorJobs.en.resources
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.Authors.en.resources
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.AuthorSuffix.en.resources
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.AuthorTitle.en.resources
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.Certifications.en.resources
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.Cities.en.resources
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.Common.en.resources
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.Conferences.en.resources
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.Countries.en.resources
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.Genders.en.resources
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.JobBusinesss.en.resources
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.jobFunctions.en.resources
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.jobResponsibilitys.en.resources
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.JobTitles.en.resources
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.JobTypes.en.resources
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.Journals.en.resources
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.MainAdmin.en.resources
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.Members.en.resources
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.Months.en.resources
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.PaperAuthors.en.resources
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.PaperCategory.en.resources
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.PaperReviewer.en.resources
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.Papers.en.resources
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.PaperStatus.en.resources
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.PaperSubCategory.en.resources
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.PaperType.en.resources
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.PrivilegeGroup.en.resources
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.Users.en.resources
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.Years.en.resources
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.csproj.GenerateResource.Cache
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\MasterWebApp\obj\Debug\en\MasterWebApp.resources.dll
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.dll
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.pdb
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.CommonMessage.resources
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.CommonMessage.en.resources
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\MasterWebApp\bin\DataLayer.dll.config
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\MasterWebApp\bin\Data.dll.config
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.Login.resources
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.Login.en.resources
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.ConferenceAddresses.resources
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.ConferenceContacts.resources
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.ConferenceFields.resources
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.ContactTypes.resources
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.ConferenceAddresses.en.resources
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.ConferenceContacts.en.resources
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.ConferenceFields.en.resources
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.ContactTypes.en.resources
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.AuthorAddresses.resources
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.AuthorAddresses.en.resources
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.AuthorAcademicProgram.resources
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.AuthorDegree.resources
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.AuthorEducations.resources
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.AuthorAcademicProgram.en.resources
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.AuthorDegree.en.resources
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.AuthorEducations.en.resources
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.AuthorInterest.resources
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.AuthorInterest.en.resources
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.Title.resources
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.Title.en.resources
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.InterestLevel.resources
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.InterestLevel.en.resources
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.JournalDetails.resources
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.JournalDetails.en.resources
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.JournalIndexing.resources
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.JournalPaperArchive.resources
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.JournalEditorialBoard.resources
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.JournalEditorialType.resources
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.JournalImpactFactor.resources
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.JournalAbout.resources
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.JournalAimsScope.resources
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.JournalEditorialBoard.en.resources
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.JournalEditorialType.en.resources
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.JournalImpactFactor.en.resources
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.JournalIndexing.en.resources
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.JournalPaperArchive.en.resources
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.JournalAimsScope.en.resources
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.JournalAbout.en.resources
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.PaperAbstract.resources
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.PaperFields.resources
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.JournalFields.resources
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.JournalFields.en.resources
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.PaperAbstract.en.resources
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.PaperFields.en.resources
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.ConferencesOverview.resources
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.ConferencesOverview.en.resources
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.MainJournals.resources
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.MainJournals.en.resources
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\MasterWebApp\bin\Rotativa.dll
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.MainCommon.resources
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.MainCommon.en.resources
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\MasterWebApp\bin\PagedList.dll
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\MasterWebApp\bin\PagedList.Mvc.dll
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\MasterWebApp\bin\PagedList.xml
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\MasterWebApp\bin\PagedList.Mvc.xml
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\bin\MasterWebApp.dll.config
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\bin\MasterWebApp.dll
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\bin\MasterWebApp.pdb
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\bin\en\MasterWebApp.resources.dll
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\bin\roslyn\csc.exe
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\bin\roslyn\csc.exe.config
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\bin\roslyn\csc.rsp
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\bin\roslyn\csi.exe
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\bin\roslyn\csi.rsp
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\bin\roslyn\System.AppContext.dll
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\bin\roslyn\vbc.exe
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\bin\roslyn\vbc.exe.config
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\bin\roslyn\vbc.rsp
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\bin\roslyn\VBCSCompiler.exe
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\bin\Antlr3.Runtime.dll
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\bin\Data.dll
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\bin\DataLayer.dll
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\bin\EntityFramework.dll
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\bin\EntityFramework.SqlServer.dll
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\bin\FluentValidation.dll
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\bin\FluentValidation.ValidatorAttribute.dll
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\bin\FluentValidation.WebApi.dll
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\bin\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\bin\Microsoft.IdentityModel.Logging.dll
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\bin\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\bin\Ninject.dll
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\bin\Ninject.Web.Common.dll
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\bin\Ninject.Web.Common.WebHost.dll
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\bin\Ninject.Web.WebApi.dll
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\bin\Ninject.Web.WebApi.WebHost.dll
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\bin\PagedList.dll
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\bin\PagedList.Mvc.dll
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\bin\Rotativa.dll
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\bin\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\bin\System.Net.Http.Formatting.dll
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\bin\System.Web.Helpers.dll
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\bin\System.Web.Http.dll
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\bin\System.Web.Http.WebHost.dll
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\bin\System.Web.Mvc.dll
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\bin\System.Web.Optimization.dll
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\bin\System.Web.Razor.dll
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\bin\System.Web.WebPages.dll
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\bin\System.Web.WebPages.Razor.dll
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\bin\WebActivatorEx.dll
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\bin\WebGrease.dll
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\bin\DataLayer.pdb
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\bin\DataLayer.dll.config
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\bin\Data.pdb
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\bin\Data.dll.config
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\bin\EntityFramework.xml
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\bin\EntityFramework.SqlServer.xml
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\bin\FluentValidation.xml
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\bin\FluentValidation.WebApi.xml
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\bin\Microsoft.IdentityModel.JsonWebTokens.xml
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\bin\Microsoft.IdentityModel.Logging.xml
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\bin\Microsoft.IdentityModel.Tokens.xml
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\bin\Ninject.xml
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\bin\Ninject.Web.Common.xml
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\bin\Ninject.Web.Common.WebHost.xml
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\bin\Ninject.Web.WebApi.xml
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\bin\Ninject.Web.WebApi.WebHost.xml
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\bin\PagedList.xml
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\bin\PagedList.Mvc.xml
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\bin\System.IdentityModel.Tokens.Jwt.xml
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\bin\System.Net.Http.Formatting.xml
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\bin\System.Web.Http.xml
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\bin\System.Web.Http.WebHost.xml
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\bin\System.Web.Helpers.xml
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\bin\System.Web.Mvc.xml
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\bin\System.Web.Optimization.xml
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\bin\System.Web.Razor.xml
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\bin\System.Web.WebPages.xml
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\bin\System.Web.WebPages.Razor.xml
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\bin\Antlr3.Runtime.pdb
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.csprojAssemblyReference.cache
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.AuthorAcademicProgram.resources
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.MainCommon.resources
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.MainJournals.resources
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.PaperAbstract.resources
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.PaperFields.resources
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.JournalFields.resources
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.JournalIndexing.resources
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.JournalPaperArchive.resources
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.JournalEditorialBoard.resources
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.JournalEditorialType.resources
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.JournalImpactFactor.resources
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.JournalAbout.resources
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.JournalAimsScope.resources
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.AuthorInterest.resources
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.AuthorDegree.resources
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.AuthorEducations.resources
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.AuthorAddresses.resources
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.Authors.resources
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.ConferencesOverview.resources
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.JournalDetails.resources
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.InterestLevel.resources
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.Journals.resources
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.Title.resources
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.ConferenceAddresses.resources
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.ConferenceContacts.resources
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.ConferenceFields.resources
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.ContactTypes.resources
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.AuthorCertifications.resources
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.authorJobs.resources
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.AuthorSuffix.resources
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.AuthorTitle.resources
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.Certifications.resources
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.Cities.resources
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.Common.resources
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.CommonMessage.resources
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.Conferences.resources
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.Countries.resources
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.Genders.resources
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.JobBusinesss.resources
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.jobFunctions.resources
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.jobResponsibilitys.resources
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.JobTitles.resources
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.JobTypes.resources
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.Login.resources
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.MainAdmin.resources
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.Members.resources
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.Months.resources
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.PaperAuthors.resources
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.PaperCategory.resources
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.PaperReviewer.resources
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.Papers.resources
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.PaperStatus.resources
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.PaperSubCategory.resources
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.PaperType.resources
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.PrivilegeGroup.resources
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.Users.resources
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.Years.resources
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.JournalFields.en.resources
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.MainCommon.en.resources
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.MainJournals.en.resources
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.PaperAbstract.en.resources
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.PaperFields.en.resources
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.JournalEditorialBoard.en.resources
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.JournalEditorialType.en.resources
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.JournalImpactFactor.en.resources
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.JournalIndexing.en.resources
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.JournalPaperArchive.en.resources
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.JournalAimsScope.en.resources
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.JournalAbout.en.resources
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.AuthorInterest.en.resources
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.AuthorAcademicProgram.en.resources
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.AuthorDegree.en.resources
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.AuthorEducations.en.resources
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.AuthorAddresses.en.resources
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.JournalDetails.en.resources
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.InterestLevel.en.resources
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.ConferencesOverview.en.resources
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.Title.en.resources
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.ConferenceAddresses.en.resources
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.ConferenceContacts.en.resources
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.ConferenceFields.en.resources
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.ContactTypes.en.resources
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.Login.en.resources
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.AuthorCertifications.en.resources
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.authorJobs.en.resources
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.Authors.en.resources
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.AuthorSuffix.en.resources
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.AuthorTitle.en.resources
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.Certifications.en.resources
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.Cities.en.resources
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.Common.en.resources
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.CommonMessage.en.resources
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.Conferences.en.resources
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.Countries.en.resources
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.Genders.en.resources
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.JobBusinesss.en.resources
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.jobFunctions.en.resources
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.jobResponsibilitys.en.resources
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.JobTitles.en.resources
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.JobTypes.en.resources
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.Journals.en.resources
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.MainAdmin.en.resources
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.Members.en.resources
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.Months.en.resources
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.PaperAuthors.en.resources
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.PaperCategory.en.resources
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.PaperReviewer.en.resources
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.Papers.en.resources
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.PaperStatus.en.resources
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.PaperSubCategory.en.resources
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.PaperType.en.resources
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.PrivilegeGroup.en.resources
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.Users.en.resources
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.Years.en.resources
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.csproj.GenerateResource.cache
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.csproj.CoreCompileInputs.cache
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\obj\Debug\en\MasterWebApp.resources.dll
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.csproj.CopyComplete
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.dll
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.pdb
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.FAQ.resources
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.FAQ.en.resources
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.FAQ.resources
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.FAQ.en.resources
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.ConferenceCommittees.resources
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.ConferenceCommittees.en.resources
+C:\Users\Fayoum Laptop\Dropbox\pointOfSale\PointOfSale\MasterWebApp\bin\MasterWebApp.dll.config
+C:\Users\Fayoum Laptop\Dropbox\pointOfSale\PointOfSale\MasterWebApp\bin\MasterWebApp.dll
+C:\Users\Fayoum Laptop\Dropbox\pointOfSale\PointOfSale\MasterWebApp\bin\MasterWebApp.pdb
+C:\Users\Fayoum Laptop\Dropbox\pointOfSale\PointOfSale\MasterWebApp\bin\en\MasterWebApp.resources.dll
+C:\Users\Fayoum Laptop\Dropbox\pointOfSale\PointOfSale\MasterWebApp\bin\roslyn\csc.exe
+C:\Users\Fayoum Laptop\Dropbox\pointOfSale\PointOfSale\MasterWebApp\bin\roslyn\csc.exe.config
+C:\Users\Fayoum Laptop\Dropbox\pointOfSale\PointOfSale\MasterWebApp\bin\roslyn\csc.rsp
+C:\Users\Fayoum Laptop\Dropbox\pointOfSale\PointOfSale\MasterWebApp\bin\roslyn\csi.exe
+C:\Users\Fayoum Laptop\Dropbox\pointOfSale\PointOfSale\MasterWebApp\bin\roslyn\csi.rsp
+C:\Users\Fayoum Laptop\Dropbox\pointOfSale\PointOfSale\MasterWebApp\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Fayoum Laptop\Dropbox\pointOfSale\PointOfSale\MasterWebApp\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Fayoum Laptop\Dropbox\pointOfSale\PointOfSale\MasterWebApp\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Fayoum Laptop\Dropbox\pointOfSale\PointOfSale\MasterWebApp\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Fayoum Laptop\Dropbox\pointOfSale\PointOfSale\MasterWebApp\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Fayoum Laptop\Dropbox\pointOfSale\PointOfSale\MasterWebApp\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Fayoum Laptop\Dropbox\pointOfSale\PointOfSale\MasterWebApp\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Fayoum Laptop\Dropbox\pointOfSale\PointOfSale\MasterWebApp\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Fayoum Laptop\Dropbox\pointOfSale\PointOfSale\MasterWebApp\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Fayoum Laptop\Dropbox\pointOfSale\PointOfSale\MasterWebApp\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Fayoum Laptop\Dropbox\pointOfSale\PointOfSale\MasterWebApp\bin\roslyn\System.AppContext.dll
+C:\Users\Fayoum Laptop\Dropbox\pointOfSale\PointOfSale\MasterWebApp\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Fayoum Laptop\Dropbox\pointOfSale\PointOfSale\MasterWebApp\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\Fayoum Laptop\Dropbox\pointOfSale\PointOfSale\MasterWebApp\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\Fayoum Laptop\Dropbox\pointOfSale\PointOfSale\MasterWebApp\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\Fayoum Laptop\Dropbox\pointOfSale\PointOfSale\MasterWebApp\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Fayoum Laptop\Dropbox\pointOfSale\PointOfSale\MasterWebApp\bin\roslyn\vbc.exe
+C:\Users\Fayoum Laptop\Dropbox\pointOfSale\PointOfSale\MasterWebApp\bin\roslyn\vbc.exe.config
+C:\Users\Fayoum Laptop\Dropbox\pointOfSale\PointOfSale\MasterWebApp\bin\roslyn\vbc.rsp
+C:\Users\Fayoum Laptop\Dropbox\pointOfSale\PointOfSale\MasterWebApp\bin\roslyn\VBCSCompiler.exe
+C:\Users\Fayoum Laptop\Dropbox\pointOfSale\PointOfSale\MasterWebApp\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Fayoum Laptop\Dropbox\pointOfSale\PointOfSale\MasterWebApp\bin\Antlr3.Runtime.dll
+C:\Users\Fayoum Laptop\Dropbox\pointOfSale\PointOfSale\MasterWebApp\bin\Data.dll
+C:\Users\Fayoum Laptop\Dropbox\pointOfSale\PointOfSale\MasterWebApp\bin\DataLayer.dll
+C:\Users\Fayoum Laptop\Dropbox\pointOfSale\PointOfSale\MasterWebApp\bin\EntityFramework.dll
+C:\Users\Fayoum Laptop\Dropbox\pointOfSale\PointOfSale\MasterWebApp\bin\EntityFramework.SqlServer.dll
+C:\Users\Fayoum Laptop\Dropbox\pointOfSale\PointOfSale\MasterWebApp\bin\FluentValidation.dll
+C:\Users\Fayoum Laptop\Dropbox\pointOfSale\PointOfSale\MasterWebApp\bin\FluentValidation.ValidatorAttribute.dll
+C:\Users\Fayoum Laptop\Dropbox\pointOfSale\PointOfSale\MasterWebApp\bin\FluentValidation.WebApi.dll
+C:\Users\Fayoum Laptop\Dropbox\pointOfSale\PointOfSale\MasterWebApp\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Fayoum Laptop\Dropbox\pointOfSale\PointOfSale\MasterWebApp\bin\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\Fayoum Laptop\Dropbox\pointOfSale\PointOfSale\MasterWebApp\bin\Microsoft.IdentityModel.Logging.dll
+C:\Users\Fayoum Laptop\Dropbox\pointOfSale\PointOfSale\MasterWebApp\bin\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Fayoum Laptop\Dropbox\pointOfSale\PointOfSale\MasterWebApp\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Fayoum Laptop\Dropbox\pointOfSale\PointOfSale\MasterWebApp\bin\Ninject.dll
+C:\Users\Fayoum Laptop\Dropbox\pointOfSale\PointOfSale\MasterWebApp\bin\Ninject.Web.Common.dll
+C:\Users\Fayoum Laptop\Dropbox\pointOfSale\PointOfSale\MasterWebApp\bin\Ninject.Web.Common.WebHost.dll
+C:\Users\Fayoum Laptop\Dropbox\pointOfSale\PointOfSale\MasterWebApp\bin\Ninject.Web.WebApi.dll
+C:\Users\Fayoum Laptop\Dropbox\pointOfSale\PointOfSale\MasterWebApp\bin\Ninject.Web.WebApi.WebHost.dll
+C:\Users\Fayoum Laptop\Dropbox\pointOfSale\PointOfSale\MasterWebApp\bin\PagedList.dll
+C:\Users\Fayoum Laptop\Dropbox\pointOfSale\PointOfSale\MasterWebApp\bin\PagedList.Mvc.dll
+C:\Users\Fayoum Laptop\Dropbox\pointOfSale\PointOfSale\MasterWebApp\bin\Rotativa.dll
+C:\Users\Fayoum Laptop\Dropbox\pointOfSale\PointOfSale\MasterWebApp\bin\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\Fayoum Laptop\Dropbox\pointOfSale\PointOfSale\MasterWebApp\bin\System.Net.Http.Formatting.dll
+C:\Users\Fayoum Laptop\Dropbox\pointOfSale\PointOfSale\MasterWebApp\bin\System.Web.Helpers.dll
+C:\Users\Fayoum Laptop\Dropbox\pointOfSale\PointOfSale\MasterWebApp\bin\System.Web.Http.dll
+C:\Users\Fayoum Laptop\Dropbox\pointOfSale\PointOfSale\MasterWebApp\bin\System.Web.Http.WebHost.dll
+C:\Users\Fayoum Laptop\Dropbox\pointOfSale\PointOfSale\MasterWebApp\bin\System.Web.Mvc.dll
+C:\Users\Fayoum Laptop\Dropbox\pointOfSale\PointOfSale\MasterWebApp\bin\System.Web.Optimization.dll
+C:\Users\Fayoum Laptop\Dropbox\pointOfSale\PointOfSale\MasterWebApp\bin\System.Web.Razor.dll
+C:\Users\Fayoum Laptop\Dropbox\pointOfSale\PointOfSale\MasterWebApp\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Fayoum Laptop\Dropbox\pointOfSale\PointOfSale\MasterWebApp\bin\System.Web.WebPages.dll
+C:\Users\Fayoum Laptop\Dropbox\pointOfSale\PointOfSale\MasterWebApp\bin\System.Web.WebPages.Razor.dll
+C:\Users\Fayoum Laptop\Dropbox\pointOfSale\PointOfSale\MasterWebApp\bin\WebActivatorEx.dll
+C:\Users\Fayoum Laptop\Dropbox\pointOfSale\PointOfSale\MasterWebApp\bin\WebGrease.dll
+C:\Users\Fayoum Laptop\Dropbox\pointOfSale\PointOfSale\MasterWebApp\bin\DataLayer.pdb
+C:\Users\Fayoum Laptop\Dropbox\pointOfSale\PointOfSale\MasterWebApp\bin\DataLayer.dll.config
+C:\Users\Fayoum Laptop\Dropbox\pointOfSale\PointOfSale\MasterWebApp\bin\Data.pdb
+C:\Users\Fayoum Laptop\Dropbox\pointOfSale\PointOfSale\MasterWebApp\bin\Data.dll.config
+C:\Users\Fayoum Laptop\Dropbox\pointOfSale\PointOfSale\MasterWebApp\bin\EntityFramework.xml
+C:\Users\Fayoum Laptop\Dropbox\pointOfSale\PointOfSale\MasterWebApp\bin\EntityFramework.SqlServer.xml
+C:\Users\Fayoum Laptop\Dropbox\pointOfSale\PointOfSale\MasterWebApp\bin\FluentValidation.xml
+C:\Users\Fayoum Laptop\Dropbox\pointOfSale\PointOfSale\MasterWebApp\bin\FluentValidation.WebApi.xml
+C:\Users\Fayoum Laptop\Dropbox\pointOfSale\PointOfSale\MasterWebApp\bin\Microsoft.IdentityModel.JsonWebTokens.xml
+C:\Users\Fayoum Laptop\Dropbox\pointOfSale\PointOfSale\MasterWebApp\bin\Microsoft.IdentityModel.Logging.xml
+C:\Users\Fayoum Laptop\Dropbox\pointOfSale\PointOfSale\MasterWebApp\bin\Microsoft.IdentityModel.Tokens.xml
+C:\Users\Fayoum Laptop\Dropbox\pointOfSale\PointOfSale\MasterWebApp\bin\Ninject.xml
+C:\Users\Fayoum Laptop\Dropbox\pointOfSale\PointOfSale\MasterWebApp\bin\Ninject.Web.Common.xml
+C:\Users\Fayoum Laptop\Dropbox\pointOfSale\PointOfSale\MasterWebApp\bin\Ninject.Web.Common.WebHost.xml
+C:\Users\Fayoum Laptop\Dropbox\pointOfSale\PointOfSale\MasterWebApp\bin\Ninject.Web.WebApi.xml
+C:\Users\Fayoum Laptop\Dropbox\pointOfSale\PointOfSale\MasterWebApp\bin\Ninject.Web.WebApi.WebHost.xml
+C:\Users\Fayoum Laptop\Dropbox\pointOfSale\PointOfSale\MasterWebApp\bin\PagedList.xml
+C:\Users\Fayoum Laptop\Dropbox\pointOfSale\PointOfSale\MasterWebApp\bin\PagedList.Mvc.xml
+C:\Users\Fayoum Laptop\Dropbox\pointOfSale\PointOfSale\MasterWebApp\bin\System.IdentityModel.Tokens.Jwt.xml
+C:\Users\Fayoum Laptop\Dropbox\pointOfSale\PointOfSale\MasterWebApp\bin\System.Net.Http.Formatting.xml
+C:\Users\Fayoum Laptop\Dropbox\pointOfSale\PointOfSale\MasterWebApp\bin\System.Web.Http.xml
+C:\Users\Fayoum Laptop\Dropbox\pointOfSale\PointOfSale\MasterWebApp\bin\System.Web.Http.WebHost.xml
+C:\Users\Fayoum Laptop\Dropbox\pointOfSale\PointOfSale\MasterWebApp\bin\System.Web.Helpers.xml
+C:\Users\Fayoum Laptop\Dropbox\pointOfSale\PointOfSale\MasterWebApp\bin\System.Web.Mvc.xml
+C:\Users\Fayoum Laptop\Dropbox\pointOfSale\PointOfSale\MasterWebApp\bin\System.Web.Optimization.xml
+C:\Users\Fayoum Laptop\Dropbox\pointOfSale\PointOfSale\MasterWebApp\bin\System.Web.Razor.xml
+C:\Users\Fayoum Laptop\Dropbox\pointOfSale\PointOfSale\MasterWebApp\bin\System.Web.WebPages.xml
+C:\Users\Fayoum Laptop\Dropbox\pointOfSale\PointOfSale\MasterWebApp\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Fayoum Laptop\Dropbox\pointOfSale\PointOfSale\MasterWebApp\bin\System.Web.WebPages.Razor.xml
+C:\Users\Fayoum Laptop\Dropbox\pointOfSale\PointOfSale\MasterWebApp\bin\Antlr3.Runtime.pdb
+C:\Users\Fayoum Laptop\Dropbox\pointOfSale\PointOfSale\MasterWebApp\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Fayoum Laptop\Dropbox\pointOfSale\PointOfSale\MasterWebApp\obj\Debug\MasterWebApp.csprojResolveAssemblyReference.cache
+C:\Users\Fayoum Laptop\Dropbox\pointOfSale\PointOfSale\MasterWebApp\obj\Debug\MasterWebApp.Resource.Addresses.resources
+C:\Users\Fayoum Laptop\Dropbox\pointOfSale\PointOfSale\MasterWebApp\obj\Debug\MasterWebApp.Resource.Brands.resources
+C:\Users\Fayoum Laptop\Dropbox\pointOfSale\PointOfSale\MasterWebApp\obj\Debug\MasterWebApp.Resource.Category.resources
+C:\Users\Fayoum Laptop\Dropbox\pointOfSale\PointOfSale\MasterWebApp\obj\Debug\MasterWebApp.Resource.Cities.resources
+C:\Users\Fayoum Laptop\Dropbox\pointOfSale\PointOfSale\MasterWebApp\obj\Debug\MasterWebApp.Resource.CommonMessage.resources
+C:\Users\Fayoum Laptop\Dropbox\pointOfSale\PointOfSale\MasterWebApp\obj\Debug\MasterWebApp.Resource.Companies.resources
+C:\Users\Fayoum Laptop\Dropbox\pointOfSale\PointOfSale\MasterWebApp\obj\Debug\MasterWebApp.Resource.Countries.resources
+C:\Users\Fayoum Laptop\Dropbox\pointOfSale\PointOfSale\MasterWebApp\obj\Debug\MasterWebApp.Resource.Customers.resources
+C:\Users\Fayoum Laptop\Dropbox\pointOfSale\PointOfSale\MasterWebApp\obj\Debug\MasterWebApp.Resource.Delivery.resources
+C:\Users\Fayoum Laptop\Dropbox\pointOfSale\PointOfSale\MasterWebApp\obj\Debug\MasterWebApp.Resource.DeliveryType.resources
+C:\Users\Fayoum Laptop\Dropbox\pointOfSale\PointOfSale\MasterWebApp\obj\Debug\MasterWebApp.Resource.InvoiceDetalis.resources
+C:\Users\Fayoum Laptop\Dropbox\pointOfSale\PointOfSale\MasterWebApp\obj\Debug\MasterWebApp.Resource.Invoices.resources
+C:\Users\Fayoum Laptop\Dropbox\pointOfSale\PointOfSale\MasterWebApp\obj\Debug\MasterWebApp.Resource.MainAdmin.resources
+C:\Users\Fayoum Laptop\Dropbox\pointOfSale\PointOfSale\MasterWebApp\obj\Debug\MasterWebApp.Resource.MainCommon.resources
+C:\Users\Fayoum Laptop\Dropbox\pointOfSale\PointOfSale\MasterWebApp\obj\Debug\MasterWebApp.Resource.Nationality.resources
+C:\Users\Fayoum Laptop\Dropbox\pointOfSale\PointOfSale\MasterWebApp\obj\Debug\MasterWebApp.Resource.PaymentType.resources
+C:\Users\Fayoum Laptop\Dropbox\pointOfSale\PointOfSale\MasterWebApp\obj\Debug\MasterWebApp.Resource.Premission.resources
+C:\Users\Fayoum Laptop\Dropbox\pointOfSale\PointOfSale\MasterWebApp\obj\Debug\MasterWebApp.Resource.products.resources
+C:\Users\Fayoum Laptop\Dropbox\pointOfSale\PointOfSale\MasterWebApp\obj\Debug\MasterWebApp.Resource.PropertiesField.resources
+C:\Users\Fayoum Laptop\Dropbox\pointOfSale\PointOfSale\MasterWebApp\obj\Debug\MasterWebApp.Resource.PropertyType.resources
+C:\Users\Fayoum Laptop\Dropbox\pointOfSale\PointOfSale\MasterWebApp\obj\Debug\MasterWebApp.Resource.PropertyValue.resources
+C:\Users\Fayoum Laptop\Dropbox\pointOfSale\PointOfSale\MasterWebApp\obj\Debug\MasterWebApp.Resource.Staff.resources
+C:\Users\Fayoum Laptop\Dropbox\pointOfSale\PointOfSale\MasterWebApp\obj\Debug\MasterWebApp.Resource.Title.resources
+C:\Users\Fayoum Laptop\Dropbox\pointOfSale\PointOfSale\MasterWebApp\obj\Debug\MasterWebApp.Resource.Addresses.en.resources
+C:\Users\Fayoum Laptop\Dropbox\pointOfSale\PointOfSale\MasterWebApp\obj\Debug\MasterWebApp.Resource.Cities.en.resources
+C:\Users\Fayoum Laptop\Dropbox\pointOfSale\PointOfSale\MasterWebApp\obj\Debug\MasterWebApp.Resource.CommonMessage.en.resources
+C:\Users\Fayoum Laptop\Dropbox\pointOfSale\PointOfSale\MasterWebApp\obj\Debug\MasterWebApp.Resource.Countries.en.resources
+C:\Users\Fayoum Laptop\Dropbox\pointOfSale\PointOfSale\MasterWebApp\obj\Debug\MasterWebApp.Resource.MainAdmin.en.resources
+C:\Users\Fayoum Laptop\Dropbox\pointOfSale\PointOfSale\MasterWebApp\obj\Debug\MasterWebApp.Resource.MainCommon.en.resources
+C:\Users\Fayoum Laptop\Dropbox\pointOfSale\PointOfSale\MasterWebApp\obj\Debug\MasterWebApp.csproj.GenerateResource.Cache
+C:\Users\Fayoum Laptop\Dropbox\pointOfSale\PointOfSale\MasterWebApp\obj\Debug\en\MasterWebApp.resources.dll
+C:\Users\Fayoum Laptop\Dropbox\pointOfSale\PointOfSale\MasterWebApp\obj\Debug\MasterWebApp.dll
+C:\Users\Fayoum Laptop\Dropbox\pointOfSale\PointOfSale\MasterWebApp\obj\Debug\MasterWebApp.pdb
+C:\Users\Fayoum Laptop\Dropbox\pointOfSale\PointOfSale\MasterWebApp\obj\Debug\MasterWebApp.Resource.Brands.en.resources
+C:\Users\Fayoum Laptop\Dropbox\pointOfSale\PointOfSale\MasterWebApp\obj\Debug\MasterWebApp.Resource.Category.en.resources
+C:\Users\Fayoum Laptop\Dropbox\pointOfSale\PointOfSale\MasterWebApp\obj\Debug\MasterWebApp.Resource.Nationality.en.resources
+C:\Users\Fayoum Laptop\Dropbox\pointOfSale\PointOfSale\MasterWebApp\obj\Debug\MasterWebApp.Resource.Units.resources
+C:\Users\Fayoum Laptop\Dropbox\pointOfSale\PointOfSale\MasterWebApp\obj\Debug\MasterWebApp.Resource.Units.en.resources
+C:\Users\Fayoum Laptop\Dropbox\pointOfSale\PointOfSale\MasterWebApp\obj\Debug\MasterWebApp.Resource.Branches.resources
+C:\Users\Fayoum Laptop\Dropbox\pointOfSale\PointOfSale\MasterWebApp\obj\Debug\MasterWebApp.Resource.Branches.en.resources
+C:\Users\Fayoum Laptop\Dropbox\pointOfSale\PointOfSale\MasterWebApp\obj\Debug\MasterWebApp.Resource.Customers.en.resources
+C:\Users\Fayoum Laptop\Dropbox\pointOfSale\PointOfSale\MasterWebApp\obj\Debug\MasterWebApp.Resource.Delivery.en.resources
+C:\Users\Fayoum Laptop\Dropbox\pointOfSale\PointOfSale\MasterWebApp\obj\Debug\MasterWebApp.Resource.DeliveryType.en.resources
+C:\Users\Fayoum Laptop\Dropbox\pointOfSale\PointOfSale\MasterWebApp\obj\Debug\MasterWebApp.Resource.InvoiceDetalis.en.resources
+C:\Users\Fayoum Laptop\Dropbox\pointOfSale\PointOfSale\MasterWebApp\obj\Debug\MasterWebApp.Resource.Invoices.en.resources
+C:\Users\Fayoum Laptop\Dropbox\pointOfSale\PointOfSale\MasterWebApp\obj\Debug\MasterWebApp.Resource.PaymentType.en.resources
+C:\Users\Fayoum Laptop\Dropbox\pointOfSale\PointOfSale\MasterWebApp\obj\Debug\MasterWebApp.Resource.Premission.en.resources
+C:\Users\Fayoum Laptop\Dropbox\pointOfSale\PointOfSale\MasterWebApp\obj\Debug\MasterWebApp.Resource.products.en.resources
+C:\Users\Fayoum Laptop\Dropbox\pointOfSale\PointOfSale\MasterWebApp\obj\Debug\MasterWebApp.Resource.PropertiesField.en.resources
+C:\Users\Fayoum Laptop\Dropbox\pointOfSale\PointOfSale\MasterWebApp\obj\Debug\MasterWebApp.Resource.PropertyType.en.resources
+C:\Users\Fayoum Laptop\Dropbox\pointOfSale\PointOfSale\MasterWebApp\obj\Debug\MasterWebApp.Resource.PropertyValue.en.resources
+C:\Users\Fayoum Laptop\Dropbox\pointOfSale\PointOfSale\MasterWebApp\obj\Debug\MasterWebApp.Resource.Staff.en.resources
+C:\Users\Fayoum Laptop\Dropbox\pointOfSale\PointOfSale\MasterWebApp\obj\Debug\MasterWebApp.Resource.Title.en.resources
+C:\Users\Fayoum Laptop\Dropbox\pointOfSale\PointOfSale\MasterWebApp\obj\Debug\MasterWebApp.Resource.RowStatus.resources
+C:\Users\Fayoum Laptop\Dropbox\pointOfSale\PointOfSale\MasterWebApp\obj\Debug\MasterWebApp.Resource.RowStatus.en.resources
+C:\Users\Fayoum Laptop\Dropbox\pointOfSale\PointOfSale\MasterWebApp\obj\Debug\MasterWebApp.Resource.InvoiceStatus.resources
+C:\Users\Fayoum Laptop\Dropbox\pointOfSale\PointOfSale\MasterWebApp\obj\Debug\MasterWebApp.Resource.InvoiceStatus.en.resources
+C:\Users\Mr.Mohammed\Dropbox\pointOfSale\PointOfSale\MasterWebApp\bin\MasterWebApp.dll.config
+C:\Users\Mr.Mohammed\Dropbox\pointOfSale\PointOfSale\MasterWebApp\bin\MasterWebApp.dll
+C:\Users\Mr.Mohammed\Dropbox\pointOfSale\PointOfSale\MasterWebApp\bin\MasterWebApp.pdb
+C:\Users\Mr.Mohammed\Dropbox\pointOfSale\PointOfSale\MasterWebApp\bin\en\MasterWebApp.resources.dll
+C:\Users\Mr.Mohammed\Dropbox\pointOfSale\PointOfSale\MasterWebApp\bin\roslyn\csc.exe
+C:\Users\Mr.Mohammed\Dropbox\pointOfSale\PointOfSale\MasterWebApp\bin\roslyn\csc.exe.config
+C:\Users\Mr.Mohammed\Dropbox\pointOfSale\PointOfSale\MasterWebApp\bin\roslyn\csc.rsp
+C:\Users\Mr.Mohammed\Dropbox\pointOfSale\PointOfSale\MasterWebApp\bin\roslyn\csi.exe
+C:\Users\Mr.Mohammed\Dropbox\pointOfSale\PointOfSale\MasterWebApp\bin\roslyn\csi.rsp
+C:\Users\Mr.Mohammed\Dropbox\pointOfSale\PointOfSale\MasterWebApp\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Mr.Mohammed\Dropbox\pointOfSale\PointOfSale\MasterWebApp\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Mr.Mohammed\Dropbox\pointOfSale\PointOfSale\MasterWebApp\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Mr.Mohammed\Dropbox\pointOfSale\PointOfSale\MasterWebApp\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Mr.Mohammed\Dropbox\pointOfSale\PointOfSale\MasterWebApp\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Mr.Mohammed\Dropbox\pointOfSale\PointOfSale\MasterWebApp\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Mr.Mohammed\Dropbox\pointOfSale\PointOfSale\MasterWebApp\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Mr.Mohammed\Dropbox\pointOfSale\PointOfSale\MasterWebApp\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Mr.Mohammed\Dropbox\pointOfSale\PointOfSale\MasterWebApp\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Mr.Mohammed\Dropbox\pointOfSale\PointOfSale\MasterWebApp\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Mr.Mohammed\Dropbox\pointOfSale\PointOfSale\MasterWebApp\bin\roslyn\System.AppContext.dll
+C:\Users\Mr.Mohammed\Dropbox\pointOfSale\PointOfSale\MasterWebApp\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Mr.Mohammed\Dropbox\pointOfSale\PointOfSale\MasterWebApp\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\Mr.Mohammed\Dropbox\pointOfSale\PointOfSale\MasterWebApp\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\Mr.Mohammed\Dropbox\pointOfSale\PointOfSale\MasterWebApp\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\Mr.Mohammed\Dropbox\pointOfSale\PointOfSale\MasterWebApp\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Mr.Mohammed\Dropbox\pointOfSale\PointOfSale\MasterWebApp\bin\roslyn\vbc.exe
+C:\Users\Mr.Mohammed\Dropbox\pointOfSale\PointOfSale\MasterWebApp\bin\roslyn\vbc.exe.config
+C:\Users\Mr.Mohammed\Dropbox\pointOfSale\PointOfSale\MasterWebApp\bin\roslyn\vbc.rsp
+C:\Users\Mr.Mohammed\Dropbox\pointOfSale\PointOfSale\MasterWebApp\bin\roslyn\VBCSCompiler.exe
+C:\Users\Mr.Mohammed\Dropbox\pointOfSale\PointOfSale\MasterWebApp\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Mr.Mohammed\Dropbox\pointOfSale\PointOfSale\MasterWebApp\bin\Antlr3.Runtime.dll
+C:\Users\Mr.Mohammed\Dropbox\pointOfSale\PointOfSale\MasterWebApp\bin\Data.dll
+C:\Users\Mr.Mohammed\Dropbox\pointOfSale\PointOfSale\MasterWebApp\bin\DataLayer.dll
+C:\Users\Mr.Mohammed\Dropbox\pointOfSale\PointOfSale\MasterWebApp\bin\EntityFramework.dll
+C:\Users\Mr.Mohammed\Dropbox\pointOfSale\PointOfSale\MasterWebApp\bin\EntityFramework.SqlServer.dll
+C:\Users\Mr.Mohammed\Dropbox\pointOfSale\PointOfSale\MasterWebApp\bin\FluentValidation.dll
+C:\Users\Mr.Mohammed\Dropbox\pointOfSale\PointOfSale\MasterWebApp\bin\FluentValidation.ValidatorAttribute.dll
+C:\Users\Mr.Mohammed\Dropbox\pointOfSale\PointOfSale\MasterWebApp\bin\FluentValidation.WebApi.dll
+C:\Users\Mr.Mohammed\Dropbox\pointOfSale\PointOfSale\MasterWebApp\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Mr.Mohammed\Dropbox\pointOfSale\PointOfSale\MasterWebApp\bin\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\Mr.Mohammed\Dropbox\pointOfSale\PointOfSale\MasterWebApp\bin\Microsoft.IdentityModel.Logging.dll
+C:\Users\Mr.Mohammed\Dropbox\pointOfSale\PointOfSale\MasterWebApp\bin\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Mr.Mohammed\Dropbox\pointOfSale\PointOfSale\MasterWebApp\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Mr.Mohammed\Dropbox\pointOfSale\PointOfSale\MasterWebApp\bin\Ninject.dll
+C:\Users\Mr.Mohammed\Dropbox\pointOfSale\PointOfSale\MasterWebApp\bin\Ninject.Web.Common.dll
+C:\Users\Mr.Mohammed\Dropbox\pointOfSale\PointOfSale\MasterWebApp\bin\Ninject.Web.Common.WebHost.dll
+C:\Users\Mr.Mohammed\Dropbox\pointOfSale\PointOfSale\MasterWebApp\bin\Ninject.Web.WebApi.dll
+C:\Users\Mr.Mohammed\Dropbox\pointOfSale\PointOfSale\MasterWebApp\bin\Ninject.Web.WebApi.WebHost.dll
+C:\Users\Mr.Mohammed\Dropbox\pointOfSale\PointOfSale\MasterWebApp\bin\PagedList.dll
+C:\Users\Mr.Mohammed\Dropbox\pointOfSale\PointOfSale\MasterWebApp\bin\PagedList.Mvc.dll
+C:\Users\Mr.Mohammed\Dropbox\pointOfSale\PointOfSale\MasterWebApp\bin\Rotativa.dll
+C:\Users\Mr.Mohammed\Dropbox\pointOfSale\PointOfSale\MasterWebApp\bin\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\Mr.Mohammed\Dropbox\pointOfSale\PointOfSale\MasterWebApp\bin\System.Net.Http.Formatting.dll
+C:\Users\Mr.Mohammed\Dropbox\pointOfSale\PointOfSale\MasterWebApp\bin\System.Web.Helpers.dll
+C:\Users\Mr.Mohammed\Dropbox\pointOfSale\PointOfSale\MasterWebApp\bin\System.Web.Http.dll
+C:\Users\Mr.Mohammed\Dropbox\pointOfSale\PointOfSale\MasterWebApp\bin\System.Web.Http.WebHost.dll
+C:\Users\Mr.Mohammed\Dropbox\pointOfSale\PointOfSale\MasterWebApp\bin\System.Web.Mvc.dll
+C:\Users\Mr.Mohammed\Dropbox\pointOfSale\PointOfSale\MasterWebApp\bin\System.Web.Optimization.dll
+C:\Users\Mr.Mohammed\Dropbox\pointOfSale\PointOfSale\MasterWebApp\bin\System.Web.Razor.dll
+C:\Users\Mr.Mohammed\Dropbox\pointOfSale\PointOfSale\MasterWebApp\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Mr.Mohammed\Dropbox\pointOfSale\PointOfSale\MasterWebApp\bin\System.Web.WebPages.dll
+C:\Users\Mr.Mohammed\Dropbox\pointOfSale\PointOfSale\MasterWebApp\bin\System.Web.WebPages.Razor.dll
+C:\Users\Mr.Mohammed\Dropbox\pointOfSale\PointOfSale\MasterWebApp\bin\WebActivatorEx.dll
+C:\Users\Mr.Mohammed\Dropbox\pointOfSale\PointOfSale\MasterWebApp\bin\WebGrease.dll
+C:\Users\Mr.Mohammed\Dropbox\pointOfSale\PointOfSale\MasterWebApp\bin\DataLayer.pdb
+C:\Users\Mr.Mohammed\Dropbox\pointOfSale\PointOfSale\MasterWebApp\bin\DataLayer.dll.config
+C:\Users\Mr.Mohammed\Dropbox\pointOfSale\PointOfSale\MasterWebApp\bin\Data.pdb
+C:\Users\Mr.Mohammed\Dropbox\pointOfSale\PointOfSale\MasterWebApp\bin\Data.dll.config
+C:\Users\Mr.Mohammed\Dropbox\pointOfSale\PointOfSale\MasterWebApp\bin\EntityFramework.xml
+C:\Users\Mr.Mohammed\Dropbox\pointOfSale\PointOfSale\MasterWebApp\bin\EntityFramework.SqlServer.xml
+C:\Users\Mr.Mohammed\Dropbox\pointOfSale\PointOfSale\MasterWebApp\bin\FluentValidation.xml
+C:\Users\Mr.Mohammed\Dropbox\pointOfSale\PointOfSale\MasterWebApp\bin\FluentValidation.WebApi.xml
+C:\Users\Mr.Mohammed\Dropbox\pointOfSale\PointOfSale\MasterWebApp\bin\Microsoft.IdentityModel.JsonWebTokens.xml
+C:\Users\Mr.Mohammed\Dropbox\pointOfSale\PointOfSale\MasterWebApp\bin\Microsoft.IdentityModel.Logging.xml
+C:\Users\Mr.Mohammed\Dropbox\pointOfSale\PointOfSale\MasterWebApp\bin\Microsoft.IdentityModel.Tokens.xml
+C:\Users\Mr.Mohammed\Dropbox\pointOfSale\PointOfSale\MasterWebApp\bin\Ninject.xml
+C:\Users\Mr.Mohammed\Dropbox\pointOfSale\PointOfSale\MasterWebApp\bin\Ninject.Web.Common.xml
+C:\Users\Mr.Mohammed\Dropbox\pointOfSale\PointOfSale\MasterWebApp\bin\Ninject.Web.Common.WebHost.xml
+C:\Users\Mr.Mohammed\Dropbox\pointOfSale\PointOfSale\MasterWebApp\bin\Ninject.Web.WebApi.xml
+C:\Users\Mr.Mohammed\Dropbox\pointOfSale\PointOfSale\MasterWebApp\bin\Ninject.Web.WebApi.WebHost.xml
+C:\Users\Mr.Mohammed\Dropbox\pointOfSale\PointOfSale\MasterWebApp\bin\PagedList.xml
+C:\Users\Mr.Mohammed\Dropbox\pointOfSale\PointOfSale\MasterWebApp\bin\PagedList.Mvc.xml
+C:\Users\Mr.Mohammed\Dropbox\pointOfSale\PointOfSale\MasterWebApp\bin\System.IdentityModel.Tokens.Jwt.xml
+C:\Users\Mr.Mohammed\Dropbox\pointOfSale\PointOfSale\MasterWebApp\bin\System.Net.Http.Formatting.xml
+C:\Users\Mr.Mohammed\Dropbox\pointOfSale\PointOfSale\MasterWebApp\bin\System.Web.Http.xml
+C:\Users\Mr.Mohammed\Dropbox\pointOfSale\PointOfSale\MasterWebApp\bin\System.Web.Http.WebHost.xml
+C:\Users\Mr.Mohammed\Dropbox\pointOfSale\PointOfSale\MasterWebApp\bin\System.Web.Helpers.xml
+C:\Users\Mr.Mohammed\Dropbox\pointOfSale\PointOfSale\MasterWebApp\bin\System.Web.Mvc.xml
+C:\Users\Mr.Mohammed\Dropbox\pointOfSale\PointOfSale\MasterWebApp\bin\System.Web.Optimization.xml
+C:\Users\Mr.Mohammed\Dropbox\pointOfSale\PointOfSale\MasterWebApp\bin\System.Web.Razor.xml
+C:\Users\Mr.Mohammed\Dropbox\pointOfSale\PointOfSale\MasterWebApp\bin\System.Web.WebPages.xml
+C:\Users\Mr.Mohammed\Dropbox\pointOfSale\PointOfSale\MasterWebApp\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Mr.Mohammed\Dropbox\pointOfSale\PointOfSale\MasterWebApp\bin\System.Web.WebPages.Razor.xml
+C:\Users\Mr.Mohammed\Dropbox\pointOfSale\PointOfSale\MasterWebApp\bin\Antlr3.Runtime.pdb
+C:\Users\Mr.Mohammed\Dropbox\pointOfSale\PointOfSale\MasterWebApp\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Mr.Mohammed\Dropbox\pointOfSale\PointOfSale\MasterWebApp\obj\Debug\MasterWebApp.csprojResolveAssemblyReference.cache
+C:\Users\Mr.Mohammed\Dropbox\pointOfSale\PointOfSale\MasterWebApp\obj\Debug\MasterWebApp.Resource.AboutUS.resources
+C:\Users\Mr.Mohammed\Dropbox\pointOfSale\PointOfSale\MasterWebApp\obj\Debug\MasterWebApp.Resource.Addresses.resources
+C:\Users\Mr.Mohammed\Dropbox\pointOfSale\PointOfSale\MasterWebApp\obj\Debug\MasterWebApp.Resource.Branches.resources
+C:\Users\Mr.Mohammed\Dropbox\pointOfSale\PointOfSale\MasterWebApp\obj\Debug\MasterWebApp.Resource.Brands.resources
+C:\Users\Mr.Mohammed\Dropbox\pointOfSale\PointOfSale\MasterWebApp\obj\Debug\MasterWebApp.Resource.Category.resources
+C:\Users\Mr.Mohammed\Dropbox\pointOfSale\PointOfSale\MasterWebApp\obj\Debug\MasterWebApp.Resource.Cities.resources
+C:\Users\Mr.Mohammed\Dropbox\pointOfSale\PointOfSale\MasterWebApp\obj\Debug\MasterWebApp.Resource.CommonMessage.resources
+C:\Users\Mr.Mohammed\Dropbox\pointOfSale\PointOfSale\MasterWebApp\obj\Debug\MasterWebApp.Resource.Companies.resources
+C:\Users\Mr.Mohammed\Dropbox\pointOfSale\PointOfSale\MasterWebApp\obj\Debug\MasterWebApp.Resource.Conditions.resources
+C:\Users\Mr.Mohammed\Dropbox\pointOfSale\PointOfSale\MasterWebApp\obj\Debug\MasterWebApp.Resource.Countries.resources
+C:\Users\Mr.Mohammed\Dropbox\pointOfSale\PointOfSale\MasterWebApp\obj\Debug\MasterWebApp.Resource.Customers.resources
+C:\Users\Mr.Mohammed\Dropbox\pointOfSale\PointOfSale\MasterWebApp\obj\Debug\MasterWebApp.Resource.Delivery.resources
+C:\Users\Mr.Mohammed\Dropbox\pointOfSale\PointOfSale\MasterWebApp\obj\Debug\MasterWebApp.Resource.DeliveryType.resources
+C:\Users\Mr.Mohammed\Dropbox\pointOfSale\PointOfSale\MasterWebApp\obj\Debug\MasterWebApp.Resource.InvoiceDetalis.resources
+C:\Users\Mr.Mohammed\Dropbox\pointOfSale\PointOfSale\MasterWebApp\obj\Debug\MasterWebApp.Resource.Invoices.resources
+C:\Users\Mr.Mohammed\Dropbox\pointOfSale\PointOfSale\MasterWebApp\obj\Debug\MasterWebApp.Resource.InvoiceStatus.resources
+C:\Users\Mr.Mohammed\Dropbox\pointOfSale\PointOfSale\MasterWebApp\obj\Debug\MasterWebApp.Resource.MainAdmin.resources
+C:\Users\Mr.Mohammed\Dropbox\pointOfSale\PointOfSale\MasterWebApp\obj\Debug\MasterWebApp.Resource.MainCommon.resources
+C:\Users\Mr.Mohammed\Dropbox\pointOfSale\PointOfSale\MasterWebApp\obj\Debug\MasterWebApp.Resource.Nationality.resources
+C:\Users\Mr.Mohammed\Dropbox\pointOfSale\PointOfSale\MasterWebApp\obj\Debug\MasterWebApp.Resource.PaymentType.resources
+C:\Users\Mr.Mohammed\Dropbox\pointOfSale\PointOfSale\MasterWebApp\obj\Debug\MasterWebApp.Resource.Premission.resources
+C:\Users\Mr.Mohammed\Dropbox\pointOfSale\PointOfSale\MasterWebApp\obj\Debug\MasterWebApp.Resource.RowStatus.resources
+C:\Users\Mr.Mohammed\Dropbox\pointOfSale\PointOfSale\MasterWebApp\obj\Debug\MasterWebApp.Resource.Units.resources
+C:\Users\Mr.Mohammed\Dropbox\pointOfSale\PointOfSale\MasterWebApp\obj\Debug\MasterWebApp.Resource.products.resources
+C:\Users\Mr.Mohammed\Dropbox\pointOfSale\PointOfSale\MasterWebApp\obj\Debug\MasterWebApp.Resource.PropertiesField.resources
+C:\Users\Mr.Mohammed\Dropbox\pointOfSale\PointOfSale\MasterWebApp\obj\Debug\MasterWebApp.Resource.PropertyType.resources
+C:\Users\Mr.Mohammed\Dropbox\pointOfSale\PointOfSale\MasterWebApp\obj\Debug\MasterWebApp.Resource.PropertyValue.resources
+C:\Users\Mr.Mohammed\Dropbox\pointOfSale\PointOfSale\MasterWebApp\obj\Debug\MasterWebApp.Resource.Staff.resources
+C:\Users\Mr.Mohammed\Dropbox\pointOfSale\PointOfSale\MasterWebApp\obj\Debug\MasterWebApp.Resource.Title.resources
+C:\Users\Mr.Mohammed\Dropbox\pointOfSale\PointOfSale\MasterWebApp\obj\Debug\MasterWebApp.Resource.AboutUS.en.resources
+C:\Users\Mr.Mohammed\Dropbox\pointOfSale\PointOfSale\MasterWebApp\obj\Debug\MasterWebApp.Resource.Addresses.en.resources
+C:\Users\Mr.Mohammed\Dropbox\pointOfSale\PointOfSale\MasterWebApp\obj\Debug\MasterWebApp.Resource.Branches.en.resources
+C:\Users\Mr.Mohammed\Dropbox\pointOfSale\PointOfSale\MasterWebApp\obj\Debug\MasterWebApp.Resource.Brands.en.resources
+C:\Users\Mr.Mohammed\Dropbox\pointOfSale\PointOfSale\MasterWebApp\obj\Debug\MasterWebApp.Resource.Category.en.resources
+C:\Users\Mr.Mohammed\Dropbox\pointOfSale\PointOfSale\MasterWebApp\obj\Debug\MasterWebApp.Resource.Cities.en.resources
+C:\Users\Mr.Mohammed\Dropbox\pointOfSale\PointOfSale\MasterWebApp\obj\Debug\MasterWebApp.Resource.CommonMessage.en.resources
+C:\Users\Mr.Mohammed\Dropbox\pointOfSale\PointOfSale\MasterWebApp\obj\Debug\MasterWebApp.Resource.Conditions.en.resources
+C:\Users\Mr.Mohammed\Dropbox\pointOfSale\PointOfSale\MasterWebApp\obj\Debug\MasterWebApp.Resource.Countries.en.resources
+C:\Users\Mr.Mohammed\Dropbox\pointOfSale\PointOfSale\MasterWebApp\obj\Debug\MasterWebApp.Resource.Customers.en.resources
+C:\Users\Mr.Mohammed\Dropbox\pointOfSale\PointOfSale\MasterWebApp\obj\Debug\MasterWebApp.Resource.Delivery.en.resources
+C:\Users\Mr.Mohammed\Dropbox\pointOfSale\PointOfSale\MasterWebApp\obj\Debug\MasterWebApp.Resource.DeliveryType.en.resources
+C:\Users\Mr.Mohammed\Dropbox\pointOfSale\PointOfSale\MasterWebApp\obj\Debug\MasterWebApp.Resource.InvoiceDetalis.en.resources
+C:\Users\Mr.Mohammed\Dropbox\pointOfSale\PointOfSale\MasterWebApp\obj\Debug\MasterWebApp.Resource.Invoices.en.resources
+C:\Users\Mr.Mohammed\Dropbox\pointOfSale\PointOfSale\MasterWebApp\obj\Debug\MasterWebApp.Resource.InvoiceStatus.en.resources
+C:\Users\Mr.Mohammed\Dropbox\pointOfSale\PointOfSale\MasterWebApp\obj\Debug\MasterWebApp.Resource.MainAdmin.en.resources
+C:\Users\Mr.Mohammed\Dropbox\pointOfSale\PointOfSale\MasterWebApp\obj\Debug\MasterWebApp.Resource.MainCommon.en.resources
+C:\Users\Mr.Mohammed\Dropbox\pointOfSale\PointOfSale\MasterWebApp\obj\Debug\MasterWebApp.Resource.Nationality.en.resources
+C:\Users\Mr.Mohammed\Dropbox\pointOfSale\PointOfSale\MasterWebApp\obj\Debug\MasterWebApp.Resource.PaymentType.en.resources
+C:\Users\Mr.Mohammed\Dropbox\pointOfSale\PointOfSale\MasterWebApp\obj\Debug\MasterWebApp.Resource.Premission.en.resources
+C:\Users\Mr.Mohammed\Dropbox\pointOfSale\PointOfSale\MasterWebApp\obj\Debug\MasterWebApp.Resource.products.en.resources
+C:\Users\Mr.Mohammed\Dropbox\pointOfSale\PointOfSale\MasterWebApp\obj\Debug\MasterWebApp.Resource.PropertiesField.en.resources
+C:\Users\Mr.Mohammed\Dropbox\pointOfSale\PointOfSale\MasterWebApp\obj\Debug\MasterWebApp.Resource.PropertyType.en.resources
+C:\Users\Mr.Mohammed\Dropbox\pointOfSale\PointOfSale\MasterWebApp\obj\Debug\MasterWebApp.Resource.PropertyValue.en.resources
+C:\Users\Mr.Mohammed\Dropbox\pointOfSale\PointOfSale\MasterWebApp\obj\Debug\MasterWebApp.Resource.RowStatus.en.resources
+C:\Users\Mr.Mohammed\Dropbox\pointOfSale\PointOfSale\MasterWebApp\obj\Debug\MasterWebApp.Resource.Staff.en.resources
+C:\Users\Mr.Mohammed\Dropbox\pointOfSale\PointOfSale\MasterWebApp\obj\Debug\MasterWebApp.Resource.Title.en.resources
+C:\Users\Mr.Mohammed\Dropbox\pointOfSale\PointOfSale\MasterWebApp\obj\Debug\MasterWebApp.Resource.Units.en.resources
+C:\Users\Mr.Mohammed\Dropbox\pointOfSale\PointOfSale\MasterWebApp\obj\Debug\MasterWebApp.csproj.GenerateResource.Cache
+C:\Users\Mr.Mohammed\Dropbox\pointOfSale\PointOfSale\MasterWebApp\obj\Debug\en\MasterWebApp.resources.dll
+C:\Users\Mr.Mohammed\Dropbox\pointOfSale\PointOfSale\MasterWebApp\obj\Debug\MasterWebApp.dll
+C:\Users\Mr.Mohammed\Dropbox\pointOfSale\PointOfSale\MasterWebApp\obj\Debug\MasterWebApp.pdb
+C:\Users\Mr.Mohammed\Dropbox\pointOfSale\PointOfSale\MasterWebApp\bin\ImageResizer.dll
+C:\Users\Mr.Mohammed\Dropbox\pointOfSale\PointOfSale\MasterWebApp\bin\ImageResizer.xml
+E:\OurProject\Flutter_Projects\NASASPACEAPPS\DataDiscoveryForEarthScience\DataDiscoveryWeb\MasterWebApp\bin\MasterWebApp.dll.config
+E:\OurProject\Flutter_Projects\NASASPACEAPPS\DataDiscoveryForEarthScience\DataDiscoveryWeb\MasterWebApp\bin\MasterWebApp.dll
+E:\OurProject\Flutter_Projects\NASASPACEAPPS\DataDiscoveryForEarthScience\DataDiscoveryWeb\MasterWebApp\bin\MasterWebApp.pdb
+E:\OurProject\Flutter_Projects\NASASPACEAPPS\DataDiscoveryForEarthScience\DataDiscoveryWeb\MasterWebApp\bin\roslyn\csc.exe
+E:\OurProject\Flutter_Projects\NASASPACEAPPS\DataDiscoveryForEarthScience\DataDiscoveryWeb\MasterWebApp\bin\roslyn\csc.exe.config
+E:\OurProject\Flutter_Projects\NASASPACEAPPS\DataDiscoveryForEarthScience\DataDiscoveryWeb\MasterWebApp\bin\roslyn\csc.rsp
+E:\OurProject\Flutter_Projects\NASASPACEAPPS\DataDiscoveryForEarthScience\DataDiscoveryWeb\MasterWebApp\bin\roslyn\csi.exe
+E:\OurProject\Flutter_Projects\NASASPACEAPPS\DataDiscoveryForEarthScience\DataDiscoveryWeb\MasterWebApp\bin\roslyn\csi.rsp
+E:\OurProject\Flutter_Projects\NASASPACEAPPS\DataDiscoveryForEarthScience\DataDiscoveryWeb\MasterWebApp\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\OurProject\Flutter_Projects\NASASPACEAPPS\DataDiscoveryForEarthScience\DataDiscoveryWeb\MasterWebApp\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\OurProject\Flutter_Projects\NASASPACEAPPS\DataDiscoveryForEarthScience\DataDiscoveryWeb\MasterWebApp\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\OurProject\Flutter_Projects\NASASPACEAPPS\DataDiscoveryForEarthScience\DataDiscoveryWeb\MasterWebApp\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\OurProject\Flutter_Projects\NASASPACEAPPS\DataDiscoveryForEarthScience\DataDiscoveryWeb\MasterWebApp\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\OurProject\Flutter_Projects\NASASPACEAPPS\DataDiscoveryForEarthScience\DataDiscoveryWeb\MasterWebApp\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\OurProject\Flutter_Projects\NASASPACEAPPS\DataDiscoveryForEarthScience\DataDiscoveryWeb\MasterWebApp\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\OurProject\Flutter_Projects\NASASPACEAPPS\DataDiscoveryForEarthScience\DataDiscoveryWeb\MasterWebApp\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\OurProject\Flutter_Projects\NASASPACEAPPS\DataDiscoveryForEarthScience\DataDiscoveryWeb\MasterWebApp\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\OurProject\Flutter_Projects\NASASPACEAPPS\DataDiscoveryForEarthScience\DataDiscoveryWeb\MasterWebApp\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\OurProject\Flutter_Projects\NASASPACEAPPS\DataDiscoveryForEarthScience\DataDiscoveryWeb\MasterWebApp\bin\roslyn\System.AppContext.dll
+E:\OurProject\Flutter_Projects\NASASPACEAPPS\DataDiscoveryForEarthScience\DataDiscoveryWeb\MasterWebApp\bin\roslyn\System.Collections.Immutable.dll
+E:\OurProject\Flutter_Projects\NASASPACEAPPS\DataDiscoveryForEarthScience\DataDiscoveryWeb\MasterWebApp\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\OurProject\Flutter_Projects\NASASPACEAPPS\DataDiscoveryForEarthScience\DataDiscoveryWeb\MasterWebApp\bin\roslyn\System.IO.FileSystem.dll
+E:\OurProject\Flutter_Projects\NASASPACEAPPS\DataDiscoveryForEarthScience\DataDiscoveryWeb\MasterWebApp\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\OurProject\Flutter_Projects\NASASPACEAPPS\DataDiscoveryForEarthScience\DataDiscoveryWeb\MasterWebApp\bin\roslyn\System.Reflection.Metadata.dll
+E:\OurProject\Flutter_Projects\NASASPACEAPPS\DataDiscoveryForEarthScience\DataDiscoveryWeb\MasterWebApp\bin\roslyn\vbc.exe
+E:\OurProject\Flutter_Projects\NASASPACEAPPS\DataDiscoveryForEarthScience\DataDiscoveryWeb\MasterWebApp\bin\roslyn\vbc.exe.config
+E:\OurProject\Flutter_Projects\NASASPACEAPPS\DataDiscoveryForEarthScience\DataDiscoveryWeb\MasterWebApp\bin\roslyn\vbc.rsp
+E:\OurProject\Flutter_Projects\NASASPACEAPPS\DataDiscoveryForEarthScience\DataDiscoveryWeb\MasterWebApp\bin\roslyn\VBCSCompiler.exe
+E:\OurProject\Flutter_Projects\NASASPACEAPPS\DataDiscoveryForEarthScience\DataDiscoveryWeb\MasterWebApp\bin\roslyn\VBCSCompiler.exe.config
+E:\OurProject\Flutter_Projects\NASASPACEAPPS\DataDiscoveryForEarthScience\DataDiscoveryWeb\MasterWebApp\bin\Antlr3.Runtime.dll
+E:\OurProject\Flutter_Projects\NASASPACEAPPS\DataDiscoveryForEarthScience\DataDiscoveryWeb\MasterWebApp\bin\Data.dll
+E:\OurProject\Flutter_Projects\NASASPACEAPPS\DataDiscoveryForEarthScience\DataDiscoveryWeb\MasterWebApp\bin\DataLayer.dll
+E:\OurProject\Flutter_Projects\NASASPACEAPPS\DataDiscoveryForEarthScience\DataDiscoveryWeb\MasterWebApp\bin\EntityFramework.dll
+E:\OurProject\Flutter_Projects\NASASPACEAPPS\DataDiscoveryForEarthScience\DataDiscoveryWeb\MasterWebApp\bin\EntityFramework.SqlServer.dll
+E:\OurProject\Flutter_Projects\NASASPACEAPPS\DataDiscoveryForEarthScience\DataDiscoveryWeb\MasterWebApp\bin\FluentValidation.dll
+E:\OurProject\Flutter_Projects\NASASPACEAPPS\DataDiscoveryForEarthScience\DataDiscoveryWeb\MasterWebApp\bin\FluentValidation.ValidatorAttribute.dll
+E:\OurProject\Flutter_Projects\NASASPACEAPPS\DataDiscoveryForEarthScience\DataDiscoveryWeb\MasterWebApp\bin\FluentValidation.WebApi.dll
+E:\OurProject\Flutter_Projects\NASASPACEAPPS\DataDiscoveryForEarthScience\DataDiscoveryWeb\MasterWebApp\bin\ImageResizer.dll
+E:\OurProject\Flutter_Projects\NASASPACEAPPS\DataDiscoveryForEarthScience\DataDiscoveryWeb\MasterWebApp\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\OurProject\Flutter_Projects\NASASPACEAPPS\DataDiscoveryForEarthScience\DataDiscoveryWeb\MasterWebApp\bin\Microsoft.IdentityModel.JsonWebTokens.dll
+E:\OurProject\Flutter_Projects\NASASPACEAPPS\DataDiscoveryForEarthScience\DataDiscoveryWeb\MasterWebApp\bin\Microsoft.IdentityModel.Logging.dll
+E:\OurProject\Flutter_Projects\NASASPACEAPPS\DataDiscoveryForEarthScience\DataDiscoveryWeb\MasterWebApp\bin\Microsoft.IdentityModel.Tokens.dll
+E:\OurProject\Flutter_Projects\NASASPACEAPPS\DataDiscoveryForEarthScience\DataDiscoveryWeb\MasterWebApp\bin\Microsoft.Web.Infrastructure.dll
+E:\OurProject\Flutter_Projects\NASASPACEAPPS\DataDiscoveryForEarthScience\DataDiscoveryWeb\MasterWebApp\bin\Ninject.dll
+E:\OurProject\Flutter_Projects\NASASPACEAPPS\DataDiscoveryForEarthScience\DataDiscoveryWeb\MasterWebApp\bin\Ninject.Web.Common.dll
+E:\OurProject\Flutter_Projects\NASASPACEAPPS\DataDiscoveryForEarthScience\DataDiscoveryWeb\MasterWebApp\bin\Ninject.Web.Common.WebHost.dll
+E:\OurProject\Flutter_Projects\NASASPACEAPPS\DataDiscoveryForEarthScience\DataDiscoveryWeb\MasterWebApp\bin\Ninject.Web.WebApi.dll
+E:\OurProject\Flutter_Projects\NASASPACEAPPS\DataDiscoveryForEarthScience\DataDiscoveryWeb\MasterWebApp\bin\Ninject.Web.WebApi.WebHost.dll
+E:\OurProject\Flutter_Projects\NASASPACEAPPS\DataDiscoveryForEarthScience\DataDiscoveryWeb\MasterWebApp\bin\PagedList.dll
+E:\OurProject\Flutter_Projects\NASASPACEAPPS\DataDiscoveryForEarthScience\DataDiscoveryWeb\MasterWebApp\bin\PagedList.Mvc.dll
+E:\OurProject\Flutter_Projects\NASASPACEAPPS\DataDiscoveryForEarthScience\DataDiscoveryWeb\MasterWebApp\bin\Rotativa.dll
+E:\OurProject\Flutter_Projects\NASASPACEAPPS\DataDiscoveryForEarthScience\DataDiscoveryWeb\MasterWebApp\bin\System.IdentityModel.Tokens.Jwt.dll
+E:\OurProject\Flutter_Projects\NASASPACEAPPS\DataDiscoveryForEarthScience\DataDiscoveryWeb\MasterWebApp\bin\System.Net.Http.Formatting.dll
+E:\OurProject\Flutter_Projects\NASASPACEAPPS\DataDiscoveryForEarthScience\DataDiscoveryWeb\MasterWebApp\bin\System.Web.Helpers.dll
+E:\OurProject\Flutter_Projects\NASASPACEAPPS\DataDiscoveryForEarthScience\DataDiscoveryWeb\MasterWebApp\bin\System.Web.Http.dll
+E:\OurProject\Flutter_Projects\NASASPACEAPPS\DataDiscoveryForEarthScience\DataDiscoveryWeb\MasterWebApp\bin\System.Web.Http.WebHost.dll
+E:\OurProject\Flutter_Projects\NASASPACEAPPS\DataDiscoveryForEarthScience\DataDiscoveryWeb\MasterWebApp\bin\System.Web.Mvc.dll
+E:\OurProject\Flutter_Projects\NASASPACEAPPS\DataDiscoveryForEarthScience\DataDiscoveryWeb\MasterWebApp\bin\System.Web.Optimization.dll
+E:\OurProject\Flutter_Projects\NASASPACEAPPS\DataDiscoveryForEarthScience\DataDiscoveryWeb\MasterWebApp\bin\System.Web.Razor.dll
+E:\OurProject\Flutter_Projects\NASASPACEAPPS\DataDiscoveryForEarthScience\DataDiscoveryWeb\MasterWebApp\bin\System.Web.WebPages.Deployment.dll
+E:\OurProject\Flutter_Projects\NASASPACEAPPS\DataDiscoveryForEarthScience\DataDiscoveryWeb\MasterWebApp\bin\System.Web.WebPages.dll
+E:\OurProject\Flutter_Projects\NASASPACEAPPS\DataDiscoveryForEarthScience\DataDiscoveryWeb\MasterWebApp\bin\System.Web.WebPages.Razor.dll
+E:\OurProject\Flutter_Projects\NASASPACEAPPS\DataDiscoveryForEarthScience\DataDiscoveryWeb\MasterWebApp\bin\WebActivatorEx.dll
+E:\OurProject\Flutter_Projects\NASASPACEAPPS\DataDiscoveryForEarthScience\DataDiscoveryWeb\MasterWebApp\bin\WebGrease.dll
+E:\OurProject\Flutter_Projects\NASASPACEAPPS\DataDiscoveryForEarthScience\DataDiscoveryWeb\MasterWebApp\bin\DataLayer.pdb
+E:\OurProject\Flutter_Projects\NASASPACEAPPS\DataDiscoveryForEarthScience\DataDiscoveryWeb\MasterWebApp\bin\DataLayer.dll.config
+E:\OurProject\Flutter_Projects\NASASPACEAPPS\DataDiscoveryForEarthScience\DataDiscoveryWeb\MasterWebApp\bin\Data.pdb
+E:\OurProject\Flutter_Projects\NASASPACEAPPS\DataDiscoveryForEarthScience\DataDiscoveryWeb\MasterWebApp\bin\Data.dll.config
+E:\OurProject\Flutter_Projects\NASASPACEAPPS\DataDiscoveryForEarthScience\DataDiscoveryWeb\MasterWebApp\bin\EntityFramework.xml
+E:\OurProject\Flutter_Projects\NASASPACEAPPS\DataDiscoveryForEarthScience\DataDiscoveryWeb\MasterWebApp\bin\EntityFramework.SqlServer.xml
+E:\OurProject\Flutter_Projects\NASASPACEAPPS\DataDiscoveryForEarthScience\DataDiscoveryWeb\MasterWebApp\bin\FluentValidation.xml
+E:\OurProject\Flutter_Projects\NASASPACEAPPS\DataDiscoveryForEarthScience\DataDiscoveryWeb\MasterWebApp\bin\FluentValidation.WebApi.xml
+E:\OurProject\Flutter_Projects\NASASPACEAPPS\DataDiscoveryForEarthScience\DataDiscoveryWeb\MasterWebApp\bin\ImageResizer.xml
+E:\OurProject\Flutter_Projects\NASASPACEAPPS\DataDiscoveryForEarthScience\DataDiscoveryWeb\MasterWebApp\bin\Microsoft.IdentityModel.JsonWebTokens.xml
+E:\OurProject\Flutter_Projects\NASASPACEAPPS\DataDiscoveryForEarthScience\DataDiscoveryWeb\MasterWebApp\bin\Microsoft.IdentityModel.Logging.xml
+E:\OurProject\Flutter_Projects\NASASPACEAPPS\DataDiscoveryForEarthScience\DataDiscoveryWeb\MasterWebApp\bin\Microsoft.IdentityModel.Tokens.xml
+E:\OurProject\Flutter_Projects\NASASPACEAPPS\DataDiscoveryForEarthScience\DataDiscoveryWeb\MasterWebApp\bin\Ninject.xml
+E:\OurProject\Flutter_Projects\NASASPACEAPPS\DataDiscoveryForEarthScience\DataDiscoveryWeb\MasterWebApp\bin\Ninject.Web.Common.xml
+E:\OurProject\Flutter_Projects\NASASPACEAPPS\DataDiscoveryForEarthScience\DataDiscoveryWeb\MasterWebApp\bin\Ninject.Web.Common.WebHost.xml
+E:\OurProject\Flutter_Projects\NASASPACEAPPS\DataDiscoveryForEarthScience\DataDiscoveryWeb\MasterWebApp\bin\Ninject.Web.WebApi.xml
+E:\OurProject\Flutter_Projects\NASASPACEAPPS\DataDiscoveryForEarthScience\DataDiscoveryWeb\MasterWebApp\bin\Ninject.Web.WebApi.WebHost.xml
+E:\OurProject\Flutter_Projects\NASASPACEAPPS\DataDiscoveryForEarthScience\DataDiscoveryWeb\MasterWebApp\bin\PagedList.xml
+E:\OurProject\Flutter_Projects\NASASPACEAPPS\DataDiscoveryForEarthScience\DataDiscoveryWeb\MasterWebApp\bin\PagedList.Mvc.xml
+E:\OurProject\Flutter_Projects\NASASPACEAPPS\DataDiscoveryForEarthScience\DataDiscoveryWeb\MasterWebApp\bin\System.IdentityModel.Tokens.Jwt.xml
+E:\OurProject\Flutter_Projects\NASASPACEAPPS\DataDiscoveryForEarthScience\DataDiscoveryWeb\MasterWebApp\bin\System.Net.Http.Formatting.xml
+E:\OurProject\Flutter_Projects\NASASPACEAPPS\DataDiscoveryForEarthScience\DataDiscoveryWeb\MasterWebApp\bin\System.Web.Http.xml
+E:\OurProject\Flutter_Projects\NASASPACEAPPS\DataDiscoveryForEarthScience\DataDiscoveryWeb\MasterWebApp\bin\System.Web.Http.WebHost.xml
+E:\OurProject\Flutter_Projects\NASASPACEAPPS\DataDiscoveryForEarthScience\DataDiscoveryWeb\MasterWebApp\bin\System.Web.Helpers.xml
+E:\OurProject\Flutter_Projects\NASASPACEAPPS\DataDiscoveryForEarthScience\DataDiscoveryWeb\MasterWebApp\bin\System.Web.Mvc.xml
+E:\OurProject\Flutter_Projects\NASASPACEAPPS\DataDiscoveryForEarthScience\DataDiscoveryWeb\MasterWebApp\bin\System.Web.Optimization.xml
+E:\OurProject\Flutter_Projects\NASASPACEAPPS\DataDiscoveryForEarthScience\DataDiscoveryWeb\MasterWebApp\bin\System.Web.Razor.xml
+E:\OurProject\Flutter_Projects\NASASPACEAPPS\DataDiscoveryForEarthScience\DataDiscoveryWeb\MasterWebApp\bin\System.Web.WebPages.xml
+E:\OurProject\Flutter_Projects\NASASPACEAPPS\DataDiscoveryForEarthScience\DataDiscoveryWeb\MasterWebApp\bin\System.Web.WebPages.Deployment.xml
+E:\OurProject\Flutter_Projects\NASASPACEAPPS\DataDiscoveryForEarthScience\DataDiscoveryWeb\MasterWebApp\bin\System.Web.WebPages.Razor.xml
+E:\OurProject\Flutter_Projects\NASASPACEAPPS\DataDiscoveryForEarthScience\DataDiscoveryWeb\MasterWebApp\bin\Antlr3.Runtime.pdb
+E:\OurProject\Flutter_Projects\NASASPACEAPPS\DataDiscoveryForEarthScience\DataDiscoveryWeb\MasterWebApp\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\OurProject\Flutter_Projects\NASASPACEAPPS\DataDiscoveryForEarthScience\DataDiscoveryWeb\MasterWebApp\obj\Debug\MasterWebApp.csprojResolveAssemblyReference.cache
+E:\OurProject\Flutter_Projects\NASASPACEAPPS\DataDiscoveryForEarthScience\DataDiscoveryWeb\MasterWebApp\obj\Debug\MasterWebApp.dll
+E:\OurProject\Flutter_Projects\NASASPACEAPPS\DataDiscoveryForEarthScience\DataDiscoveryWeb\MasterWebApp\obj\Debug\MasterWebApp.pdb
+E:\OurProject\Flutter_Projects\NASASPACEAPPS\DataDiscoveryForEarthScience\DataDiscoveryWeb\MasterWebApp\bin\en\MasterWebApp.resources.dll
+E:\OurProject\Flutter_Projects\NASASPACEAPPS\DataDiscoveryForEarthScience\DataDiscoveryWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.CommonMessage.resources
+E:\OurProject\Flutter_Projects\NASASPACEAPPS\DataDiscoveryForEarthScience\DataDiscoveryWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.Countries.resources
+E:\OurProject\Flutter_Projects\NASASPACEAPPS\DataDiscoveryForEarthScience\DataDiscoveryWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.CommonMessage.en.resources
+E:\OurProject\Flutter_Projects\NASASPACEAPPS\DataDiscoveryForEarthScience\DataDiscoveryWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.Countries.en.resources
+E:\OurProject\Flutter_Projects\NASASPACEAPPS\DataDiscoveryForEarthScience\DataDiscoveryWeb\MasterWebApp\obj\Debug\MasterWebApp.csproj.GenerateResource.Cache
+E:\OurProject\Flutter_Projects\NASASPACEAPPS\DataDiscoveryForEarthScience\DataDiscoveryWeb\MasterWebApp\obj\Debug\en\MasterWebApp.resources.dll
+E:\OurProject\Flutter_Projects\NASASPACEAPPS\DataDiscoveryForEarthScience\DataDiscoveryWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.EventInfo.resources
+E:\OurProject\Flutter_Projects\NASASPACEAPPS\DataDiscoveryForEarthScience\DataDiscoveryWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.UserType.resources
+E:\OurProject\Flutter_Projects\NASASPACEAPPS\DataDiscoveryForEarthScience\DataDiscoveryWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.Users.resources
+E:\OurProject\Flutter_Projects\NASASPACEAPPS\DataDiscoveryForEarthScience\DataDiscoveryWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.AboutUs.resources
+E:\OurProject\Flutter_Projects\NASASPACEAPPS\DataDiscoveryForEarthScience\DataDiscoveryWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.EventTypes.resources
+E:\OurProject\Flutter_Projects\NASASPACEAPPS\DataDiscoveryForEarthScience\DataDiscoveryWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.UserType.en.resources
+E:\OurProject\Flutter_Projects\NASASPACEAPPS\DataDiscoveryForEarthScience\DataDiscoveryWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.Users.en.resources
+E:\OurProject\Flutter_Projects\NASASPACEAPPS\DataDiscoveryForEarthScience\DataDiscoveryWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.EventInfo.en.resources
+E:\OurProject\Flutter_Projects\NASASPACEAPPS\DataDiscoveryForEarthScience\DataDiscoveryWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.AboutUs.en.resources
+E:\OurProject\Flutter_Projects\NASASPACEAPPS\DataDiscoveryForEarthScience\DataDiscoveryWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.EventTypes.en.resources
+E:\OurProject\Flutter_Projects\NASASPACEAPPS\DataDiscoveryForEarthScience\DataDiscoveryWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.Admin.resources
+E:\OurProject\Flutter_Projects\NASASPACEAPPS\DataDiscoveryForEarthScience\DataDiscoveryWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.Admin.en.resources
+E:\OurProject\Flutter_Projects\NASASPACEAPPS\DataDiscoveryForEarthScience\DataDiscoveryWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.Login.resources
+E:\OurProject\Flutter_Projects\NASASPACEAPPS\DataDiscoveryForEarthScience\DataDiscoveryWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.Login.en.resources
+E:\OurProject\Flutter_Projects\NASASPACEAPPS\DataDiscoveryForEarthScience\DataDiscoveryWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.EventRefrences.resources
+E:\OurProject\Flutter_Projects\NASASPACEAPPS\DataDiscoveryForEarthScience\DataDiscoveryWeb\MasterWebApp\obj\Debug\MasterWebApp.Resource.EventRefrences.en.resources

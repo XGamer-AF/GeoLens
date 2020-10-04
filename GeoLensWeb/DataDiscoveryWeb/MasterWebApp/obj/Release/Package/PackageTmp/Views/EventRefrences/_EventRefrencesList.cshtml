@@ -1,0 +1,65 @@
+﻿@using Data.ViewModel;
+@using DataLayer;
+@model EventRefrencesAddViewModel
+
+
+<a href="@Url.Action("EventRefrencesAddEdit", "EventRefrences", new { eventID = Model.eventID, eventName = Request.QueryString["eventName"] })" class="btn btn-primary">
+
+    <i class="fas fa-plus-circle"></i>
+    @MasterWebApp.Resource.CommonMessage.btnNew
+</a>
+
+
+@{
+    string lang = FunServices.getLang("lang");
+}
+
+<div style="padding-top:5px;">
+
+    <table id="mTable" class="table table-striped table-bordered table-hover table-responsive">
+
+        <thead>
+            <tr>
+                <td style="width:40.44%">
+                    @MasterWebApp.Resource.EventRefrences.eventURL
+                </td>
+                <td style="width:40.44%">
+                    @MasterWebApp.Resource.EventRefrences.orderID
+                </td>
+                <td style="width:15.44%">
+                </td>
+
+                <td style="width:10.1%"></td>
+
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model.EventRefrencesAll)
+            {
+
+            <tr>
+                <td>
+                    @item.eventURL
+                </td>
+                <td>
+                    @item.orderID
+                </td>
+               
+                <td>
+                    <a href="@Url.Action("EventRefrencesAddEdit", new {eventID = item.eventID, eventName = Request.QueryString["eventName"] ,id = item.eventRefrencesID })" style="padding:10px;">
+                        <i class="far fa-edit"></i>
+                    </a>
+                </td>
+
+                <td>
+                    <a href="@Url.Action("ChangeStatus", new { id = item.eventRefrencesID, statusID = 0 , eventID = item.eventID , eventName = Request.QueryString["eventName"] })" style="padding:10px;" onclick="return confirm('@MasterWebApp.Resource.CommonMessage.confirmDelete')">
+                        <i class="fas fa-minus-circle"></i>
+                    </a>
+                </td>
+            </tr>
+
+            }
+        </tbody>
+    </table>
+
+</div>

@@ -1,0 +1,151 @@
+﻿@using Data.ViewModel;
+@using DataLayer;
+
+
+@model CountriesAddViewModel
+@using (Html.BeginForm("CountriesAddEdit", "Countries", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    @Html.AntiForgeryToken()
+    <div class="form-horizontal">
+
+        @Html.ValidationSummary(true)
+
+        @Html.HiddenFor(x => x.Countries.countryID)
+
+        @if (Model.Countries != null)
+        {
+
+            @Html.HiddenFor(model => model.Countries.statusID)
+
+        }
+        
+      
+
+
+        <div class="form-group">
+            <label>
+                @MasterWebApp.Resource.Countries.countryNameAr
+            </label>
+
+            @Html.TextBoxFor(model => model.Countries.countryNameAr, new { @class = "form-control col-12" })
+            @Html.ValidationMessageFor(model => model.Countries.countryNameAr)
+
+        </div>
+
+        <div class="form-group">
+            <label>
+                @MasterWebApp.Resource.Countries.countryNameEn
+            </label>
+
+            @Html.TextBoxFor(model => model.Countries.countryNameEn, new { @class = "form-control col-12" })
+            @Html.ValidationMessageFor(model => model.Countries.countryNameEn)
+
+        </div>
+
+       <div class="form-row">
+           <div class="form-group col-lg-6 col-12">
+               <label>
+                   @MasterWebApp.Resource.Countries.currencyNameAr
+               </label>
+
+               @Html.TextBoxFor(model => model.Countries.currencyNameAr, new { @class = "form-control col-12" })
+               @Html.ValidationMessageFor(model => model.Countries.currencyNameAr)
+
+           </div>
+
+           <div class="form-group col-lg-6 col-12">
+               <label>
+                   @MasterWebApp.Resource.Countries.currencyNameEn
+               </label>
+
+               @Html.TextBoxFor(model => model.Countries.currencyNameEn, new { @class = "form-control col-12" })
+               @Html.ValidationMessageFor(model => model.Countries.currencyNameEn)
+
+           </div>
+       </div>
+
+<div class="form-row">
+    <div class="form-group col-lg-6 col-12">
+        <label>
+            @MasterWebApp.Resource.Countries.counteyCode
+        </label>
+
+        @Html.TextBoxFor(model => model.Countries.counteyCode, new { @class = "form-control col-12" })
+        @Html.ValidationMessageFor(model => model.Countries.counteyCode)
+
+    </div>
+    <div class="form-group col-lg-6 col-12">
+        <label>
+            @MasterWebApp.Resource.Countries.telLength
+        </label>
+
+        @Html.TextBoxFor(model => model.Countries.telLength, new { @class = "form-control col-12" })
+        @Html.ValidationMessageFor(model => model.Countries.telLength)
+
+    </div>
+
+</div>      
+
+
+        @{
+            string fileName = "";
+            string filePath = "";
+            string fullName = "";
+            Boolean haveImage = false;
+            if (Model.Countries.countryID != 0)
+            {
+                fileName = "CO" + Model.Countries.countryID + ".png";
+                filePath = ImagesServices.getPath("Countries/");
+                @*<input id="txtProfileID" name="txtProfileID" type="hidden" value="@TempData["profileID"]" />*@
+
+            if (ImagesServices.fileExists((filePath + fileName)))
+            {
+                fullName = filePath + fileName;
+                haveImage = true;
+            }
+            else
+            {
+                fullName = filePath + "noImage.png";
+                haveImage = false;
+            }
+
+
+
+        }
+        else
+        {
+            fullName = filePath + "noImage.png";
+            haveImage = false;
+        }
+
+
+        string query = string.Format(GlobalVariable.httpBase + "AImages?folder={0}&imageName={1}", "Countries", fileName);
+
+
+        }
+
+        <div class="form-group col-md-12 col-xs-12">
+            <img src="@query" alt="NoImage" width="100" height="100" class="img-rounded" />
+            <div class="form-group">
+                <label>
+                    اختر الصورة يفضل 100× 100
+                </label>
+                <input type="file" name="file" accept=".jpg, .png, .gif" />
+
+            </div>
+
+        </div>
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <button  type="submit" 
+                       class="btn btn-primary">
+
+                    <i class="far fa-save"></i>
+                    @MasterWebApp.Resource.CommonMessage.btnSave
+                    </button>
+                
+            </div>
+        </div>
+    </div>
+}
+

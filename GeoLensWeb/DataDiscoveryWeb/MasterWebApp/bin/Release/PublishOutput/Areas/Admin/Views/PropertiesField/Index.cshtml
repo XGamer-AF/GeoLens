@@ -1,0 +1,83 @@
+﻿@using Data.ViewModel;
+@using DataLayer;
+@using PagedList
+@using PagedList.Mvc;
+@model PropertiesFieldAddViewModel
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container">
+    <div class="card border-dark">
+        <div class="card-header bg-dark text-white">
+            <span>
+                @MasterWebApp.Resource.PropertiesField.title
+            </span>
+
+        </div>
+        <div class="card-body">
+            @using (Html.BeginForm("Index", "PropertiesField", FormMethod.Get))
+            {
+                <div>
+
+                    <div class="form-group col-lg-6 col-12">
+                        <label>
+                            @MasterWebApp.Resource.PropertiesField.Search
+                        </label>
+                        <div>
+                            @Html.TextBox("search", null, new { @class = "form-control col-12" })
+                        </div>
+                    </div>
+
+
+
+
+
+                    <div class="form-group col-md-4 col-12" style="padding-top:30px;">
+
+                        <button class="btn btn-primary" type="submit" value="seacher">
+                            <i class="fas fa-search"></i>
+                            @MasterWebApp.Resource.CommonMessage.btnSubmit
+
+                        </button>
+                        <div class="btn-group ">
+                            <a href="@Url.Action("Index", "PropertiesField", new { area = "Admin" })" class="btn btn-primary">
+                                <i class="fas fa-sync-alt"></i>
+                                @MasterWebApp.Resource.CommonMessage.btnRestore
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            }
+
+
+            <div style=" clear:both;border-top:1px solid rgba(220, 220, 220, 0.76); padding-top:20px;">
+
+                <div class="form-group col-lg-8 col-12">
+                    @Html.Partial("_PropertiesFieldList")
+                </div>
+
+                <div class="form-group col-lg-4 col-12">
+                    @Html.Partial("_PropertiesFieldAddEdit")
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+
+</div>
+
+
+<hr />
+
+<div class="pr-4 pl-4 divPage d-flex flex-row flex-grow-1 ">
+    @Html.PagedListPager(Model.PropertiesFieldAll, page => Url.Action("Index", new { page, search=Request.QueryString["search"] })
+, new PagedListRenderOptions() { Display = PagedListDisplayMode.IfNeeded })
+
+
+</div>

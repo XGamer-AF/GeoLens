@@ -1,0 +1,671 @@
+﻿@using Data.ViewModel;
+@using DataLayer;
+@using System.Net.Http;
+@using System.Web.Hosting;
+
+@model ConfJournalViewModel
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/Common/Views/Shared/_Layout.cshtml";
+
+    if (FunServices.getLang("lang") == "en")
+    {
+        <style>
+            .carousel-caption {
+                position: absolute;
+                right: 15%;
+                bottom: 20px;
+                left: 20px;
+                z-index: 10;
+                padding-left: 0;
+                padding-top: 20px;
+                padding-bottom: 20px;
+                text-align: left;
+            }
+        </style>
+    }
+    else
+    {
+        <style>
+            .carousel-caption {
+                position: absolute;
+                left: 15%;
+                bottom: 20px;
+                right: 20px;
+                z-index: 10;
+                padding-left: 0;
+                padding-top: 20px;
+                padding-bottom: 20px;
+                text-align: right;
+            }
+        </style>
+    }
+
+    string lang = FunServices.getLang("lang");
+}
+
+
+<div class="container p-0">
+    <div class=" m-0" id="mainRow1">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner  ">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="~/Images/1.jpg" alt="First slide">
+                    <div class="carousel-caption">
+                        <h2 class="caption-f-l">@MasterWebApp.Resource.MainCommon.image1Title</h2>
+                        <h4 class="caption-s-l">@MasterWebApp.Resource.MainCommon.image1Desc</h4>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="~/Images/2.jpg" alt="Second slide">
+                    <div class="carousel-caption">
+                        <h2 class="caption-f-l">@MasterWebApp.Resource.MainCommon.image2Title</h2>
+                        <h4 class="caption-s-l">@MasterWebApp.Resource.MainCommon.image2Desc</h4>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="~/Images/3.jpg" alt="Third slide">
+                    <div class="carousel-caption ">
+                        <h2 class="caption-f-l">@MasterWebApp.Resource.MainCommon.image3Title</h2>
+                        <h4 class="caption-s-l">@MasterWebApp.Resource.MainCommon.image3Desc</h4>
+                    </div>
+                </div>
+                <div class="overlay">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                @*<span class="carousel-control-prev-icon" aria-hidden="true"></span>*@
+                <span class="" aria-hidden="true">
+                    <img src="~/Images/1_03.gif" id="imgPrev" />
+                </span>
+
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                @*<span class="carousel-control-next-icon" aria-hidden="true"></span>*@
+                <span class="" aria-hidden="true">
+                    <img src="~/Images/2_05.gif" id="imgNext" />
+                </span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+
+    @using (Html.BeginForm("Index", "DigitalLibrary", FormMethod.Get))
+    {
+
+
+    }
+
+
+    <div class="bgAll m-0">
+        <div id="mainRow5">
+
+
+            <div class="searchHeader d-flex flex-column" style="clear:both;">
+
+                <div>
+                    <img src="~/Images/adlSearch.png" />
+                </div>
+                <div class="p-1">
+                    <h2>
+                        @MasterWebApp.Resource.MainCommon.adlSearch
+                    </h2>
+
+                </div>
+                @using (Html.BeginForm("Index", "DigitalLibrary", FormMethod.Get))
+{
+                <div class="d-flex flex-row justify-content-center  pr-lg-5 pl-lg-5 p-2">
+
+                    <div class="form-group col-lg-2 col-3 p-0">
+                        @Html.DropDownList("paperTypeID", (SelectList)ViewBag.PaperTypeV, @MasterWebApp.Resource.Conferences.allCountries, new { @class = "form-control form-control-lg col-12 rounded-0 " })
+
+                    </div>
+                    <div class=" col-lg-7 col-9 p-0">
+
+                        <div class="input-group">
+
+
+                            @Html.TextBox("search", "", new { @class = "form-control form-control-lg col-12 searchText rounded-0" , placeholder= @MasterWebApp.Resource.Papers.paperSearchPlaceholder })
+
+                            <div class="input-group-prepend  ">
+                                <button type="submit" class="input-group-text searchBtn" id="basic-addon1">
+                                    <i class="fas fa-search"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="d-flex flex-row justify-content-end m-0 pt-2">
+                            <a class="nav-link" href="@Url.Action("Advanced", "DigitalLibrary", new { Area = "Common" })" style="color:#000;font-weight:700;">
+
+                                @MasterWebApp.Resource.Papers.advanceSearch
+
+                            </a>
+                        </div>
+
+                    </div>
+
+                   
+
+
+                </div>
+}
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+
+
+    <div id="MainCommonItem">
+        <div id="mainRow2">
+            <div class="d-lg-flex flex-lg-row flex-lg-grow-1">
+                <div class="col-lg-4 col-12 ">
+                    <div class="p-2 row2Box border mt-lg-0 mt-3">
+                        <div>
+                            <img src="~/Images/conf_g.png" class="row2Image" />
+                        </div>
+
+                        <div class="row2Title">
+                            @MasterWebApp.Resource.MainCommon.confTitle
+                        </div>
+                        <div>
+                            @MasterWebApp.Resource.MainCommon.confLine1
+                            <br />
+                            @MasterWebApp.Resource.MainCommon.confLine2
+                        </div>
+                        <a class="" href="@Url.Action("Index", "Conferences", new { Area = "Common" })">
+                            <div class="row2More">
+
+                                @MasterWebApp.Resource.MainCommon.more
+
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+
+                <div class="col-lg-4 col-12">
+                    <div class="p-2 row2Box border mt-lg-0 mt-3">
+                        <div>
+                            <img src="~/Images/journal_g.png" class="row2Image" />
+                        </div>
+
+                        <div class="row2Title">
+                            @MasterWebApp.Resource.MainCommon.journalTitle
+                        </div>
+                        <div>
+                            @MasterWebApp.Resource.MainCommon.journalLine1
+                            <br />
+                            @MasterWebApp.Resource.MainCommon.journalLine2
+                        </div>
+
+                        <a class="" href="@Url.Action("Index", "Journals", new { Area = "Common" })">
+                            <div class="row2More">
+
+                                @MasterWebApp.Resource.MainCommon.more
+
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+                <div class="col-lg-4 col-12 ">
+                    <div class="p-2 row2Box border mt-lg-0 mt-3">
+                        <div>
+                            <img src="~/Images/adl_g.png" class="row2Image" />
+                        </div>
+
+                        <div class="row2Title">
+                            @MasterWebApp.Resource.MainCommon.adlTitle
+                        </div>
+                        <div>
+                            @MasterWebApp.Resource.MainCommon.adlLine1
+                            <br />
+                            @MasterWebApp.Resource.MainCommon.adlLine2
+                        </div>
+
+                        <a class="" href="@Url.Action("Index", "DigitalLibrary", new { Area = "Common" })">
+                            <div class="row2More">
+
+                                @MasterWebApp.Resource.MainCommon.more
+
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="bgAll">
+
+            <div class="mt-lg-0 mt-2 " id="mainRow3">
+                <h5 style="padding:0px 30px; color:#000;">
+                    @MasterWebApp.Resource.MainCommon.confTitle
+                </h5>
+                @*<div>
+                        <a href="@Url.Action("Index", "Conferences", new {area = "Common" })">
+                            <div class="subTitle col-lg-3 col-8">
+                                <div class="title ">
+                                    @MasterWebApp.Resource.MainCommon.confTitle
+                                </div>
+                            </div>
+                        </a>
+                    </div>*@
+                <div class="d-lg-flex flex-lg-row flex-lg-grow-1 p-2" style="clear:both;">
+                    @foreach (var item in Model.Conf)
+                    {
+
+                        <div class="col-lg-4 col-12 ">
+                            <a href="@Url.Action("test", "JournalsView", new {area = "JournalsView" , conferenceID = item.conferenceID })" target="_blank">
+                                <div class=" row3Box rounded  mt-lg-2 mt-3 ">
+                                    @{
+
+                                        string folder = "Conferences";
+                                        string flagFolder = "Countries";
+                                        string imageFile = "CF" + item.conferenceID + ".jpg";
+                                        string flagFile = item.countryID + ".png";
+
+                                        if (PaperAuthorList.haveImage(folder, imageFile))
+                                        {
+                                            string query = string.Format(GlobalVariable.httpBase + "AImages?folder={0}&imageName={1}", folder, imageFile);
+
+                                            <div class="text-center">
+                                                <img class="rounded" src="@query" style="width:100%; height:200px" />
+
+                                            </div>
+                                        }
+                                        else
+                                        {
+                                            string query = string.Format(GlobalVariable.httpBase + "AImages?folder={0}&imageName={1}", folder, "NoImageConf.jpg");
+
+                                            <div class="text-center">
+                                                <img class="rounded" src="@query" style="width:100%; height:200px" />
+
+                                            </div>
+
+                                        }
+                                        if (PaperAuthorList.haveImage(flagFolder, flagFile))
+                                        {
+                                            string query = string.Format(GlobalVariable.httpBase + "AImages?folder={0}&imageName={1}", flagFolder, flagFile);
+
+                                            <div class="text-center">
+                                                <img class=" flag" src="@query" />
+                                            </div>
+
+
+                                        }
+
+
+                                    }
+
+                                    <div class="d-flex flex-row flex-grow-1 justify-content-between mt-1 date-city">
+                                        <div class="">
+                                            @if (item.startDate.HasValue)
+                                            {
+
+                                                <span>
+                                                    @item.startDate.Value.ToString("dd,MMM,yyyy")
+                                                </span>
+                                            }
+                                        </div>
+
+                                        <div class="">
+                                           @if(lang =="ar")
+                                           {
+                                               <span>
+                                                   @item.Countries.countryAr
+                                               </span>
+                                           }
+                                           else
+                                           {
+                                            <span>
+                                                @item.Countries.countryEn
+                                            </span>
+                                           }
+                                        </div>
+                                    </div>
+
+
+                                    <div class="box-content">
+                                        <div class="first-letter" style="height:25px;">
+                                            @item.conferenceAcronym
+                                        </div>
+                                        <div class="conf-title" style="height:70px;">
+
+
+                                            @item.conferenceEn
+                                        </div>
+
+                                        <div class="conf-cat" style="height:25px;">
+
+
+                                            @item.PaperCategory.paperCatEn
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+
+                        </div>
+
+
+                                        }
+                </div>
+
+
+            </div>
+
+
+            <div id="mainRow4">
+                <h4 style="padding:0px 30px; color:#000;">
+                    @MasterWebApp.Resource.MainCommon.journalTitle
+                </h4>
+                @*<div>
+                        <a href="@Url.Action("Index", "Journals", new {area = "Common" })">
+                            <div class="subTitle col-lg-3 col-8">
+                                <div class="title ">
+                                    @MasterWebApp.Resource.MainCommon.journalTitle
+                                </div>
+                            </div>
+                        </a>
+                    </div>*@
+                <div class="d-lg-flex flex-lg-row flex-lg-grow-1 p-2" style="clear:both;">
+                    @foreach (var item in Model.Journal)
+                    {
+
+                        <div class="col-lg-4 col-12 ">
+                            <a href="@Url.Action("AboutIndex", "JournalsView", new {area = "JournalsView" , journalID = item.journalID })">
+                                <div class=" row4Box rounded  mt-lg-2 mt-3 ">
+                                    @{
+
+                                        string folder = "Journals";
+                                        string imageFile = "CO" + item.journalID + ".jpg";
+
+                                        if (PaperAuthorList.haveImage(folder, imageFile))
+                                        {
+                                            string query = string.Format(GlobalVariable.httpBase + "AImages?folder={0}&imageName={1}", "Journals", imageFile);
+
+                                            <div class="text-center">
+                                                <img class="rounded" src="@query" style="width:100%; height:350px" />
+                                            </div>
+                                        }
+                                        else
+                                        {
+                                            string query = string.Format(GlobalVariable.httpBase + "AImages?folder={0}&imageName={1}", "Journals", "NoImageCover.jpg");
+
+                                            <div class="text-center">
+                                                <img class="rounded" src="@query" style="width:100%; height:350px" />
+                                            </div>
+
+                                        }
+                                    }
+                                    <div class="box-content">
+                                        <div class="" style="height:25px;">
+                                            @item.firstLetters
+                                        </div>
+                                        <div class="" style="height:70px;">
+                                            @item.journalEn
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                                        }
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+<style>
+    /*Carousel*/
+    /*------------------*/
+
+    .overlay {
+        position: absolute;
+        top: 8px;
+        bottom: 8px;
+        left: 8px;
+        right: 8px;
+        height: auto;
+        width: auto;
+        opacity: 1;
+        /*transition: .3s ease;*/
+        opacity: 1;
+        border: 5px solid #6da0b5;
+    }
+
+    .caption-f-l {
+        color: #6da0b5;
+    }
+
+    .caption-s-l {
+        color: #ffffff;
+    }
+
+    /*------------------*/
+    /*Carousel*/
+
+    #mainRow1 {
+        /*margin-top: 20px;*/
+    }
+
+    #mainRow2 {
+        color: #6da0b5;
+        margin-top: 20px;
+        padding: 0 15px;
+    }
+
+   
+
+    #mainRow4 {
+        color: #6da0b5;
+        margin: 10px 0;
+        padding: 10px 15px;
+    }
+
+    #mainRow5 {
+        margin-top: 10px;
+        padding: 10px 0px;
+    }
+
+    /*Row 2 */
+    .row2Box {
+        text-align: center;
+        box-shadow: 4px 4px #6da0b5;
+        background-color: #fff;
+    }
+
+        .row2Box:hover {
+            text-align: center;
+            box-shadow: 4px 4px #000;
+            /*background-color: #000;*/
+        }
+
+    .row2Image {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .row2Title {
+        font-weight: 800;
+        margin-bottom: 20px;
+    }
+
+    .row2More {
+        margin: 30px 100px;
+        padding: 10px;
+        background-color: #6da0b5;
+        color: #fff;
+    }
+
+    .row2Box a {
+        color: #fff;
+        text-decoration: none;
+        margin: 0px;
+        font-weight: 600;
+    }
+
+    .row4Box a {
+        color: #fff;
+        text-decoration: none;
+        margin: 0px;
+        font-weight: 600;
+    }
+
+    .subTitle {
+        display: block;
+        padding: 0;
+        padding-bottom: 8px;
+        background-color: #6da0b5;
+        margin: 0 30px;
+    }
+
+    .title {
+        padding: 10px;
+        background-color: #b3cdd8;
+        color: #fff;
+        font-weight: 600;
+    }
+
+    /*Row 3*/
+
+    /*Row 4*/
+    .row4Box {
+    }
+
+    /*.row4Box:hover {
+            background-color: #6da0b5;
+            color: #fff;
+        }*/
+
+    .boxText {
+        padding: 5px;
+    }
+
+    ul ol {
+        margin-block-start: 0px;
+        margin-block-end: 0px;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        padding-inline-start: 0px;
+    }
+
+
+
+    #mainRow3 {
+        color: #6da0b5;
+        margin: 0;
+        padding: 0 15px;
+    }
+
+    .row3Box {
+        border: 3px solid #6da0b5;
+        border-radius: 10px;
+        padding: 2px;
+    }
+
+        .row3Box .box-content {
+            color: #fff;
+            padding: 10px;
+            text-decoration: none;
+            text-justify: inter-word;
+        }
+
+            .row3Box .box-content .first-letter {
+                color: #6da0b5;
+                font-weight: 700;
+            }
+
+            .row3Box .box-content .conf-title {
+                color: #000;
+            }
+
+            .row3Box .box-content .conf-cat {
+                padding-top: 5px;
+                color: #ff0000;
+            }
+
+        .row3Box:hover .box-content {
+            color: #000;
+            text-decoration: none;
+        }
+    .flag {
+        width: 50px;
+        height: 30px;
+        position: absolute;
+        top: 20px;
+        left: 25px;
+    }
+
+    .date-city {
+        background-color: #6da0b5;
+        padding: 5px;
+        color: #000;
+        font-weight: 600;
+    }
+    /*.row3Date {
+        position: absolute;
+        top: 165px;
+        right: 10px;
+        color: #fff;
+    }
+
+    .row3City {
+        position: absolute;
+        top: 165px;
+        left: 10px;
+        color: #fff;
+    }*/
+</style>
+
+<script>
+
+    $(document).ready(function () {
+
+
+
+        $("#search").autocomplete({
+
+            source: function (request, response) {
+                $.ajax({
+
+                    url: "/DigitalLibrary/GetPaperTitle",
+                    type: "POST",
+                    dataType: "json",
+                    data: { letter: request.term },
+                    success: function (data) {
+                        response($.map(data, function (item) {
+                            return { label: item, value: item };
+
+                        }))
+
+                    }
+                })
+            },
+
+            messages: {
+                noResults: "", results: ""
+            }
+        });
+
+
+
+    })
+
+
+
+
+</script>

@@ -1,0 +1,923 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="adlModelStoreContainer" CdmEntityContainer="Entities">
+    <EntitySetMapping Name="AuthorCertifications">
+      <EntityTypeMapping TypeName="IsTypeOf(adlModel.AuthorCertifications)">
+        <MappingFragment StoreEntitySet="AuthorCertifications">
+          <ScalarProperty Name="cityName" ColumnName="cityName" />
+          <ScalarProperty Name="authorCertificationID" ColumnName="authorCertificationID" />
+          <ScalarProperty Name="authorID" ColumnName="authorID" />
+          <ScalarProperty Name="certificationID" ColumnName="certificationID" />
+          <ScalarProperty Name="countryID" ColumnName="countryID" />
+          <ScalarProperty Name="cityID" ColumnName="cityID" />
+          <ScalarProperty Name="monthID" ColumnName="monthID" />
+          <ScalarProperty Name="yearID" ColumnName="yearID" />
+          <ScalarProperty Name="userID" ColumnName="userID" />
+          <ScalarProperty Name="statusID" ColumnName="statusID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="authorJobs">
+      <EntityTypeMapping TypeName="IsTypeOf(adlModel.authorJobs)">
+        <MappingFragment StoreEntitySet="authorJobs">
+          <ScalarProperty Name="authorJobID" ColumnName="authorJobID" />
+          <ScalarProperty Name="authorID" ColumnName="authorID" />
+          <ScalarProperty Name="jobAr" ColumnName="jobAr" />
+          <ScalarProperty Name="jobEn" ColumnName="jobEn" />
+          <ScalarProperty Name="jobTitleID" ColumnName="jobTitleID" />
+          <ScalarProperty Name="jobTypeID" ColumnName="jobTypeID" />
+          <ScalarProperty Name="jobBusinessID" ColumnName="jobBusinessID" />
+          <ScalarProperty Name="jobFunctionID" ColumnName="jobFunctionID" />
+          <ScalarProperty Name="jobResponsibilityID" ColumnName="jobResponsibilityID" />
+          <ScalarProperty Name="isPrimary" ColumnName="isPrimary" />
+          <ScalarProperty Name="userID" ColumnName="userID" />
+          <ScalarProperty Name="statusID" ColumnName="statusID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Authors">
+      <EntityTypeMapping TypeName="IsTypeOf(adlModel.Authors)">
+        <MappingFragment StoreEntitySet="Authors">
+          <ScalarProperty Name="conferenceID" ColumnName="conferenceID" />
+          <ScalarProperty Name="journalID" ColumnName="journalID" />
+          <ScalarProperty Name="securityAnswer" ColumnName="securityAnswer" />
+          <ScalarProperty Name="securityQuestion" ColumnName="securityQuestion" />
+          <ScalarProperty Name="authorNo" ColumnName="authorNo" />
+          <ScalarProperty Name="authorID" ColumnName="authorID" />
+          <ScalarProperty Name="authorTypeID" ColumnName="authorTypeID" />
+          <ScalarProperty Name="authorNameAr" ColumnName="authorNameAr" />
+          <ScalarProperty Name="authorNameEn" ColumnName="authorNameEn" />
+          <ScalarProperty Name="titleID" ColumnName="titleID" />
+          <ScalarProperty Name="suffixID" ColumnName="suffixID" />
+          <ScalarProperty Name="genderID" ColumnName="genderID" />
+          <ScalarProperty Name="birthDate" ColumnName="birthDate" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="alternateEmail" ColumnName="alternateEmail" />
+          <ScalarProperty Name="password" ColumnName="password" />
+          <ScalarProperty Name="website" ColumnName="website" />
+          <ScalarProperty Name="phone" ColumnName="phone" />
+          <ScalarProperty Name="mobile" ColumnName="mobile" />
+          <ScalarProperty Name="workPhone" ColumnName="workPhone" />
+          <ScalarProperty Name="workExtn" ColumnName="workExtn" />
+          <ScalarProperty Name="otherPhone" ColumnName="otherPhone" />
+          <ScalarProperty Name="otherExtn" ColumnName="otherExtn" />
+          <ScalarProperty Name="countryID" ColumnName="countryID" />
+          <ScalarProperty Name="cityID" ColumnName="cityID" />
+          <ScalarProperty Name="address" ColumnName="address" />
+          <ScalarProperty Name="dateEnter" ColumnName="dateEnter" />
+          <ScalarProperty Name="userID" ColumnName="userID" />
+          <ScalarProperty Name="statusID" ColumnName="statusID" />
+          <ScalarProperty Name="isReviewer" ColumnName="isReviewer" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AuthorSuffix">
+      <EntityTypeMapping TypeName="IsTypeOf(adlModel.AuthorSuffix)">
+        <MappingFragment StoreEntitySet="AuthorSuffix">
+          <ScalarProperty Name="suffixID" ColumnName="suffixID" />
+          <ScalarProperty Name="suffixAr" ColumnName="suffixAr" />
+          <ScalarProperty Name="suffixEn" ColumnName="suffixEn" />
+          <ScalarProperty Name="userID" ColumnName="userID" />
+          <ScalarProperty Name="statusID" ColumnName="statusID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AuthorTitle">
+      <EntityTypeMapping TypeName="IsTypeOf(adlModel.AuthorTitle)">
+        <MappingFragment StoreEntitySet="AuthorTitle">
+          <ScalarProperty Name="titleID" ColumnName="titleID" />
+          <ScalarProperty Name="titleAr" ColumnName="titleAr" />
+          <ScalarProperty Name="titleEn" ColumnName="titleEn" />
+          <ScalarProperty Name="userID" ColumnName="userID" />
+          <ScalarProperty Name="statusID" ColumnName="statusID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Certifications">
+      <EntityTypeMapping TypeName="IsTypeOf(adlModel.Certifications)">
+        <MappingFragment StoreEntitySet="Certifications">
+          <ScalarProperty Name="certificationID" ColumnName="certificationID" />
+          <ScalarProperty Name="certificationAr" ColumnName="certificationAr" />
+          <ScalarProperty Name="certificationEn" ColumnName="certificationEn" />
+          <ScalarProperty Name="userID" ColumnName="userID" />
+          <ScalarProperty Name="statusID" ColumnName="statusID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Cities">
+      <EntityTypeMapping TypeName="IsTypeOf(adlModel.Cities)">
+        <MappingFragment StoreEntitySet="Cities">
+          <ScalarProperty Name="cityID" ColumnName="cityID" />
+          <ScalarProperty Name="countryID" ColumnName="countryID" />
+          <ScalarProperty Name="cityAr" ColumnName="cityAr" />
+          <ScalarProperty Name="cityEn" ColumnName="cityEn" />
+          <ScalarProperty Name="userID" ColumnName="userID" />
+          <ScalarProperty Name="statusID" ColumnName="statusID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Conferences">
+      <EntityTypeMapping TypeName="IsTypeOf(adlModel.Conferences)">
+        <MappingFragment StoreEntitySet="Conferences">
+          <ScalarProperty Name="cssFile" ColumnName="cssFile" />
+          <ScalarProperty Name="havePdf" ColumnName="havePdf" />
+          <ScalarProperty Name="approved" ColumnName="approved" />
+          <ScalarProperty Name="haveWebsite" ColumnName="haveWebsite" />
+          <ScalarProperty Name="currencyID" ColumnName="currencyID" />
+          <ScalarProperty Name="submissionDeadLineDateOld" ColumnName="submissionDeadLineDateOld" />
+          <ScalarProperty Name="registrationDateOld" ColumnName="registrationDateOld" />
+          <ScalarProperty Name="cameraReadyDateOld" ColumnName="cameraReadyDateOld" />
+          <ScalarProperty Name="paperAcceptEndDateOld" ColumnName="paperAcceptEndDateOld" />
+          <ScalarProperty Name="notificationDateOld" ColumnName="notificationDateOld" />
+          <ScalarProperty Name="abstractDateOld" ColumnName="abstractDateOld" />
+          <ScalarProperty Name="endDateOld" ColumnName="endDateOld" />
+          <ScalarProperty Name="startDateOld" ColumnName="startDateOld" />
+          <ScalarProperty Name="submissionDeadLineDate" ColumnName="submissionDeadLineDate" />
+          <ScalarProperty Name="registrationDate" ColumnName="registrationDate" />
+          <ScalarProperty Name="cameraReadyDate" ColumnName="cameraReadyDate" />
+          <ScalarProperty Name="reviewerTypeID" ColumnName="reviewerTypeID" />
+          <ScalarProperty Name="paperFees" ColumnName="paperFees" />
+          <ScalarProperty Name="email2" ColumnName="email2" />
+          <ScalarProperty Name="jobTitle" ColumnName="jobTitle" />
+          <ScalarProperty Name="contactName" ColumnName="contactName" />
+          <ScalarProperty Name="titleID" ColumnName="titleID" />
+          <ScalarProperty Name="authorID" ColumnName="authorID" />
+          <ScalarProperty Name="notes" ColumnName="notes" />
+          <ScalarProperty Name="paperReviewerCount" ColumnName="paperReviewerCount" />
+          <ScalarProperty Name="namedReviewerCount" ColumnName="namedReviewerCount" />
+          <ScalarProperty Name="acceptedPaperRate" ColumnName="acceptedPaperRate" />
+          <ScalarProperty Name="submittedPaperCount" ColumnName="submittedPaperCount" />
+          <ScalarProperty Name="copyright" ColumnName="copyright" />
+          <ScalarProperty Name="jornalPublications" ColumnName="jornalPublications" />
+          <ScalarProperty Name="conferencePublications" ColumnName="conferencePublications" />
+          <ScalarProperty Name="exibitsCount" ColumnName="exibitsCount" />
+          <ScalarProperty Name="attendanceCount" ColumnName="attendanceCount" />
+          <ScalarProperty Name="paperCategoryID" ColumnName="paperCategoryID" />
+          <ScalarProperty Name="notificationDate" ColumnName="notificationDate" />
+          <ScalarProperty Name="abstractDate" ColumnName="abstractDate" />
+          <ScalarProperty Name="cityName" ColumnName="cityName" />
+          <ScalarProperty Name="keywords" ColumnName="keywords" />
+          <ScalarProperty Name="scope" ColumnName="scope" />
+          <ScalarProperty Name="conferenceAcronym" ColumnName="conferenceAcronym" />
+          <ScalarProperty Name="conferenceID" ColumnName="conferenceID" />
+          <ScalarProperty Name="conferenceAr" ColumnName="conferenceAr" />
+          <ScalarProperty Name="conferenceEn" ColumnName="conferenceEn" />
+          <ScalarProperty Name="countryID" ColumnName="countryID" />
+          <ScalarProperty Name="cityID" ColumnName="cityID" />
+          <ScalarProperty Name="adress" ColumnName="adress" />
+          <ScalarProperty Name="startDate" ColumnName="startDate" />
+          <ScalarProperty Name="endDate" ColumnName="endDate" />
+          <ScalarProperty Name="paperAcceptEndDate" ColumnName="paperAcceptEndDate" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="website" ColumnName="website" />
+          <ScalarProperty Name="phone1" ColumnName="phone1" />
+          <ScalarProperty Name="phone2" ColumnName="phone2" />
+          <ScalarProperty Name="locked" ColumnName="locked" />
+          <ScalarProperty Name="dateEnter" ColumnName="dateEnter" />
+          <ScalarProperty Name="dateUpdate" ColumnName="dateUpdate" />
+          <ScalarProperty Name="userEnterID" ColumnName="userEnterID" />
+          <ScalarProperty Name="userUpdateID" ColumnName="userUpdateID" />
+          <ScalarProperty Name="statusID" ColumnName="statusID" />
+          <ScalarProperty Name="fees" ColumnName="fees" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Countries">
+      <EntityTypeMapping TypeName="IsTypeOf(adlModel.Countries)">
+        <MappingFragment StoreEntitySet="Countries">
+          <ScalarProperty Name="countryID" ColumnName="countryID" />
+          <ScalarProperty Name="countryAr" ColumnName="countryAr" />
+          <ScalarProperty Name="countryEn" ColumnName="countryEn" />
+          <ScalarProperty Name="userID" ColumnName="userID" />
+          <ScalarProperty Name="statusID" ColumnName="statusID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Genders">
+      <EntityTypeMapping TypeName="IsTypeOf(adlModel.Genders)">
+        <MappingFragment StoreEntitySet="Genders">
+          <ScalarProperty Name="genderID" ColumnName="genderID" />
+          <ScalarProperty Name="genderAr" ColumnName="genderAr" />
+          <ScalarProperty Name="genderEn" ColumnName="genderEn" />
+          <ScalarProperty Name="userID" ColumnName="userID" />
+          <ScalarProperty Name="statusID" ColumnName="statusID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="JobBusinesss">
+      <EntityTypeMapping TypeName="IsTypeOf(adlModel.JobBusinesss)">
+        <MappingFragment StoreEntitySet="JobBusinesss">
+          <ScalarProperty Name="jobBusinessID" ColumnName="jobBusinessID" />
+          <ScalarProperty Name="jobBusinessAr" ColumnName="jobBusinessAr" />
+          <ScalarProperty Name="jobBusinessEn" ColumnName="jobBusinessEn" />
+          <ScalarProperty Name="userID" ColumnName="userID" />
+          <ScalarProperty Name="statusID" ColumnName="statusID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="jobFunctions">
+      <EntityTypeMapping TypeName="IsTypeOf(adlModel.jobFunctions)">
+        <MappingFragment StoreEntitySet="jobFunctions">
+          <ScalarProperty Name="jobFunctionID" ColumnName="jobFunctionID" />
+          <ScalarProperty Name="jobFunctionAr" ColumnName="jobFunctionAr" />
+          <ScalarProperty Name="jobFunctionEn" ColumnName="jobFunctionEn" />
+          <ScalarProperty Name="userID" ColumnName="userID" />
+          <ScalarProperty Name="statusID" ColumnName="statusID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="jobResponsibilitys">
+      <EntityTypeMapping TypeName="IsTypeOf(adlModel.jobResponsibilitys)">
+        <MappingFragment StoreEntitySet="jobResponsibilitys">
+          <ScalarProperty Name="jobResponsibilityID" ColumnName="jobResponsibilityID" />
+          <ScalarProperty Name="jobResponsibilityAr" ColumnName="jobResponsibilityAr" />
+          <ScalarProperty Name="jobResponsibilityEn" ColumnName="jobResponsibilityEn" />
+          <ScalarProperty Name="userID" ColumnName="userID" />
+          <ScalarProperty Name="statusID" ColumnName="statusID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="JobTitles">
+      <EntityTypeMapping TypeName="IsTypeOf(adlModel.JobTitles)">
+        <MappingFragment StoreEntitySet="JobTitles">
+          <ScalarProperty Name="jobTitleID" ColumnName="jobTitleID" />
+          <ScalarProperty Name="jobTitleAr" ColumnName="jobTitleAr" />
+          <ScalarProperty Name="jobTitleEn" ColumnName="jobTitleEn" />
+          <ScalarProperty Name="userID" ColumnName="userID" />
+          <ScalarProperty Name="statusID" ColumnName="statusID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="JobTypes">
+      <EntityTypeMapping TypeName="IsTypeOf(adlModel.JobTypes)">
+        <MappingFragment StoreEntitySet="JobTypes">
+          <ScalarProperty Name="jobTypeID" ColumnName="jobTypeID" />
+          <ScalarProperty Name="jobTypeAr" ColumnName="jobTypeAr" />
+          <ScalarProperty Name="jobTypeEn" ColumnName="jobTypeEn" />
+          <ScalarProperty Name="userID" ColumnName="userID" />
+          <ScalarProperty Name="statusID" ColumnName="statusID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Months">
+      <EntityTypeMapping TypeName="IsTypeOf(adlModel.Months)">
+        <MappingFragment StoreEntitySet="Months">
+          <ScalarProperty Name="monthID" ColumnName="monthID" />
+          <ScalarProperty Name="monthAr" ColumnName="monthAr" />
+          <ScalarProperty Name="monthEn" ColumnName="monthEn" />
+          <ScalarProperty Name="userID" ColumnName="userID" />
+          <ScalarProperty Name="statusID" ColumnName="statusID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PaperCategory">
+      <EntityTypeMapping TypeName="IsTypeOf(adlModel.PaperCategory)">
+        <MappingFragment StoreEntitySet="PaperCategory">
+          <ScalarProperty Name="paperCategoryID" ColumnName="paperCategoryID" />
+          <ScalarProperty Name="parentID" ColumnName="parentID" />
+          <ScalarProperty Name="paperCatAr" ColumnName="paperCatAr" />
+          <ScalarProperty Name="paperCatEn" ColumnName="paperCatEn" />
+          <ScalarProperty Name="userID" ColumnName="userID" />
+          <ScalarProperty Name="statusID" ColumnName="statusID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PaperReviewer">
+      <EntityTypeMapping TypeName="IsTypeOf(adlModel.PaperReviewer)">
+        <MappingFragment StoreEntitySet="PaperReviewer">
+          <ScalarProperty Name="needAction" ColumnName="needAction" />
+          <ScalarProperty Name="fileCount" ColumnName="fileCount" />
+          <ScalarProperty Name="paperReviewerID" ColumnName="paperReviewerID" />
+          <ScalarProperty Name="authorID" ColumnName="authorID" />
+          <ScalarProperty Name="paperID" ColumnName="paperID" />
+          <ScalarProperty Name="receiveDate" ColumnName="receiveDate" />
+          <ScalarProperty Name="deliveryDate" ColumnName="deliveryDate" />
+          <ScalarProperty Name="paperStatusID" ColumnName="paperStatusID" />
+          <ScalarProperty Name="notes" ColumnName="notes" />
+          <ScalarProperty Name="dateEnter" ColumnName="dateEnter" />
+          <ScalarProperty Name="dateUpdate" ColumnName="dateUpdate" />
+          <ScalarProperty Name="userEnterID" ColumnName="userEnterID" />
+          <ScalarProperty Name="userUpdateID" ColumnName="userUpdateID" />
+          <ScalarProperty Name="statusID" ColumnName="statusID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Papers">
+      <EntityTypeMapping TypeName="IsTypeOf(adlModel.Papers)">
+        <MappingFragment StoreEntitySet="Papers">
+          <ScalarProperty Name="needAction" ColumnName="needAction" />
+          <ScalarProperty Name="fileCount" ColumnName="fileCount" />
+          <ScalarProperty Name="isPublictaion" ColumnName="isPublictaion" />
+          <ScalarProperty Name="datePublictaion" ColumnName="datePublictaion" />
+          <ScalarProperty Name="isStudent" ColumnName="isStudent" />
+          <ScalarProperty Name="notes" ColumnName="notes" />
+          <ScalarProperty Name="abstractPaper" ColumnName="abstractPaper" />
+          <ScalarProperty Name="phoneAlternate" ColumnName="phoneAlternate" />
+          <ScalarProperty Name="emailAlternate" ColumnName="emailAlternate" />
+          <ScalarProperty Name="keyWords" ColumnName="keyWords" />
+          <ScalarProperty Name="journalDetailID" ColumnName="journalDetailID" />
+          <ScalarProperty Name="paperID" ColumnName="paperID" />
+          <ScalarProperty Name="paperTypeID" ColumnName="paperTypeID" />
+          <ScalarProperty Name="paperCategoryID" ColumnName="paperCategoryID" />
+          <ScalarProperty Name="journalID" ColumnName="journalID" />
+          <ScalarProperty Name="conferenceID" ColumnName="conferenceID" />
+          <ScalarProperty Name="authorID" ColumnName="authorID" />
+          <ScalarProperty Name="paperStatusID" ColumnName="paperStatusID" />
+          <ScalarProperty Name="titleAr" ColumnName="titleAr" />
+          <ScalarProperty Name="titleEn" ColumnName="titleEn" />
+          <ScalarProperty Name="year" ColumnName="year" />
+          <ScalarProperty Name="pageStart" ColumnName="pageStart" />
+          <ScalarProperty Name="pageEnd" ColumnName="pageEnd" />
+          <ScalarProperty Name="locked" ColumnName="locked" />
+          <ScalarProperty Name="dateEnter" ColumnName="dateEnter" />
+          <ScalarProperty Name="dateUpdate" ColumnName="dateUpdate" />
+          <ScalarProperty Name="userEnterID" ColumnName="userEnterID" />
+          <ScalarProperty Name="userUpdateID" ColumnName="userUpdateID" />
+          <ScalarProperty Name="statusID" ColumnName="statusID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PaperStatus">
+      <EntityTypeMapping TypeName="IsTypeOf(adlModel.PaperStatus)">
+        <MappingFragment StoreEntitySet="PaperStatus">
+          <ScalarProperty Name="showReviewer" ColumnName="showReviewer" />
+          <ScalarProperty Name="paperStatusID" ColumnName="paperStatusID" />
+          <ScalarProperty Name="paperStatusAr" ColumnName="paperStatusAr" />
+          <ScalarProperty Name="paperStatusEn" ColumnName="paperStatusEn" />
+          <ScalarProperty Name="userID" ColumnName="userID" />
+          <ScalarProperty Name="statusID" ColumnName="statusID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PaperSubCategory">
+      <EntityTypeMapping TypeName="IsTypeOf(adlModel.PaperSubCategory)">
+        <MappingFragment StoreEntitySet="PaperSubCategory">
+          <ScalarProperty Name="paperCategoryID" ColumnName="paperCategoryID" />
+          <ScalarProperty Name="paperSubCategoryID" ColumnName="paperSubCategoryID" />
+          <ScalarProperty Name="paperSubCategoryAr" ColumnName="paperSubCategoryAr" />
+          <ScalarProperty Name="paperSubCategoryEn" ColumnName="paperSubCategoryEn" />
+          <ScalarProperty Name="userID" ColumnName="userID" />
+          <ScalarProperty Name="statusID" ColumnName="statusID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PaperType">
+      <EntityTypeMapping TypeName="IsTypeOf(adlModel.PaperType)">
+        <MappingFragment StoreEntitySet="PaperType">
+          <ScalarProperty Name="paperTypeID" ColumnName="paperTypeID" />
+          <ScalarProperty Name="paperTypeAr" ColumnName="paperTypeAr" />
+          <ScalarProperty Name="paperTypeEn" ColumnName="paperTypeEn" />
+          <ScalarProperty Name="userID" ColumnName="userID" />
+          <ScalarProperty Name="statusID" ColumnName="statusID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PrivilegeGroup">
+      <EntityTypeMapping TypeName="IsTypeOf(adlModel.PrivilegeGroup)">
+        <MappingFragment StoreEntitySet="PrivilegeGroup">
+          <ScalarProperty Name="privilegeGroupID" ColumnName="privilegeGroupID" />
+          <ScalarProperty Name="privilegeGroupAr" ColumnName="privilegeGroupAr" />
+          <ScalarProperty Name="privilegeGroupEn" ColumnName="privilegeGroupEn" />
+          <ScalarProperty Name="userID" ColumnName="userID" />
+          <ScalarProperty Name="statusID" ColumnName="statusID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="IsTypeOf(adlModel.sysdiagrams)">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Users">
+      <EntityTypeMapping TypeName="IsTypeOf(adlModel.Users)">
+        <MappingFragment StoreEntitySet="Users">
+          <ScalarProperty Name="userID" ColumnName="userID" />
+          <ScalarProperty Name="userName" ColumnName="userName" />
+          <ScalarProperty Name="userPassword" ColumnName="userPassword" />
+          <ScalarProperty Name="privilegeGroupID" ColumnName="privilegeGroupID" />
+          <ScalarProperty Name="statusID" ColumnName="statusID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Years">
+      <EntityTypeMapping TypeName="IsTypeOf(adlModel.Years)">
+        <MappingFragment StoreEntitySet="Years">
+          <ScalarProperty Name="yearID" ColumnName="yearID" />
+          <ScalarProperty Name="yearAr" ColumnName="yearAr" />
+          <ScalarProperty Name="yearEn" ColumnName="yearEn" />
+          <ScalarProperty Name="userID" ColumnName="userID" />
+          <ScalarProperty Name="statusID" ColumnName="statusID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PaperAuthors">
+      <EntityTypeMapping TypeName="IsTypeOf(adlModel.PaperAuthors)">
+        <MappingFragment StoreEntitySet="PaperAuthors">
+          <ScalarProperty Name="jobTitleID" ColumnName="jobTitleID" />
+          <ScalarProperty Name="organization" ColumnName="organization" />
+          <ScalarProperty Name="isContact" ColumnName="isContact" />
+          <ScalarProperty Name="authorPhone" ColumnName="authorPhone" />
+          <ScalarProperty Name="cityName" ColumnName="cityName" />
+          <ScalarProperty Name="paperAuthorID" ColumnName="paperAuthorID" />
+          <ScalarProperty Name="paperID" ColumnName="paperID" />
+          <ScalarProperty Name="authorName" ColumnName="authorName" />
+          <ScalarProperty Name="authorMail" ColumnName="authorMail" />
+          <ScalarProperty Name="authorJobID" ColumnName="authorJobID" />
+          <ScalarProperty Name="countryID" ColumnName="countryID" />
+          <ScalarProperty Name="cityID" ColumnName="cityID" />
+          <ScalarProperty Name="statusID" ColumnName="statusID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ConferenceAddresses">
+      <EntityTypeMapping TypeName="adlModel.ConferenceAddresses">
+        <MappingFragment StoreEntitySet="ConferenceAddresses">
+          <ScalarProperty Name="statusID" ColumnName="statusID" />
+          <ScalarProperty Name="zipCode" ColumnName="zipCode" />
+          <ScalarProperty Name="cityName" ColumnName="cityName" />
+          <ScalarProperty Name="cityID" ColumnName="cityID" />
+          <ScalarProperty Name="countryID" ColumnName="countryID" />
+          <ScalarProperty Name="addressLine4" ColumnName="addressLine4" />
+          <ScalarProperty Name="addressLine3" ColumnName="addressLine3" />
+          <ScalarProperty Name="addressLine2" ColumnName="addressLine2" />
+          <ScalarProperty Name="addressLine1" ColumnName="addressLine1" />
+          <ScalarProperty Name="addressName" ColumnName="addressName" />
+          <ScalarProperty Name="conferenceID" ColumnName="conferenceID" />
+          <ScalarProperty Name="conferenceAddressID" ColumnName="conferenceAddressID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ConferenceContacts">
+      <EntityTypeMapping TypeName="adlModel.ConferenceContacts">
+        <MappingFragment StoreEntitySet="ConferenceContacts">
+          <ScalarProperty Name="conferenceAddressID" ColumnName="conferenceAddressID" />
+          <ScalarProperty Name="Other" ColumnName="Other" />
+          <ScalarProperty Name="technicalProgramChair" ColumnName="technicalProgramChair" />
+          <ScalarProperty Name="publicationChair" ColumnName="publicationChair" />
+          <ScalarProperty Name="conferenceTreasure" ColumnName="conferenceTreasure" />
+          <ScalarProperty Name="conferenceChair" ColumnName="conferenceChair" />
+          <ScalarProperty Name="conferenceSubmitter" ColumnName="conferenceSubmitter" />
+          <ScalarProperty Name="statusID" ColumnName="statusID" />
+          <ScalarProperty Name="phone2" ColumnName="phone2" />
+          <ScalarProperty Name="phone1" ColumnName="phone1" />
+          <ScalarProperty Name="email2" ColumnName="email2" />
+          <ScalarProperty Name="email1" ColumnName="email1" />
+          <ScalarProperty Name="jobTitle" ColumnName="jobTitle" />
+          <ScalarProperty Name="contactName" ColumnName="contactName" />
+          <ScalarProperty Name="contactTypeID" ColumnName="contactTypeID" />
+          <ScalarProperty Name="titleID" ColumnName="titleID" />
+          <ScalarProperty Name="conferenceID" ColumnName="conferenceID" />
+          <ScalarProperty Name="conferenceContactID" ColumnName="conferenceContactID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ConferenceFields">
+      <EntityTypeMapping TypeName="adlModel.ConferenceFields">
+        <MappingFragment StoreEntitySet="ConferenceFields">
+          <ScalarProperty Name="statusID" ColumnName="statusID" />
+          <ScalarProperty Name="paperSubCategoryID" ColumnName="paperSubCategoryID" />
+          <ScalarProperty Name="conferenceID" ColumnName="conferenceID" />
+          <ScalarProperty Name="conferenceFieldID" ColumnName="conferenceFieldID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ContactTypes">
+      <EntityTypeMapping TypeName="adlModel.ContactTypes">
+        <MappingFragment StoreEntitySet="ContactTypes">
+          <ScalarProperty Name="statusID" ColumnName="statusID" />
+          <ScalarProperty Name="contactTypeEn" ColumnName="contactTypeEn" />
+          <ScalarProperty Name="contactTypeAr" ColumnName="contactTypeAr" />
+          <ScalarProperty Name="contactTypeID" ColumnName="contactTypeID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AuthorAddresses">
+      <EntityTypeMapping TypeName="adlModel.AuthorAddresses">
+        <MappingFragment StoreEntitySet="AuthorAddresses">
+          <ScalarProperty Name="statusID" ColumnName="statusID" />
+          <ScalarProperty Name="zipCode" ColumnName="zipCode" />
+          <ScalarProperty Name="cityName" ColumnName="cityName" />
+          <ScalarProperty Name="cityID" ColumnName="cityID" />
+          <ScalarProperty Name="countryID" ColumnName="countryID" />
+          <ScalarProperty Name="addressLine4" ColumnName="addressLine4" />
+          <ScalarProperty Name="addressLine3" ColumnName="addressLine3" />
+          <ScalarProperty Name="addressLine2" ColumnName="addressLine2" />
+          <ScalarProperty Name="addressLine1" ColumnName="addressLine1" />
+          <ScalarProperty Name="addressName" ColumnName="addressName" />
+          <ScalarProperty Name="authorID" ColumnName="authorID" />
+          <ScalarProperty Name="authorAddressID" ColumnName="authorAddressID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AuthorAcademicProgram">
+      <EntityTypeMapping TypeName="adlModel.AuthorAcademicProgram">
+        <MappingFragment StoreEntitySet="AuthorAcademicProgram">
+          <ScalarProperty Name="statusID" ColumnName="statusID" />
+          <ScalarProperty Name="userID" ColumnName="userID" />
+          <ScalarProperty Name="academicProgramEn" ColumnName="academicProgramEn" />
+          <ScalarProperty Name="academicProgramAr" ColumnName="academicProgramAr" />
+          <ScalarProperty Name="academicProgramID" ColumnName="academicProgramID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AuthorDegree">
+      <EntityTypeMapping TypeName="adlModel.AuthorDegree">
+        <MappingFragment StoreEntitySet="AuthorDegree">
+          <ScalarProperty Name="statusID" ColumnName="statusID" />
+          <ScalarProperty Name="userID" ColumnName="userID" />
+          <ScalarProperty Name="degreeEn" ColumnName="degreeEn" />
+          <ScalarProperty Name="degreeAr" ColumnName="degreeAr" />
+          <ScalarProperty Name="degreeID" ColumnName="degreeID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AuthorEducations">
+      <EntityTypeMapping TypeName="adlModel.AuthorEducations">
+        <MappingFragment StoreEntitySet="AuthorEducations">
+          <ScalarProperty Name="statusID" ColumnName="statusID" />
+          <ScalarProperty Name="userID" ColumnName="userID" />
+          <ScalarProperty Name="academicProgramID" ColumnName="academicProgramID" />
+          <ScalarProperty Name="yearID" ColumnName="yearID" />
+          <ScalarProperty Name="monthID" ColumnName="monthID" />
+          <ScalarProperty Name="cityName" ColumnName="cityName" />
+          <ScalarProperty Name="degreeID" ColumnName="degreeID" />
+          <ScalarProperty Name="countryID" ColumnName="countryID" />
+          <ScalarProperty Name="paperSubCategoryID" ColumnName="paperSubCategoryID" />
+          <ScalarProperty Name="paperCategoryID" ColumnName="paperCategoryID" />
+          <ScalarProperty Name="authorEducationEn" ColumnName="authorEducationEn" />
+          <ScalarProperty Name="authorEducationAr" ColumnName="authorEducationAr" />
+          <ScalarProperty Name="authorID" ColumnName="authorID" />
+          <ScalarProperty Name="authorEducationID" ColumnName="authorEducationID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AuthorInterest">
+      <EntityTypeMapping TypeName="adlModel.AuthorInterest">
+        <MappingFragment StoreEntitySet="AuthorInterest">
+          <ScalarProperty Name="statusID" ColumnName="statusID" />
+          <ScalarProperty Name="interestLevelID" ColumnName="interestLevelID" />
+          <ScalarProperty Name="paperSubCategoryID" ColumnName="paperSubCategoryID" />
+          <ScalarProperty Name="paperCategoryID" ColumnName="paperCategoryID" />
+          <ScalarProperty Name="authorID" ColumnName="authorID" />
+          <ScalarProperty Name="authorInterestID" ColumnName="authorInterestID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ConferencesOverview">
+      <EntityTypeMapping TypeName="adlModel.ConferencesOverview">
+        <MappingFragment StoreEntitySet="ConferencesOverview">
+          <ScalarProperty Name="orderID" ColumnName="orderID" />
+          <ScalarProperty Name="statusID" ColumnName="statusID" />
+          <ScalarProperty Name="userID" ColumnName="userID" />
+          <ScalarProperty Name="overviewEn" ColumnName="overviewEn" />
+          <ScalarProperty Name="overvewAr" ColumnName="overvewAr" />
+          <ScalarProperty Name="overviewID" ColumnName="overviewID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="InterestLevel">
+      <EntityTypeMapping TypeName="adlModel.InterestLevel">
+        <MappingFragment StoreEntitySet="InterestLevel">
+          <ScalarProperty Name="statusID" ColumnName="statusID" />
+          <ScalarProperty Name="interestLevelEn" ColumnName="interestLevelEn" />
+          <ScalarProperty Name="interestLevelAr" ColumnName="interestLevelAr" />
+          <ScalarProperty Name="interestLevelID" ColumnName="interestLevelID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Title">
+      <EntityTypeMapping TypeName="adlModel.Title">
+        <MappingFragment StoreEntitySet="Title">
+          <ScalarProperty Name="statusID" ColumnName="statusID" />
+          <ScalarProperty Name="userID" ColumnName="userID" />
+          <ScalarProperty Name="titleEn" ColumnName="titleEn" />
+          <ScalarProperty Name="titleAr" ColumnName="titleAr" />
+          <ScalarProperty Name="titleID" ColumnName="titleID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="JournalDetails">
+      <EntityTypeMapping TypeName="adlModel.JournalDetails">
+        <MappingFragment StoreEntitySet="JournalDetails">
+          <ScalarProperty Name="havePdf" ColumnName="havePdf" />
+          <ScalarProperty Name="journalID" ColumnName="journalID" />
+          <ScalarProperty Name="isCurrent" ColumnName="isCurrent" />
+          <ScalarProperty Name="locked" ColumnName="locked" />
+          <ScalarProperty Name="userUpdateID" ColumnName="userUpdateID" />
+          <ScalarProperty Name="userEnterID" ColumnName="userEnterID" />
+          <ScalarProperty Name="dateUpdate" ColumnName="dateUpdate" />
+          <ScalarProperty Name="dateEnter" ColumnName="dateEnter" />
+          <ScalarProperty Name="statusID" ColumnName="statusID" />
+          <ScalarProperty Name="yearID" ColumnName="yearID" />
+          <ScalarProperty Name="fees" ColumnName="fees" />
+          <ScalarProperty Name="issue" ColumnName="issue" />
+          <ScalarProperty Name="volume" ColumnName="volume" />
+          <ScalarProperty Name="journalDetailID" ColumnName="journalDetailID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Journals">
+      <EntityTypeMapping TypeName="adlModel.Journals">
+        <MappingFragment StoreEntitySet="Journals">
+          <ScalarProperty Name="reviewerTypeID" ColumnName="reviewerTypeID" />
+          <ScalarProperty Name="issueCount" ColumnName="issueCount" />
+          <ScalarProperty Name="pagesCount" ColumnName="pagesCount" />
+          <ScalarProperty Name="cssFile" ColumnName="cssFile" />
+          <ScalarProperty Name="havePdf" ColumnName="havePdf" />
+          <ScalarProperty Name="paperCategoryID" ColumnName="paperCategoryID" />
+          <ScalarProperty Name="aimsScope" ColumnName="aimsScope" />
+          <ScalarProperty Name="managingOfficer" ColumnName="managingOfficer" />
+          <ScalarProperty Name="journalsOwner" ColumnName="journalsOwner" />
+          <ScalarProperty Name="issnPrint" ColumnName="issnPrint" />
+          <ScalarProperty Name="issnOnline" ColumnName="issnOnline" />
+          <ScalarProperty Name="statusID" ColumnName="statusID" />
+          <ScalarProperty Name="userUpdateID" ColumnName="userUpdateID" />
+          <ScalarProperty Name="userEnterID" ColumnName="userEnterID" />
+          <ScalarProperty Name="dateUpdate" ColumnName="dateUpdate" />
+          <ScalarProperty Name="dateEnter" ColumnName="dateEnter" />
+          <ScalarProperty Name="locked" ColumnName="locked" />
+          <ScalarProperty Name="phone2" ColumnName="phone2" />
+          <ScalarProperty Name="phone1" ColumnName="phone1" />
+          <ScalarProperty Name="website" ColumnName="website" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="adress" ColumnName="adress" />
+          <ScalarProperty Name="cityName" ColumnName="cityName" />
+          <ScalarProperty Name="cityID" ColumnName="cityID" />
+          <ScalarProperty Name="countryID" ColumnName="countryID" />
+          <ScalarProperty Name="journalSubTitle" ColumnName="journalSubTitle" />
+          <ScalarProperty Name="firstLetters" ColumnName="firstLetters" />
+          <ScalarProperty Name="journalEn" ColumnName="journalEn" />
+          <ScalarProperty Name="journalAr" ColumnName="journalAr" />
+          <ScalarProperty Name="journalID" ColumnName="journalID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="JournalAbout">
+      <EntityTypeMapping TypeName="adlModel.JournalAbout">
+        <MappingFragment StoreEntitySet="JournalAbout">
+          <ScalarProperty Name="statusID" ColumnName="statusID" />
+          <ScalarProperty Name="userID" ColumnName="userID" />
+          <ScalarProperty Name="pargraphEn" ColumnName="pargraphEn" />
+          <ScalarProperty Name="pargraphAr" ColumnName="pargraphAr" />
+          <ScalarProperty Name="titleEn" ColumnName="titleEn" />
+          <ScalarProperty Name="titleAr" ColumnName="titleAr" />
+          <ScalarProperty Name="journalID" ColumnName="journalID" />
+          <ScalarProperty Name="journalAboutID" ColumnName="journalAboutID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="JournalAimsScope">
+      <EntityTypeMapping TypeName="adlModel.JournalAimsScope">
+        <MappingFragment StoreEntitySet="JournalAimsScope">
+          <ScalarProperty Name="statusID" ColumnName="statusID" />
+          <ScalarProperty Name="userID" ColumnName="userID" />
+          <ScalarProperty Name="pargraphEn" ColumnName="pargraphEn" />
+          <ScalarProperty Name="pargraphAr" ColumnName="pargraphAr" />
+          <ScalarProperty Name="journalID" ColumnName="journalID" />
+          <ScalarProperty Name="journalAimsScopeID" ColumnName="journalAimsScopeID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="JournalEditorialBoard">
+      <EntityTypeMapping TypeName="adlModel.JournalEditorialBoard">
+        <MappingFragment StoreEntitySet="JournalEditorialBoard">
+          <ScalarProperty Name="statusID" ColumnName="statusID" />
+          <ScalarProperty Name="userID" ColumnName="userID" />
+          <ScalarProperty Name="pargraphEn" ColumnName="pargraphEn" />
+          <ScalarProperty Name="pargraphAr" ColumnName="pargraphAr" />
+          <ScalarProperty Name="journalEditorialTypeID" ColumnName="journalEditorialTypeID" />
+          <ScalarProperty Name="journalID" ColumnName="journalID" />
+          <ScalarProperty Name="journalEditorialBoardID" ColumnName="journalEditorialBoardID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="JournalEditorialType">
+      <EntityTypeMapping TypeName="adlModel.JournalEditorialType">
+        <MappingFragment StoreEntitySet="JournalEditorialType">
+          <ScalarProperty Name="statusID" ColumnName="statusID" />
+          <ScalarProperty Name="editorialTypeEn" ColumnName="editorialTypeEn" />
+          <ScalarProperty Name="editorialTypeAr" ColumnName="editorialTypeAr" />
+          <ScalarProperty Name="journalEditorialTypeID" ColumnName="journalEditorialTypeID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="JournalImpactFactor">
+      <EntityTypeMapping TypeName="adlModel.JournalImpactFactor">
+        <MappingFragment StoreEntitySet="JournalImpactFactor">
+          <ScalarProperty Name="statusID" ColumnName="statusID" />
+          <ScalarProperty Name="pargraphEn" ColumnName="pargraphEn" />
+          <ScalarProperty Name="pargraphAr" ColumnName="pargraphAr" />
+          <ScalarProperty Name="journalID" ColumnName="journalID" />
+          <ScalarProperty Name="journalImpactFactorID" ColumnName="journalImpactFactorID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="JournalIndexing">
+      <EntityTypeMapping TypeName="adlModel.JournalIndexing">
+        <MappingFragment StoreEntitySet="JournalIndexing">
+          <ScalarProperty Name="statusID" ColumnName="statusID" />
+          <ScalarProperty Name="pargraphEn" ColumnName="pargraphEn" />
+          <ScalarProperty Name="pargraphAr" ColumnName="pargraphAr" />
+          <ScalarProperty Name="journalID" ColumnName="journalID" />
+          <ScalarProperty Name="journalIndexingID" ColumnName="journalIndexingID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="JournalPaperArchive">
+      <EntityTypeMapping TypeName="adlModel.JournalPaperArchive">
+        <MappingFragment StoreEntitySet="JournalPaperArchive">
+          <ScalarProperty Name="statusID" ColumnName="statusID" />
+          <ScalarProperty Name="pargraphEn" ColumnName="pargraphEn" />
+          <ScalarProperty Name="pargraphAr" ColumnName="pargraphAr" />
+          <ScalarProperty Name="journalID" ColumnName="journalID" />
+          <ScalarProperty Name="journalPaperArchiveID" ColumnName="journalPaperArchiveID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="JournalFields">
+      <EntityTypeMapping TypeName="adlModel.JournalFields">
+        <MappingFragment StoreEntitySet="JournalFields">
+          <ScalarProperty Name="statusID" ColumnName="statusID" />
+          <ScalarProperty Name="paperSubCategoryID" ColumnName="paperSubCategoryID" />
+          <ScalarProperty Name="journalID" ColumnName="journalID" />
+          <ScalarProperty Name="journalFieldID" ColumnName="journalFieldID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PaperAbstract">
+      <EntityTypeMapping TypeName="adlModel.PaperAbstract">
+        <MappingFragment StoreEntitySet="PaperAbstract">
+          <ScalarProperty Name="abstractPaper" ColumnName="abstractPaper" />
+          <ScalarProperty Name="notes" ColumnName="notes" />
+          <ScalarProperty Name="paperID" ColumnName="paperID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PaperFields">
+      <EntityTypeMapping TypeName="adlModel.PaperFields">
+        <MappingFragment StoreEntitySet="PaperFields">
+          <ScalarProperty Name="statusID" ColumnName="statusID" />
+          <ScalarProperty Name="paperSubCategoryID" ColumnName="paperSubCategoryID" />
+          <ScalarProperty Name="paperID" ColumnName="paperID" />
+          <ScalarProperty Name="paperFieldID" ColumnName="paperFieldID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ConferenceCommittees">
+      <EntityTypeMapping TypeName="adlModel.ConferenceCommittees">
+        <MappingFragment StoreEntitySet="ConferenceCommittees">
+          <ScalarProperty Name="statusID" ColumnName="statusID" />
+          <ScalarProperty Name="phone1" ColumnName="phone1" />
+          <ScalarProperty Name="email1" ColumnName="email1" />
+          <ScalarProperty Name="jobTitle" ColumnName="jobTitle" />
+          <ScalarProperty Name="university" ColumnName="university" />
+          <ScalarProperty Name="countryID" ColumnName="countryID" />
+          <ScalarProperty Name="personName" ColumnName="personName" />
+          <ScalarProperty Name="titleID" ColumnName="titleID" />
+          <ScalarProperty Name="programCommiteeID" ColumnName="programCommiteeID" />
+          <ScalarProperty Name="conferenceID" ColumnName="conferenceID" />
+          <ScalarProperty Name="conferenceCommitteeID" ColumnName="conferenceCommitteeID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OtherConferences">
+      <EntityTypeMapping TypeName="adlModel.OtherConferences">
+        <MappingFragment StoreEntitySet="OtherConferences">
+          <ScalarProperty Name="statusID" ColumnName="statusID" />
+          <ScalarProperty Name="otherConfDate" ColumnName="otherConfDate" />
+          <ScalarProperty Name="countryID" ColumnName="countryID" />
+          <ScalarProperty Name="otherConfUrl" ColumnName="otherConfUrl" />
+          <ScalarProperty Name="otherConfIntials" ColumnName="otherConfIntials" />
+          <ScalarProperty Name="otherConfNameEn" ColumnName="otherConfNameEn" />
+          <ScalarProperty Name="otherConfNameAr" ColumnName="otherConfNameAr" />
+          <ScalarProperty Name="conferenceID" ColumnName="conferenceID" />
+          <ScalarProperty Name="otherConferenceID" ColumnName="otherConferenceID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OtherLinks">
+      <EntityTypeMapping TypeName="adlModel.OtherLinks">
+        <MappingFragment StoreEntitySet="OtherLinks">
+          <ScalarProperty Name="statusID" ColumnName="statusID" />
+          <ScalarProperty Name="LinkUrl" ColumnName="LinkUrl" />
+          <ScalarProperty Name="linkNameEn" ColumnName="linkNameEn" />
+          <ScalarProperty Name="linkNameAr" ColumnName="linkNameAr" />
+          <ScalarProperty Name="conferenceID" ColumnName="conferenceID" />
+          <ScalarProperty Name="otherLinkID" ColumnName="otherLinkID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProgramCommitees">
+      <EntityTypeMapping TypeName="adlModel.ProgramCommitees">
+        <MappingFragment StoreEntitySet="ProgramCommitees">
+          <ScalarProperty Name="statusID" ColumnName="statusID" />
+          <ScalarProperty Name="programCommiteeEn" ColumnName="programCommiteeEn" />
+          <ScalarProperty Name="programCommiteeAr" ColumnName="programCommiteeAr" />
+          <ScalarProperty Name="programCommiteeID" ColumnName="programCommiteeID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ReviewerTypes">
+      <EntityTypeMapping TypeName="adlModel.ReviewerTypes">
+        <MappingFragment StoreEntitySet="ReviewerTypes">
+          <ScalarProperty Name="statusID" ColumnName="statusID" />
+          <ScalarProperty Name="reviewerTypeEn" ColumnName="reviewerTypeEn" />
+          <ScalarProperty Name="reviewerTypeAr" ColumnName="reviewerTypeAr" />
+          <ScalarProperty Name="reviewerTypeID" ColumnName="reviewerTypeID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SocialMedia">
+      <EntityTypeMapping TypeName="adlModel.SocialMedia">
+        <MappingFragment StoreEntitySet="SocialMedia">
+          <ScalarProperty Name="statusID" ColumnName="statusID" />
+          <ScalarProperty Name="socialMediaEn" ColumnName="socialMediaEn" />
+          <ScalarProperty Name="socialMediaAr" ColumnName="socialMediaAr" />
+          <ScalarProperty Name="socialMediaID" ColumnName="socialMediaID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Currencies">
+      <EntityTypeMapping TypeName="adlModel.Currencies">
+        <MappingFragment StoreEntitySet="Currencies">
+          <ScalarProperty Name="currencyEn" ColumnName="currencyEn" />
+          <ScalarProperty Name="currencyAr" ColumnName="currencyAr" />
+          <ScalarProperty Name="currencyID" ColumnName="currencyID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FAQ">
+      <EntityTypeMapping TypeName="adlModel.FAQ">
+        <MappingFragment StoreEntitySet="FAQ">
+          <ScalarProperty Name="statusID" ColumnName="statusID" />
+          <ScalarProperty Name="userID" ColumnName="userID" />
+          <ScalarProperty Name="answerEn" ColumnName="answerEn" />
+          <ScalarProperty Name="answerAr" ColumnName="answerAr" />
+          <ScalarProperty Name="questionEn" ColumnName="questionEn" />
+          <ScalarProperty Name="questionAr" ColumnName="questionAr" />
+          <ScalarProperty Name="faqID" ColumnName="faqID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="GetPaperReviewer" FunctionName="adlModel.Store.GetPaperReviewer">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="adlModel.GetPaperReviewer_Result2">
+          <ScalarProperty Name="titleEn" ColumnName="titleEn" />
+          <ScalarProperty Name="titleAr" ColumnName="titleAr" />
+          <ScalarProperty Name="paperID" ColumnName="paperID" />
+          <ScalarProperty Name="authorID" ColumnName="authorID" />
+          <ScalarProperty Name="authorNameAr" ColumnName="authorNameAr" />
+          <ScalarProperty Name="authorNameEn" ColumnName="authorNameEn" />
+          <ScalarProperty Name="conferenceID" ColumnName="conferenceID" />
+          <ScalarProperty Name="journalID" ColumnName="journalID" />
+          <ScalarProperty Name="conferenceEn" ColumnName="conferenceEn" />
+          <ScalarProperty Name="conferenceAr" ColumnName="conferenceAr" />
+          <ScalarProperty Name="journalAr" ColumnName="journalAr" />
+          <ScalarProperty Name="journalEn" ColumnName="journalEn" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="alternateEmail" ColumnName="alternateEmail" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <EntitySetMapping Name="ConferenceFees">
+      <EntityTypeMapping TypeName="adlModel.ConferenceFees">
+        <MappingFragment StoreEntitySet="ConferenceFees">
+          <ScalarProperty Name="statusID" ColumnName="statusID" />
+          <ScalarProperty Name="notes" ColumnName="notes" />
+          <ScalarProperty Name="value" ColumnName="value" />
+          <ScalarProperty Name="feesID" ColumnName="feesID" />
+          <ScalarProperty Name="conferenceID" ColumnName="conferenceID" />
+          <ScalarProperty Name="conferenceFeesID" ColumnName="conferenceFeesID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ConferenceSocials">
+      <EntityTypeMapping TypeName="adlModel.ConferenceSocials">
+        <MappingFragment StoreEntitySet="ConferenceSocials">
+          <ScalarProperty Name="statusID" ColumnName="statusID" />
+          <ScalarProperty Name="active" ColumnName="active" />
+          <ScalarProperty Name="socialUrl" ColumnName="socialUrl" />
+          <ScalarProperty Name="socialMediaID" ColumnName="socialMediaID" />
+          <ScalarProperty Name="conferenceID" ColumnName="conferenceID" />
+          <ScalarProperty Name="conferenceSocialID" ColumnName="conferenceSocialID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Fees">
+      <EntityTypeMapping TypeName="adlModel.Fees">
+        <MappingFragment StoreEntitySet="Fees">
+          <ScalarProperty Name="statusID" ColumnName="statusID" />
+          <ScalarProperty Name="feesEn" ColumnName="feesEn" />
+          <ScalarProperty Name="feesAr" ColumnName="feesAr" />
+          <ScalarProperty Name="feesID" ColumnName="feesID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,258 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="btnActive" xml:space="preserve">
+    <value>تفعيل</value>
+  </data>
+  <data name="btnClose" xml:space="preserve">
+    <value>إغلاق</value>
+  </data>
+  <data name="btnDelete" xml:space="preserve">
+    <value>حذف</value>
+  </data>
+  <data name="btnDone" xml:space="preserve">
+    <value>تمت</value>
+  </data>
+  <data name="btnEdit" xml:space="preserve">
+    <value>تعديل</value>
+  </data>
+  <data name="btnIgnore" xml:space="preserve">
+    <value>تجاهل</value>
+  </data>
+  <data name="btnNew" xml:space="preserve">
+    <value>جديد </value>
+  </data>
+  <data name="btnPause" xml:space="preserve">
+    <value>ايقاف مؤقت</value>
+  </data>
+  <data name="btnRestore" xml:space="preserve">
+    <value>استعادة</value>
+  </data>
+  <data name="btnSave" xml:space="preserve">
+    <value>حفظ</value>
+  </data>
+  <data name="btnSubmit" xml:space="preserve">
+    <value>بحث</value>
+  </data>
+  <data name="btnView" xml:space="preserve">
+    <value>عرض</value>
+  </data>
+  <data name="companyName" xml:space="preserve">
+    <value>شركة انجز للخدمات العقارية</value>
+  </data>
+  <data name="contactUs" xml:space="preserve">
+    <value>اتصل بنا</value>
+  </data>
+  <data name="count" xml:space="preserve">
+    <value>Count</value>
+  </data>
+  <data name="drpSelect" xml:space="preserve">
+    <value>-- اختر --</value>
+  </data>
+  <data name="errorLogin" xml:space="preserve">
+    <value>يجب تسجيل الدخول للحصول على هذه الخدمة</value>
+  </data>
+  <data name="erroWhenSave" xml:space="preserve">
+    <value>خطأ اثناء الحفظ</value>
+  </data>
+  <data name="islogin" xml:space="preserve">
+    <value>تم الدخول بنجاح </value>
+  </data>
+  <data name="msgEmpty" xml:space="preserve">
+    <value>استكمل البيانات وحاول مرة اخرى</value>
+  </data>
+  <data name="saveOk" xml:space="preserve">
+    <value>تم الحفظ بنجاح </value>
+  </data>
+  <data name="selectItem" xml:space="preserve">
+    <value>اختر</value>
+  </data>
+  <data name="te2" xml:space="preserve">
+    <value>988888</value>
+  </data>
+  <data name="tel1" xml:space="preserve">
+    <value>268555555</value>
+  </data>
+  <data name="webFooter" xml:space="preserve">
+    <value>جميع الحقوق محفوظة للمكتبة الرقمية</value>
+  </data>
+  <data name="webHeader" xml:space="preserve">
+    <value>المكتبة الرقمية الأكاديمية</value>
+  </data>
+  <data name="noData" xml:space="preserve">
+    <value>لاتوجد بيانات</value>
+  </data>
+  <data name="rowActive" xml:space="preserve">
+    <value>فعال</value>
+  </data>
+  <data name="rowClose" xml:space="preserve">
+    <value>مغلق</value>
+  </data>
+  <data name="rowLocked" xml:space="preserve">
+    <value>مقفل</value>
+  </data>
+  <data name="rowUnLocked" xml:space="preserve">
+    <value>متاح</value>
+  </data>
+  <data name="webSite" xml:space="preserve">
+    <value>الموقع</value>
+  </data>
+  <data name="rowCurrent" xml:space="preserve">
+    <value>الإصدار الحالي</value>
+  </data>
+  <data name="rowNoCurrent" xml:space="preserve">
+    <value>Not Current</value>
+  </data>
+  <data name="back" xml:space="preserve">
+    <value>رجوع</value>
+  </data>
+  <data name="webFooterJournal" xml:space="preserve">
+    <value>جميع الحقوق محفوظة للمكتبة الرقمية</value>
+  </data>
+  <data name="webHeaderJournal" xml:space="preserve">
+    <value>المكتبة الرقمية الأكاديمية</value>
+  </data>
+  <data name="downloadPdf" xml:space="preserve">
+    <value>تحميل الملف</value>
+  </data>
+  <data name="uploadPDFFile" xml:space="preserve">
+    <value>رفع ملف PDF</value>
+  </data>
+  <data name="docFormatHint" xml:space="preserve">
+    <value>يجب أن تكون الملفات بصيغة .docx</value>
+  </data>
+  <data name="imgFormatHint" xml:space="preserve">
+    <value>يجب أن تكون الملفات بصيغة .jpg</value>
+  </data>
+  <data name="pdfFormatHint" xml:space="preserve">
+    <value>يجب أن تكون الملفات بصيغة .pdf</value>
+  </data>
+  <data name="AuthorBtnNew" xml:space="preserve">
+    <value>بحث جديد</value>
+  </data>
+  <data name="confirmDelete" xml:space="preserve">
+    <value>confirmDelete</value>
+  </data>
+  <data name="status0" xml:space="preserve">
+    <value>محذوف</value>
+  </data>
+  <data name="status1" xml:space="preserve">
+    <value>فعال</value>
+  </data>
+</root>

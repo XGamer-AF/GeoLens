@@ -1,0 +1,108 @@
+﻿@using Data.ViewModel;
+@using DataLayer;
+@using System.Net.Http;
+
+@using System.Web.Helpers;
+
+@model AboutUSAddViewModel
+@using (Html.BeginForm("AboutUSAddEdit", "AboutUS", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    @Html.AntiForgeryToken()
+    <div class="form-horizontal">
+
+        @Html.ValidationSummary(true)
+
+        @Html.HiddenFor(x => x.aboutUS.aboutID)
+        @if (Model.aboutUS != null)
+        {
+
+            @Html.HiddenFor(model => model.aboutUS.statusID)
+
+        }
+
+
+
+
+        <div class="form-group">
+            <label>
+                @MasterWebApp.Resource.AboutUS.aboutText
+
+
+            </label>
+
+            @Html.TextAreaFor(model => model.aboutUS.aboutText, new { @class = "form-control" })
+            @Html.ValidationMessageFor(model => model.aboutUS.aboutText)
+
+        </div>
+
+        <div class="form-group">
+            <label>
+                @MasterWebApp.Resource.AboutUS.aboutTextEn
+
+
+            </label>
+
+            @Html.TextAreaFor(model => model.aboutUS.aboutTextEn, new { @class = "form-control" })
+            @Html.ValidationMessageFor(model => model.aboutUS.aboutTextEn)
+
+        </div>
+
+
+        @{
+        string fileName = "";
+        string filePath = "";
+        string fullName = "";
+       
+        if (Model.aboutUS.aboutID != 0)
+        {
+            
+            fileName = "AU" + Model.aboutUS.aboutID + ".jpg";
+            filePath = ImagesServices.getImagePath() + "AboutUS/";
+            
+
+            if (ImagesServices.fileExists((filePath + fileName)))
+            {
+                fullName = filePath + fileName;
+               
+            }
+            else
+            {
+                fullName = filePath + "noImage.jpg";
+               
+            }
+
+
+
+        }
+        else
+        {
+            fullName = filePath + "noImage.jpg";
+          
+        }
+
+
+        string query = string.Format(GlobalVariable.httpBase + "AImages?folder={0}&imageName={1}", "AboutUS", fileName);
+        
+        
+        }
+
+        <div class="form-group col-md-12 col-xs-12">
+            <img src="@query" alt="NoImage" width="100" height="100" class="img-rounded" />
+            <div class="form-group">
+                <label>
+                    اختر الصورة يفضل 100× 100
+                </label>
+                <input type="file" name="file" accept=".jpg, .png, .gif" />
+
+            </div>
+
+        </div>
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value=@MasterWebApp.Resource.CommonMessage.btnSave
+                       class="btn btn-primary" />
+            </div>
+        </div>
+    </div>
+}
+

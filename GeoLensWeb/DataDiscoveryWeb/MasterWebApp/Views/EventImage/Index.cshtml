@@ -1,0 +1,55 @@
+﻿
+@using Data.ViewModel;
+@using DataLayer;
+@using PagedList
+@using PagedList.Mvc;
+@model EventImageAddViewModel
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container">
+    <div class="card border-dark">
+        <div class="card-header bg-dark text-white">
+            <div class="d-flex justify-content-between">
+                <span class="center_line">
+                    @ViewBag.eventName
+                </span>
+
+                <span >
+                    <a href="@Url.Action("Index", "EventInfo")" class="btn btn_card">
+
+                        <i class="fa fa-list-alt"></i>
+                        @MasterWebApp.Resource.EventInfo.title
+                    </a>
+
+                </span>
+            </div>
+
+        </div>
+        <div class="card-body">
+
+
+            <div style=" clear:both;border-top:1px solid rgba(220, 220, 220, 0.76); padding-top:20px;">
+
+                
+
+                <div class="form-group col-lg-12 col-12">
+                    @Html.Partial("_EventImageAddEdit")
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+
+</div>
+
+
+<hr />
+
+
+

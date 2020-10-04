@@ -1,0 +1,85 @@
+﻿@using Data.ViewModel;
+@using DataLayer;
+
+
+@model CitiesAddViewModel
+@using (Html.BeginForm("CitiesAddEdit", "Cities", FormMethod.Post))
+{
+    @Html.AntiForgeryToken()
+    <div class="form-horizontal">
+
+        @Html.ValidationSummary(true)
+
+        @Html.HiddenFor(x => x.Cities.cityID)
+
+        @if (Model.Cities != null)
+        {
+
+            @Html.HiddenFor(model => model.Cities.statusID)
+
+        }
+        
+        @Html.HiddenFor(s=> s.parentID)
+        <div class="form-group">
+            <label>
+                @MasterWebApp.Resource.Cities.countryID
+            </label>
+
+            @Html.DropDownListFor(s=> s.Cities.countryID, (SelectList)ViewBag.CountriesV,new { @class = "form-control col-12" })
+            @Html.ValidationMessageFor(model => model.Cities.countryID)
+
+        </div>
+
+
+        <div class="form-group">
+            <label>
+                @MasterWebApp.Resource.Cities.cityNameAr
+            </label>
+
+            @Html.TextBoxFor(model => model.Cities.cityNameAr, new { @class = "form-control col-12" })
+            @Html.ValidationMessageFor(model => model.Cities.cityNameAr)
+
+        </div>
+
+        <div class="form-group">
+            <label>
+                @MasterWebApp.Resource.Cities.cityNameEn
+            </label>
+
+            @Html.TextBoxFor(model => model.Cities.cityNameEn, new { @class = "form-control col-12" })
+            @Html.ValidationMessageFor(model => model.Cities.cityNameEn)
+
+        </div>
+
+        <div class="form-group">
+            <label>
+                @MasterWebApp.Resource.Cities.parentID
+            </label>
+
+            @Html.DropDownListFor(s => s.Cities.parentID, (SelectList)ViewBag.CitiesV, MasterWebApp.Resource.CommonMessage.selectItem,new { @class = "form-control col-12" })
+            @Html.ValidationMessageFor(model => model.Cities.parentID)
+
+        </div>
+        <div class="form-group">
+            <label>
+                @MasterWebApp.Resource.Cities.deliveryCost
+            </label>
+
+            @Html.TextBoxFor(model => model.Cities.deliveryCost, new { @class = "form-control col-12" })
+            @Html.ValidationMessageFor(model => model.Cities.deliveryCost)
+
+        </div>
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <button  type="submit" 
+                       class="btn btn-primary">
+
+                    <i class="far fa-save"></i>
+                    @MasterWebApp.Resource.CommonMessage.btnSave
+                    </button>
+                
+            </div>
+        </div>
+    </div>
+}
+

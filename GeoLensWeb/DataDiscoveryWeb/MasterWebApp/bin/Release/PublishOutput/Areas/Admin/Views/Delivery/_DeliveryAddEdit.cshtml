@@ -1,0 +1,119 @@
+﻿@using Data.ViewModel;
+@using DataLayer;
+
+
+@model DeliveryAddViewModel
+@using (Html.BeginForm("DeliveryAddEdit", "Delivery", FormMethod.Post))
+{
+    @Html.AntiForgeryToken()
+    <div class="form-horizontal">
+
+        @Html.ValidationSummary(true)
+
+        @Html.HiddenFor(x => x.Delivery.deliveryID)
+
+        @if (Model.Delivery != null)
+        {
+
+            @Html.HiddenFor(model => model.Delivery.statusID)
+
+        }
+
+
+
+
+        <div class="form-group">
+            <label>
+                @MasterWebApp.Resource.Delivery.deliveryName
+            </label>
+
+            @Html.TextBoxFor(model => model.Delivery.deliveryName, new { @class = "form-control col-12" })
+            @Html.ValidationMessageFor(model => model.Delivery.deliveryName)
+
+        </div>
+
+        <div class="form-group ">
+            <label>
+                @MasterWebApp.Resource.Delivery.companyID
+            </label>
+
+            @Html.DropDownListFor(model => model.Delivery.companyID, (SelectList)ViewBag.CompaniesV, MasterWebApp.Resource.CommonMessage.selectItem, new { @class = "form-control col-12" })
+            @Html.ValidationMessageFor(model => model.Delivery.companyID)
+
+        </div>
+        <div class="form-group ">
+            <label>
+                @MasterWebApp.Resource.Delivery.branchID
+            </label>
+
+            @Html.DropDownListFor(model => model.Delivery.branchID, (SelectList)ViewBag.BranchesV, MasterWebApp.Resource.CommonMessage.selectItem, new { @class = "form-control col-12" })
+            @Html.ValidationMessageFor(model => model.Delivery.branchID)
+
+        </div>
+
+
+
+        <div class="form-row">
+
+            <div class="form-group col-lg-6 col-12 ">
+                <label>
+                    @MasterWebApp.Resource.Delivery.tel1
+                </label>
+
+                @Html.TextBoxFor(model => model.Delivery.tel1, new { @class = "form-control col-12" })
+                @Html.ValidationMessageFor(model => model.Delivery.tel1)
+
+            </div>
+
+            <div class="form-group col-lg-6 col-12 ">
+                <label>
+                    @MasterWebApp.Resource.Delivery.tel2
+                </label>
+
+                @Html.TextBoxFor(model => model.Delivery.tel2, new { @class = "form-control col-12" })
+                @Html.ValidationMessageFor(model => model.Delivery.tel2)
+
+            </div>
+
+        </div>
+
+
+        <div class="form-group">
+            <label>
+                @MasterWebApp.Resource.Delivery.civilID
+            </label>
+
+            @Html.TextBoxFor(model => model.Delivery.civilID, new { @class = "form-control col-12" })
+            @Html.ValidationMessageFor(model => model.Delivery.civilID)
+
+        </div>
+
+
+
+
+        <div class="form-group">
+            <label>
+                @MasterWebApp.Resource.Delivery.address
+            </label>
+
+            @Html.TextBoxFor(model => model.Delivery.address, new { @class = "form-control col-12" })
+            @Html.ValidationMessageFor(model => model.Delivery.address)
+
+        </div>
+
+
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <button type="submit"
+                        class="btn btn-primary">
+
+                    <i class="far fa-save"></i>
+                    @MasterWebApp.Resource.CommonMessage.btnSave
+                </button>
+
+            </div>
+        </div>
+    </div>
+}
+

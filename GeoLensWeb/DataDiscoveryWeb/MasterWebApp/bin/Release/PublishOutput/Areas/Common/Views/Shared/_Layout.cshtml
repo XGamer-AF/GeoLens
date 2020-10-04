@@ -1,0 +1,693 @@
+﻿@using DataLayer;
+@using System.Globalization;
+@using System.Resources;
+
+<!DOCTYPE html>
+<html dir="@(FunServices.getLang("dir"))">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+    <link href="~/Content/alertifyjs/alertify.min.css" rel="stylesheet" />
+    <script src="~/Scripts/alertify.min.js"></script>
+    <link href="~/Content/Site.css" rel="stylesheet" />
+    <link href="~/Content/jquery-ui.min.css" rel="stylesheet" />
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    @*<script src="~/Scripts/jquery-3.0.0.js"></script>*@
+    <script src="~/Scripts/jquery-ui-1.11.4.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+    <style>
+        .navbar-nav > li { float:none;  }
+        .navbar-nav > li > img {   display:none;  }
+
+        @@media (min-width: 768px) {
+        .navbar-nav > li { float: @FunServices.getLang("float");  }
+        .navbar-nav > li > img {   display:block;  }
+        }
+
+        .ui-front { z-index: 1500 !important; }
+
+        .dropdown-menu > li > a {
+        display: block;
+        padding: 3px 20px;
+        clear: both;
+        font-weight: normal;
+        line-height: 1.42857143;
+        color: #333;
+        white-space: nowrap;
+        text-align:@FunServices.getLang("float") ;
+        }
+
+
+        .col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12
+        {
+            float: @FunServices.getLang("float") ;
+        }
+
+    </style>
+
+    @*<title>@ViewBag.Title</title>*@
+    <title>  Adl</title>
+    @*@Styles.Render("~/Content/css")
+        @Scripts.Render("~/bundles/modernizr")*@
+</head>
+<body dir="@(FunServices.getLang("dir"))" style="background-color:#c0cfd2 ">
+
+    <div class="container  p-0">
+        <div id="MainHeader" class="d-flex  justify-content-between p-2">
+            <div class="col-8  " id="mainLogo">
+                <img src="~/Images/alllogo.png" />
+            </div>
+            <div class="col-4 d-flex flex-row justify-content-end">
+                <div class=" d-flex flex-column justify-content-end">
+                    <div class="d-flex flex-row justify-content-end ">
+
+                        <div class="iconBox">
+                            <a class="" onclick="Login()" href="#" tabindex="-1">
+                                <img src="~/Images/login.png" class="loginImg" />
+                                <span class="loginText">@MasterWebApp.Resource.Users.logIn</span>
+                            </a>
+
+                        </div>
+                        <div style="width:20px;">
+
+                        </div>
+                        <div class="iconBox">
+
+                            <a href="#" onclick="SignUp()">
+                                <img src="~/Images/signup.png" class="loginImg" />
+                                <span class="loginText">@MasterWebApp.Resource.Users.signUp</span>
+                            </a>
+
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+
+        <div class="navbar-dark sticky-top">
+            <nav class=" navbar navbar-expand-lg justify-content-between bg-menu p-0">
+                @*<a class="navbar-brand" href="#">Navbar</a>*@
+                <button class="navbar-toggler bg-menu m-1" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class=" collapse navbar-collapse bg-menu" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto pr-0">
+                        <li class="nav-item ">
+
+                            <a class="nav-link" href="@Url.Action("Index", "MainCommon", new { Area = "Common" })">
+
+                                <i class="fa fa-home"></i>
+                                @MasterWebApp.Resource.Common.home
+
+                            </a>
+
+
+                        </li>
+
+                        <li class="nav-item ">
+                            @*<a class="nav-link" href="#">Link</a>*@
+
+                            <a class="nav-link" href="@Url.Action("Index", "Abouts", new { Area = "Common" })">
+
+                                <i class="fas fa-info-circle"></i>
+                                @MasterWebApp.Resource.Common.about
+
+                            </a>
+
+                        </li>
+
+
+                        <li class="nav-item ">
+                            @*<a class="nav-link" href="#">Link</a>*@
+
+                            <a class="nav-link" href="@Url.Action("Index", "DigitalLibrary", new { Area = "Common" })">
+
+                                <i class="fas fa-book-reader"></i>
+                                @MasterWebApp.Resource.Common.digitalLibrary
+
+                            </a>
+
+                        </li>
+                        <li class="nav-item ">
+                            @*<a class="nav-link" href="#">Link</a>*@
+
+                            <a class="nav-link" href="@Url.Action("Index", "Conferences", new { Area = "Common" })">
+
+                                <i class="fas fa-suitcase"></i>
+                                @MasterWebApp.Resource.Common.confernces
+
+                            </a>
+
+                        </li>
+
+                        <li class="nav-item ">
+                            @*<a class="nav-link" href="#">Link</a>*@
+
+                            <a class="nav-link" href="@Url.Action("Index", "Journals", new { Area = "Common" })">
+
+                                <i class="far fa-newspaper"></i>
+                                @MasterWebApp.Resource.Common.jornals
+
+                            </a>
+
+                        </li>
+
+
+                        @*<li class="nav-item dropdown ">
+                                <a class="nav-link dropdown-toggle " href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i class="far fa-newspaper"></i>
+                                    @MasterWebApp.Resource.Common.jornals
+                                </a>
+                                <div class="dropdown-menu  @(FunServices.getLang("drp"))" aria-labelledby="navbarDropdown">
+                                    <a class="nav-link" href="@Url.Action("Index", "Journals", new { Area = "Common" })">
+
+                                        <i class="far fa-newspaper"></i>
+                                        @MasterWebApp.Resource.Common.jornals
+
+                                    </a>
+                                    <a class="nav-link" href="@Url.Action("Index", "AuthorDegree", new { Area = "Admin" })">
+                                        <i class="fa fa-home"></i>
+                                        @MasterWebApp.Resource.MainAdmin.AuthorDegree
+                                    </a>
+
+                                    <a class="nav-link" href="@Url.Action("Index", "AuthorSuffix", new { Area = "Admin" })">
+                                        <i class="fa fa-home"></i>
+                                        @MasterWebApp.Resource.MainAdmin.AuthorSuffix
+                                    </a>
+                                    <div class="dropdown-divider"></div>
+                                </div>
+                                <div class="bg-menu-bottom">
+
+                                </div>
+                            </li>*@
+
+                        <li class="nav-item ">
+                            @*<a class="nav-link" href="#">Link</a>*@
+
+                            <a class="nav-link" href="@Url.Action("Index", "faq", new { Area = "Common" })">
+
+                                <i class="fas fa-question"></i>
+                                @MasterWebApp.Resource.Common.faq
+
+                            </a>
+
+                        </li>
+
+                        <li class="nav-item ">
+                            @*<a class="nav-link" href="#">Link</a>*@
+
+                            <a class="nav-link" href="@Url.Action("Index", "ContactUs", new { Area = "Common" })">
+
+                                <i class="fas fa-address-book"></i>
+                                @MasterWebApp.Resource.Common.contactUs
+
+                            </a>
+
+                        </li>
+
+
+                    </ul>
+                </div>
+
+                <div class="pr-2 pl-2" style="display:flex;">
+                    <div class="nav-item dropdown active">
+                        <a class="nav-link dropdown-toggle p-2 fas fa-user" href="#" style="font-size: large; color: #fff; Background: transparent;" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            @if (Session["authorID"] != null)
+                            {
+                                if (FunServices.getLang("lang") == "ar")
+                                {
+                                    <span>@Session["authorAr"]</span>
+                                }
+                                else
+                                {
+                                    <span>@Session["authorEn"]</span>
+                                }
+                            }
+                            else
+                            {
+                                @MasterWebApp.Resource.Users.iconText
+                            }
+
+                        </a>
+                        <div class="  dropdown-menu @(FunServices.getLang("drp"))" aria-labelledby="navbarDropdown">
+                            <a class=" nav-link myAccount  fa fa-user-circle " id="myAccount" name="myAccount" href="@Url.Action("Profile", "Authors", new { Area = "Common" })">
+                                @MasterWebApp.Resource.Users.myAccount
+                            </a>
+
+                            <div class="dropdown-divider"></div>
+                            <a class="nav-link" href="@Url.Action("LogOut", "Authors", new { Area = "Common" })">
+                                <i class="fa fa-sign-out-alt"></i>
+                                @MasterWebApp.Resource.Users.logOut
+                            </a>
+                        </div>
+                    </div>
+                    @{
+                        string lang = System.Threading.Thread.CurrentThread.CurrentCulture.ToString();
+                        if (lang == "en")
+                        {
+                            <div>
+                                <a href="#" onclick="changeLang('ar')" class="fas fa-globe p-2" title="عربي" style="font-size: x-large; color: #fff; Background: transparent;">
+                                    <i style="font-size:small">
+                                    </i>
+                                </a>
+                            </div>
+                        }
+                        else
+                        {
+                            <div>
+                                <a href="#" onclick="changeLang('en')" class="fas fa-globe p-2" title="En" style="font-size: x-large; color: #fff; Background: transparent;">
+                                    <i style="font-size:small">
+                                    </i>
+                                </a>
+                            </div>
+                        }
+                    }
+
+
+
+
+                </div>
+
+
+
+
+            </nav>
+        </div>
+        <input type="hidden" value="@MasterWebApp.Resource.CommonMessage.errorLogin" id="msgError" name="msgError" />
+
+        <input type="hidden" value="@MasterWebApp.Resource.Users.myAccount" id="msgAccount" name="msgAccount" />
+        <div class="container p-0" style="display:flex;background-color:#fff;min-height:600px;">
+            @RenderBody()
+        </div>
+
+        <!-- Footer -->
+        <div class="bgFooter text-white">
+            <div class="container">
+                <div class="row">
+                    <!-- Footer Content -->
+                    <div class="col-lg-4 col-md-6 mb-3">
+                        <div class="">
+                            <h5 class="footTitle">@MasterWebApp.Resource.Common.footerJoinUsT</h5>
+                        </div>
+                        <hr class="bg-white">
+                        <article>
+                            <h6>
+                                <a href="#" class="footItem" onclick="SignUp()">
+                                    @MasterWebApp.Resource.Common.footerMembership
+                                </a>
+                            </h6>
+                        </article>
+                        <article>
+                            <h6>
+                                <a class="footItem" onclick="Login()" href="#" tabindex="-1">
+                                    @MasterWebApp.Resource.Common.footerlogin
+                                </a>
+                            </h6>
+                        </article>
+                    </div>
+                    <!-- End Footer Content -->
+                    <!-- Footer Content -->
+                    <div class="col-lg-4 col-md-6 mb-3">
+                        <div class="">
+                            <h5 class="footTitle">@MasterWebApp.Resource.Common.footerJournalT</h5>
+                        </div>
+                        <hr class="bg-white">
+                        <article>
+                            <h6>
+                                <a class="footItem" href="@Url.Action("Index", "Journals", new {area = "Common" })">
+                                    @MasterWebApp.Resource.Common.footerDownloadJournal
+                                </a>
+                            </h6>
+                        </article>
+                        <article>
+                            <h6>
+                                <a class="footItem" href="@Url.Action("ComputerScience", "Journals", new {area = "Common", search="A" , searchType="1" })">
+                                    @MasterWebApp.Resource.Journals.ComputerScienceJournal
+                                </a>
+                            </h6>
+                        </article>
+                        <article>
+                            <h6>
+                                <a class="footItem" href="@Url.Action("JournalRankings", "Journals", new {area = "Common" })">
+                                    @MasterWebApp.Resource.Journals.journalRankings
+                                </a>
+                            </h6>
+                        </article>
+                    </div>
+                    <!-- End Footer Content -->
+                    <!-- Footer Content -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="">
+                            <h5 class="footTitle">@MasterWebApp.Resource.Common.footerConferenceT</h5>
+                        </div>
+                        <hr class="bg-white">
+                        <article>
+                            <h6>
+                                <a href="#" class="footItem" onclick="IsLogin()">
+                                    @MasterWebApp.Resource.Common.footerConferenceNew
+                                </a>
+                            </h6>
+                        </article>
+                        <article>
+                            <h6>
+                                <a class="footItem" href="@Url.Action("Index", "Conferences", new {area = "Common" })">
+                                    @MasterWebApp.Resource.Common.footerConferenceFind
+                                </a>
+                            </h6>
+                        </article>
+                        <article>
+                            <h6>
+                                <a class="footItem" href="@Url.Action("ComputerScience", "Conferences", new {area = "Common", search="A" , searchType="1" })">
+                                    @MasterWebApp.Resource.Conferences.ComputerScienceConf
+                                </a>
+                            </h6>
+                        </article>
+                        <article>
+                            <h6 class="footItem">
+
+                                <a class="footItem" href="@Url.Action("ConfRankings", "Conferences", new {area = "Common" })">
+                                    @MasterWebApp.Resource.Common.footerRankingConference
+                                </a>
+                               
+                            </h6>
+                        </article>
+                    </div>
+                    <!-- End Footer Content -->
+                </div>
+            </div>
+        </div>
+        <!-- End Footer -->
+        <!-- Copyright Footer -->
+        <footer class="bgFooter2">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-12 align-self-start">
+                        <span class="socialTitle">@MasterWebApp.Resource.Common.footSocialTitle</span>
+                        <ul class="list-inline ">
+                            <li class="list-inline-item" data-toggle="tooltip" data-placement="top" title="Facebook">
+                                <a href="#" class="socialMedia">
+                                    <i class="fab fa-facebook-square"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item" data-toggle="tooltip" data-placement="top" title="Messenger">
+                                <a href="#" class="socialMedia">
+                                    <i class="fab fa-facebook-messenger"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item" data-toggle="tooltip" data-placement="top" title="WhatsApp">
+                                <a href="#" class="socialMedia">
+                                    <i class="fab fa-whatsapp-square"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item" data-toggle="tooltip" data-placement="top" title="Email">
+                                <a href="#" class="socialMedia">
+                                    <i class="fas fa-envelope"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item" data-toggle="tooltip" data-placement="top" title="Twitter">
+                                <a href="#" class="socialMedia">
+                                    <i class="fab fa-twitter-square"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item" data-toggle="tooltip" data-placement="top" title="Google+">
+                                <a href="#" class="socialMedia">
+                                    <i class="fab fa-google-plus-square"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item" data-toggle="tooltip" data-placement="top" title="Instgram">
+                                <a href="#" class="socialMedia">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item" data-toggle="tooltip" data-placement="top" title="SnapChat">
+                                <a href="#" class="socialMedia">
+                                    <i class="fab fa-snapchat-square"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item" data-toggle="tooltip" data-placement="top" title="Telegram">
+                                <a href="#" class="socialMedia">
+                                    <i class="fab fa-telegram"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4 col-12 align-self-center">
+                        <div class="">
+                            <img class="mr-2 ml-2" src="~/Images/googlePlay.gif" />
+                            <img class="mr-2 ml-2" src="~/Images/appStore.gif" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- End Copyright Footer -->
+    </div>
+
+    <footer class="nav navbar-dark bg-menu text-center font-small fadeIn  container " style="clear:both;">
+        <div class="col-lg-12 p-2">
+            <span style="color: lightgray; vertical-align: central; ">Copyright &copy;  @DateTime.Now.Year Academic Digital Library </span>
+        </div>
+    </footer>
+
+    <div class=" modal" id="contractPause" tabindex="-1">
+        <div class=" modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body" id="divBody">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    @*<script src="~/Scripts/jquery-3.0.0.js"></script>*@
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    @*@Scripts.Render("~/bundles/jquery")
+        @Scripts.Render("~/bundles/bootstrap")*@
+    @RenderSection("scripts", required: false)
+</body>
+</html>
+<style>
+    .navbar-dark .navbar-nav .nav-link {
+        color: #fff;
+    }
+
+    .mActive {
+        background-color: #aac8d4;
+        border-bottom: 8px solid #555
+    }
+
+    .mmActive {
+        color: #000 !important;
+    }
+
+    /*Footer*/
+    /*------------------*/
+    .bgFooter {
+        background-color: #000000;
+        padding: 10px 0;
+    }
+
+    .bgFooter2 {
+        background-color: #000000;
+    }
+
+    .footTitle {
+        color: #6da0b5;
+        padding-top: 5px;
+    }
+
+    .footItem {
+        color: #fff;
+        margin: 5px;
+        padding-top: 2px;
+        padding-bottom: 2px;
+    }
+
+    .socialMedia {
+        margin: 3px;
+        color: #fff;
+    }
+
+    .socialTitle {
+        margin: 3px;
+        color: #fff;
+        font-size: 12px;
+    }
+    /*------------------*/
+    /*End Footer*/
+
+</style>
+
+<script>
+
+     $(function () {
+        $('#navbarSupportedContent li a').each(function () {
+            debugger
+            $current = location.href;
+            $target = $(this).attr('href');
+            if ($current.includes($target)) {
+                $(this).parent().addClass('mActive');
+                $(this).addClass('mmActive');
+                debugger
+            }
+        });
+    });
+
+    $(function () {
+
+        var save = '@TempData["saveOk"]'
+        var error = '@TempData["error"]'
+        if (save != '') {
+            alertify.success(save)
+        }
+        if (error != '') {
+            alertify.error(error);
+        }
+    });
+
+    function changeLang(lang) {
+        $.ajax({
+            type: "Get",
+            url: "/Common/Language/SetLanguage",
+            data: { 'lang': lang },
+
+            success: function (data) {
+                location.reload();
+            },
+            error: function () {
+                alert('خطأ اثناء التحويل');
+            }
+        })
+    }
+
+    function Login() {
+        debugger
+        var url = "/Common/Authors/SignIn?id=0";
+        $('#divBody').load(url, function () {
+            $('#contractPause').modal('show');
+        });
+    }
+
+    function AuthorSignIn() {
+        @*var msg = @System.Web.Helpers.Json.Encode(MasterWebApp.Resource.Login.msgWrongUserOrPass);*@
+        var username = $('#UserName').val();
+        var password = $('#Password').val();
+
+        var isValid = true;
+        //
+        if (username == '') {
+            $('#UserName').addClass('is-invalid');
+            isValid = false;
+        }
+        else {
+            $('#UserName').removeClass('is-invalid');
+            //$('#UserName').addClass('is-valid');
+        }
+        //
+        if (password == '') {
+            $('#Password').addClass('is-invalid');
+            isValid = false;
+        }
+        else {
+            $('#Password').removeClass('is-invalid');
+            //$('#Password').addClass('is-valid');
+        }
+        //
+        debugger
+        if (isValid) {
+            $.ajax({
+                type: "POST",
+                url: "/Common/Authors/AuthorSignIn",
+                data: {
+                    'username': username,
+                    'password': password,
+                    },
+                success: function (data) {
+                    debugger
+                    if (data != "") {
+                        location.reload();
+                        $('#myAccount').removeClass('disabled');
+                        $('a.logIn').addClass('disabled');
+                    }
+                    else {
+                        debugger
+                        $('a.logIn').removeClass('disabled');
+                        $('a.myAccount').addClass('disabled');
+                        $('#myAccount').html($('#msgAccount').val());
+                        $('.msg').html($('#msgError').val());
+                    }
+                },
+                error: function () {
+                }
+            });
+        }
+    }
+
+    function clearText() {
+        $('.msg').html('');
+    }
+
+    function SignUp() {
+        debugger
+        var url = "/Common/Authors/SignUp";
+        $('#divBody').load(url, function () {
+            $('#contractPause').modal('show');
+        })
+    }
+
+    function IsLogin() {
+        var error = $('#msgError').val();
+        debugger
+        $.ajax({
+
+            type: "GET",
+            url: "/Common/Conferences/IsLogin",
+
+            success: function (data) {
+                //location.reload();
+                if (data == true) {
+                    var url = "/Common/Conferences/NewConferences";
+                    $('#divBody').load(url, function () {
+                        $('#contractPause').modal('show');
+                    });
+                }
+
+                else {
+                    var url = "/Common/Authors/SignIn?id=0";
+                    $('#divBody').load(url, function () {
+                        $('#contractPause').modal('show');
+                    });
+                }
+
+            },
+            error: function () {
+
+            }
+
+        });
+
+    }
+
+
+    function NewConferences() {
+        debugger
+        var url = "/Common/Conferences/NewConferences";
+        $('#divBody').load(url, function () {
+            $('#contractPause').modal('show');
+        })
+
+    }
+
+</script>

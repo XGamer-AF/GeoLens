@@ -1,0 +1,133 @@
+﻿@using Data.ViewModel;
+@using DataLayer;
+@model CategoryAddViewModel
+@{ 
+    string lang = FunServices.getLang("lang");
+
+}
+<div class="d-flex flex-row justify-content-between bg-info p-1">
+    <label>
+       @foreach (var tt in Model.tree)
+       {
+
+        <a href="@Url.Action("Index", "Category",new { parentID = tt.parentID })" class="btn btn-primary">
+            @if(lang == "ar")
+            {
+                <span> @tt.categoryNameAr</span>
+                <span> /</span>
+
+            }
+            else
+            {
+                <span> @tt.categoryNameEn</span>
+                <span> /</span>
+            }
+
+        </a>
+       }
+    </label>
+    <a href="@Url.Action("CategoryAddEdit", "Category",new {parentID = Request.QueryString["parentID"] })" class="btn btn-primary">
+
+        <i class="fas fa-plus-circle"></i>
+        @MasterWebApp.Resource.CommonMessage.btnNew
+    </a>
+    </div>
+
+
+
+    <div style="padding-top:5px;">
+
+        <div id="mTable" class="table table-striped table-bordered table-hover ">
+
+
+            <div class="d-flex flex-row justify-content-between bg-dark text-white p-2">
+                <div class="col-lg-10">
+                    @MasterWebApp.Resource.Category.categoryNameAr
+
+                    @MasterWebApp.Resource.Category.categoryNameEn
+
+                </div>
+                <div class="col-lg-2 col-2 ">
+                    action
+
+                </div>
+            </div>
+
+
+            @foreach (var item in Model.CategoryAll)
+            {
+
+                
+                    string fileName = "";
+                    string filePath = "";
+                    string fullName = "";
+                    Boolean haveImage = false;
+                    if (item.categoryID != 0)
+                    {
+                        fileName = "CA" + item.categoryID + ".png";
+                        filePath = ImagesServices.getPath("Categories/");
+
+                    if (ImagesServices.fileExists((filePath + fileName)))
+                    {
+                        fullName = filePath + fileName;
+                        haveImage = true;
+                    }
+                    else
+                    {
+                        fullName = filePath + "noImage.png";
+                        haveImage = false;
+                    }
+
+
+
+                }
+                else
+                {
+                    fullName = filePath + "noImage.png";
+                    haveImage = false;
+                }
+
+
+                string query = string.Format(GlobalVariable.httpBase + "AImages?folder={0}&imageName={1}", "Categories", fileName);
+
+
+               
+
+                <div class="col-lg-10 col-12 ">
+                    <img src="@query" alt="NoImage" width="40" height="40" class="rounded-circle" />
+                  @if (lang == "ar")
+                  {
+                    <a href="@Url.Action("Index", new { parentID =item.categoryID })" style="padding:10px;" )">
+
+                        @item.categoryNameAr
+                        /
+                        @item.categoryNameEn
+                    </a>
+                  }
+                  else
+                  {
+                    <a href="@Url.Action("Index", new { parentID =item.categoryID })" style="padding:10px;" )">
+
+                        @item.categoryNameAr
+                        /
+                        @item.categoryNameEn
+                    </a>
+                  }
+                </div>
+
+
+                <div class="col-lg-2 col-2 ">
+                    <a href="@Url.Action("CategoryAddEdit", new { id = item.categoryID ,  parentID = Request.QueryString["parentID"] })" style="padding:10px;">
+                        <i class="far fa-edit"></i>
+                    </a>
+
+                    <a href="@Url.Action("ChangeStatus", new { id = item.categoryID, statusID = 0 })" style="padding:10px;" onclick="return confirm('@MasterWebApp.Resource.CommonMessage.confirmDelete')">
+                        <i class="fas fa-minus-circle"></i>
+                    </a>
+                </div>
+
+            }
+
+        </div>
+
+    </div>

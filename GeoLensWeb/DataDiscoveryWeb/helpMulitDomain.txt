@@ -1,0 +1,18 @@
+Yes, I can absolutely confirm that on your Windows Professional(Enterprise) package - it comes up with the option to host an unlimited number of domains and websites.
+
+If you do not have the domain registered, you could start off and purchase it with us from your Client Area -> Domains -> Register a new domain to us.
+
+If the domain is already registered from another place, you will just need to update its Nameserver record values to the following entries:
+- ns1.win09.tmd.cloud
+- ns2.win09.tmd.cloud
+
+
+Once this is met, here are also the steps on how to add as much domains into your account as you want:
+
+1. Log into your Plesk control panel at: https://win09.tmd.cloud:8443/
+2. Navigate to the 'Websites & Domains' tab
+3. Press on the button saying 'Add Domain'
+4. Type in your the name of your domain without the 'www' prefix and then hit the 'OK' button at the bottom.
+
+You can also refer to the following Plesk documentation which would illustrate and show you quite clearly how to add domains:
+> https://docs.plesk.com/en-US/obsidian/customer-guide/websites-and-domains/domains-and-dns/adding-and-removing-domains.65150/

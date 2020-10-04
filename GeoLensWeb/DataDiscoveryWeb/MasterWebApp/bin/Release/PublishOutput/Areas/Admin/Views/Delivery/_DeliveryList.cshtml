@@ -1,0 +1,68 @@
+﻿@using Data.ViewModel;
+@using DataLayer;
+@model DeliveryAddViewModel
+
+
+<a href="@Url.Action("DeliveryAddEdit", "Delivery")" class="btn btn-primary">
+
+    <i class="fas fa-plus-circle"></i>
+    @MasterWebApp.Resource.CommonMessage.btnNew
+</a>
+
+
+@{
+    string lang = FunServices.getLang("lang");
+}
+
+<div style="padding-top:5px;">
+
+    <table id="mTable" class="table table-striped table-bordered table-hover table-responsive">
+
+        <thead>
+            <tr>
+                <td style="width:40.44%">
+                    @MasterWebApp.Resource.Delivery.deliveryName
+                </td>
+                <td style="width:40.44%">
+                    @MasterWebApp.Resource.Delivery.tel1
+                </td>
+                <td style="width:15.44%">
+                </td>
+
+
+              
+
+                <td style="width:10.1%"></td>
+
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model.DeliveryAll)
+            {
+
+            <tr>
+                <td>
+                    @item.deliveryName
+                </td>
+                <td>
+                    @item.tel1 & @item.tel2
+                </td>
+               
+                <td>
+                    <a href="@Url.Action("DeliveryAddEdit", new { id = item.deliveryID })" style="padding:10px;">
+                        <i class="far fa-edit"></i>
+                    </a>
+                </td>
+
+                <td>
+                    <a href="@Url.Action("ChangeStatus", new { id = item.deliveryID, statusID = 0 })" style="padding:10px;" onclick="return confirm('@MasterWebApp.Resource.CommonMessage.confirmDelete')">
+                        <i class="fas fa-minus-circle"></i>
+                    </a>
+                </td>
+            </tr>
+
+            }
+        </tbody>
+    </table>
+
+</div>

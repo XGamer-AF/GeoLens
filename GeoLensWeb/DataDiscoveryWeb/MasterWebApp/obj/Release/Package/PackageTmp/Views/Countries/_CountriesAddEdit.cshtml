@@ -1,0 +1,63 @@
+﻿@using Data.ViewModel;
+@using DataLayer;
+
+
+@model CountriesAddViewModel
+@using (Html.BeginForm("CountriesAddEdit", "Countries", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    @Html.AntiForgeryToken()
+    <div class="form-horizontal">
+
+        @Html.ValidationSummary(true)
+
+        @Html.HiddenFor(x => x.Countries.countryID)
+
+        @if (Model.Countries != null)
+        {
+
+            @Html.HiddenFor(model => model.Countries.statusID)
+
+        }
+        
+      
+
+        <div class="form-group">
+            <label>
+                @MasterWebApp.Resource.Countries.countryNameEn
+            </label>
+
+            @Html.TextBoxFor(model => model.Countries.countryNameEn, new { @class = "form-control col-12 en" })
+            @Html.ValidationMessageFor(model => model.Countries.countryNameEn)
+
+        </div>
+
+        <div class="form-group">
+            <label>
+                @MasterWebApp.Resource.Countries.countryNameAr
+            </label>
+
+            @Html.TextBoxFor(model => model.Countries.countryNameAr, new { @class = "form-control col-12 ar" })
+            @Html.ValidationMessageFor(model => model.Countries.countryNameAr)
+
+        </div>
+
+
+
+
+      
+
+    
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <button  type="submit" 
+                       class="btn btn-primary">
+
+                    <i class="far fa-save"></i>
+                    @MasterWebApp.Resource.CommonMessage.btnSave
+                    </button>
+                
+            </div>
+        </div>
+    </div>
+}
+

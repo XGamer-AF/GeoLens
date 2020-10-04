@@ -1,0 +1,99 @@
+﻿@using Data.ViewModel;
+@using DataLayer;
+@using PagedList
+@using PagedList.Mvc;
+@model IPagedList<EventInfoViewModel>
+
+
+@{
+    string lang = FunServices.getLang("lang");
+}
+
+<div style="padding-top:5px;">
+
+    <table id="mTable" class="table table-striped table-bordered table-hover table-responsive">
+
+        <thead>
+            <tr>
+                <td style="width:50%">
+                    @MasterWebApp.Resource.EventInfo.eventNameEn
+                    <br />
+                    @MasterWebApp.Resource.EventInfo.eventNameAr
+                    <br />
+                    @MasterWebApp.Resource.EventInfo.eventDate
+                               
+                </td>
+
+                <td style="width:20%">
+                    @MasterWebApp.Resource.EventInfo.eventTypeID
+                </td>
+                <td style="width:10%">
+                    @MasterWebApp.Resource.EventInfo.countryID
+                </td>
+
+                <td style="width:10%"></td>
+                             
+
+                <td style="width:10%"></td>
+
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+
+            <tr>
+                <td>
+                   
+                    @item.eventNameEn
+                    <br />
+                    @item.eventNameAr
+                    <br />
+                          @if (item.eventDate.HasValue)
+                          {
+                            @item.eventDate.Value.ToString("dd/MM/yyyy")
+
+                          }
+                </td>
+                   
+                <td>
+                    @item.EventTypes.eventTypeNameAr
+                    <br />
+                    @item.EventTypes.eventTypeNameEn
+                </td>
+                <td>
+                    @item.Countries.countryNameEn
+                    <br />
+                    @item.Countries.countryNameAr
+
+                </td>
+
+               
+                <td>
+                    <a href="@Url.Action("EventInfoAddEdit", new { id = item.eventID })" style="padding:5px;">
+                        <i class="far fa-edit"></i>
+                    </a>
+
+                    <a href="@Url.Action("ChangeStatus", new { id = item.eventID, statusID = 0 })" style="padding:5px;" onclick="return confirm('@MasterWebApp.Resource.CommonMessage.confirmDelete')">
+                        <i class="fas fa-minus-circle"></i>
+                    </a>
+
+                </td>
+                <td>
+                    <a href="@Url.Action("Index","EventRefrences", new { eventID = item.eventID, eventName =item.eventNameEn })" style="padding:5px;" >
+                        <i class="fas fa-link"></i>
+                    </a>
+
+                    <a href="@Url.Action("Index","EventImage", new { eventID = item.eventID, eventName =item.eventNameEn })" style="padding:5px;">
+                        <i class="fas fa-images"></i>
+                    </a>
+                </td>
+
+
+            </tr>
+
+            }
+        </tbody>
+    </table>
+
+</div>

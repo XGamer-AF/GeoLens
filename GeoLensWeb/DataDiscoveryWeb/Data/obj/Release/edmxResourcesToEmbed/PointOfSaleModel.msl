@@ -1,0 +1,437 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="pointOfSaleModelStoreContainer" CdmEntityContainer="taxiqco1_pointOfSaleEntities">
+    <EntitySetMapping Name="AboutUS">
+      <EntityTypeMapping TypeName="pointOfSaleModel.AboutUS">
+        <MappingFragment StoreEntitySet="AboutUS">
+          <ScalarProperty Name="aboutID" ColumnName="aboutID" />
+          <ScalarProperty Name="aboutText" ColumnName="aboutText" />
+          <ScalarProperty Name="aboutTextEn" ColumnName="aboutTextEn" />
+          <ScalarProperty Name="statusID" ColumnName="statusID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Addresses">
+      <EntityTypeMapping TypeName="pointOfSaleModel.Addresses">
+        <MappingFragment StoreEntitySet="Addresses">
+          <ScalarProperty Name="addressID" ColumnName="addressID" />
+          <ScalarProperty Name="recevierName" ColumnName="recevierName" />
+          <ScalarProperty Name="customerID" ColumnName="customerID" />
+          <ScalarProperty Name="tel" ColumnName="tel" />
+          <ScalarProperty Name="cityName" ColumnName="cityName" />
+          <ScalarProperty Name="areaName" ColumnName="areaName" />
+          <ScalarProperty Name="fullAddress" ColumnName="fullAddress" />
+          <ScalarProperty Name="landMark" ColumnName="landMark" />
+          <ScalarProperty Name="statusID" ColumnName="statusID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Branches">
+      <EntityTypeMapping TypeName="pointOfSaleModel.Branches">
+        <MappingFragment StoreEntitySet="Branches">
+          <ScalarProperty Name="branchID" ColumnName="branchID" />
+          <ScalarProperty Name="companyID" ColumnName="companyID" />
+          <ScalarProperty Name="countryID" ColumnName="countryID" />
+          <ScalarProperty Name="cityID" ColumnName="cityID" />
+          <ScalarProperty Name="branchNameEn" ColumnName="branchNameEn" />
+          <ScalarProperty Name="branchNameAr" ColumnName="branchNameAr" />
+          <ScalarProperty Name="tel1" ColumnName="tel1" />
+          <ScalarProperty Name="tel2" ColumnName="tel2" />
+          <ScalarProperty Name="fax" ColumnName="fax" />
+          <ScalarProperty Name="mail1" ColumnName="mail1" />
+          <ScalarProperty Name="mail2" ColumnName="mail2" />
+          <ScalarProperty Name="latitude" ColumnName="latitude" />
+          <ScalarProperty Name="longitude" ColumnName="longitude" />
+          <ScalarProperty Name="address" ColumnName="address" />
+          <ScalarProperty Name="dateAdd" ColumnName="dateAdd" />
+          <ScalarProperty Name="statusID" ColumnName="statusID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Brands">
+      <EntityTypeMapping TypeName="pointOfSaleModel.Brands">
+        <MappingFragment StoreEntitySet="Brands">
+          <ScalarProperty Name="brandID" ColumnName="brandID" />
+          <ScalarProperty Name="brandNameEn" ColumnName="brandNameEn" />
+          <ScalarProperty Name="brandNameAr" ColumnName="brandNameAr" />
+          <ScalarProperty Name="staffID" ColumnName="staffID" />
+          <ScalarProperty Name="dateAdd" ColumnName="dateAdd" />
+          <ScalarProperty Name="statusID" ColumnName="statusID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Category">
+      <EntityTypeMapping TypeName="pointOfSaleModel.Category">
+        <MappingFragment StoreEntitySet="Category">
+          <ScalarProperty Name="categoryID" ColumnName="categoryID" />
+          <ScalarProperty Name="staffID" ColumnName="staffID" />
+          <ScalarProperty Name="categoryNameEn" ColumnName="categoryNameEn" />
+          <ScalarProperty Name="categoryNameAr" ColumnName="categoryNameAr" />
+          <ScalarProperty Name="parentID" ColumnName="parentID" />
+          <ScalarProperty Name="dateAdd" ColumnName="dateAdd" />
+          <ScalarProperty Name="statusID" ColumnName="statusID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Cities">
+      <EntityTypeMapping TypeName="pointOfSaleModel.Cities">
+        <MappingFragment StoreEntitySet="Cities">
+          <ScalarProperty Name="cityID" ColumnName="cityID" />
+          <ScalarProperty Name="countryID" ColumnName="countryID" />
+          <ScalarProperty Name="cityNameEn" ColumnName="cityNameEn" />
+          <ScalarProperty Name="cityNameAr" ColumnName="cityNameAr" />
+          <ScalarProperty Name="parentID" ColumnName="parentID" />
+          <ScalarProperty Name="levelID" ColumnName="levelID" />
+          <ScalarProperty Name="deliveryCost" ColumnName="deliveryCost" />
+          <ScalarProperty Name="statusID" ColumnName="statusID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Companies">
+      <EntityTypeMapping TypeName="pointOfSaleModel.Companies">
+        <MappingFragment StoreEntitySet="Companies">
+          <ScalarProperty Name="companyID" ColumnName="companyID" />
+          <ScalarProperty Name="companyNameEn" ColumnName="companyNameEn" />
+          <ScalarProperty Name="companyNameAr" ColumnName="companyNameAr" />
+          <ScalarProperty Name="location" ColumnName="location" />
+          <ScalarProperty Name="tel1" ColumnName="tel1" />
+          <ScalarProperty Name="tel2" ColumnName="tel2" />
+          <ScalarProperty Name="fax" ColumnName="fax" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="website" ColumnName="website" />
+          <ScalarProperty Name="descriptionEn" ColumnName="descriptionEn" />
+          <ScalarProperty Name="descriptionAr" ColumnName="descriptionAr" />
+          <ScalarProperty Name="dateAdd" ColumnName="dateAdd" />
+          <ScalarProperty Name="statusID" ColumnName="statusID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Conditions">
+      <EntityTypeMapping TypeName="pointOfSaleModel.Conditions">
+        <MappingFragment StoreEntitySet="Conditions">
+          <ScalarProperty Name="conditionID" ColumnName="conditionID" />
+          <ScalarProperty Name="consitionText" ColumnName="consitionText" />
+          <ScalarProperty Name="consitionTextEn" ColumnName="consitionTextEn" />
+          <ScalarProperty Name="rowOrder" ColumnName="rowOrder" />
+          <ScalarProperty Name="statusID" ColumnName="statusID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Countries">
+      <EntityTypeMapping TypeName="pointOfSaleModel.Countries">
+        <MappingFragment StoreEntitySet="Countries">
+          <ScalarProperty Name="countryID" ColumnName="countryID" />
+          <ScalarProperty Name="countryNameEn" ColumnName="countryNameEn" />
+          <ScalarProperty Name="countryNameAr" ColumnName="countryNameAr" />
+          <ScalarProperty Name="counteyCode" ColumnName="counteyCode" />
+          <ScalarProperty Name="orderID" ColumnName="orderID" />
+          <ScalarProperty Name="telLength" ColumnName="telLength" />
+          <ScalarProperty Name="showCity" ColumnName="showCity" />
+          <ScalarProperty Name="currencyNameEn" ColumnName="currencyNameEn" />
+          <ScalarProperty Name="currencyNameAr" ColumnName="currencyNameAr" />
+          <ScalarProperty Name="statusID" ColumnName="statusID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Currency">
+      <EntityTypeMapping TypeName="pointOfSaleModel.Currency">
+        <MappingFragment StoreEntitySet="Currency">
+          <ScalarProperty Name="currencyID" ColumnName="currencyID" />
+          <ScalarProperty Name="currencyEn" ColumnName="currencyEn" />
+          <ScalarProperty Name="currencyAr" ColumnName="currencyAr" />
+          <ScalarProperty Name="statusID" ColumnName="statusID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Customers">
+      <EntityTypeMapping TypeName="pointOfSaleModel.Customers">
+        <MappingFragment StoreEntitySet="Customers">
+          <ScalarProperty Name="customerID" ColumnName="customerID" />
+          <ScalarProperty Name="titleID" ColumnName="titleID" />
+          <ScalarProperty Name="firstName" ColumnName="firstName" />
+          <ScalarProperty Name="lastName" ColumnName="lastName" />
+          <ScalarProperty Name="latitude" ColumnName="latitude" />
+          <ScalarProperty Name="longitude" ColumnName="longitude" />
+          <ScalarProperty Name="tel1" ColumnName="tel1" />
+          <ScalarProperty Name="mail" ColumnName="mail" />
+          <ScalarProperty Name="password" ColumnName="password" />
+          <ScalarProperty Name="statusID" ColumnName="statusID" />
+          <ScalarProperty Name="birthDate" ColumnName="birthDate" />
+          <ScalarProperty Name="dateAdd" ColumnName="dateAdd" />
+          <ScalarProperty Name="nationalityID" ColumnName="nationalityID" />
+          <ScalarProperty Name="countryID" ColumnName="countryID" />
+          <ScalarProperty Name="cityID" ColumnName="cityID" />
+          <ScalarProperty Name="countForgetPassword" ColumnName="countForgetPassword" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Delivery">
+      <EntityTypeMapping TypeName="pointOfSaleModel.Delivery">
+        <MappingFragment StoreEntitySet="Delivery">
+          <ScalarProperty Name="deliveryID" ColumnName="deliveryID" />
+          <ScalarProperty Name="companyID" ColumnName="companyID" />
+          <ScalarProperty Name="branchID" ColumnName="branchID" />
+          <ScalarProperty Name="deliveryName" ColumnName="deliveryName" />
+          <ScalarProperty Name="civilID" ColumnName="civilID" />
+          <ScalarProperty Name="tel1" ColumnName="tel1" />
+          <ScalarProperty Name="tel2" ColumnName="tel2" />
+          <ScalarProperty Name="address" ColumnName="address" />
+          <ScalarProperty Name="dateAdd" ColumnName="dateAdd" />
+          <ScalarProperty Name="statusID" ColumnName="statusID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DeliveryType">
+      <EntityTypeMapping TypeName="pointOfSaleModel.DeliveryType">
+        <MappingFragment StoreEntitySet="DeliveryType">
+          <ScalarProperty Name="deliveryTypeID" ColumnName="deliveryTypeID" />
+          <ScalarProperty Name="nameEn" ColumnName="nameEn" />
+          <ScalarProperty Name="nameAr" ColumnName="nameAr" />
+          <ScalarProperty Name="statusID" ColumnName="statusID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="InvoiceDetalis">
+      <EntityTypeMapping TypeName="pointOfSaleModel.InvoiceDetalis">
+        <MappingFragment StoreEntitySet="InvoiceDetalis">
+          <ScalarProperty Name="invoiceDetailsID" ColumnName="invoiceDetailsID" />
+          <ScalarProperty Name="invoiceID" ColumnName="invoiceID" />
+          <ScalarProperty Name="productID" ColumnName="productID" />
+          <ScalarProperty Name="quantity" ColumnName="quantity" />
+          <ScalarProperty Name="price" ColumnName="price" />
+          <ScalarProperty Name="discount" ColumnName="discount" />
+          <ScalarProperty Name="statusID" ColumnName="statusID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Invoices">
+      <EntityTypeMapping TypeName="pointOfSaleModel.Invoices">
+        <MappingFragment StoreEntitySet="Invoices">
+          <ScalarProperty Name="invoiveID" ColumnName="invoiveID" />
+          <ScalarProperty Name="invoiceNo" ColumnName="invoiceNo" />
+          <ScalarProperty Name="customerID" ColumnName="customerID" />
+          <ScalarProperty Name="invoiceDate" ColumnName="invoiceDate" />
+          <ScalarProperty Name="companyID" ColumnName="companyID" />
+          <ScalarProperty Name="branchID" ColumnName="branchID" />
+          <ScalarProperty Name="countryID" ColumnName="countryID" />
+          <ScalarProperty Name="deliveryTypeID" ColumnName="deliveryTypeID" />
+          <ScalarProperty Name="deliveryDate" ColumnName="deliveryDate" />
+          <ScalarProperty Name="deliveryID" ColumnName="deliveryID" />
+          <ScalarProperty Name="deliveryCost" ColumnName="deliveryCost" />
+          <ScalarProperty Name="total" ColumnName="total" />
+          <ScalarProperty Name="discount" ColumnName="discount" />
+          <ScalarProperty Name="addressID" ColumnName="addressID" />
+          <ScalarProperty Name="invoiceStatusID" ColumnName="invoiceStatusID" />
+          <ScalarProperty Name="paymentTypeID" ColumnName="paymentTypeID" />
+          <ScalarProperty Name="statusID" ColumnName="statusID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="InvoiceStatus">
+      <EntityTypeMapping TypeName="pointOfSaleModel.InvoiceStatus">
+        <MappingFragment StoreEntitySet="InvoiceStatus">
+          <ScalarProperty Name="invoiceStatusID" ColumnName="invoiceStatusID" />
+          <ScalarProperty Name="invoiceStatusAr" ColumnName="invoiceStatusAr" />
+          <ScalarProperty Name="invoiceStatusEn" ColumnName="invoiceStatusEn" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Nationality">
+      <EntityTypeMapping TypeName="pointOfSaleModel.Nationality">
+        <MappingFragment StoreEntitySet="Nationality">
+          <ScalarProperty Name="nationalityID" ColumnName="nationalityID" />
+          <ScalarProperty Name="nationalityNameEn" ColumnName="nationalityNameEn" />
+          <ScalarProperty Name="nationalityNameAr" ColumnName="nationalityNameAr" />
+          <ScalarProperty Name="statusID" ColumnName="statusID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PaymentType">
+      <EntityTypeMapping TypeName="pointOfSaleModel.PaymentType">
+        <MappingFragment StoreEntitySet="PaymentType">
+          <ScalarProperty Name="paymentTypeID" ColumnName="paymentTypeID" />
+          <ScalarProperty Name="paymentNameEn" ColumnName="paymentNameEn" />
+          <ScalarProperty Name="paymentNameAr" ColumnName="paymentNameAr" />
+          <ScalarProperty Name="statusID" ColumnName="statusID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Premission">
+      <EntityTypeMapping TypeName="pointOfSaleModel.Premission">
+        <MappingFragment StoreEntitySet="Premission">
+          <ScalarProperty Name="permissionID" ColumnName="permissionID" />
+          <ScalarProperty Name="descriptionEn" ColumnName="descriptionEn" />
+          <ScalarProperty Name="descriptionAr" ColumnName="descriptionAr" />
+          <ScalarProperty Name="statusID" ColumnName="statusID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="products">
+      <EntityTypeMapping TypeName="pointOfSaleModel.products">
+        <MappingFragment StoreEntitySet="products">
+          <ScalarProperty Name="productID" ColumnName="productID" />
+          <ScalarProperty Name="productNo" ColumnName="productNo" />
+          <ScalarProperty Name="productBarcode" ColumnName="productBarcode" />
+          <ScalarProperty Name="categoryID" ColumnName="categoryID" />
+          <ScalarProperty Name="companyID" ColumnName="companyID" />
+          <ScalarProperty Name="branchID" ColumnName="branchID" />
+          <ScalarProperty Name="productNameEn" ColumnName="productNameEn" />
+          <ScalarProperty Name="productNameAr" ColumnName="productNameAr" />
+          <ScalarProperty Name="brandID" ColumnName="brandID" />
+          <ScalarProperty Name="price" ColumnName="price" />
+          <ScalarProperty Name="price2" ColumnName="price2" />
+          <ScalarProperty Name="price3" ColumnName="price3" />
+          <ScalarProperty Name="buyPrice" ColumnName="buyPrice" />
+          <ScalarProperty Name="buyPrice2" ColumnName="buyPrice2" />
+          <ScalarProperty Name="buyPrice3" ColumnName="buyPrice3" />
+          <ScalarProperty Name="productTax1" ColumnName="productTax1" />
+          <ScalarProperty Name="productTax2" ColumnName="productTax2" />
+          <ScalarProperty Name="discount" ColumnName="discount" />
+          <ScalarProperty Name="priceAfterDiscount" ColumnName="priceAfterDiscount" />
+          <ScalarProperty Name="descriptionEn" ColumnName="descriptionEn" />
+          <ScalarProperty Name="descriptionAr" ColumnName="descriptionAr" />
+          <ScalarProperty Name="unitID" ColumnName="unitID" />
+          <ScalarProperty Name="size" ColumnName="size" />
+          <ScalarProperty Name="viewCount" ColumnName="viewCount" />
+          <ScalarProperty Name="avgRate" ColumnName="avgRate" />
+          <ScalarProperty Name="inStock" ColumnName="inStock" />
+          <ScalarProperty Name="quantity" ColumnName="quantity" />
+          <ScalarProperty Name="available" ColumnName="available" />
+          <ScalarProperty Name="minCount" ColumnName="minCount" />
+          <ScalarProperty Name="ProductInitial" ColumnName="ProductInitial" />
+          <ScalarProperty Name="dateAdd" ColumnName="dateAdd" />
+          <ScalarProperty Name="staffID" ColumnName="staffID" />
+          <ScalarProperty Name="statusID" ColumnName="statusID" />
+          <ScalarProperty Name="storeID" ColumnName="storeID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PropertiesField">
+      <EntityTypeMapping TypeName="pointOfSaleModel.PropertiesField">
+        <MappingFragment StoreEntitySet="PropertiesField">
+          <ScalarProperty Name="propertyFieldID" ColumnName="propertyFieldID" />
+          <ScalarProperty Name="propertyTypeID" ColumnName="propertyTypeID" />
+          <ScalarProperty Name="categoryID" ColumnName="categoryID" />
+          <ScalarProperty Name="propertyNameEn" ColumnName="propertyNameEn" />
+          <ScalarProperty Name="propertyNameAr" ColumnName="propertyNameAr" />
+          <ScalarProperty Name="staffID" ColumnName="staffID" />
+          <ScalarProperty Name="statusID" ColumnName="statusID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PropertyType">
+      <EntityTypeMapping TypeName="pointOfSaleModel.PropertyType">
+        <MappingFragment StoreEntitySet="PropertyType">
+          <ScalarProperty Name="propertyTypeID" ColumnName="propertyTypeID" />
+          <ScalarProperty Name="propertyNameEn" ColumnName="propertyNameEn" />
+          <ScalarProperty Name="propertyNameAr" ColumnName="propertyNameAr" />
+          <ScalarProperty Name="statusID" ColumnName="statusID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PropertyValue">
+      <EntityTypeMapping TypeName="pointOfSaleModel.PropertyValue">
+        <MappingFragment StoreEntitySet="PropertyValue">
+          <ScalarProperty Name="propertyValueID" ColumnName="propertyValueID" />
+          <ScalarProperty Name="propertyFieldID" ColumnName="propertyFieldID" />
+          <ScalarProperty Name="productID" ColumnName="productID" />
+          <ScalarProperty Name="valueNameEn" ColumnName="valueNameEn" />
+          <ScalarProperty Name="valueNameAr" ColumnName="valueNameAr" />
+          <ScalarProperty Name="statusID" ColumnName="statusID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RowStatus">
+      <EntityTypeMapping TypeName="pointOfSaleModel.RowStatus">
+        <MappingFragment StoreEntitySet="RowStatus">
+          <ScalarProperty Name="statusID" ColumnName="statusID" />
+          <ScalarProperty Name="rowStatusNameEn" ColumnName="rowStatusNameEn" />
+          <ScalarProperty Name="rowStatusNameAr" ColumnName="rowStatusNameAr" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Staff">
+      <EntityTypeMapping TypeName="pointOfSaleModel.Staff">
+        <MappingFragment StoreEntitySet="Staff">
+          <ScalarProperty Name="staffID" ColumnName="staffID" />
+          <ScalarProperty Name="companyID" ColumnName="companyID" />
+          <ScalarProperty Name="fullName" ColumnName="fullName" />
+          <ScalarProperty Name="userName" ColumnName="userName" />
+          <ScalarProperty Name="password" ColumnName="password" />
+          <ScalarProperty Name="permissionID" ColumnName="permissionID" />
+          <ScalarProperty Name="statusID" ColumnName="statusID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Stores">
+      <EntityTypeMapping TypeName="pointOfSaleModel.Stores">
+        <MappingFragment StoreEntitySet="Stores">
+          <ScalarProperty Name="storeID" ColumnName="storeID" />
+          <ScalarProperty Name="storeNumber" ColumnName="storeNumber" />
+          <ScalarProperty Name="storeNameAr" ColumnName="storeNameAr" />
+          <ScalarProperty Name="storeNameEn" ColumnName="storeNameEn" />
+          <ScalarProperty Name="storeAddress" ColumnName="storeAddress" />
+          <ScalarProperty Name="statusID" ColumnName="statusID" />
+          <ScalarProperty Name="storePrimery" ColumnName="storePrimery" />
+          <ScalarProperty Name="stutas" ColumnName="stutas" />
+          <ScalarProperty Name="companyID" ColumnName="companyID" />
+          <ScalarProperty Name="userID" ColumnName="userID" />
+          <ScalarProperty Name="dateAdd" ColumnName="dateAdd" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Title">
+      <EntityTypeMapping TypeName="pointOfSaleModel.Title">
+        <MappingFragment StoreEntitySet="Title">
+          <ScalarProperty Name="titleID" ColumnName="titleID" />
+          <ScalarProperty Name="titleNameEn" ColumnName="titleNameEn" />
+          <ScalarProperty Name="tilteNameAr" ColumnName="tilteNameAr" />
+          <ScalarProperty Name="statusID" ColumnName="statusID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Units">
+      <EntityTypeMapping TypeName="pointOfSaleModel.Units">
+        <MappingFragment StoreEntitySet="Units">
+          <ScalarProperty Name="unitID" ColumnName="unitID" />
+          <ScalarProperty Name="unitNameEn" ColumnName="unitNameEn" />
+          <ScalarProperty Name="unitNameAr" ColumnName="unitNameAr" />
+          <ScalarProperty Name="statusID" ColumnName="statusID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="GetLastBranch" FunctionName="pointOfSaleModel.Store.GetLastBranch">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="pointOfSaleModel.GetLastBranch_Result">
+          <ScalarProperty Name="categoryID" ColumnName="categoryID" />
+          <ScalarProperty Name="staffID" ColumnName="staffID" />
+          <ScalarProperty Name="categoryNameEn" ColumnName="categoryNameEn" />
+          <ScalarProperty Name="categoryNameAr" ColumnName="categoryNameAr" />
+          <ScalarProperty Name="parentID" ColumnName="parentID" />
+          <ScalarProperty Name="dateAdd" ColumnName="dateAdd" />
+          <ScalarProperty Name="statusID" ColumnName="statusID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="GetTree" FunctionName="pointOfSaleModel.Store.GetTree">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="pointOfSaleModel.GetTree_Result">
+          <ScalarProperty Name="cityID" ColumnName="cityID" />
+          <ScalarProperty Name="cityNameAr" ColumnName="cityNameAr" />
+          <ScalarProperty Name="cityNameEn" ColumnName="cityNameEn" />
+          <ScalarProperty Name="parentID" ColumnName="parentID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="GetTreeCategory" FunctionName="pointOfSaleModel.Store.GetTreeCategory">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="pointOfSaleModel.GetTreeCategory_Result">
+          <ScalarProperty Name="categoryID" ColumnName="categoryID" />
+          <ScalarProperty Name="categoryNameAr" ColumnName="categoryNameAr" />
+          <ScalarProperty Name="categoryNameEn" ColumnName="categoryNameEn" />
+          <ScalarProperty Name="parentID" ColumnName="parentID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+  </EntityContainerMapping>
+</Mapping>

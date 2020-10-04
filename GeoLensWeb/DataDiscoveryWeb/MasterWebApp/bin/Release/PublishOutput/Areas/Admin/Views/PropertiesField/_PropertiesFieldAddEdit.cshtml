@@ -1,0 +1,67 @@
+﻿@using Data.ViewModel;
+@using DataLayer;
+
+
+@model PropertiesFieldAddViewModel
+@using (Html.BeginForm("PropertiesFieldAddEdit", "PropertiesField", FormMethod.Post))
+{
+    @Html.AntiForgeryToken()
+    <div class="form-horizontal">
+
+        @Html.ValidationSummary(true)
+
+        @Html.HiddenFor(x => x.PropertiesField.propertyFieldID)
+
+        @if (Model.PropertiesField != null)
+        {
+
+            @Html.HiddenFor(model => model.PropertiesField.statusID)
+
+        }
+        
+      
+
+        <div class="form-group">
+            <label>
+                @MasterWebApp.Resource.PropertiesField.propertyTypeID
+            </label>
+
+            @Html.DropDownListFor(s => s.PropertiesField.propertyTypeID, (SelectList)ViewBag.PropertyTypeV, new { @class = "form-control col-12" })
+            @Html.ValidationMessageFor(model => model.PropertiesField.propertyTypeID)
+
+        </div>
+        <div class="form-group">
+            <label>
+                @MasterWebApp.Resource.PropertiesField.propertyNameAr
+            </label>
+
+            @Html.TextBoxFor(model => model.PropertiesField.propertyNameAr, new { @class = "form-control col-12" })
+            @Html.ValidationMessageFor(model => model.PropertiesField.propertyNameAr)
+
+        </div>
+
+        <div class="form-group">
+            <label>
+                @MasterWebApp.Resource.PropertiesField.propertyNameEn
+            </label>
+
+            @Html.TextBoxFor(model => model.PropertiesField.propertyNameEn, new { @class = "form-control col-12" })
+            @Html.ValidationMessageFor(model => model.PropertiesField.propertyNameEn)
+
+        </div>
+
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <button  type="submit" 
+                       class="btn btn-primary">
+
+                    <i class="far fa-save"></i>
+                    @MasterWebApp.Resource.CommonMessage.btnSave
+                    </button>
+                
+            </div>
+        </div>
+    </div>
+}
+

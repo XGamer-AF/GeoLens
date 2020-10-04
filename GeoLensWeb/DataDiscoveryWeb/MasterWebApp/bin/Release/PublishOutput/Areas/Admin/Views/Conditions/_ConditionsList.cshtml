@@ -1,0 +1,77 @@
+﻿@using Data.ViewModel;
+@model ConditionsAddViewModel
+
+
+<a href="@Url.Action("ConditionsAddEdit", "Conditions")" class="btn btn-primary">
+
+    <span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span>
+    @MasterWebApp.Resource.CommonMessage.btnNew
+</a>
+<div class="table-bordered" style="overflow-y:scroll;max-height:450px;">
+
+    <table id="mTable" class="table  table-hover table-responsive ">
+
+        <thead>
+            <tr>
+                <td>
+                    @MasterWebApp.Resource.Conditions.title
+                </td>
+
+
+
+                <td></td>
+
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model.conditionsAll)
+            {
+
+
+                <tr>
+                    <td class="col-md-12 col-sm-12">
+                        <span class=" col-md-12 pull-right">
+                            @item.consitionText
+                        </span>
+                        <span class=" col-md-12 pull-left text-left" style="padding-top: 20px; color: #754eb9">
+                            @item.consitionTextEn
+                        </span>
+
+
+                    </td>
+
+
+
+
+
+
+                    <td class="col-md-1 col-sm-1">
+
+                        <a href="@Url.Action("ConditionsAddEdit", new { id = item.conditionID })" style="padding:10px;">
+
+                            <i class="far fa-edit"></i>
+                        </a>
+
+
+                    </td>
+                    <td class="col-md-1 col-sm-1">
+
+
+                        <a href="@Url.Action("ChangeStatus", new { id = item.conditionID, statusID  = 0})" style="padding:10px;" onclick="return confirm('هل تريد حذف السجل ')">
+                            <i class="fas fa-minus-circle"></i>
+
+                        </a>
+
+
+
+                    </td>
+
+                </tr>
+
+
+
+            }
+        </tbody>
+    </table>
+
+</div>

@@ -1,0 +1,60 @@
+﻿@using Data.ViewModel;
+@using DataLayer;
+@model AboutUsAddViewModel
+
+
+
+
+
+@{
+    string lang = FunServices.getLang("lang");
+}
+
+<div style="padding-top:5px;">
+
+    <table id="mTable" class="table table-striped table-bordered table-hover table-responsive">
+
+        <thead>
+            <tr>
+                <td style="width:50%">
+                    @MasterWebApp.Resource.AboutUs.aboutUsDescEn
+                </td>
+                <td style="width:50%">
+                    @MasterWebApp.Resource.AboutUs.aboutUsDescAr
+                </td>
+                <td style="width:15.44%">
+                </td>
+
+
+              
+
+               
+
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model.AboutUsAll)
+            {
+
+            <tr>
+                <td>
+                    @item.aboutUsDescEn
+                </td>
+                <td>
+                    @item.aboutUsDescAr
+                </td>
+               
+                <td>
+                    <a href="@Url.Action("AboutUsAddEdit", new { id = item.aboutUsID })" style="padding:10px;">
+                        <i class="far fa-edit"></i>
+                    </a>
+                </td>
+
+             
+            </tr>
+
+            }
+        </tbody>
+    </table>
+
+</div>

@@ -1,0 +1,2223 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="adlModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="AuthorAcademicProgram">
+    <Key>
+      <PropertyRef Name="academicProgramID" />
+    </Key>
+    <Property Name="academicProgramID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="academicProgramAr" Type="nvarchar" MaxLength="150" />
+    <Property Name="academicProgramEn" Type="nvarchar" MaxLength="150" />
+    <Property Name="userID" Type="int" />
+    <Property Name="statusID" Type="int" />
+  </EntityType>
+  <EntityType Name="AuthorAddresses">
+    <Key>
+      <PropertyRef Name="authorAddressID" />
+    </Key>
+    <Property Name="authorAddressID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="authorID" Type="int" Nullable="false" />
+    <Property Name="addressName" Type="nvarchar" MaxLength="200" />
+    <Property Name="addressLine1" Type="nvarchar" MaxLength="200" />
+    <Property Name="addressLine2" Type="nvarchar" MaxLength="200" />
+    <Property Name="addressLine3" Type="nvarchar" MaxLength="200" />
+    <Property Name="addressLine4" Type="nvarchar" MaxLength="200" />
+    <Property Name="countryID" Type="int" />
+    <Property Name="cityID" Type="int" />
+    <Property Name="cityName" Type="nvarchar" MaxLength="50" />
+    <Property Name="zipCode" Type="nvarchar" MaxLength="50" />
+    <Property Name="statusID" Type="int" />
+  </EntityType>
+  <EntityType Name="AuthorCertifications">
+    <Key>
+      <PropertyRef Name="authorCertificationID" />
+    </Key>
+    <Property Name="authorCertificationID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="authorID" Type="int" />
+    <Property Name="certificationID" Type="int" />
+    <Property Name="countryID" Type="int" />
+    <Property Name="cityID" Type="int" />
+    <Property Name="monthID" Type="int" />
+    <Property Name="yearID" Type="int" />
+    <Property Name="userID" Type="int" />
+    <Property Name="statusID" Type="int" />
+    <Property Name="cityName" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="AuthorDegree">
+    <Key>
+      <PropertyRef Name="degreeID" />
+    </Key>
+    <Property Name="degreeID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="degreeAr" Type="nvarchar" MaxLength="150" />
+    <Property Name="degreeEn" Type="nvarchar" MaxLength="150" />
+    <Property Name="userID" Type="int" />
+    <Property Name="statusID" Type="int" />
+  </EntityType>
+  <EntityType Name="AuthorEducations">
+    <Key>
+      <PropertyRef Name="authorEducationID" />
+    </Key>
+    <Property Name="authorEducationID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="authorID" Type="int" />
+    <Property Name="authorEducationAr" Type="nvarchar" MaxLength="200" />
+    <Property Name="authorEducationEn" Type="nvarchar" MaxLength="200" />
+    <Property Name="paperCategoryID" Type="int" />
+    <Property Name="paperSubCategoryID" Type="int" />
+    <Property Name="countryID" Type="int" />
+    <Property Name="degreeID" Type="int" />
+    <Property Name="cityName" Type="nvarchar" MaxLength="50" />
+    <Property Name="monthID" Type="int" />
+    <Property Name="yearID" Type="int" />
+    <Property Name="academicProgramID" Type="int" />
+    <Property Name="userID" Type="int" />
+    <Property Name="statusID" Type="int" />
+  </EntityType>
+  <EntityType Name="AuthorInterest">
+    <Key>
+      <PropertyRef Name="authorInterestID" />
+    </Key>
+    <Property Name="authorInterestID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="authorID" Type="int" Nullable="false" />
+    <Property Name="paperCategoryID" Type="int" />
+    <Property Name="paperSubCategoryID" Type="int" />
+    <Property Name="interestLevelID" Type="int" />
+    <Property Name="statusID" Type="int" />
+  </EntityType>
+  <EntityType Name="authorJobs">
+    <Key>
+      <PropertyRef Name="authorJobID" />
+    </Key>
+    <Property Name="authorJobID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="authorID" Type="int" />
+    <Property Name="jobAr" Type="nvarchar" MaxLength="500" />
+    <Property Name="jobEn" Type="nvarchar" MaxLength="500" />
+    <Property Name="jobTitleID" Type="int" />
+    <Property Name="jobTypeID" Type="int" />
+    <Property Name="jobBusinessID" Type="int" />
+    <Property Name="jobFunctionID" Type="int" />
+    <Property Name="jobResponsibilityID" Type="int" />
+    <Property Name="isPrimary" Type="bit" Nullable="false" />
+    <Property Name="userID" Type="int" />
+    <Property Name="statusID" Type="int" />
+  </EntityType>
+  <EntityType Name="Authors">
+    <Key>
+      <PropertyRef Name="authorID" />
+    </Key>
+    <Property Name="authorID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="authorNo" Type="nvarchar" MaxLength="20" />
+    <Property Name="authorTypeID" Type="int" />
+    <Property Name="journalID" Type="int" />
+    <Property Name="conferenceID" Type="int" />
+    <Property Name="authorNameAr" Type="nvarchar" MaxLength="350" />
+    <Property Name="authorNameEn" Type="nvarchar" MaxLength="350" />
+    <Property Name="titleID" Type="int" />
+    <Property Name="suffixID" Type="int" />
+    <Property Name="genderID" Type="int" />
+    <Property Name="birthDate" Type="datetime" />
+    <Property Name="email" Type="nvarchar" MaxLength="250" />
+    <Property Name="alternateEmail" Type="nvarchar" MaxLength="250" />
+    <Property Name="password" Type="nvarchar" MaxLength="250" />
+    <Property Name="website" Type="nvarchar" MaxLength="150" />
+    <Property Name="phone" Type="nvarchar" MaxLength="20" />
+    <Property Name="mobile" Type="nvarchar" MaxLength="20" />
+    <Property Name="workPhone" Type="nvarchar" MaxLength="20" />
+    <Property Name="workExtn" Type="nvarchar" MaxLength="5" />
+    <Property Name="otherPhone" Type="nvarchar" MaxLength="20" />
+    <Property Name="otherExtn" Type="nvarchar" MaxLength="5" />
+    <Property Name="countryID" Type="int" />
+    <Property Name="cityID" Type="int" />
+    <Property Name="address" Type="nvarchar" MaxLength="350" />
+    <Property Name="dateEnter" Type="datetime" />
+    <Property Name="userID" Type="int" />
+    <Property Name="statusID" Type="int" />
+    <Property Name="isReviewer" Type="bit" />
+    <Property Name="securityQuestion" Type="nvarchar" MaxLength="150" />
+    <Property Name="securityAnswer" Type="nvarchar" MaxLength="150" />
+  </EntityType>
+  <EntityType Name="AuthorSuffix">
+    <Key>
+      <PropertyRef Name="suffixID" />
+    </Key>
+    <Property Name="suffixID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="suffixAr" Type="nvarchar" MaxLength="150" />
+    <Property Name="suffixEn" Type="nvarchar" MaxLength="150" />
+    <Property Name="userID" Type="int" />
+    <Property Name="statusID" Type="int" />
+  </EntityType>
+  <EntityType Name="AuthorTitle">
+    <Key>
+      <PropertyRef Name="titleID" />
+    </Key>
+    <Property Name="titleID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="titleAr" Type="nvarchar" MaxLength="150" />
+    <Property Name="titleEn" Type="nvarchar" MaxLength="150" />
+    <Property Name="userID" Type="int" />
+    <Property Name="statusID" Type="int" />
+  </EntityType>
+  <EntityType Name="Certifications">
+    <Key>
+      <PropertyRef Name="certificationID" />
+    </Key>
+    <Property Name="certificationID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="certificationAr" Type="nvarchar" MaxLength="150" />
+    <Property Name="certificationEn" Type="nvarchar" MaxLength="150" />
+    <Property Name="userID" Type="int" />
+    <Property Name="statusID" Type="int" />
+  </EntityType>
+  <EntityType Name="Cities">
+    <Key>
+      <PropertyRef Name="cityID" />
+    </Key>
+    <Property Name="cityID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="countryID" Type="int" Nullable="false" />
+    <Property Name="cityAr" Type="nvarchar" MaxLength="150" />
+    <Property Name="cityEn" Type="nvarchar" MaxLength="150" />
+    <Property Name="userID" Type="int" />
+    <Property Name="statusID" Type="int" />
+  </EntityType>
+  <EntityType Name="ConferenceAddresses">
+    <Key>
+      <PropertyRef Name="conferenceAddressID" />
+    </Key>
+    <Property Name="conferenceAddressID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="conferenceID" Type="int" Nullable="false" />
+    <Property Name="addressName" Type="nvarchar" MaxLength="200" />
+    <Property Name="addressLine1" Type="nvarchar" MaxLength="200" />
+    <Property Name="addressLine2" Type="nvarchar" MaxLength="200" />
+    <Property Name="addressLine3" Type="nvarchar" MaxLength="200" />
+    <Property Name="addressLine4" Type="nvarchar" MaxLength="200" />
+    <Property Name="countryID" Type="int" />
+    <Property Name="cityID" Type="int" />
+    <Property Name="cityName" Type="nvarchar" MaxLength="50" />
+    <Property Name="zipCode" Type="nvarchar" MaxLength="50" />
+    <Property Name="statusID" Type="int" />
+  </EntityType>
+  <EntityType Name="ConferenceCommittees">
+    <Key>
+      <PropertyRef Name="conferenceCommitteeID" />
+    </Key>
+    <Property Name="conferenceCommitteeID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="conferenceID" Type="int" />
+    <Property Name="programCommiteeID" Type="int" />
+    <Property Name="titleID" Type="int" />
+    <Property Name="personName" Type="nvarchar" MaxLength="200" />
+    <Property Name="countryID" Type="int" />
+    <Property Name="university" Type="nvarchar" MaxLength="200" />
+    <Property Name="jobTitle" Type="nvarchar" MaxLength="200" />
+    <Property Name="email1" Type="nvarchar" MaxLength="200" />
+    <Property Name="phone1" Type="nvarchar" MaxLength="20" />
+    <Property Name="statusID" Type="int" />
+  </EntityType>
+  <EntityType Name="ConferenceContacts">
+    <Key>
+      <PropertyRef Name="conferenceContactID" />
+    </Key>
+    <Property Name="conferenceContactID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="conferenceID" Type="int" Nullable="false" />
+    <Property Name="conferenceAddressID" Type="int" />
+    <Property Name="titleID" Type="int" />
+    <Property Name="contactTypeID" Type="int" />
+    <Property Name="contactName" Type="nvarchar" MaxLength="200" />
+    <Property Name="jobTitle" Type="nvarchar" MaxLength="200" />
+    <Property Name="email1" Type="nvarchar" MaxLength="200" />
+    <Property Name="email2" Type="nvarchar" MaxLength="200" />
+    <Property Name="phone1" Type="nvarchar" MaxLength="20" />
+    <Property Name="phone2" Type="nvarchar" MaxLength="20" />
+    <Property Name="statusID" Type="int" />
+    <Property Name="conferenceSubmitter" Type="bit" Nullable="false" />
+    <Property Name="conferenceChair" Type="bit" Nullable="false" />
+    <Property Name="conferenceTreasure" Type="bit" Nullable="false" />
+    <Property Name="publicationChair" Type="bit" Nullable="false" />
+    <Property Name="technicalProgramChair" Type="bit" Nullable="false" />
+    <Property Name="Other" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ConferenceFees">
+    <Key>
+      <PropertyRef Name="conferenceFeesID" />
+    </Key>
+    <Property Name="conferenceFeesID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="conferenceID" Type="int" />
+    <Property Name="feesID" Type="int" />
+    <Property Name="value" Type="float" />
+    <Property Name="notes" Type="nvarchar" MaxLength="500" />
+    <Property Name="statusID" Type="int" />
+  </EntityType>
+  <EntityType Name="ConferenceFields">
+    <Key>
+      <PropertyRef Name="conferenceFieldID" />
+    </Key>
+    <Property Name="conferenceFieldID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="conferenceID" Type="int" />
+    <Property Name="paperSubCategoryID" Type="int" />
+    <Property Name="statusID" Type="int" />
+  </EntityType>
+  <EntityType Name="Conferences">
+    <Key>
+      <PropertyRef Name="conferenceID" />
+    </Key>
+    <Property Name="conferenceID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="conferenceAr" Type="nvarchar" MaxLength="500" />
+    <Property Name="conferenceEn" Type="nvarchar" MaxLength="500" />
+    <Property Name="conferenceAcronym" Type="nvarchar" MaxLength="200" />
+    <Property Name="scope" Type="nvarchar" MaxLength="200" />
+    <Property Name="keywords" Type="nvarchar" MaxLength="200" />
+    <Property Name="reviewerTypeID" Type="int" />
+    <Property Name="countryID" Type="int" />
+    <Property Name="cityID" Type="int" />
+    <Property Name="cityName" Type="nvarchar" MaxLength="50" />
+    <Property Name="adress" Type="nvarchar" MaxLength="500" />
+    <Property Name="startDate" Type="date" />
+    <Property Name="endDate" Type="date" />
+    <Property Name="abstractDate" Type="date" />
+    <Property Name="notificationDate" Type="date" />
+    <Property Name="paperAcceptEndDate" Type="date" />
+    <Property Name="cameraReadyDate" Type="date" />
+    <Property Name="registrationDate" Type="date" />
+    <Property Name="submissionDeadLineDate" Type="date" />
+    <Property Name="startDateOld" Type="date" />
+    <Property Name="endDateOld" Type="date" />
+    <Property Name="abstractDateOld" Type="date" />
+    <Property Name="notificationDateOld" Type="date" />
+    <Property Name="paperAcceptEndDateOld" Type="date" />
+    <Property Name="cameraReadyDateOld" Type="date" />
+    <Property Name="registrationDateOld" Type="date" />
+    <Property Name="submissionDeadLineDateOld" Type="date" />
+    <Property Name="paperCategoryID" Type="int" />
+    <Property Name="website" Type="nvarchar" MaxLength="150" />
+    <Property Name="locked" Type="bit" Nullable="false" />
+    <Property Name="dateEnter" Type="datetime" />
+    <Property Name="dateUpdate" Type="datetime" />
+    <Property Name="userEnterID" Type="int" />
+    <Property Name="userUpdateID" Type="int" />
+    <Property Name="statusID" Type="int" />
+    <Property Name="fees" Type="float" />
+    <Property Name="attendanceCount" Type="int" />
+    <Property Name="exibitsCount" Type="int" />
+    <Property Name="conferencePublications" Type="bit" Nullable="false" />
+    <Property Name="jornalPublications" Type="bit" Nullable="false" />
+    <Property Name="copyright" Type="bit" Nullable="false" />
+    <Property Name="submittedPaperCount" Type="int" />
+    <Property Name="acceptedPaperRate" Type="int" />
+    <Property Name="namedReviewerCount" Type="int" />
+    <Property Name="paperReviewerCount" Type="int" />
+    <Property Name="notes" Type="nvarchar(max)" />
+    <Property Name="authorID" Type="int" />
+    <Property Name="titleID" Type="int" />
+    <Property Name="contactName" Type="nvarchar" MaxLength="200" />
+    <Property Name="jobTitle" Type="nvarchar" MaxLength="200" />
+    <Property Name="email" Type="nvarchar" MaxLength="250" />
+    <Property Name="email2" Type="nvarchar" MaxLength="200" />
+    <Property Name="phone1" Type="nvarchar" MaxLength="20" />
+    <Property Name="phone2" Type="nvarchar" MaxLength="20" />
+    <Property Name="cssFile" Type="nvarchar" MaxLength="20" />
+    <Property Name="currencyID" Type="int" />
+    <Property Name="paperFees" Type="float" />
+    <Property Name="haveWebsite" Type="bit" Nullable="false" />
+    <Property Name="approved" Type="bit" Nullable="false" />
+    <Property Name="havePdf" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ConferenceSocials">
+    <Key>
+      <PropertyRef Name="conferenceSocialID" />
+    </Key>
+    <Property Name="conferenceSocialID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="conferenceID" Type="int" />
+    <Property Name="socialMediaID" Type="int" Nullable="false" />
+    <Property Name="socialUrl" Type="nvarchar" MaxLength="500" />
+    <Property Name="active" Type="bit" Nullable="false" />
+    <Property Name="statusID" Type="int" />
+  </EntityType>
+  <EntityType Name="ConferencesOverview">
+    <Key>
+      <PropertyRef Name="overviewID" />
+    </Key>
+    <Property Name="overviewID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="overvewAr" Type="nvarchar" MaxLength="500" />
+    <Property Name="overviewEn" Type="nvarchar" MaxLength="500" />
+    <Property Name="userID" Type="int" />
+    <Property Name="statusID" Type="int" />
+    <Property Name="orderID" Type="int" />
+  </EntityType>
+  <EntityType Name="ContactTypes">
+    <Key>
+      <PropertyRef Name="contactTypeID" />
+    </Key>
+    <Property Name="contactTypeID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="contactTypeAr" Type="nvarchar" MaxLength="100" />
+    <Property Name="contactTypeEn" Type="nvarchar" MaxLength="100" />
+    <Property Name="statusID" Type="int" />
+  </EntityType>
+  <EntityType Name="Countries">
+    <Key>
+      <PropertyRef Name="countryID" />
+    </Key>
+    <Property Name="countryID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="countryAr" Type="nvarchar" MaxLength="150" />
+    <Property Name="countryEn" Type="nvarchar" MaxLength="150" />
+    <Property Name="userID" Type="int" />
+    <Property Name="statusID" Type="int" />
+  </EntityType>
+  <EntityType Name="Currencies">
+    <Key>
+      <PropertyRef Name="currencyID" />
+    </Key>
+    <Property Name="currencyID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="currencyAr" Type="nvarchar" MaxLength="50" />
+    <Property Name="currencyEn" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="FAQ">
+    <Key>
+      <PropertyRef Name="faqID" />
+    </Key>
+    <Property Name="faqID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="questionAr" Type="nvarchar(max)" />
+    <Property Name="questionEn" Type="nvarchar(max)" />
+    <Property Name="answerAr" Type="nvarchar(max)" />
+    <Property Name="answerEn" Type="nvarchar(max)" />
+    <Property Name="userID" Type="int" />
+    <Property Name="statusID" Type="int" />
+  </EntityType>
+  <EntityType Name="Fees">
+    <Key>
+      <PropertyRef Name="feesID" />
+    </Key>
+    <Property Name="feesID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="feesAr" Type="nvarchar" MaxLength="500" />
+    <Property Name="feesEn" Type="nvarchar" MaxLength="500" />
+    <Property Name="statusID" Type="int" />
+  </EntityType>
+  <EntityType Name="Genders">
+    <Key>
+      <PropertyRef Name="genderID" />
+    </Key>
+    <Property Name="genderID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="genderAr" Type="nvarchar" MaxLength="150" />
+    <Property Name="genderEn" Type="nvarchar" MaxLength="150" />
+    <Property Name="userID" Type="int" />
+    <Property Name="statusID" Type="int" />
+  </EntityType>
+  <EntityType Name="InterestLevel">
+    <Key>
+      <PropertyRef Name="interestLevelID" />
+    </Key>
+    <Property Name="interestLevelID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="interestLevelAr" Type="nvarchar" MaxLength="150" />
+    <Property Name="interestLevelEn" Type="nvarchar" MaxLength="150" />
+    <Property Name="statusID" Type="int" />
+  </EntityType>
+  <EntityType Name="JobBusinesss">
+    <Key>
+      <PropertyRef Name="jobBusinessID" />
+    </Key>
+    <Property Name="jobBusinessID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="jobBusinessAr" Type="nvarchar" MaxLength="350" />
+    <Property Name="jobBusinessEn" Type="nvarchar" MaxLength="350" />
+    <Property Name="userID" Type="int" />
+    <Property Name="statusID" Type="int" />
+  </EntityType>
+  <EntityType Name="jobFunctions">
+    <Key>
+      <PropertyRef Name="jobFunctionID" />
+    </Key>
+    <Property Name="jobFunctionID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="jobFunctionAr" Type="nvarchar" MaxLength="350" />
+    <Property Name="jobFunctionEn" Type="nvarchar" MaxLength="350" />
+    <Property Name="userID" Type="int" />
+    <Property Name="statusID" Type="int" />
+  </EntityType>
+  <EntityType Name="jobResponsibilitys">
+    <Key>
+      <PropertyRef Name="jobResponsibilityID" />
+    </Key>
+    <Property Name="jobResponsibilityID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="jobResponsibilityAr" Type="nvarchar" MaxLength="350" />
+    <Property Name="jobResponsibilityEn" Type="nvarchar" MaxLength="350" />
+    <Property Name="userID" Type="int" />
+    <Property Name="statusID" Type="int" />
+  </EntityType>
+  <EntityType Name="JobTitles">
+    <Key>
+      <PropertyRef Name="jobTitleID" />
+    </Key>
+    <Property Name="jobTitleID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="jobTitleAr" Type="nvarchar" MaxLength="350" />
+    <Property Name="jobTitleEn" Type="nvarchar" MaxLength="350" />
+    <Property Name="userID" Type="int" />
+    <Property Name="statusID" Type="int" />
+  </EntityType>
+  <EntityType Name="JobTypes">
+    <Key>
+      <PropertyRef Name="jobTypeID" />
+    </Key>
+    <Property Name="jobTypeID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="jobTypeAr" Type="nvarchar" MaxLength="350" />
+    <Property Name="jobTypeEn" Type="nvarchar" MaxLength="350" />
+    <Property Name="userID" Type="int" />
+    <Property Name="statusID" Type="int" />
+  </EntityType>
+  <EntityType Name="JournalAbout">
+    <Key>
+      <PropertyRef Name="journalAboutID" />
+    </Key>
+    <Property Name="journalAboutID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="journalID" Type="int" Nullable="false" />
+    <Property Name="titleAr" Type="nvarchar" MaxLength="350" />
+    <Property Name="titleEn" Type="nvarchar" MaxLength="350" />
+    <Property Name="pargraphAr" Type="nvarchar(max)" />
+    <Property Name="pargraphEn" Type="nvarchar(max)" />
+    <Property Name="userID" Type="int" />
+    <Property Name="statusID" Type="int" />
+  </EntityType>
+  <EntityType Name="JournalAimsScope">
+    <Key>
+      <PropertyRef Name="journalAimsScopeID" />
+    </Key>
+    <Property Name="journalAimsScopeID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="journalID" Type="int" Nullable="false" />
+    <Property Name="pargraphAr" Type="nvarchar(max)" />
+    <Property Name="pargraphEn" Type="nvarchar(max)" />
+    <Property Name="userID" Type="int" />
+    <Property Name="statusID" Type="int" />
+  </EntityType>
+  <EntityType Name="JournalDetails">
+    <Key>
+      <PropertyRef Name="journalDetailID" />
+    </Key>
+    <Property Name="journalDetailID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="journalID" Type="int" />
+    <Property Name="volume" Type="int" />
+    <Property Name="issue" Type="int" />
+    <Property Name="fees" Type="float" />
+    <Property Name="yearID" Type="int" />
+    <Property Name="statusID" Type="int" />
+    <Property Name="dateEnter" Type="datetime" />
+    <Property Name="dateUpdate" Type="datetime" />
+    <Property Name="userEnterID" Type="int" />
+    <Property Name="userUpdateID" Type="int" />
+    <Property Name="locked" Type="bit" Nullable="false" />
+    <Property Name="isCurrent" Type="bit" Nullable="false" />
+    <Property Name="havePdf" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="JournalEditorialBoard">
+    <Key>
+      <PropertyRef Name="journalEditorialBoardID" />
+    </Key>
+    <Property Name="journalEditorialBoardID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="journalID" Type="int" Nullable="false" />
+    <Property Name="journalEditorialTypeID" Type="int" Nullable="false" />
+    <Property Name="pargraphAr" Type="nvarchar" MaxLength="500" />
+    <Property Name="pargraphEn" Type="nvarchar" MaxLength="500" />
+    <Property Name="userID" Type="int" />
+    <Property Name="statusID" Type="int" />
+  </EntityType>
+  <EntityType Name="JournalEditorialType">
+    <Key>
+      <PropertyRef Name="journalEditorialTypeID" />
+    </Key>
+    <Property Name="journalEditorialTypeID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="editorialTypeAr" Type="nvarchar" MaxLength="50" />
+    <Property Name="editorialTypeEn" Type="nvarchar" MaxLength="50" />
+    <Property Name="statusID" Type="int" />
+  </EntityType>
+  <EntityType Name="JournalFields">
+    <Key>
+      <PropertyRef Name="journalFieldID" />
+    </Key>
+    <Property Name="journalFieldID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="journalID" Type="int" />
+    <Property Name="paperSubCategoryID" Type="int" />
+    <Property Name="statusID" Type="int" />
+  </EntityType>
+  <EntityType Name="JournalImpactFactor">
+    <Key>
+      <PropertyRef Name="journalImpactFactorID" />
+    </Key>
+    <Property Name="journalImpactFactorID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="journalID" Type="int" Nullable="false" />
+    <Property Name="pargraphAr" Type="nvarchar(max)" />
+    <Property Name="pargraphEn" Type="nvarchar(max)" />
+    <Property Name="statusID" Type="int" />
+  </EntityType>
+  <EntityType Name="JournalIndexing">
+    <Key>
+      <PropertyRef Name="journalIndexingID" />
+    </Key>
+    <Property Name="journalIndexingID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="journalID" Type="int" Nullable="false" />
+    <Property Name="pargraphAr" Type="nvarchar(max)" />
+    <Property Name="pargraphEn" Type="nvarchar(max)" />
+    <Property Name="statusID" Type="int" />
+  </EntityType>
+  <EntityType Name="JournalPaperArchive">
+    <Key>
+      <PropertyRef Name="journalPaperArchiveID" />
+    </Key>
+    <Property Name="journalPaperArchiveID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="journalID" Type="int" Nullable="false" />
+    <Property Name="pargraphAr" Type="nvarchar(max)" />
+    <Property Name="pargraphEn" Type="nvarchar(max)" />
+    <Property Name="statusID" Type="int" />
+  </EntityType>
+  <EntityType Name="Journals">
+    <Key>
+      <PropertyRef Name="journalID" />
+    </Key>
+    <Property Name="journalID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="journalAr" Type="nvarchar" MaxLength="500" />
+    <Property Name="journalEn" Type="nvarchar" MaxLength="500" />
+    <Property Name="firstLetters" Type="nvarchar" MaxLength="50" />
+    <Property Name="journalSubTitle" Type="nvarchar" MaxLength="500" />
+    <Property Name="reviewerTypeID" Type="int" />
+    <Property Name="countryID" Type="int" />
+    <Property Name="cityID" Type="int" />
+    <Property Name="cityName" Type="nvarchar" MaxLength="50" />
+    <Property Name="adress" Type="nvarchar" MaxLength="500" />
+    <Property Name="email" Type="nvarchar" MaxLength="250" />
+    <Property Name="website" Type="nvarchar" MaxLength="150" />
+    <Property Name="phone1" Type="nvarchar" MaxLength="20" />
+    <Property Name="phone2" Type="nvarchar" MaxLength="20" />
+    <Property Name="locked" Type="bit" Nullable="false" />
+    <Property Name="dateEnter" Type="datetime" />
+    <Property Name="dateUpdate" Type="datetime" />
+    <Property Name="userEnterID" Type="int" />
+    <Property Name="userUpdateID" Type="int" />
+    <Property Name="statusID" Type="int" />
+    <Property Name="issnOnline" Type="nvarchar" MaxLength="50" />
+    <Property Name="issnPrint" Type="nvarchar" MaxLength="50" />
+    <Property Name="journalsOwner" Type="nvarchar" MaxLength="500" />
+    <Property Name="managingOfficer" Type="nvarchar" MaxLength="500" />
+    <Property Name="aimsScope" Type="nvarchar(max)" />
+    <Property Name="paperCategoryID" Type="int" />
+    <Property Name="havePdf" Type="bit" Nullable="false" />
+    <Property Name="cssFile" Type="nvarchar" MaxLength="20" />
+    <Property Name="pagesCount" Type="int" />
+    <Property Name="issueCount" Type="int" />
+  </EntityType>
+  <EntityType Name="Months">
+    <Key>
+      <PropertyRef Name="monthID" />
+    </Key>
+    <Property Name="monthID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="monthAr" Type="nvarchar" MaxLength="150" />
+    <Property Name="monthEn" Type="nvarchar" MaxLength="150" />
+    <Property Name="userID" Type="int" />
+    <Property Name="statusID" Type="int" />
+  </EntityType>
+  <EntityType Name="OtherConferences">
+    <Key>
+      <PropertyRef Name="otherConferenceID" />
+    </Key>
+    <Property Name="otherConferenceID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="conferenceID" Type="int" />
+    <Property Name="otherConfNameAr" Type="nvarchar" MaxLength="100" />
+    <Property Name="otherConfNameEn" Type="nvarchar" MaxLength="100" />
+    <Property Name="otherConfIntials" Type="nvarchar" MaxLength="30" />
+    <Property Name="otherConfUrl" Type="nvarchar" MaxLength="500" />
+    <Property Name="countryID" Type="int" />
+    <Property Name="otherConfDate" Type="date" />
+    <Property Name="statusID" Type="int" />
+  </EntityType>
+  <EntityType Name="OtherLinks">
+    <Key>
+      <PropertyRef Name="otherLinkID" />
+    </Key>
+    <Property Name="otherLinkID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="conferenceID" Type="int" />
+    <Property Name="linkNameAr" Type="nvarchar" MaxLength="100" />
+    <Property Name="linkNameEn" Type="nvarchar" MaxLength="100" />
+    <Property Name="LinkUrl" Type="nvarchar" MaxLength="500" />
+    <Property Name="statusID" Type="int" />
+  </EntityType>
+  <EntityType Name="PaperAbstract">
+    <Key>
+      <PropertyRef Name="paperID" />
+    </Key>
+    <Property Name="paperID" Type="int" Nullable="false" />
+    <Property Name="abstractPaper" Type="nvarchar(max)" />
+    <Property Name="notes" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="PaperAuthors">
+    <Key>
+      <PropertyRef Name="paperAuthorID" />
+    </Key>
+    <Property Name="paperAuthorID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="paperID" Type="int" />
+    <Property Name="authorName" Type="nvarchar" MaxLength="250" />
+    <Property Name="authorMail" Type="nvarchar" MaxLength="250" />
+    <Property Name="authorPhone" Type="nvarchar" MaxLength="20" />
+    <Property Name="authorJobID" Type="int" />
+    <Property Name="countryID" Type="int" />
+    <Property Name="cityID" Type="int" />
+    <Property Name="cityName" Type="nvarchar" MaxLength="50" />
+    <Property Name="isContact" Type="bit" Nullable="false" />
+    <Property Name="statusID" Type="int" />
+    <Property Name="organization" Type="nvarchar" MaxLength="250" />
+    <Property Name="jobTitleID" Type="int" />
+  </EntityType>
+  <EntityType Name="PaperCategory">
+    <Key>
+      <PropertyRef Name="paperCategoryID" />
+    </Key>
+    <Property Name="paperCategoryID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="parentID" Type="int" />
+    <Property Name="paperCatAr" Type="nvarchar" MaxLength="350" />
+    <Property Name="paperCatEn" Type="nvarchar" MaxLength="350" />
+    <Property Name="userID" Type="int" />
+    <Property Name="statusID" Type="int" />
+  </EntityType>
+  <EntityType Name="PaperFields">
+    <Key>
+      <PropertyRef Name="paperFieldID" />
+    </Key>
+    <Property Name="paperFieldID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="paperID" Type="int" />
+    <Property Name="paperSubCategoryID" Type="int" />
+    <Property Name="statusID" Type="int" />
+  </EntityType>
+  <EntityType Name="PaperReviewer">
+    <Key>
+      <PropertyRef Name="paperReviewerID" />
+    </Key>
+    <Property Name="paperReviewerID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="authorID" Type="int" />
+    <Property Name="paperID" Type="int" />
+    <Property Name="receiveDate" Type="datetime" />
+    <Property Name="deliveryDate" Type="datetime" />
+    <Property Name="paperStatusID" Type="int" />
+    <Property Name="notes" Type="nvarchar(max)" />
+    <Property Name="dateEnter" Type="datetime" />
+    <Property Name="dateUpdate" Type="datetime" />
+    <Property Name="userEnterID" Type="int" />
+    <Property Name="userUpdateID" Type="int" />
+    <Property Name="statusID" Type="int" />
+    <Property Name="fileCount" Type="int" />
+    <Property Name="needAction" Type="bit" />
+  </EntityType>
+  <EntityType Name="Papers">
+    <Key>
+      <PropertyRef Name="paperID" />
+    </Key>
+    <Property Name="paperID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="paperTypeID" Type="int" />
+    <Property Name="paperCategoryID" Type="int" />
+    <Property Name="journalID" Type="int" />
+    <Property Name="journalDetailID" Type="int" />
+    <Property Name="conferenceID" Type="int" />
+    <Property Name="authorID" Type="int" />
+    <Property Name="paperStatusID" Type="int" />
+    <Property Name="titleAr" Type="nvarchar" MaxLength="500" />
+    <Property Name="titleEn" Type="nvarchar" MaxLength="500" />
+    <Property Name="keyWords" Type="nvarchar" MaxLength="500" />
+    <Property Name="year" Type="nvarchar" MaxLength="5" />
+    <Property Name="pageStart" Type="nvarchar" MaxLength="5" />
+    <Property Name="pageEnd" Type="nvarchar" MaxLength="5" />
+    <Property Name="emailAlternate" Type="nvarchar" MaxLength="100" />
+    <Property Name="phoneAlternate" Type="nvarchar" MaxLength="20" />
+    <Property Name="abstractPaper" Type="nvarchar(max)" />
+    <Property Name="notes" Type="nvarchar(max)" />
+    <Property Name="isStudent" Type="bit" Nullable="false" />
+    <Property Name="locked" Type="bit" Nullable="false" />
+    <Property Name="dateEnter" Type="datetime" />
+    <Property Name="dateUpdate" Type="datetime" />
+    <Property Name="userEnterID" Type="int" />
+    <Property Name="userUpdateID" Type="int" />
+    <Property Name="statusID" Type="int" />
+    <Property Name="datePublictaion" Type="date" />
+    <Property Name="isPublictaion" Type="bit" />
+    <Property Name="fileCount" Type="int" />
+    <Property Name="needAction" Type="bit" />
+  </EntityType>
+  <EntityType Name="PaperStatus">
+    <Key>
+      <PropertyRef Name="paperStatusID" />
+    </Key>
+    <Property Name="paperStatusID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="paperStatusAr" Type="nvarchar" MaxLength="150" />
+    <Property Name="paperStatusEn" Type="nvarchar" MaxLength="150" />
+    <Property Name="userID" Type="int" />
+    <Property Name="statusID" Type="int" />
+    <Property Name="showReviewer" Type="bit" />
+  </EntityType>
+  <EntityType Name="PaperSubCategory">
+    <Key>
+      <PropertyRef Name="paperSubCategoryID" />
+    </Key>
+    <Property Name="paperSubCategoryID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="paperSubCategoryAr" Type="nvarchar" MaxLength="350" />
+    <Property Name="paperSubCategoryEn" Type="nvarchar" MaxLength="350" />
+    <Property Name="userID" Type="int" />
+    <Property Name="statusID" Type="int" />
+    <Property Name="paperCategoryID" Type="int" />
+  </EntityType>
+  <EntityType Name="PaperType">
+    <Key>
+      <PropertyRef Name="paperTypeID" />
+    </Key>
+    <Property Name="paperTypeID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="paperTypeAr" Type="nvarchar" MaxLength="150" />
+    <Property Name="paperTypeEn" Type="nvarchar" MaxLength="150" />
+    <Property Name="userID" Type="int" />
+    <Property Name="statusID" Type="int" />
+  </EntityType>
+  <EntityType Name="PrivilegeGroup">
+    <Key>
+      <PropertyRef Name="privilegeGroupID" />
+    </Key>
+    <Property Name="privilegeGroupID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="privilegeGroupAr" Type="nvarchar" MaxLength="150" />
+    <Property Name="privilegeGroupEn" Type="nvarchar" MaxLength="150" />
+    <Property Name="userID" Type="int" />
+    <Property Name="statusID" Type="int" />
+  </EntityType>
+  <EntityType Name="ProgramCommitees">
+    <Key>
+      <PropertyRef Name="programCommiteeID" />
+    </Key>
+    <Property Name="programCommiteeID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="programCommiteeAr" Type="nvarchar" MaxLength="100" />
+    <Property Name="programCommiteeEn" Type="nvarchar" MaxLength="100" />
+    <Property Name="statusID" Type="int" />
+  </EntityType>
+  <EntityType Name="ReviewerTypes">
+    <Key>
+      <PropertyRef Name="reviewerTypeID" />
+    </Key>
+    <Property Name="reviewerTypeID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="reviewerTypeAr" Type="nvarchar" MaxLength="100" />
+    <Property Name="reviewerTypeEn" Type="nvarchar" MaxLength="100" />
+    <Property Name="statusID" Type="int" />
+  </EntityType>
+  <EntityType Name="SocialMedia">
+    <Key>
+      <PropertyRef Name="socialMediaID" />
+    </Key>
+    <Property Name="socialMediaID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="socialMediaAr" Type="nvarchar" MaxLength="50" />
+    <Property Name="socialMediaEn" Type="nvarchar" MaxLength="50" />
+    <Property Name="statusID" Type="int" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <EntityType Name="Title">
+    <Key>
+      <PropertyRef Name="titleID" />
+    </Key>
+    <Property Name="titleID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="titleAr" Type="nvarchar" MaxLength="150" />
+    <Property Name="titleEn" Type="nvarchar" MaxLength="150" />
+    <Property Name="userID" Type="int" />
+    <Property Name="statusID" Type="int" />
+  </EntityType>
+  <EntityType Name="Users">
+    <Key>
+      <PropertyRef Name="userID" />
+    </Key>
+    <Property Name="userID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="userName" Type="nvarchar" MaxLength="250" />
+    <Property Name="userPassword" Type="nvarchar" MaxLength="250" />
+    <Property Name="privilegeGroupID" Type="int" />
+    <Property Name="statusID" Type="int" />
+  </EntityType>
+  <EntityType Name="Years">
+    <Key>
+      <PropertyRef Name="yearID" />
+    </Key>
+    <Property Name="yearID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="yearAr" Type="nvarchar" MaxLength="150" />
+    <Property Name="yearEn" Type="nvarchar" MaxLength="150" />
+    <Property Name="userID" Type="int" />
+    <Property Name="statusID" Type="int" />
+  </EntityType>
+  <Association Name="FK_Author Addresses_Authors">
+    <End Role="Authors" Type="Self.Authors" Multiplicity="1" />
+    <End Role="AuthorAddresses" Type="Self.AuthorAddresses" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Authors">
+        <PropertyRef Name="authorID" />
+      </Principal>
+      <Dependent Role="AuthorAddresses">
+        <PropertyRef Name="authorID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_AuthorAddresses_Countries">
+    <End Role="Countries" Type="Self.Countries" Multiplicity="0..1" />
+    <End Role="AuthorAddresses" Type="Self.AuthorAddresses" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Countries">
+        <PropertyRef Name="countryID" />
+      </Principal>
+      <Dependent Role="AuthorAddresses">
+        <PropertyRef Name="countryID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_AuthorCertifications_Authors">
+    <End Role="Authors" Type="Self.Authors" Multiplicity="0..1" />
+    <End Role="AuthorCertifications" Type="Self.AuthorCertifications" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Authors">
+        <PropertyRef Name="authorID" />
+      </Principal>
+      <Dependent Role="AuthorCertifications">
+        <PropertyRef Name="authorID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_AuthorCertifications_Certifications">
+    <End Role="Certifications" Type="Self.Certifications" Multiplicity="0..1" />
+    <End Role="AuthorCertifications" Type="Self.AuthorCertifications" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Certifications">
+        <PropertyRef Name="certificationID" />
+      </Principal>
+      <Dependent Role="AuthorCertifications">
+        <PropertyRef Name="certificationID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_AuthorCertifications_Countries">
+    <End Role="Countries" Type="Self.Countries" Multiplicity="0..1" />
+    <End Role="AuthorCertifications" Type="Self.AuthorCertifications" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Countries">
+        <PropertyRef Name="countryID" />
+      </Principal>
+      <Dependent Role="AuthorCertifications">
+        <PropertyRef Name="countryID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_AuthorCertifications_Months">
+    <End Role="Months" Type="Self.Months" Multiplicity="0..1" />
+    <End Role="AuthorCertifications" Type="Self.AuthorCertifications" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Months">
+        <PropertyRef Name="monthID" />
+      </Principal>
+      <Dependent Role="AuthorCertifications">
+        <PropertyRef Name="monthID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_AuthorCertifications_Years">
+    <End Role="Years" Type="Self.Years" Multiplicity="0..1" />
+    <End Role="AuthorCertifications" Type="Self.AuthorCertifications" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Years">
+        <PropertyRef Name="yearID" />
+      </Principal>
+      <Dependent Role="AuthorCertifications">
+        <PropertyRef Name="yearID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_AuthorEducations_AuthoracademicProgram">
+    <End Role="AuthorAcademicProgram" Type="Self.AuthorAcademicProgram" Multiplicity="0..1" />
+    <End Role="AuthorEducations" Type="Self.AuthorEducations" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AuthorAcademicProgram">
+        <PropertyRef Name="academicProgramID" />
+      </Principal>
+      <Dependent Role="AuthorEducations">
+        <PropertyRef Name="academicProgramID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_AuthorEducations_AuthorDegree">
+    <End Role="AuthorDegree" Type="Self.AuthorDegree" Multiplicity="0..1" />
+    <End Role="AuthorEducations" Type="Self.AuthorEducations" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AuthorDegree">
+        <PropertyRef Name="degreeID" />
+      </Principal>
+      <Dependent Role="AuthorEducations">
+        <PropertyRef Name="degreeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_AuthorEducations_Authors">
+    <End Role="Authors" Type="Self.Authors" Multiplicity="0..1" />
+    <End Role="AuthorEducations" Type="Self.AuthorEducations" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Authors">
+        <PropertyRef Name="authorID" />
+      </Principal>
+      <Dependent Role="AuthorEducations">
+        <PropertyRef Name="authorID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_AuthorEducations_Countries">
+    <End Role="Countries" Type="Self.Countries" Multiplicity="0..1" />
+    <End Role="AuthorEducations" Type="Self.AuthorEducations" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Countries">
+        <PropertyRef Name="countryID" />
+      </Principal>
+      <Dependent Role="AuthorEducations">
+        <PropertyRef Name="countryID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_AuthorEducations_Months">
+    <End Role="Months" Type="Self.Months" Multiplicity="0..1" />
+    <End Role="AuthorEducations" Type="Self.AuthorEducations" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Months">
+        <PropertyRef Name="monthID" />
+      </Principal>
+      <Dependent Role="AuthorEducations">
+        <PropertyRef Name="monthID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_AuthorEducations_PaperCategory">
+    <End Role="PaperCategory" Type="Self.PaperCategory" Multiplicity="0..1" />
+    <End Role="AuthorEducations" Type="Self.AuthorEducations" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PaperCategory">
+        <PropertyRef Name="paperCategoryID" />
+      </Principal>
+      <Dependent Role="AuthorEducations">
+        <PropertyRef Name="paperCategoryID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_AuthorEducations_PaperSubCategory">
+    <End Role="PaperSubCategory" Type="Self.PaperSubCategory" Multiplicity="0..1" />
+    <End Role="AuthorEducations" Type="Self.AuthorEducations" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PaperSubCategory">
+        <PropertyRef Name="paperSubCategoryID" />
+      </Principal>
+      <Dependent Role="AuthorEducations">
+        <PropertyRef Name="paperSubCategoryID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_AuthorEducations_Years">
+    <End Role="Years" Type="Self.Years" Multiplicity="0..1" />
+    <End Role="AuthorEducations" Type="Self.AuthorEducations" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Years">
+        <PropertyRef Name="yearID" />
+      </Principal>
+      <Dependent Role="AuthorEducations">
+        <PropertyRef Name="yearID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_AuthorInterest_Authors">
+    <End Role="Authors" Type="Self.Authors" Multiplicity="1" />
+    <End Role="AuthorInterest" Type="Self.AuthorInterest" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Authors">
+        <PropertyRef Name="authorID" />
+      </Principal>
+      <Dependent Role="AuthorInterest">
+        <PropertyRef Name="authorID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_AuthorInterest_InterestLevel">
+    <End Role="InterestLevel" Type="Self.InterestLevel" Multiplicity="0..1" />
+    <End Role="AuthorInterest" Type="Self.AuthorInterest" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="InterestLevel">
+        <PropertyRef Name="interestLevelID" />
+      </Principal>
+      <Dependent Role="AuthorInterest">
+        <PropertyRef Name="interestLevelID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_AuthorInterest_PaperCategory">
+    <End Role="PaperCategory" Type="Self.PaperCategory" Multiplicity="0..1" />
+    <End Role="AuthorInterest" Type="Self.AuthorInterest" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PaperCategory">
+        <PropertyRef Name="paperCategoryID" />
+      </Principal>
+      <Dependent Role="AuthorInterest">
+        <PropertyRef Name="paperCategoryID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_AuthorInterest_PaperSubCategory">
+    <End Role="PaperSubCategory" Type="Self.PaperSubCategory" Multiplicity="0..1" />
+    <End Role="AuthorInterest" Type="Self.AuthorInterest" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PaperSubCategory">
+        <PropertyRef Name="paperSubCategoryID" />
+      </Principal>
+      <Dependent Role="AuthorInterest">
+        <PropertyRef Name="paperSubCategoryID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_authorJobs_Authors">
+    <End Role="Authors" Type="Self.Authors" Multiplicity="0..1" />
+    <End Role="authorJobs" Type="Self.authorJobs" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Authors">
+        <PropertyRef Name="authorID" />
+      </Principal>
+      <Dependent Role="authorJobs">
+        <PropertyRef Name="authorID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_authorJobs_JobBusinesss">
+    <End Role="JobBusinesss" Type="Self.JobBusinesss" Multiplicity="0..1" />
+    <End Role="authorJobs" Type="Self.authorJobs" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="JobBusinesss">
+        <PropertyRef Name="jobBusinessID" />
+      </Principal>
+      <Dependent Role="authorJobs">
+        <PropertyRef Name="jobBusinessID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_authorJobs_jobFunctions">
+    <End Role="jobFunctions" Type="Self.jobFunctions" Multiplicity="0..1" />
+    <End Role="authorJobs" Type="Self.authorJobs" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="jobFunctions">
+        <PropertyRef Name="jobFunctionID" />
+      </Principal>
+      <Dependent Role="authorJobs">
+        <PropertyRef Name="jobFunctionID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_authorJobs_jobResponsibilitys">
+    <End Role="jobResponsibilitys" Type="Self.jobResponsibilitys" Multiplicity="0..1" />
+    <End Role="authorJobs" Type="Self.authorJobs" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="jobResponsibilitys">
+        <PropertyRef Name="jobResponsibilityID" />
+      </Principal>
+      <Dependent Role="authorJobs">
+        <PropertyRef Name="jobResponsibilityID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_authorJobs_JobTitles">
+    <End Role="JobTitles" Type="Self.JobTitles" Multiplicity="0..1" />
+    <End Role="authorJobs" Type="Self.authorJobs" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="JobTitles">
+        <PropertyRef Name="jobTitleID" />
+      </Principal>
+      <Dependent Role="authorJobs">
+        <PropertyRef Name="jobTitleID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_authorJobs_JobTypes">
+    <End Role="JobTypes" Type="Self.JobTypes" Multiplicity="0..1" />
+    <End Role="authorJobs" Type="Self.authorJobs" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="JobTypes">
+        <PropertyRef Name="jobTypeID" />
+      </Principal>
+      <Dependent Role="authorJobs">
+        <PropertyRef Name="jobTypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Authors_AuthorSuffix">
+    <End Role="AuthorSuffix" Type="Self.AuthorSuffix" Multiplicity="0..1" />
+    <End Role="Authors" Type="Self.Authors" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AuthorSuffix">
+        <PropertyRef Name="suffixID" />
+      </Principal>
+      <Dependent Role="Authors">
+        <PropertyRef Name="suffixID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Authors_AuthorTitle">
+    <End Role="AuthorTitle" Type="Self.AuthorTitle" Multiplicity="0..1" />
+    <End Role="Authors" Type="Self.Authors" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AuthorTitle">
+        <PropertyRef Name="titleID" />
+      </Principal>
+      <Dependent Role="Authors">
+        <PropertyRef Name="titleID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Authors_Cities">
+    <End Role="Cities" Type="Self.Cities" Multiplicity="0..1" />
+    <End Role="Authors" Type="Self.Authors" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Cities">
+        <PropertyRef Name="cityID" />
+      </Principal>
+      <Dependent Role="Authors">
+        <PropertyRef Name="cityID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Authors_Conferences">
+    <End Role="Conferences" Type="Self.Conferences" Multiplicity="0..1" />
+    <End Role="Authors" Type="Self.Authors" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Conferences">
+        <PropertyRef Name="conferenceID" />
+      </Principal>
+      <Dependent Role="Authors">
+        <PropertyRef Name="conferenceID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Authors_Countries">
+    <End Role="Countries" Type="Self.Countries" Multiplicity="0..1" />
+    <End Role="Authors" Type="Self.Authors" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Countries">
+        <PropertyRef Name="countryID" />
+      </Principal>
+      <Dependent Role="Authors">
+        <PropertyRef Name="countryID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Authors_Genders">
+    <End Role="Genders" Type="Self.Genders" Multiplicity="0..1" />
+    <End Role="Authors" Type="Self.Authors" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Genders">
+        <PropertyRef Name="genderID" />
+      </Principal>
+      <Dependent Role="Authors">
+        <PropertyRef Name="genderID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Authors_Journals">
+    <End Role="Journals" Type="Self.Journals" Multiplicity="0..1" />
+    <End Role="Authors" Type="Self.Authors" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Journals">
+        <PropertyRef Name="journalID" />
+      </Principal>
+      <Dependent Role="Authors">
+        <PropertyRef Name="journalID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ConferenceAddresses_Conferences">
+    <End Role="Conferences" Type="Self.Conferences" Multiplicity="1" />
+    <End Role="ConferenceAddresses" Type="Self.ConferenceAddresses" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Conferences">
+        <PropertyRef Name="conferenceID" />
+      </Principal>
+      <Dependent Role="ConferenceAddresses">
+        <PropertyRef Name="conferenceID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ConferenceAddresses_Countries">
+    <End Role="Countries" Type="Self.Countries" Multiplicity="0..1" />
+    <End Role="ConferenceAddresses" Type="Self.ConferenceAddresses" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Countries">
+        <PropertyRef Name="countryID" />
+      </Principal>
+      <Dependent Role="ConferenceAddresses">
+        <PropertyRef Name="countryID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ConferenceCommittees_AuthorTitle">
+    <End Role="AuthorTitle" Type="Self.AuthorTitle" Multiplicity="0..1" />
+    <End Role="ConferenceCommittees" Type="Self.ConferenceCommittees" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AuthorTitle">
+        <PropertyRef Name="titleID" />
+      </Principal>
+      <Dependent Role="ConferenceCommittees">
+        <PropertyRef Name="titleID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ConferenceCommittees_Conferences">
+    <End Role="Conferences" Type="Self.Conferences" Multiplicity="0..1" />
+    <End Role="ConferenceCommittees" Type="Self.ConferenceCommittees" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Conferences">
+        <PropertyRef Name="conferenceID" />
+      </Principal>
+      <Dependent Role="ConferenceCommittees">
+        <PropertyRef Name="conferenceID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ConferenceCommittees_Countries">
+    <End Role="Countries" Type="Self.Countries" Multiplicity="0..1" />
+    <End Role="ConferenceCommittees" Type="Self.ConferenceCommittees" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Countries">
+        <PropertyRef Name="countryID" />
+      </Principal>
+      <Dependent Role="ConferenceCommittees">
+        <PropertyRef Name="countryID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ConferenceCommittees_ProgramCommitees">
+    <End Role="ProgramCommitees" Type="Self.ProgramCommitees" Multiplicity="0..1" />
+    <End Role="ConferenceCommittees" Type="Self.ConferenceCommittees" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ProgramCommitees">
+        <PropertyRef Name="programCommiteeID" />
+      </Principal>
+      <Dependent Role="ConferenceCommittees">
+        <PropertyRef Name="programCommiteeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ConferenceContacts_AuthorTitle">
+    <End Role="AuthorTitle" Type="Self.AuthorTitle" Multiplicity="0..1" />
+    <End Role="ConferenceContacts" Type="Self.ConferenceContacts" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AuthorTitle">
+        <PropertyRef Name="titleID" />
+      </Principal>
+      <Dependent Role="ConferenceContacts">
+        <PropertyRef Name="titleID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ConferenceContacts_Conferences">
+    <End Role="Conferences" Type="Self.Conferences" Multiplicity="1" />
+    <End Role="ConferenceContacts" Type="Self.ConferenceContacts" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Conferences">
+        <PropertyRef Name="conferenceID" />
+      </Principal>
+      <Dependent Role="ConferenceContacts">
+        <PropertyRef Name="conferenceID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ConferenceContacts_ContactTypes">
+    <End Role="ContactTypes" Type="Self.ContactTypes" Multiplicity="0..1" />
+    <End Role="ConferenceContacts" Type="Self.ConferenceContacts" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ContactTypes">
+        <PropertyRef Name="contactTypeID" />
+      </Principal>
+      <Dependent Role="ConferenceContacts">
+        <PropertyRef Name="contactTypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ConferenceFees_Conferences">
+    <End Role="Conferences" Type="Self.Conferences" Multiplicity="0..1" />
+    <End Role="ConferenceFees" Type="Self.ConferenceFees" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Conferences">
+        <PropertyRef Name="conferenceID" />
+      </Principal>
+      <Dependent Role="ConferenceFees">
+        <PropertyRef Name="conferenceID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ConferenceFees_Fees">
+    <End Role="Fees" Type="Self.Fees" Multiplicity="0..1" />
+    <End Role="ConferenceFees" Type="Self.ConferenceFees" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Fees">
+        <PropertyRef Name="feesID" />
+      </Principal>
+      <Dependent Role="ConferenceFees">
+        <PropertyRef Name="feesID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ConferenceFields_Conferences">
+    <End Role="Conferences" Type="Self.Conferences" Multiplicity="0..1" />
+    <End Role="ConferenceFields" Type="Self.ConferenceFields" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Conferences">
+        <PropertyRef Name="conferenceID" />
+      </Principal>
+      <Dependent Role="ConferenceFields">
+        <PropertyRef Name="conferenceID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ConferenceFields_PaperSubCategory">
+    <End Role="PaperSubCategory" Type="Self.PaperSubCategory" Multiplicity="0..1" />
+    <End Role="ConferenceFields" Type="Self.ConferenceFields" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PaperSubCategory">
+        <PropertyRef Name="paperSubCategoryID" />
+      </Principal>
+      <Dependent Role="ConferenceFields">
+        <PropertyRef Name="paperSubCategoryID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Conferences_Countries">
+    <End Role="Countries" Type="Self.Countries" Multiplicity="0..1" />
+    <End Role="Conferences" Type="Self.Conferences" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Countries">
+        <PropertyRef Name="countryID" />
+      </Principal>
+      <Dependent Role="Conferences">
+        <PropertyRef Name="countryID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Conferences_PaperCategory">
+    <End Role="PaperCategory" Type="Self.PaperCategory" Multiplicity="0..1" />
+    <End Role="Conferences" Type="Self.Conferences" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PaperCategory">
+        <PropertyRef Name="paperCategoryID" />
+      </Principal>
+      <Dependent Role="Conferences">
+        <PropertyRef Name="paperCategoryID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Conferences_ReviewerTypes">
+    <End Role="ReviewerTypes" Type="Self.ReviewerTypes" Multiplicity="0..1" />
+    <End Role="Conferences" Type="Self.Conferences" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ReviewerTypes">
+        <PropertyRef Name="reviewerTypeID" />
+      </Principal>
+      <Dependent Role="Conferences">
+        <PropertyRef Name="reviewerTypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ConferenceSocials_Conferences">
+    <End Role="Conferences" Type="Self.Conferences" Multiplicity="0..1" />
+    <End Role="ConferenceSocials" Type="Self.ConferenceSocials" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Conferences">
+        <PropertyRef Name="conferenceID" />
+      </Principal>
+      <Dependent Role="ConferenceSocials">
+        <PropertyRef Name="conferenceID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ConferenceSocials_SocialMedia">
+    <End Role="SocialMedia" Type="Self.SocialMedia" Multiplicity="1" />
+    <End Role="ConferenceSocials" Type="Self.ConferenceSocials" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SocialMedia">
+        <PropertyRef Name="socialMediaID" />
+      </Principal>
+      <Dependent Role="ConferenceSocials">
+        <PropertyRef Name="socialMediaID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_JournalAbout_Journals">
+    <End Role="Journals" Type="Self.Journals" Multiplicity="1" />
+    <End Role="JournalAbout" Type="Self.JournalAbout" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Journals">
+        <PropertyRef Name="journalID" />
+      </Principal>
+      <Dependent Role="JournalAbout">
+        <PropertyRef Name="journalID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_JournalAimsScope_Journals">
+    <End Role="Journals" Type="Self.Journals" Multiplicity="1" />
+    <End Role="JournalAimsScope" Type="Self.JournalAimsScope" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Journals">
+        <PropertyRef Name="journalID" />
+      </Principal>
+      <Dependent Role="JournalAimsScope">
+        <PropertyRef Name="journalID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_JournalDetails_Journals">
+    <End Role="Journals" Type="Self.Journals" Multiplicity="0..1" />
+    <End Role="JournalDetails" Type="Self.JournalDetails" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Journals">
+        <PropertyRef Name="journalID" />
+      </Principal>
+      <Dependent Role="JournalDetails">
+        <PropertyRef Name="journalID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_JournalDetails_Years">
+    <End Role="Years" Type="Self.Years" Multiplicity="0..1" />
+    <End Role="JournalDetails" Type="Self.JournalDetails" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Years">
+        <PropertyRef Name="yearID" />
+      </Principal>
+      <Dependent Role="JournalDetails">
+        <PropertyRef Name="yearID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_JournalEditorialBoard_JournalEditorialType">
+    <End Role="JournalEditorialType" Type="Self.JournalEditorialType" Multiplicity="1" />
+    <End Role="JournalEditorialBoard" Type="Self.JournalEditorialBoard" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="JournalEditorialType">
+        <PropertyRef Name="journalEditorialTypeID" />
+      </Principal>
+      <Dependent Role="JournalEditorialBoard">
+        <PropertyRef Name="journalEditorialTypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_JournalEditorialBoard_Journals">
+    <End Role="Journals" Type="Self.Journals" Multiplicity="1" />
+    <End Role="JournalEditorialBoard" Type="Self.JournalEditorialBoard" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Journals">
+        <PropertyRef Name="journalID" />
+      </Principal>
+      <Dependent Role="JournalEditorialBoard">
+        <PropertyRef Name="journalID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_JournalFields_Journals">
+    <End Role="Journals" Type="Self.Journals" Multiplicity="0..1" />
+    <End Role="JournalFields" Type="Self.JournalFields" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Journals">
+        <PropertyRef Name="journalID" />
+      </Principal>
+      <Dependent Role="JournalFields">
+        <PropertyRef Name="journalID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_JournalFields_PaperSubCategory">
+    <End Role="PaperSubCategory" Type="Self.PaperSubCategory" Multiplicity="0..1" />
+    <End Role="JournalFields" Type="Self.JournalFields" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PaperSubCategory">
+        <PropertyRef Name="paperSubCategoryID" />
+      </Principal>
+      <Dependent Role="JournalFields">
+        <PropertyRef Name="paperSubCategoryID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_JournalImpactFactor_Journals">
+    <End Role="Journals" Type="Self.Journals" Multiplicity="1" />
+    <End Role="JournalImpactFactor" Type="Self.JournalImpactFactor" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Journals">
+        <PropertyRef Name="journalID" />
+      </Principal>
+      <Dependent Role="JournalImpactFactor">
+        <PropertyRef Name="journalID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_JournalIndexing_Journals">
+    <End Role="Journals" Type="Self.Journals" Multiplicity="1" />
+    <End Role="JournalIndexing" Type="Self.JournalIndexing" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Journals">
+        <PropertyRef Name="journalID" />
+      </Principal>
+      <Dependent Role="JournalIndexing">
+        <PropertyRef Name="journalID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_JournalPaperArchive_Journals">
+    <End Role="Journals" Type="Self.Journals" Multiplicity="1" />
+    <End Role="JournalPaperArchive" Type="Self.JournalPaperArchive" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Journals">
+        <PropertyRef Name="journalID" />
+      </Principal>
+      <Dependent Role="JournalPaperArchive">
+        <PropertyRef Name="journalID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Journals_Countries">
+    <End Role="Countries" Type="Self.Countries" Multiplicity="0..1" />
+    <End Role="Journals" Type="Self.Journals" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Countries">
+        <PropertyRef Name="countryID" />
+      </Principal>
+      <Dependent Role="Journals">
+        <PropertyRef Name="countryID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Journals_PaperCategory">
+    <End Role="PaperCategory" Type="Self.PaperCategory" Multiplicity="0..1" />
+    <End Role="Journals" Type="Self.Journals" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PaperCategory">
+        <PropertyRef Name="paperCategoryID" />
+      </Principal>
+      <Dependent Role="Journals">
+        <PropertyRef Name="paperCategoryID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Journals_ReviewerTypes">
+    <End Role="ReviewerTypes" Type="Self.ReviewerTypes" Multiplicity="0..1" />
+    <End Role="Journals" Type="Self.Journals" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ReviewerTypes">
+        <PropertyRef Name="reviewerTypeID" />
+      </Principal>
+      <Dependent Role="Journals">
+        <PropertyRef Name="reviewerTypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_OtherConferences_Conferences">
+    <End Role="Conferences" Type="Self.Conferences" Multiplicity="0..1" />
+    <End Role="OtherConferences" Type="Self.OtherConferences" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Conferences">
+        <PropertyRef Name="conferenceID" />
+      </Principal>
+      <Dependent Role="OtherConferences">
+        <PropertyRef Name="conferenceID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_OtherLinks_Conferences">
+    <End Role="Conferences" Type="Self.Conferences" Multiplicity="0..1" />
+    <End Role="OtherLinks" Type="Self.OtherLinks" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Conferences">
+        <PropertyRef Name="conferenceID" />
+      </Principal>
+      <Dependent Role="OtherLinks">
+        <PropertyRef Name="conferenceID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PaperAbstract_Papers">
+    <End Role="Papers" Type="Self.Papers" Multiplicity="1" />
+    <End Role="PaperAbstract" Type="Self.PaperAbstract" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="Papers">
+        <PropertyRef Name="paperID" />
+      </Principal>
+      <Dependent Role="PaperAbstract">
+        <PropertyRef Name="paperID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PaperAuthors_Countries">
+    <End Role="Countries" Type="Self.Countries" Multiplicity="0..1" />
+    <End Role="PaperAuthors" Type="Self.PaperAuthors" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Countries">
+        <PropertyRef Name="countryID" />
+      </Principal>
+      <Dependent Role="PaperAuthors">
+        <PropertyRef Name="countryID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PaperAuthors_JobTitles">
+    <End Role="JobTitles" Type="Self.JobTitles" Multiplicity="0..1" />
+    <End Role="PaperAuthors" Type="Self.PaperAuthors" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="JobTitles">
+        <PropertyRef Name="jobTitleID" />
+      </Principal>
+      <Dependent Role="PaperAuthors">
+        <PropertyRef Name="jobTitleID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PaperAuthors_Papers">
+    <End Role="Papers" Type="Self.Papers" Multiplicity="0..1" />
+    <End Role="PaperAuthors" Type="Self.PaperAuthors" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Papers">
+        <PropertyRef Name="paperID" />
+      </Principal>
+      <Dependent Role="PaperAuthors">
+        <PropertyRef Name="paperID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PaperFields_Papers">
+    <End Role="Papers" Type="Self.Papers" Multiplicity="0..1" />
+    <End Role="PaperFields" Type="Self.PaperFields" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Papers">
+        <PropertyRef Name="paperID" />
+      </Principal>
+      <Dependent Role="PaperFields">
+        <PropertyRef Name="paperID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PaperFields_PaperSubCategory">
+    <End Role="PaperSubCategory" Type="Self.PaperSubCategory" Multiplicity="0..1" />
+    <End Role="PaperFields" Type="Self.PaperFields" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PaperSubCategory">
+        <PropertyRef Name="paperSubCategoryID" />
+      </Principal>
+      <Dependent Role="PaperFields">
+        <PropertyRef Name="paperSubCategoryID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PaperReviewer_Authors">
+    <End Role="Authors" Type="Self.Authors" Multiplicity="0..1" />
+    <End Role="PaperReviewer" Type="Self.PaperReviewer" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Authors">
+        <PropertyRef Name="authorID" />
+      </Principal>
+      <Dependent Role="PaperReviewer">
+        <PropertyRef Name="authorID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PaperReviewer_Papers">
+    <End Role="Papers" Type="Self.Papers" Multiplicity="0..1" />
+    <End Role="PaperReviewer" Type="Self.PaperReviewer" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Papers">
+        <PropertyRef Name="paperID" />
+      </Principal>
+      <Dependent Role="PaperReviewer">
+        <PropertyRef Name="paperID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Papers_Authors">
+    <End Role="Authors" Type="Self.Authors" Multiplicity="0..1" />
+    <End Role="Papers" Type="Self.Papers" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Authors">
+        <PropertyRef Name="authorID" />
+      </Principal>
+      <Dependent Role="Papers">
+        <PropertyRef Name="authorID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Papers_Conferences">
+    <End Role="Conferences" Type="Self.Conferences" Multiplicity="0..1" />
+    <End Role="Papers" Type="Self.Papers" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Conferences">
+        <PropertyRef Name="conferenceID" />
+      </Principal>
+      <Dependent Role="Papers">
+        <PropertyRef Name="conferenceID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Papers_JournalDetails">
+    <End Role="JournalDetails" Type="Self.JournalDetails" Multiplicity="0..1" />
+    <End Role="Papers" Type="Self.Papers" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="JournalDetails">
+        <PropertyRef Name="journalDetailID" />
+      </Principal>
+      <Dependent Role="Papers">
+        <PropertyRef Name="journalDetailID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Papers_Journals">
+    <End Role="Journals" Type="Self.Journals" Multiplicity="0..1" />
+    <End Role="Papers" Type="Self.Papers" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Journals">
+        <PropertyRef Name="journalID" />
+      </Principal>
+      <Dependent Role="Papers">
+        <PropertyRef Name="journalID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Papers_PaperCategory">
+    <End Role="PaperCategory" Type="Self.PaperCategory" Multiplicity="0..1" />
+    <End Role="Papers" Type="Self.Papers" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PaperCategory">
+        <PropertyRef Name="paperCategoryID" />
+      </Principal>
+      <Dependent Role="Papers">
+        <PropertyRef Name="paperCategoryID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Papers_PaperStatus">
+    <End Role="PaperStatus" Type="Self.PaperStatus" Multiplicity="0..1" />
+    <End Role="Papers" Type="Self.Papers" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PaperStatus">
+        <PropertyRef Name="paperStatusID" />
+      </Principal>
+      <Dependent Role="Papers">
+        <PropertyRef Name="paperStatusID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Papers_PaperType">
+    <End Role="PaperType" Type="Self.PaperType" Multiplicity="0..1" />
+    <End Role="Papers" Type="Self.Papers" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PaperType">
+        <PropertyRef Name="paperTypeID" />
+      </Principal>
+      <Dependent Role="Papers">
+        <PropertyRef Name="paperTypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PaperSubCategory_PaperCategory">
+    <End Role="PaperCategory" Type="Self.PaperCategory" Multiplicity="0..1" />
+    <End Role="PaperSubCategory" Type="Self.PaperSubCategory" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PaperCategory">
+        <PropertyRef Name="paperCategoryID" />
+      </Principal>
+      <Dependent Role="PaperSubCategory">
+        <PropertyRef Name="paperCategoryID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Function Name="GetPaperReviewer" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="allReviewer" Type="bit" Mode="In" />
+    <Parameter Name="paperID" Type="int" Mode="In" />
+    <Parameter Name="paperType" Type="int" Mode="In" />
+    <Parameter Name="reviewerType" Type="int" Mode="In" />
+    <Parameter Name="confID" Type="int" Mode="In" />
+    <Parameter Name="journalID" Type="int" Mode="In" />
+  </Function>
+  <EntityContainer Name="adlModelStoreContainer">
+    <EntitySet Name="AuthorAcademicProgram" EntityType="Self.AuthorAcademicProgram" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="AuthorAddresses" EntityType="Self.AuthorAddresses" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="AuthorCertifications" EntityType="Self.AuthorCertifications" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="AuthorDegree" EntityType="Self.AuthorDegree" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="AuthorEducations" EntityType="Self.AuthorEducations" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="AuthorInterest" EntityType="Self.AuthorInterest" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="authorJobs" EntityType="Self.authorJobs" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Authors" EntityType="Self.Authors" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="AuthorSuffix" EntityType="Self.AuthorSuffix" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="AuthorTitle" EntityType="Self.AuthorTitle" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Certifications" EntityType="Self.Certifications" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Cities" EntityType="Self.Cities" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ConferenceAddresses" EntityType="Self.ConferenceAddresses" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ConferenceCommittees" EntityType="Self.ConferenceCommittees" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ConferenceContacts" EntityType="Self.ConferenceContacts" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ConferenceFees" EntityType="Self.ConferenceFees" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ConferenceFields" EntityType="Self.ConferenceFields" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Conferences" EntityType="Self.Conferences" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ConferenceSocials" EntityType="Self.ConferenceSocials" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ConferencesOverview" EntityType="Self.ConferencesOverview" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ContactTypes" EntityType="Self.ContactTypes" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Countries" EntityType="Self.Countries" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Currencies" EntityType="Self.Currencies" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="FAQ" EntityType="Self.FAQ" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Fees" EntityType="Self.Fees" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Genders" EntityType="Self.Genders" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="InterestLevel" EntityType="Self.InterestLevel" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="JobBusinesss" EntityType="Self.JobBusinesss" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="jobFunctions" EntityType="Self.jobFunctions" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="jobResponsibilitys" EntityType="Self.jobResponsibilitys" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="JobTitles" EntityType="Self.JobTitles" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="JobTypes" EntityType="Self.JobTypes" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="JournalAbout" EntityType="Self.JournalAbout" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="JournalAimsScope" EntityType="Self.JournalAimsScope" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="JournalDetails" EntityType="Self.JournalDetails" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="JournalEditorialBoard" EntityType="Self.JournalEditorialBoard" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="JournalEditorialType" EntityType="Self.JournalEditorialType" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="JournalFields" EntityType="Self.JournalFields" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="JournalImpactFactor" EntityType="Self.JournalImpactFactor" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="JournalIndexing" EntityType="Self.JournalIndexing" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="JournalPaperArchive" EntityType="Self.JournalPaperArchive" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Journals" EntityType="Self.Journals" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Months" EntityType="Self.Months" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="OtherConferences" EntityType="Self.OtherConferences" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="OtherLinks" EntityType="Self.OtherLinks" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PaperAbstract" EntityType="Self.PaperAbstract" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PaperAuthors" EntityType="Self.PaperAuthors" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PaperCategory" EntityType="Self.PaperCategory" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PaperFields" EntityType="Self.PaperFields" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PaperReviewer" EntityType="Self.PaperReviewer" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Papers" EntityType="Self.Papers" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PaperStatus" EntityType="Self.PaperStatus" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PaperSubCategory" EntityType="Self.PaperSubCategory" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PaperType" EntityType="Self.PaperType" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PrivilegeGroup" EntityType="Self.PrivilegeGroup" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ProgramCommitees" EntityType="Self.ProgramCommitees" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ReviewerTypes" EntityType="Self.ReviewerTypes" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SocialMedia" EntityType="Self.SocialMedia" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Title" EntityType="Self.Title" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Users" EntityType="Self.Users" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Years" EntityType="Self.Years" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_Author Addresses_Authors" Association="Self.FK_Author Addresses_Authors">
+      <End Role="Authors" EntitySet="Authors" />
+      <End Role="AuthorAddresses" EntitySet="AuthorAddresses" />
+    </AssociationSet>
+    <AssociationSet Name="FK_AuthorAddresses_Countries" Association="Self.FK_AuthorAddresses_Countries">
+      <End Role="Countries" EntitySet="Countries" />
+      <End Role="AuthorAddresses" EntitySet="AuthorAddresses" />
+    </AssociationSet>
+    <AssociationSet Name="FK_AuthorCertifications_Authors" Association="Self.FK_AuthorCertifications_Authors">
+      <End Role="Authors" EntitySet="Authors" />
+      <End Role="AuthorCertifications" EntitySet="AuthorCertifications" />
+    </AssociationSet>
+    <AssociationSet Name="FK_AuthorCertifications_Certifications" Association="Self.FK_AuthorCertifications_Certifications">
+      <End Role="Certifications" EntitySet="Certifications" />
+      <End Role="AuthorCertifications" EntitySet="AuthorCertifications" />
+    </AssociationSet>
+    <AssociationSet Name="FK_AuthorCertifications_Countries" Association="Self.FK_AuthorCertifications_Countries">
+      <End Role="Countries" EntitySet="Countries" />
+      <End Role="AuthorCertifications" EntitySet="AuthorCertifications" />
+    </AssociationSet>
+    <AssociationSet Name="FK_AuthorCertifications_Months" Association="Self.FK_AuthorCertifications_Months">
+      <End Role="Months" EntitySet="Months" />
+      <End Role="AuthorCertifications" EntitySet="AuthorCertifications" />
+    </AssociationSet>
+    <AssociationSet Name="FK_AuthorCertifications_Years" Association="Self.FK_AuthorCertifications_Years">
+      <End Role="Years" EntitySet="Years" />
+      <End Role="AuthorCertifications" EntitySet="AuthorCertifications" />
+    </AssociationSet>
+    <AssociationSet Name="FK_AuthorEducations_AuthoracademicProgram" Association="Self.FK_AuthorEducations_AuthoracademicProgram">
+      <End Role="AuthorAcademicProgram" EntitySet="AuthorAcademicProgram" />
+      <End Role="AuthorEducations" EntitySet="AuthorEducations" />
+    </AssociationSet>
+    <AssociationSet Name="FK_AuthorEducations_AuthorDegree" Association="Self.FK_AuthorEducations_AuthorDegree">
+      <End Role="AuthorDegree" EntitySet="AuthorDegree" />
+      <End Role="AuthorEducations" EntitySet="AuthorEducations" />
+    </AssociationSet>
+    <AssociationSet Name="FK_AuthorEducations_Authors" Association="Self.FK_AuthorEducations_Authors">
+      <End Role="Authors" EntitySet="Authors" />
+      <End Role="AuthorEducations" EntitySet="AuthorEducations" />
+    </AssociationSet>
+    <AssociationSet Name="FK_AuthorEducations_Countries" Association="Self.FK_AuthorEducations_Countries">
+      <End Role="Countries" EntitySet="Countries" />
+      <End Role="AuthorEducations" EntitySet="AuthorEducations" />
+    </AssociationSet>
+    <AssociationSet Name="FK_AuthorEducations_Months" Association="Self.FK_AuthorEducations_Months">
+      <End Role="Months" EntitySet="Months" />
+      <End Role="AuthorEducations" EntitySet="AuthorEducations" />
+    </AssociationSet>
+    <AssociationSet Name="FK_AuthorEducations_PaperCategory" Association="Self.FK_AuthorEducations_PaperCategory">
+      <End Role="PaperCategory" EntitySet="PaperCategory" />
+      <End Role="AuthorEducations" EntitySet="AuthorEducations" />
+    </AssociationSet>
+    <AssociationSet Name="FK_AuthorEducations_PaperSubCategory" Association="Self.FK_AuthorEducations_PaperSubCategory">
+      <End Role="PaperSubCategory" EntitySet="PaperSubCategory" />
+      <End Role="AuthorEducations" EntitySet="AuthorEducations" />
+    </AssociationSet>
+    <AssociationSet Name="FK_AuthorEducations_Years" Association="Self.FK_AuthorEducations_Years">
+      <End Role="Years" EntitySet="Years" />
+      <End Role="AuthorEducations" EntitySet="AuthorEducations" />
+    </AssociationSet>
+    <AssociationSet Name="FK_AuthorInterest_Authors" Association="Self.FK_AuthorInterest_Authors">
+      <End Role="Authors" EntitySet="Authors" />
+      <End Role="AuthorInterest" EntitySet="AuthorInterest" />
+    </AssociationSet>
+    <AssociationSet Name="FK_AuthorInterest_InterestLevel" Association="Self.FK_AuthorInterest_InterestLevel">
+      <End Role="InterestLevel" EntitySet="InterestLevel" />
+      <End Role="AuthorInterest" EntitySet="AuthorInterest" />
+    </AssociationSet>
+    <AssociationSet Name="FK_AuthorInterest_PaperCategory" Association="Self.FK_AuthorInterest_PaperCategory">
+      <End Role="PaperCategory" EntitySet="PaperCategory" />
+      <End Role="AuthorInterest" EntitySet="AuthorInterest" />
+    </AssociationSet>
+    <AssociationSet Name="FK_AuthorInterest_PaperSubCategory" Association="Self.FK_AuthorInterest_PaperSubCategory">
+      <End Role="PaperSubCategory" EntitySet="PaperSubCategory" />
+      <End Role="AuthorInterest" EntitySet="AuthorInterest" />
+    </AssociationSet>
+    <AssociationSet Name="FK_authorJobs_Authors" Association="Self.FK_authorJobs_Authors">
+      <End Role="Authors" EntitySet="Authors" />
+      <End Role="authorJobs" EntitySet="authorJobs" />
+    </AssociationSet>
+    <AssociationSet Name="FK_authorJobs_JobBusinesss" Association="Self.FK_authorJobs_JobBusinesss">
+      <End Role="JobBusinesss" EntitySet="JobBusinesss" />
+      <End Role="authorJobs" EntitySet="authorJobs" />
+    </AssociationSet>
+    <AssociationSet Name="FK_authorJobs_jobFunctions" Association="Self.FK_authorJobs_jobFunctions">
+      <End Role="jobFunctions" EntitySet="jobFunctions" />
+      <End Role="authorJobs" EntitySet="authorJobs" />
+    </AssociationSet>
+    <AssociationSet Name="FK_authorJobs_jobResponsibilitys" Association="Self.FK_authorJobs_jobResponsibilitys">
+      <End Role="jobResponsibilitys" EntitySet="jobResponsibilitys" />
+      <End Role="authorJobs" EntitySet="authorJobs" />
+    </AssociationSet>
+    <AssociationSet Name="FK_authorJobs_JobTitles" Association="Self.FK_authorJobs_JobTitles">
+      <End Role="JobTitles" EntitySet="JobTitles" />
+      <End Role="authorJobs" EntitySet="authorJobs" />
+    </AssociationSet>
+    <AssociationSet Name="FK_authorJobs_JobTypes" Association="Self.FK_authorJobs_JobTypes">
+      <End Role="JobTypes" EntitySet="JobTypes" />
+      <End Role="authorJobs" EntitySet="authorJobs" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Authors_AuthorSuffix" Association="Self.FK_Authors_AuthorSuffix">
+      <End Role="AuthorSuffix" EntitySet="AuthorSuffix" />
+      <End Role="Authors" EntitySet="Authors" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Authors_AuthorTitle" Association="Self.FK_Authors_AuthorTitle">
+      <End Role="AuthorTitle" EntitySet="AuthorTitle" />
+      <End Role="Authors" EntitySet="Authors" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Authors_Cities" Association="Self.FK_Authors_Cities">
+      <End Role="Cities" EntitySet="Cities" />
+      <End Role="Authors" EntitySet="Authors" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Authors_Conferences" Association="Self.FK_Authors_Conferences">
+      <End Role="Conferences" EntitySet="Conferences" />
+      <End Role="Authors" EntitySet="Authors" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Authors_Countries" Association="Self.FK_Authors_Countries">
+      <End Role="Countries" EntitySet="Countries" />
+      <End Role="Authors" EntitySet="Authors" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Authors_Genders" Association="Self.FK_Authors_Genders">
+      <End Role="Genders" EntitySet="Genders" />
+      <End Role="Authors" EntitySet="Authors" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Authors_Journals" Association="Self.FK_Authors_Journals">
+      <End Role="Journals" EntitySet="Journals" />
+      <End Role="Authors" EntitySet="Authors" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ConferenceAddresses_Conferences" Association="Self.FK_ConferenceAddresses_Conferences">
+      <End Role="Conferences" EntitySet="Conferences" />
+      <End Role="ConferenceAddresses" EntitySet="ConferenceAddresses" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ConferenceAddresses_Countries" Association="Self.FK_ConferenceAddresses_Countries">
+      <End Role="Countries" EntitySet="Countries" />
+      <End Role="ConferenceAddresses" EntitySet="ConferenceAddresses" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ConferenceCommittees_AuthorTitle" Association="Self.FK_ConferenceCommittees_AuthorTitle">
+      <End Role="AuthorTitle" EntitySet="AuthorTitle" />
+      <End Role="ConferenceCommittees" EntitySet="ConferenceCommittees" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ConferenceCommittees_Conferences" Association="Self.FK_ConferenceCommittees_Conferences">
+      <End Role="Conferences" EntitySet="Conferences" />
+      <End Role="ConferenceCommittees" EntitySet="ConferenceCommittees" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ConferenceCommittees_Countries" Association="Self.FK_ConferenceCommittees_Countries">
+      <End Role="Countries" EntitySet="Countries" />
+      <End Role="ConferenceCommittees" EntitySet="ConferenceCommittees" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ConferenceCommittees_ProgramCommitees" Association="Self.FK_ConferenceCommittees_ProgramCommitees">
+      <End Role="ProgramCommitees" EntitySet="ProgramCommitees" />
+      <End Role="ConferenceCommittees" EntitySet="ConferenceCommittees" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ConferenceContacts_AuthorTitle" Association="Self.FK_ConferenceContacts_AuthorTitle">
+      <End Role="AuthorTitle" EntitySet="AuthorTitle" />
+      <End Role="ConferenceContacts" EntitySet="ConferenceContacts" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ConferenceContacts_Conferences" Association="Self.FK_ConferenceContacts_Conferences">
+      <End Role="Conferences" EntitySet="Conferences" />
+      <End Role="ConferenceContacts" EntitySet="ConferenceContacts" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ConferenceContacts_ContactTypes" Association="Self.FK_ConferenceContacts_ContactTypes">
+      <End Role="ContactTypes" EntitySet="ContactTypes" />
+      <End Role="ConferenceContacts" EntitySet="ConferenceContacts" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ConferenceFees_Conferences" Association="Self.FK_ConferenceFees_Conferences">
+      <End Role="Conferences" EntitySet="Conferences" />
+      <End Role="ConferenceFees" EntitySet="ConferenceFees" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ConferenceFees_Fees" Association="Self.FK_ConferenceFees_Fees">
+      <End Role="Fees" EntitySet="Fees" />
+      <End Role="ConferenceFees" EntitySet="ConferenceFees" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ConferenceFields_Conferences" Association="Self.FK_ConferenceFields_Conferences">
+      <End Role="Conferences" EntitySet="Conferences" />
+      <End Role="ConferenceFields" EntitySet="ConferenceFields" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ConferenceFields_PaperSubCategory" Association="Self.FK_ConferenceFields_PaperSubCategory">
+      <End Role="PaperSubCategory" EntitySet="PaperSubCategory" />
+      <End Role="ConferenceFields" EntitySet="ConferenceFields" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Conferences_Countries" Association="Self.FK_Conferences_Countries">
+      <End Role="Countries" EntitySet="Countries" />
+      <End Role="Conferences" EntitySet="Conferences" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Conferences_PaperCategory" Association="Self.FK_Conferences_PaperCategory">
+      <End Role="PaperCategory" EntitySet="PaperCategory" />
+      <End Role="Conferences" EntitySet="Conferences" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Conferences_ReviewerTypes" Association="Self.FK_Conferences_ReviewerTypes">
+      <End Role="ReviewerTypes" EntitySet="ReviewerTypes" />
+      <End Role="Conferences" EntitySet="Conferences" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ConferenceSocials_Conferences" Association="Self.FK_ConferenceSocials_Conferences">
+      <End Role="Conferences" EntitySet="Conferences" />
+      <End Role="ConferenceSocials" EntitySet="ConferenceSocials" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ConferenceSocials_SocialMedia" Association="Self.FK_ConferenceSocials_SocialMedia">
+      <End Role="SocialMedia" EntitySet="SocialMedia" />
+      <End Role="ConferenceSocials" EntitySet="ConferenceSocials" />
+    </AssociationSet>
+    <AssociationSet Name="FK_JournalAbout_Journals" Association="Self.FK_JournalAbout_Journals">
+      <End Role="Journals" EntitySet="Journals" />
+      <End Role="JournalAbout" EntitySet="JournalAbout" />
+    </AssociationSet>
+    <AssociationSet Name="FK_JournalAimsScope_Journals" Association="Self.FK_JournalAimsScope_Journals">
+      <End Role="Journals" EntitySet="Journals" />
+      <End Role="JournalAimsScope" EntitySet="JournalAimsScope" />
+    </AssociationSet>
+    <AssociationSet Name="FK_JournalDetails_Journals" Association="Self.FK_JournalDetails_Journals">
+      <End Role="Journals" EntitySet="Journals" />
+      <End Role="JournalDetails" EntitySet="JournalDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK_JournalDetails_Years" Association="Self.FK_JournalDetails_Years">
+      <End Role="Years" EntitySet="Years" />
+      <End Role="JournalDetails" EntitySet="JournalDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK_JournalEditorialBoard_JournalEditorialType" Association="Self.FK_JournalEditorialBoard_JournalEditorialType">
+      <End Role="JournalEditorialType" EntitySet="JournalEditorialType" />
+      <End Role="JournalEditorialBoard" EntitySet="JournalEditorialBoard" />
+    </AssociationSet>
+    <AssociationSet Name="FK_JournalEditorialBoard_Journals" Association="Self.FK_JournalEditorialBoard_Journals">
+      <End Role="Journals" EntitySet="Journals" />
+      <End Role="JournalEditorialBoard" EntitySet="JournalEditorialBoard" />
+    </AssociationSet>
+    <AssociationSet Name="FK_JournalFields_Journals" Association="Self.FK_JournalFields_Journals">
+      <End Role="Journals" EntitySet="Journals" />
+      <End Role="JournalFields" EntitySet="JournalFields" />
+    </AssociationSet>
+    <AssociationSet Name="FK_JournalFields_PaperSubCategory" Association="Self.FK_JournalFields_PaperSubCategory">
+      <End Role="PaperSubCategory" EntitySet="PaperSubCategory" />
+      <End Role="JournalFields" EntitySet="JournalFields" />
+    </AssociationSet>
+    <AssociationSet Name="FK_JournalImpactFactor_Journals" Association="Self.FK_JournalImpactFactor_Journals">
+      <End Role="Journals" EntitySet="Journals" />
+      <End Role="JournalImpactFactor" EntitySet="JournalImpactFactor" />
+    </AssociationSet>
+    <AssociationSet Name="FK_JournalIndexing_Journals" Association="Self.FK_JournalIndexing_Journals">
+      <End Role="Journals" EntitySet="Journals" />
+      <End Role="JournalIndexing" EntitySet="JournalIndexing" />
+    </AssociationSet>
+    <AssociationSet Name="FK_JournalPaperArchive_Journals" Association="Self.FK_JournalPaperArchive_Journals">
+      <End Role="Journals" EntitySet="Journals" />
+      <End Role="JournalPaperArchive" EntitySet="JournalPaperArchive" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Journals_Countries" Association="Self.FK_Journals_Countries">
+      <End Role="Countries" EntitySet="Countries" />
+      <End Role="Journals" EntitySet="Journals" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Journals_PaperCategory" Association="Self.FK_Journals_PaperCategory">
+      <End Role="PaperCategory" EntitySet="PaperCategory" />
+      <End Role="Journals" EntitySet="Journals" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Journals_ReviewerTypes" Association="Self.FK_Journals_ReviewerTypes">
+      <End Role="ReviewerTypes" EntitySet="ReviewerTypes" />
+      <End Role="Journals" EntitySet="Journals" />
+    </AssociationSet>
+    <AssociationSet Name="FK_OtherConferences_Conferences" Association="Self.FK_OtherConferences_Conferences">
+      <End Role="Conferences" EntitySet="Conferences" />
+      <End Role="OtherConferences" EntitySet="OtherConferences" />
+    </AssociationSet>
+    <AssociationSet Name="FK_OtherLinks_Conferences" Association="Self.FK_OtherLinks_Conferences">
+      <End Role="Conferences" EntitySet="Conferences" />
+      <End Role="OtherLinks" EntitySet="OtherLinks" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PaperAbstract_Papers" Association="Self.FK_PaperAbstract_Papers">
+      <End Role="Papers" EntitySet="Papers" />
+      <End Role="PaperAbstract" EntitySet="PaperAbstract" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PaperAuthors_Countries" Association="Self.FK_PaperAuthors_Countries">
+      <End Role="Countries" EntitySet="Countries" />
+      <End Role="PaperAuthors" EntitySet="PaperAuthors" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PaperAuthors_JobTitles" Association="Self.FK_PaperAuthors_JobTitles">
+      <End Role="JobTitles" EntitySet="JobTitles" />
+      <End Role="PaperAuthors" EntitySet="PaperAuthors" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PaperAuthors_Papers" Association="Self.FK_PaperAuthors_Papers">
+      <End Role="Papers" EntitySet="Papers" />
+      <End Role="PaperAuthors" EntitySet="PaperAuthors" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PaperFields_Papers" Association="Self.FK_PaperFields_Papers">
+      <End Role="Papers" EntitySet="Papers" />
+      <End Role="PaperFields" EntitySet="PaperFields" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PaperFields_PaperSubCategory" Association="Self.FK_PaperFields_PaperSubCategory">
+      <End Role="PaperSubCategory" EntitySet="PaperSubCategory" />
+      <End Role="PaperFields" EntitySet="PaperFields" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PaperReviewer_Authors" Association="Self.FK_PaperReviewer_Authors">
+      <End Role="Authors" EntitySet="Authors" />
+      <End Role="PaperReviewer" EntitySet="PaperReviewer" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PaperReviewer_Papers" Association="Self.FK_PaperReviewer_Papers">
+      <End Role="Papers" EntitySet="Papers" />
+      <End Role="PaperReviewer" EntitySet="PaperReviewer" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Papers_Authors" Association="Self.FK_Papers_Authors">
+      <End Role="Authors" EntitySet="Authors" />
+      <End Role="Papers" EntitySet="Papers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Papers_Conferences" Association="Self.FK_Papers_Conferences">
+      <End Role="Conferences" EntitySet="Conferences" />
+      <End Role="Papers" EntitySet="Papers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Papers_JournalDetails" Association="Self.FK_Papers_JournalDetails">
+      <End Role="JournalDetails" EntitySet="JournalDetails" />
+      <End Role="Papers" EntitySet="Papers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Papers_Journals" Association="Self.FK_Papers_Journals">
+      <End Role="Journals" EntitySet="Journals" />
+      <End Role="Papers" EntitySet="Papers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Papers_PaperCategory" Association="Self.FK_Papers_PaperCategory">
+      <End Role="PaperCategory" EntitySet="PaperCategory" />
+      <End Role="Papers" EntitySet="Papers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Papers_PaperStatus" Association="Self.FK_Papers_PaperStatus">
+      <End Role="PaperStatus" EntitySet="PaperStatus" />
+      <End Role="Papers" EntitySet="Papers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Papers_PaperType" Association="Self.FK_Papers_PaperType">
+      <End Role="PaperType" EntitySet="PaperType" />
+      <End Role="Papers" EntitySet="Papers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PaperSubCategory_PaperCategory" Association="Self.FK_PaperSubCategory_PaperCategory">
+      <End Role="PaperCategory" EntitySet="PaperCategory" />
+      <End Role="PaperSubCategory" EntitySet="PaperSubCategory" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

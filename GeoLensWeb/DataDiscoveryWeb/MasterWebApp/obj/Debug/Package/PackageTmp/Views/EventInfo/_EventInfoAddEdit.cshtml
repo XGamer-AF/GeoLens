@@ -1,0 +1,145 @@
+﻿@using Data.ViewModel;
+@using DataLayer;
+
+
+@model Data.EventInfo 
+@using (Html.BeginForm("EventInfoAddEdit", "EventInfo", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    @Html.AntiForgeryToken()
+    <div class="form-horizontal">
+
+        @Html.ValidationSummary(true)
+
+        @Html.HiddenFor(x => x.eventID)
+
+        @if (Model != null)
+        {
+
+            @Html.HiddenFor(model => model.statusID)
+
+        }
+        
+        <div class="form-group col-lg-6 col-12">
+            <label>
+                @MasterWebApp.Resource.EventInfo.eventNameEn
+            </label>
+
+            @Html.TextBoxFor(model => model.eventNameEn, new { @class = "form-control col-12" })
+            @Html.ValidationMessageFor(model => model.eventNameEn)
+
+        </div>
+
+
+        <div class="form-group col-lg-6 col-12">
+            <label>
+                @MasterWebApp.Resource.EventInfo.eventNameAr
+            </label>
+
+            @Html.TextBoxFor(model => model.eventNameAr, new { @class = "form-control col-12" })
+            @Html.ValidationMessageFor(model => model.eventNameAr)
+
+        </div>
+
+        <div class="form-group col-lg-6 col-12">
+            <label>
+                @MasterWebApp.Resource.EventInfo.eventTypeID
+            </label>
+            <div>
+                @Html.DropDownListFor(x => x.eventTypeID, (SelectList)ViewBag.EventTypesV, new { @class = "form-control col-12" })
+            </div>
+        </div>
+
+        <div class="form-group col-lg-6 col-12">
+            <label>
+                @MasterWebApp.Resource.EventInfo.countryID
+            </label>
+
+            @Html.DropDownListFor(x => x.countryID, (SelectList)ViewBag.CountriesV, new { @class = "form-control col-12" })
+            @Html.ValidationMessageFor(model => model.eventDescAr)
+
+        </div>
+
+        <div class="form-group col-lg-4 col-12">
+            <label>
+                @MasterWebApp.Resource.EventInfo.eventDate
+            </label>
+
+            @Html.TextBoxFor(model => model.eventDate, new { @class = "form-control col-12" })
+            @Html.ValidationMessageFor(model => model.eventDate)
+
+        </div>
+
+        <div class="form-group col-lg-4 col-12">
+            <label>
+                @MasterWebApp.Resource.EventInfo.longitude
+            </label>
+
+            @Html.TextBoxFor(model => model.longitude, new { @class = "form-control col-12" })
+            @Html.ValidationMessageFor(model => model.longitude)
+
+        </div>
+
+        <div class="form-group col-lg-4 col-12">
+            <label>
+                @MasterWebApp.Resource.EventInfo.latitude
+            </label>
+
+            @Html.TextBoxFor(model => model.latitude, new { @class = "form-control col-12" })
+            @Html.ValidationMessageFor(model => model.latitude)
+
+        </div>
+
+        <div class="form-group col-lg-12 col-12">
+            <label>
+                @MasterWebApp.Resource.EventInfo.eventDescEn
+            </label>
+
+            @Html.TextAreaFor(model => model.eventDescEn, new { @class = "form-control col-12",rows="5" })
+            @Html.ValidationMessageFor(model => model.eventDescEn)
+
+        </div>
+
+        <div class="form-group col-lg-12 col-12">
+            <label>
+                @MasterWebApp.Resource.EventInfo.eventDescAr
+            </label>
+
+            @Html.TextAreaFor(model => model.eventDescAr, new { @class = "form-control col-12", rows = "5" })
+            @Html.ValidationMessageFor(model => model.eventDescAr)
+
+        </div>
+
+
+
+
+   
+
+
+
+
+      
+
+    
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <button  type="submit" 
+                       class="btn btn-primary">
+
+                    <i class="far fa-save"></i>
+                    @MasterWebApp.Resource.CommonMessage.btnSave
+                    </button>
+                
+            </div>
+        </div>
+    </div>
+}
+
+<script>
+    $(document).ready(function () {
+
+        $("#eventDate").datepicker({
+            dateFormat: 'yy/m/d'
+        });
+
+    })
+</script>

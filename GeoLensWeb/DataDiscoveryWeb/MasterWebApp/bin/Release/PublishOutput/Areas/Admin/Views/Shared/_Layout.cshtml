@@ -1,0 +1,335 @@
+﻿@using DataLayer;
+@using System.Globalization;
+@using System.Resources;
+
+<!DOCTYPE html>
+<html dir="@(FunServices.getLang("dir"))">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+    <link href="~/Content/alertifyjs/alertify.min.css" rel="stylesheet" />
+    <script src="~/Scripts/alertify.min.js"></script>
+    <link href="~/Content/Site.css" rel="stylesheet" />
+    <link href="~/Content/jquery-ui.min.css" rel="stylesheet" />
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    @*<script src="~/Scripts/jquery-3.0.0.js"></script>*@
+    <script src="~/Scripts/jquery-ui-1.11.4.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+    <style>
+        .navbar-nav > li { float:none;  }
+        .navbar-nav > li > img {   display:none;  }
+
+        @@media (min-width: 768px) {
+        .navbar-nav > li { float: @FunServices.getLang("float");  }
+        .navbar-nav > li > img {   display:block;  }
+        }
+
+        .ui-front { z-index: 1500 !important; }
+
+        .dropdown-menu > li > a {
+        display: block;
+        padding: 3px 20px;
+        clear: both;
+        font-weight: normal;
+        line-height: 1.42857143;
+        color: #333;
+        white-space: nowrap;
+        text-align:@FunServices.getLang("float") ;
+        }
+
+        .col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12
+        {
+            float: @FunServices.getLang("float") ;
+        }
+
+    </style>
+
+    @*<title>@ViewBag.Title</title>*@
+    <title>Adl</title>
+    @*@Styles.Render("~/Content/css")
+        @Scripts.Render("~/bundles/modernizr")*@
+</head>
+
+<body dir="@(FunServices.getLang("dir"))" style="background-color:#FFF">
+
+    <div class="p-0">
+        <!-- Header -->
+        <div class="navbar-dark bg-menu ">
+            <nav class="container navbar navbar-expand-lg  justify-content-between">
+                @*<a class="navbar-brand" href="#">Navbar</a>*@
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse bg-menu" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto pr-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="@Url.Action("Index", "MainAdmin", new { Area = "Admin" })">
+                                <i class="fa fa-home"></i>
+                                @MasterWebApp.Resource.MainAdmin.home
+                            </a>
+                        </li>
+
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                @MasterWebApp.Resource.MainAdmin.invoices
+                            </a>
+                            <div class="dropdown-menu  @(FunServices.getLang("drp"))" aria-labelledby="navbarDropdown" style="padding:0 0 0 0;">
+                                <a class="nav-link" href="@Url.Action("Index", "Invoices" , new { Area="Admin" })">
+                                    <i class="fa fa-home"></i>
+                                    @MasterWebApp.Resource.MainAdmin.invoices
+                                </a>
+                                <a class="nav-link" href="@Url.Action("Index", "Products" , new { Area="Admin" })">
+                                    <i class="fa fa-home"></i>
+                                    @MasterWebApp.Resource.MainAdmin.product
+                                </a>
+
+                            </div>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                @MasterWebApp.Resource.MainAdmin.customers
+                            </a>
+                            <div class="dropdown-menu  @(FunServices.getLang("drp"))" aria-labelledby="navbarDropdown" style="padding:0 0 0 0;">
+                                <a class="nav-link" href="@Url.Action("Index", "Customers" , new { Area="Admin" })">
+                                    <i class="fa fa-home"></i>
+                                    @MasterWebApp.Resource.MainAdmin.customers
+                                </a>
+                                <a class="nav-link" href="@Url.Action("Index", "Addresses" , new { Area="Admin" })">
+                                    <i class="fa fa-home"></i>
+                                    @MasterWebApp.Resource.MainAdmin.addresses
+                                </a>
+
+                            </div>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                @MasterWebApp.Resource.MainAdmin.category
+                            </a>
+                            <div class="dropdown-menu  @(FunServices.getLang("drp"))" aria-labelledby="navbarDropdown" style="padding:0 0 0 0;">
+                                <a class="nav-link" href="@Url.Action("Index", "Category" , new { Area="Admin" })">
+                                    <i class="fa fa-home"></i>
+                                    @MasterWebApp.Resource.MainAdmin.category
+                                </a>
+
+                                <a class="nav-link" href="@Url.Action("Index", "PropertiesField" , new { Area="Admin" })">
+                                    <i class="fa fa-home"></i>
+                                    @MasterWebApp.Resource.MainAdmin.propertiesField
+                                </a>
+                                <a class="nav-link" href="@Url.Action("Index", "Product" , new { Area="Admin" })">
+                                    <i class="fa fa-home"></i>
+                                    @MasterWebApp.Resource.MainAdmin.propertyField
+                                </a>
+
+                            </div>
+                        </li>
+
+
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                @MasterWebApp.Resource.MainAdmin.generalData
+                            </a>
+                            <div class="dropdown-menu  @(FunServices.getLang("drp"))" aria-labelledby="navbarDropdown" style="padding:0 0 0 0;">
+                                <a class="nav-link" href="@Url.Action("Index", "Cities" , new { Area="Admin" })">
+                                    <i class="fa fa-home"></i>
+                                    @MasterWebApp.Resource.MainAdmin.cities
+                                </a>
+                                <a class="nav-link" href="@Url.Action("Index", "Countries" , new { Area="Admin" })">
+                                    <i class="fa fa-home"></i>
+                                    @MasterWebApp.Resource.MainAdmin.countries
+                                </a>
+                                <a class="nav-link" href="@Url.Action("Index", "Branches" , new { Area="Admin" })">
+                                    <i class="fa fa-home"></i>
+                                    @MasterWebApp.Resource.MainAdmin.branches
+                                </a>
+                                <a class="nav-link" href="@Url.Action("Index", "Companies" , new { Area="Admin" })">
+                                    <i class="fa fa-home"></i>
+                                    @MasterWebApp.Resource.MainAdmin.companies
+
+                                </a>
+                                <a class="nav-link" href="@Url.Action("Index", "Brands" , new { Area="Admin" })">
+                                    <i class="fa fa-home"></i>
+                                    @MasterWebApp.Resource.MainAdmin.brands
+                                </a>
+                                <a class="nav-link" href="@Url.Action("Index", "Units" , new { Area="Admin" })">
+                                    <i class="fa fa-home"></i>
+                                    @MasterWebApp.Resource.MainAdmin.units
+                                </a>
+                                <a class="nav-link" href="@Url.Action("Index", "Nationality" , new { Area="Admin" })">
+                                    <i class="fa fa-home"></i>
+                                    @MasterWebApp.Resource.MainAdmin.nationality
+                                </a>
+                               
+                            </div>
+                        </li>
+
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                @MasterWebApp.Resource.MainAdmin.staff
+                            </a>
+                            <div class="dropdown-menu  @(FunServices.getLang("drp"))" aria-labelledby="navbarDropdown" style="padding:0 0 0 0;">
+                                <a class="nav-link" href="@Url.Action("Index", "Staff" , new { Area="Admin" })">
+                                    <i class="fa fa-home"></i>
+                                    @MasterWebApp.Resource.MainAdmin.staff
+                                </a>
+                                <a class="nav-link" href="@Url.Action("Index", "Delivery" , new { Area="Admin" })">
+                                    <i class="fa fa-home"></i>
+                                    @MasterWebApp.Resource.MainAdmin.delivery
+                                </a>
+                                <a class="nav-link" href="@Url.Action("Index", "ChangePass" , new { Area="Admin" })">
+                                    <i class="fa fa-home"></i>
+                                    @MasterWebApp.Resource.MainAdmin.changePass
+                                </a>
+                            </div>
+                        </li>
+
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                @MasterWebApp.Resource.MainAdmin.pages
+                            </a>
+                            <div class="dropdown-menu  @(FunServices.getLang("drp"))" aria-labelledby="navbarDropdown" style="padding:0 0 0 0;">
+                                <a class="nav-link" href="@Url.Action("Index", "AboutUS" , new { Area="Admin" })">
+                                    <i class="fa fa-home"></i>
+                                    @MasterWebApp.Resource.MainAdmin.aboutUs
+                                </a>
+                                <a class="nav-link" href="@Url.Action("Index", "Conditions" , new { Area="Admin" })">
+                                    <i class="fa fa-home"></i>
+                                    @MasterWebApp.Resource.MainAdmin.condition
+                                </a>
+                              
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+
+                <div style="display:flex;">
+                    @{
+                        string lang = System.Threading.Thread.CurrentThread.CurrentCulture.ToString();
+                        if (lang == "en")
+                        {
+                            <div>
+                                <a href="#" class="fas fa-globe " onclick="changeLang('ar')" title="عربي" style="font-size: x-large; color: #fff; Background: transparent;padding:0 20px;">
+                                    <i style="font-size:small">
+                                    </i>
+                                </a>
+                            </div>
+                        }
+                        else
+                        {
+                            <div>
+                                <a href="#" onclick="changeLang('en')" class="fas fa-globe " title="En" style="font-size: x-large; color: #fff; Background: transparent;padding:0 20px;">
+                                    <i style="font-size:small">
+                                    </i>
+                                </a>
+                            </div>
+                        }
+                    }
+                    <a href="#" onclick="Login()" class="fas fa-user " style="font-size: x-large; color: #fff; Background: transparent;">
+                        <i style="font-size:small">
+                        </i>
+                    </a>
+                </div>
+            </nav>
+        </div>
+        <!-- /Header -->
+
+        <!-- Body -->
+        <div class="mt-2">
+            @RenderBody()
+        </div>
+        <!-- /Body -->
+
+        <!-- Footer -->
+        <footer class="nav navbar-dark bg-menu text-center font-small fadeIn mt-2" style="clear:both;">
+            <div class="col-lg-12 p-2">
+                <span style="color: lightgray; vertical-align: central; ">Copyright &copy;  @DateTime.Now.Year Academic Digital Library </span>
+            </div>
+        </footer>
+        <!-- /Footer -->
+    </div>
+
+    <div class=" modal" id="contractPause" tabindex="-1">
+        <div class=" modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-body" id="divBody">
+                    <!-- Body -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    @*<script src="~/Scripts/jquery-3.0.0.js"></script>*@
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+
+    @*@Scripts.Render("~/bundles/jquery")
+        @Scripts.Render("~/bundles/bootstrap")*@
+
+    @RenderSection("scripts", required: false)
+</body>
+</html>
+
+
+
+<script>
+
+    $(function () {
+        $('#navbarSupportedContent ul li a').each(function () {
+            debugger
+            $current = location.href;
+            $target = $(this).attr('href');
+            if ($current.includes($target)) {
+                $(this).parent().parent().addClass('mActive');
+                $(this).addClass('mmActive');
+                debugger
+            }
+        });
+    });
+
+
+    $(function () {
+        var save = '@TempData["saveOk"]'
+        var error = '@TempData["error"]'
+        if (save != '') {
+            alertify.success(save)
+        }
+        if (error != '') {
+            alertify.error(error);
+        }
+    });
+
+    function changeLang(lang) {
+        $.ajax({
+            type: "Get",
+            url: "/Common/Language/SetLanguage",
+            data: { 'lang': lang },
+
+            success: function (data) {
+                location.reload();
+            },
+            error: function () {
+                alert('خطأ اثناء التحويل');
+            }
+        })
+    }
+
+    function Login() {
+        debugger
+        var url = "/Admin/Authors/SignIn?id=0";
+        $('#divBody').load(url, function () {
+            $('#contractPause').modal({ backdrop: 'static', keyboard: false});
+        })
+    }
+
+</script>

@@ -1,0 +1,61 @@
+﻿@using Data.ViewModel;
+@using DataLayer;
+
+
+@model UnitsAddViewModel
+@using (Html.BeginForm("UnitsAddEdit", "Units", FormMethod.Post))
+{
+    @Html.AntiForgeryToken()
+    <div class="form-horizontal">
+
+        @Html.ValidationSummary(true)
+
+        @Html.HiddenFor(x => x.Units.unitID)
+
+        @if (Model.Units != null)
+        {
+
+            @Html.HiddenFor(model => model.Units.statusID)
+
+        }
+        
+      
+
+
+        <div class="form-group">
+            <label>
+                @MasterWebApp.Resource.Units.unitNameAr
+            </label>
+
+            @Html.TextBoxFor(model => model.Units.unitNameAr, new { @class = "form-control col-12" })
+            @Html.ValidationMessageFor(model => model.Units.unitNameAr)
+
+        </div>
+
+        <div class="form-group">
+            <label>
+                @MasterWebApp.Resource.Units.unitNameEn
+            </label>
+
+            @Html.TextBoxFor(model => model.Units.unitNameEn, new { @class = "form-control col-12" })
+            @Html.ValidationMessageFor(model => model.Units.unitNameEn)
+
+        </div>
+
+       
+
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <button  type="submit" 
+                       class="btn btn-primary">
+
+                    <i class="far fa-save"></i>
+                    @MasterWebApp.Resource.CommonMessage.btnSave
+                    </button>
+                
+            </div>
+        </div>
+    </div>
+}
+

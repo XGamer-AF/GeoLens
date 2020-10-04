@@ -1,0 +1,271 @@
+﻿@using Data.ViewModel;
+@using DataLayer;
+
+
+@model productsAddViewModel
+@using (Html.BeginForm("productsAddEdit", "products", FormMethod.Post))
+{
+    @Html.AntiForgeryToken()
+    <div class="form-horizontal">
+
+        @Html.ValidationSummary(true)
+
+        @Html.HiddenFor(x => x.products.productID)
+
+        @if (Model.products != null)
+        {
+
+            @Html.HiddenFor(model => model.products.statusID)
+
+        }
+        
+
+        <div class="form-group col-lg-6 col-12">
+            <label>
+                @MasterWebApp.Resource.products.productNameAr
+            </label>
+
+            @Html.TextBoxFor(model => model.products.productNameAr, new { @class = "form-control col-12" })
+            @Html.ValidationMessageFor(model => model.products.productNameAr)
+
+        </div>
+
+        <div class="form-group col-lg-6 col-12">
+            <label>
+                @MasterWebApp.Resource.products.productNameEn
+            </label>
+
+            @Html.TextBoxFor(model => model.products.productNameEn, new { @class = "form-control col-12" })
+            @Html.ValidationMessageFor(model => model.products.productNameEn)
+
+        </div>
+
+        <div class="form-group col-lg-3 col-6">
+            <label>
+                @MasterWebApp.Resource.products.productNo
+            </label>
+
+            @Html.TextBoxFor(model => model.products.productNo, new { @class = "form-control col-12" })
+            @Html.ValidationMessageFor(model => model.products.productNo)
+
+        </div>
+
+        <div class="form-group col-lg-3 col-6">
+            <label>
+                @MasterWebApp.Resource.products.productBarcode
+            </label>
+
+            @Html.TextBoxFor(model => model.products.productBarcode, new { @class = "form-control col-12" })
+            @Html.ValidationMessageFor(model => model.products.productBarcode)
+
+        </div>
+
+        <div class="form-group col-lg-3 col-6">
+            <label>
+                @MasterWebApp.Resource.products.categoryID
+            </label>
+
+            @Html.TextBox("categoryIDLabel", null, new { @class = "form-control col-12" })
+            @Html.ValidationMessageFor(model => model.products.categoryID)
+           
+            @Html.HiddenFor(x => x.products.categoryID,new {@class= "categoryID" })
+
+
+        </div>
+
+        <div class="form-group col-lg-3 col-6">
+            <label>
+                @MasterWebApp.Resource.products.unitID
+            </label>
+
+            @Html.DropDownListFor(s => s.products.unitID, (SelectList)ViewBag.UnitsV, new { @class = "form-control col-12" })
+            @Html.ValidationMessageFor(model => model.products.unitID)
+
+        </div>
+
+
+        <div class="form-group col-lg-4 col-6">
+            <label>
+                @MasterWebApp.Resource.products.companyID
+            </label>
+
+            @Html.DropDownListFor(s => s.products.companyID, (SelectList)ViewBag.CompaniesV, new { @class = "form-control col-12" })
+            @Html.ValidationMessageFor(model => model.products.companyID)
+
+        </div>
+
+        <div class="form-group col-lg-4 col-6">
+            <label>
+                @MasterWebApp.Resource.products.branchID
+            </label>
+
+            @Html.DropDownListFor(s => s.products.branchID, (SelectList)ViewBag.BranchesV, new { @class = "form-control col-12" })
+            @Html.ValidationMessageFor(model => model.products.branchID)
+
+        </div>
+
+        <div class="form-group col-lg-4 col-6">
+            <label>
+                @MasterWebApp.Resource.products.brandID
+            </label>
+
+            @Html.DropDownListFor(s => s.products.brandID, (SelectList)ViewBag.BrandsV, new { @class = "form-control col-12" })
+            @Html.ValidationMessageFor(model => model.products.brandID)
+
+        </div>
+
+        <div class="form-group col-lg-3 col-6">
+            <label>
+                @MasterWebApp.Resource.products.price
+            </label>
+
+            @Html.TextBoxFor(model => model.products.price, new { @class = "form-control col-12" })
+            @Html.ValidationMessageFor(model => model.products.price)
+
+        </div>
+
+        <div class="form-group col-lg-3 col-6">
+            <label>
+                @MasterWebApp.Resource.products.price2
+            </label>
+
+            @Html.TextBoxFor(model => model.products.price2, new { @class = "form-control col-12" })
+            @Html.ValidationMessageFor(model => model.products.price2)
+
+        </div>
+
+        <div class="form-group col-lg-3 col-6">
+            <label>
+                @MasterWebApp.Resource.products.buyPrice
+            </label>
+
+            @Html.TextBoxFor(model => model.products.buyPrice, new { @class = "form-control col-12" })
+            @Html.ValidationMessageFor(model => model.products.buyPrice)
+
+        </div>
+
+        <div class="form-group col-lg-3 col-6">
+            <label>
+                @MasterWebApp.Resource.products.buyPrice2
+            </label>
+
+            @Html.TextBoxFor(model => model.products.buyPrice2, new { @class = "form-control col-12" })
+            @Html.ValidationMessageFor(model => model.products.buyPrice2)
+
+        </div>
+
+        <div class="form-group col-lg-6 col-12">
+            <label>
+                @MasterWebApp.Resource.products.descriptionAr
+            </label>
+
+            @Html.TextAreaFor(model => model.products.descriptionAr, new { @class = "form-control col-12" })
+            @Html.ValidationMessageFor(model => model.products.descriptionAr)
+
+        </div>
+
+        <div class="form-group col-lg-6 col-12">
+            <label>
+                @MasterWebApp.Resource.products.descriptionEn
+            </label>
+
+            @Html.TextAreaFor(model => model.products.descriptionEn, new { @class = "form-control col-12" })
+            @Html.ValidationMessageFor(model => model.products.descriptionEn)
+
+        </div>
+
+
+        <div class="form-group col-lg-4 col-6">
+            <label>
+                @MasterWebApp.Resource.products.ProductInitial
+            </label>
+
+            @Html.TextBoxFor(model => model.products.ProductInitial, new { @class = "form-control col-12" })
+            @Html.ValidationMessageFor(model => model.products.ProductInitial)
+
+        </div>
+
+        <div class="form-group col-lg-4 col-6">
+            <label>
+                @MasterWebApp.Resource.products.minCount
+            </label>
+
+            @Html.TextBoxFor(model => model.products.minCount, new { @class = "form-control col-12" })
+            @Html.ValidationMessageFor(model => model.products.minCount)
+
+        </div>
+
+        <div class="form-group col-lg-4 col-6">
+            <label>
+                @MasterWebApp.Resource.products.storeID
+            </label>
+
+            @Html.DropDownListFor(s => s.products.storeID, (SelectList)ViewBag.StoresV, new { @class = "form-control col-12" })
+            @Html.ValidationMessageFor(model => model.products.storeID)
+
+        </div>
+
+
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <button  type="submit" 
+                       class="btn btn-primary">
+
+                    <i class="far fa-save"></i>
+                    @MasterWebApp.Resource.CommonMessage.btnSave
+                    </button>
+                
+            </div>
+        </div>
+    </div>
+}
+
+<script>
+    //////////////////
+
+    $("#categoryIDLabel").autocomplete({
+
+        source: function (request, response) {
+
+            $.ajax({
+
+                url: "/products/GetCategoryAuto",
+                type: "POST",
+                dataType: "json",
+                data: { letter: request.term},
+                success: function (data) {
+                    debugger
+                    response($.map(data, function (item) {
+                        return { label: item.categoryNameAr, value: item.categoryNameAr, id: item.categoryID };
+
+                    }))
+
+                }
+            })
+        },
+        select: function (event, ui) {
+            //update the jQuery selector here to your target hidden field
+
+            $(".categoryID").val(ui.item.id);
+        },
+        messages: {
+            noResults: "", results: ""
+        }
+    });
+
+    $('#categoryIDLabel').change(function () {
+
+        if ($('#categoryIDLabel').val() == '') {
+
+            $(".categoryID").val('');
+
+        }
+
+
+
+
+    });
+
+
+</script>

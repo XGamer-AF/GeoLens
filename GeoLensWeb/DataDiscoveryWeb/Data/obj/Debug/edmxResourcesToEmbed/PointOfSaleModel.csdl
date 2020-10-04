@@ -1,0 +1,900 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="pointOfSaleModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="AboutUS">
+    <Key>
+      <PropertyRef Name="aboutID" />
+    </Key>
+    <Property Name="aboutID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="aboutText" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="aboutTextEn" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="statusID" Type="Int32" />
+  </EntityType>
+  <EntityType Name="Addresses">
+    <Key>
+      <PropertyRef Name="addressID" />
+    </Key>
+    <Property Name="addressID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="recevierName" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="customerID" Type="Int32" />
+    <Property Name="tel" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="cityName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="areaName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="fullAddress" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="landMark" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="statusID" Type="Int32" />
+    <NavigationProperty Name="Invoices" Relationship="Self.FK_Invoices_Addresses" FromRole="Addresses" ToRole="Invoices" />
+  </EntityType>
+  <EntityType Name="Branches">
+    <Key>
+      <PropertyRef Name="branchID" />
+    </Key>
+    <Property Name="branchID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="companyID" Type="Int32" />
+    <Property Name="countryID" Type="Int32" />
+    <Property Name="cityID" Type="Int32" />
+    <Property Name="branchNameEn" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="branchNameAr" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="tel1" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="tel2" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="fax" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="mail1" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="mail2" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="latitude" Type="Double" />
+    <Property Name="longitude" Type="Double" />
+    <Property Name="address" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="dateAdd" Type="DateTime" Precision="0" />
+    <Property Name="statusID" Type="Int32" />
+    <NavigationProperty Name="Invoices" Relationship="Self.FK_Invoices_Branches" FromRole="Branches" ToRole="Invoices" />
+    <NavigationProperty Name="products" Relationship="Self.FK_products_Branches" FromRole="Branches" ToRole="products" />
+  </EntityType>
+  <EntityType Name="Brands">
+    <Key>
+      <PropertyRef Name="brandID" />
+    </Key>
+    <Property Name="brandID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="brandNameEn" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="brandNameAr" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="staffID" Type="Int32" />
+    <Property Name="dateAdd" Type="DateTime" Precision="0" />
+    <Property Name="statusID" Type="Int32" />
+    <NavigationProperty Name="products" Relationship="Self.FK_products_Brands" FromRole="Brands" ToRole="products" />
+  </EntityType>
+  <EntityType Name="Category">
+    <Key>
+      <PropertyRef Name="categoryID" />
+    </Key>
+    <Property Name="categoryID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="staffID" Type="Int32" />
+    <Property Name="categoryNameEn" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="categoryNameAr" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="parentID" Type="Int32" />
+    <Property Name="dateAdd" Type="DateTime" Precision="0" />
+    <Property Name="statusID" Type="Int32" />
+    <NavigationProperty Name="products" Relationship="Self.FK_products_Category" FromRole="Category" ToRole="products" />
+    <NavigationProperty Name="PropertiesField" Relationship="Self.FK_PropertiesField_Category" FromRole="Category" ToRole="PropertiesField" />
+  </EntityType>
+  <EntityType Name="Cities">
+    <Key>
+      <PropertyRef Name="cityID" />
+    </Key>
+    <Property Name="cityID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="countryID" Type="Int32" />
+    <Property Name="cityNameEn" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="cityNameAr" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="parentID" Type="Int32" />
+    <Property Name="levelID" Type="Int32" />
+    <Property Name="deliveryCost" Type="Double" />
+    <Property Name="statusID" Type="Int32" />
+    <NavigationProperty Name="Countries" Relationship="Self.FK_Cities_Countries" FromRole="Cities" ToRole="Countries" />
+    <NavigationProperty Name="Customers" Relationship="Self.FK_Customers_Cities" FromRole="Cities" ToRole="Customers" />
+  </EntityType>
+  <EntityType Name="Companies">
+    <Key>
+      <PropertyRef Name="companyID" />
+    </Key>
+    <Property Name="companyID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="companyNameEn" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="companyNameAr" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="location" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="tel1" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="tel2" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="fax" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="email" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="website" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="descriptionEn" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="descriptionAr" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="dateAdd" Type="DateTime" Precision="0" />
+    <Property Name="statusID" Type="Int32" />
+    <NavigationProperty Name="Invoices" Relationship="Self.FK_Invoices_Companies" FromRole="Companies" ToRole="Invoices" />
+    <NavigationProperty Name="products" Relationship="Self.FK_products_Companies" FromRole="Companies" ToRole="products" />
+  </EntityType>
+  <EntityType Name="Conditions">
+    <Key>
+      <PropertyRef Name="conditionID" />
+    </Key>
+    <Property Name="conditionID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="consitionText" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="consitionTextEn" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="rowOrder" Type="Int32" />
+    <Property Name="statusID" Type="Int32" />
+  </EntityType>
+  <EntityType Name="Countries">
+    <Key>
+      <PropertyRef Name="countryID" />
+    </Key>
+    <Property Name="countryID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="countryNameEn" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="countryNameAr" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="counteyCode" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="orderID" Type="Int32" />
+    <Property Name="telLength" Type="Int32" />
+    <Property Name="showCity" Type="Boolean" Nullable="false" />
+    <Property Name="currencyNameEn" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="currencyNameAr" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="statusID" Type="Int32" />
+    <NavigationProperty Name="Cities" Relationship="Self.FK_Cities_Countries" FromRole="Countries" ToRole="Cities" />
+    <NavigationProperty Name="Customers" Relationship="Self.FK_Customers_Countries" FromRole="Countries" ToRole="Customers" />
+    <NavigationProperty Name="Invoices" Relationship="Self.FK_Invoices_Countries" FromRole="Countries" ToRole="Invoices" />
+  </EntityType>
+  <EntityType Name="Currency">
+    <Key>
+      <PropertyRef Name="currencyID" />
+    </Key>
+    <Property Name="currencyID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="currencyEn" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="currencyAr" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="statusID" Type="Int32" />
+  </EntityType>
+  <EntityType Name="Customers">
+    <Key>
+      <PropertyRef Name="customerID" />
+    </Key>
+    <Property Name="customerID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="titleID" Type="Int32" />
+    <Property Name="firstName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="lastName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="latitude" Type="Double" />
+    <Property Name="longitude" Type="Double" />
+    <Property Name="tel1" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="mail" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="password" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="statusID" Type="Int32" />
+    <Property Name="birthDate" Type="DateTime" Precision="0" />
+    <Property Name="dateAdd" Type="DateTime" Precision="0" />
+    <Property Name="nationalityID" Type="Int32" />
+    <Property Name="countryID" Type="Int32" />
+    <Property Name="cityID" Type="Int32" />
+    <Property Name="countForgetPassword" Type="Int32" />
+    <NavigationProperty Name="Cities" Relationship="Self.FK_Customers_Cities" FromRole="Customers" ToRole="Cities" />
+    <NavigationProperty Name="Countries" Relationship="Self.FK_Customers_Countries" FromRole="Customers" ToRole="Countries" />
+    <NavigationProperty Name="Nationality" Relationship="Self.FK_Customers_Nationality" FromRole="Customers" ToRole="Nationality" />
+    <NavigationProperty Name="RowStatus" Relationship="Self.FK_Customers_RowStatus" FromRole="Customers" ToRole="RowStatus" />
+    <NavigationProperty Name="Title" Relationship="Self.FK_Customers_Title" FromRole="Customers" ToRole="Title" />
+    <NavigationProperty Name="Invoices" Relationship="Self.FK_Invoices_Customers" FromRole="Customers" ToRole="Invoices" />
+  </EntityType>
+  <EntityType Name="Delivery">
+    <Key>
+      <PropertyRef Name="deliveryID" />
+    </Key>
+    <Property Name="deliveryID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="companyID" Type="Int32" />
+    <Property Name="branchID" Type="Int32" />
+    <Property Name="deliveryName" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="civilID" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="tel1" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="tel2" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="address" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="dateAdd" Type="DateTime" Precision="0" />
+    <Property Name="statusID" Type="Int32" />
+    <NavigationProperty Name="Invoices" Relationship="Self.FK_Invoices_Delivery" FromRole="Delivery" ToRole="Invoices" />
+  </EntityType>
+  <EntityType Name="DeliveryType">
+    <Key>
+      <PropertyRef Name="deliveryTypeID" />
+    </Key>
+    <Property Name="deliveryTypeID" Type="Int32" Nullable="false" />
+    <Property Name="nameEn" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="nameAr" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="statusID" Type="Int32" />
+    <NavigationProperty Name="Invoices" Relationship="Self.FK_Invoices_DeliveryType" FromRole="DeliveryType" ToRole="Invoices" />
+  </EntityType>
+  <EntityType Name="InvoiceDetalis">
+    <Key>
+      <PropertyRef Name="invoiceDetailsID" />
+    </Key>
+    <Property Name="invoiceDetailsID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="invoiceID" Type="Int32" />
+    <Property Name="productID" Type="Int32" />
+    <Property Name="quantity" Type="Double" />
+    <Property Name="price" Type="Double" />
+    <Property Name="discount" Type="Double" />
+    <Property Name="statusID" Type="Int32" />
+  </EntityType>
+  <EntityType Name="Invoices">
+    <Key>
+      <PropertyRef Name="invoiveID" />
+    </Key>
+    <Property Name="invoiveID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="invoiceNo" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="customerID" Type="Int32" />
+    <Property Name="invoiceDate" Type="DateTime" Precision="3" />
+    <Property Name="companyID" Type="Int32" />
+    <Property Name="branchID" Type="Int32" />
+    <Property Name="countryID" Type="Int32" />
+    <Property Name="deliveryTypeID" Type="Int32" />
+    <Property Name="deliveryDate" Type="DateTime" Precision="3" />
+    <Property Name="deliveryID" Type="Int32" />
+    <Property Name="deliveryCost" Type="Int32" />
+    <Property Name="total" Type="Double" />
+    <Property Name="discount" Type="Double" />
+    <Property Name="addressID" Type="Int32" />
+    <Property Name="invoiceStatusID" Type="Int32" />
+    <Property Name="paymentTypeID" Type="Int32" />
+    <Property Name="statusID" Type="Int32" />
+    <NavigationProperty Name="Addresses" Relationship="Self.FK_Invoices_Addresses" FromRole="Invoices" ToRole="Addresses" />
+    <NavigationProperty Name="Branches" Relationship="Self.FK_Invoices_Branches" FromRole="Invoices" ToRole="Branches" />
+    <NavigationProperty Name="Companies" Relationship="Self.FK_Invoices_Companies" FromRole="Invoices" ToRole="Companies" />
+    <NavigationProperty Name="Countries" Relationship="Self.FK_Invoices_Countries" FromRole="Invoices" ToRole="Countries" />
+    <NavigationProperty Name="Customers" Relationship="Self.FK_Invoices_Customers" FromRole="Invoices" ToRole="Customers" />
+    <NavigationProperty Name="Delivery" Relationship="Self.FK_Invoices_Delivery" FromRole="Invoices" ToRole="Delivery" />
+    <NavigationProperty Name="DeliveryType" Relationship="Self.FK_Invoices_DeliveryType" FromRole="Invoices" ToRole="DeliveryType" />
+    <NavigationProperty Name="InvoiceStatus" Relationship="Self.FK_Invoices_InvoiceStatus" FromRole="Invoices" ToRole="InvoiceStatus" />
+    <NavigationProperty Name="PaymentType" Relationship="Self.FK_Invoices_PaymentType" FromRole="Invoices" ToRole="PaymentType" />
+  </EntityType>
+  <EntityType Name="InvoiceStatus">
+    <Key>
+      <PropertyRef Name="invoiceStatusID" />
+    </Key>
+    <Property Name="invoiceStatusID" Type="Int32" Nullable="false" />
+    <Property Name="invoiceStatusAr" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="invoiceStatusEn" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Invoices" Relationship="Self.FK_Invoices_InvoiceStatus" FromRole="InvoiceStatus" ToRole="Invoices" />
+  </EntityType>
+  <EntityType Name="Nationality">
+    <Key>
+      <PropertyRef Name="nationalityID" />
+    </Key>
+    <Property Name="nationalityID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="nationalityNameEn" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="nationalityNameAr" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="statusID" Type="Int32" />
+    <NavigationProperty Name="Customers" Relationship="Self.FK_Customers_Nationality" FromRole="Nationality" ToRole="Customers" />
+  </EntityType>
+  <EntityType Name="PaymentType">
+    <Key>
+      <PropertyRef Name="paymentTypeID" />
+    </Key>
+    <Property Name="paymentTypeID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="paymentNameEn" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="paymentNameAr" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="statusID" Type="Int32" />
+    <NavigationProperty Name="Invoices" Relationship="Self.FK_Invoices_PaymentType" FromRole="PaymentType" ToRole="Invoices" />
+  </EntityType>
+  <EntityType Name="Premission">
+    <Key>
+      <PropertyRef Name="permissionID" />
+    </Key>
+    <Property Name="permissionID" Type="Int32" Nullable="false" />
+    <Property Name="descriptionEn" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="descriptionAr" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="statusID" Type="Int32" />
+  </EntityType>
+  <EntityType Name="products">
+    <Key>
+      <PropertyRef Name="productID" />
+    </Key>
+    <Property Name="productID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="productNo" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="productBarcode" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="categoryID" Type="Int32" />
+    <Property Name="companyID" Type="Int32" />
+    <Property Name="branchID" Type="Int32" />
+    <Property Name="productNameEn" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="productNameAr" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="brandID" Type="Int32" />
+    <Property Name="price" Type="Double" />
+    <Property Name="price2" Type="Double" />
+    <Property Name="price3" Type="Double" />
+    <Property Name="buyPrice" Type="Double" />
+    <Property Name="buyPrice2" Type="Double" />
+    <Property Name="buyPrice3" Type="Double" />
+    <Property Name="productTax1" Type="Double" />
+    <Property Name="productTax2" Type="Double" />
+    <Property Name="discount" Type="Double" />
+    <Property Name="priceAfterDiscount" Type="Double" />
+    <Property Name="descriptionEn" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="descriptionAr" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="unitID" Type="Int32" />
+    <Property Name="size" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="viewCount" Type="Int32" />
+    <Property Name="avgRate" Type="Double" />
+    <Property Name="inStock" Type="Int32" />
+    <Property Name="quantity" Type="Double" />
+    <Property Name="available" Type="Boolean" />
+    <Property Name="minCount" Type="Double" />
+    <Property Name="ProductInitial" Type="Double" />
+    <Property Name="dateAdd" Type="DateTime" Precision="0" />
+    <Property Name="staffID" Type="Int32" />
+    <Property Name="statusID" Type="Int32" />
+    <Property Name="storeID" Type="Int32" />
+    <NavigationProperty Name="Branches" Relationship="Self.FK_products_Branches" FromRole="products" ToRole="Branches" />
+    <NavigationProperty Name="Brands" Relationship="Self.FK_products_Brands" FromRole="products" ToRole="Brands" />
+    <NavigationProperty Name="Category" Relationship="Self.FK_products_Category" FromRole="products" ToRole="Category" />
+    <NavigationProperty Name="Companies" Relationship="Self.FK_products_Companies" FromRole="products" ToRole="Companies" />
+    <NavigationProperty Name="Staff" Relationship="Self.FK_products_Staff" FromRole="products" ToRole="Staff" />
+    <NavigationProperty Name="Stores" Relationship="Self.FK_products_Stores" FromRole="products" ToRole="Stores" />
+    <NavigationProperty Name="Units" Relationship="Self.FK_products_Units" FromRole="products" ToRole="Units" />
+  </EntityType>
+  <EntityType Name="PropertiesField">
+    <Key>
+      <PropertyRef Name="propertyFieldID" />
+    </Key>
+    <Property Name="propertyFieldID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="propertyTypeID" Type="Int32" />
+    <Property Name="categoryID" Type="Int32" Nullable="false" />
+    <Property Name="propertyNameEn" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="propertyNameAr" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="staffID" Type="Int32" />
+    <Property Name="statusID" Type="Int32" />
+    <NavigationProperty Name="Category" Relationship="Self.FK_PropertiesField_Category" FromRole="PropertiesField" ToRole="Category" />
+    <NavigationProperty Name="PropertyType" Relationship="Self.FK_PropertiesField_PropertyType" FromRole="PropertiesField" ToRole="PropertyType" />
+    <NavigationProperty Name="Staff" Relationship="Self.FK_PropertiesField_Staff" FromRole="PropertiesField" ToRole="Staff" />
+    <NavigationProperty Name="PropertyValue" Relationship="Self.FK_PropertyValue_PropertiesField" FromRole="PropertiesField" ToRole="PropertyValue" />
+  </EntityType>
+  <EntityType Name="PropertyType">
+    <Key>
+      <PropertyRef Name="propertyTypeID" />
+    </Key>
+    <Property Name="propertyTypeID" Type="Int32" Nullable="false" />
+    <Property Name="propertyNameEn" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="propertyNameAr" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="statusID" Type="Int32" />
+    <NavigationProperty Name="PropertiesField" Relationship="Self.FK_PropertiesField_PropertyType" FromRole="PropertyType" ToRole="PropertiesField" />
+  </EntityType>
+  <EntityType Name="PropertyValue">
+    <Key>
+      <PropertyRef Name="propertyValueID" />
+    </Key>
+    <Property Name="propertyValueID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="propertyFieldID" Type="Int32" />
+    <Property Name="productID" Type="Int32" />
+    <Property Name="valueNameEn" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="valueNameAr" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="statusID" Type="Int32" />
+    <NavigationProperty Name="PropertiesField" Relationship="Self.FK_PropertyValue_PropertiesField" FromRole="PropertyValue" ToRole="PropertiesField" />
+  </EntityType>
+  <EntityType Name="RowStatus">
+    <Key>
+      <PropertyRef Name="statusID" />
+    </Key>
+    <Property Name="statusID" Type="Int32" Nullable="false" />
+    <Property Name="rowStatusNameEn" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="rowStatusNameAr" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Customers" Relationship="Self.FK_Customers_RowStatus" FromRole="RowStatus" ToRole="Customers" />
+  </EntityType>
+  <EntityType Name="Staff">
+    <Key>
+      <PropertyRef Name="staffID" />
+    </Key>
+    <Property Name="staffID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="companyID" Type="Int32" />
+    <Property Name="fullName" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="userName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="password" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="permissionID" Type="Int32" />
+    <Property Name="statusID" Type="Int32" />
+    <NavigationProperty Name="products" Relationship="Self.FK_products_Staff" FromRole="Staff" ToRole="products" />
+    <NavigationProperty Name="PropertiesField" Relationship="Self.FK_PropertiesField_Staff" FromRole="Staff" ToRole="PropertiesField" />
+  </EntityType>
+  <EntityType Name="Stores">
+    <Key>
+      <PropertyRef Name="storeID" />
+    </Key>
+    <Property Name="storeID" Type="Int32" Nullable="false" />
+    <Property Name="storeNumber" Type="Int32" />
+    <Property Name="storeNameAr" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="storeNameEn" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="storeAddress" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="statusID" Type="Int32" />
+    <Property Name="storePrimery" Type="Boolean" />
+    <Property Name="stutas" Type="Byte" />
+    <Property Name="companyID" Type="Int32" />
+    <Property Name="userID" Type="Int32" />
+    <Property Name="dateAdd" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="products" Relationship="Self.FK_products_Stores" FromRole="Stores" ToRole="products" />
+  </EntityType>
+  <EntityType Name="Title">
+    <Key>
+      <PropertyRef Name="titleID" />
+    </Key>
+    <Property Name="titleID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="titleNameEn" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="tilteNameAr" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="statusID" Type="Int32" />
+    <NavigationProperty Name="Customers" Relationship="Self.FK_Customers_Title" FromRole="Title" ToRole="Customers" />
+  </EntityType>
+  <EntityType Name="Units">
+    <Key>
+      <PropertyRef Name="unitID" />
+    </Key>
+    <Property Name="unitID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="unitNameEn" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="unitNameAr" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="statusID" Type="Int32" />
+    <NavigationProperty Name="products" Relationship="Self.FK_products_Units" FromRole="Units" ToRole="products" />
+  </EntityType>
+  <Association Name="FK_Invoices_Addresses">
+    <End Role="Addresses" Type="Self.Addresses" Multiplicity="0..1" />
+    <End Role="Invoices" Type="Self.Invoices" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Addresses">
+        <PropertyRef Name="addressID" />
+      </Principal>
+      <Dependent Role="Invoices">
+        <PropertyRef Name="addressID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Invoices_Branches">
+    <End Role="Branches" Type="Self.Branches" Multiplicity="0..1" />
+    <End Role="Invoices" Type="Self.Invoices" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Branches">
+        <PropertyRef Name="branchID" />
+      </Principal>
+      <Dependent Role="Invoices">
+        <PropertyRef Name="branchID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_products_Branches">
+    <End Role="Branches" Type="Self.Branches" Multiplicity="0..1" />
+    <End Role="products" Type="Self.products" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Branches">
+        <PropertyRef Name="branchID" />
+      </Principal>
+      <Dependent Role="products">
+        <PropertyRef Name="branchID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_products_Brands">
+    <End Role="Brands" Type="Self.Brands" Multiplicity="0..1" />
+    <End Role="products" Type="Self.products" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Brands">
+        <PropertyRef Name="brandID" />
+      </Principal>
+      <Dependent Role="products">
+        <PropertyRef Name="brandID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_products_Category">
+    <End Role="Category" Type="Self.Category" Multiplicity="0..1" />
+    <End Role="products" Type="Self.products" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Category">
+        <PropertyRef Name="categoryID" />
+      </Principal>
+      <Dependent Role="products">
+        <PropertyRef Name="categoryID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PropertiesField_Category">
+    <End Role="Category" Type="Self.Category" Multiplicity="1" />
+    <End Role="PropertiesField" Type="Self.PropertiesField" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Category">
+        <PropertyRef Name="categoryID" />
+      </Principal>
+      <Dependent Role="PropertiesField">
+        <PropertyRef Name="categoryID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Cities_Countries">
+    <End Role="Countries" Type="Self.Countries" Multiplicity="0..1" />
+    <End Role="Cities" Type="Self.Cities" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Countries">
+        <PropertyRef Name="countryID" />
+      </Principal>
+      <Dependent Role="Cities">
+        <PropertyRef Name="countryID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Customers_Cities">
+    <End Role="Cities" Type="Self.Cities" Multiplicity="0..1" />
+    <End Role="Customers" Type="Self.Customers" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Cities">
+        <PropertyRef Name="cityID" />
+      </Principal>
+      <Dependent Role="Customers">
+        <PropertyRef Name="cityID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Invoices_Companies">
+    <End Role="Companies" Type="Self.Companies" Multiplicity="0..1" />
+    <End Role="Invoices" Type="Self.Invoices" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Companies">
+        <PropertyRef Name="companyID" />
+      </Principal>
+      <Dependent Role="Invoices">
+        <PropertyRef Name="companyID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_products_Companies">
+    <End Role="Companies" Type="Self.Companies" Multiplicity="0..1" />
+    <End Role="products" Type="Self.products" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Companies">
+        <PropertyRef Name="companyID" />
+      </Principal>
+      <Dependent Role="products">
+        <PropertyRef Name="companyID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Customers_Countries">
+    <End Role="Countries" Type="Self.Countries" Multiplicity="0..1" />
+    <End Role="Customers" Type="Self.Customers" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Countries">
+        <PropertyRef Name="countryID" />
+      </Principal>
+      <Dependent Role="Customers">
+        <PropertyRef Name="countryID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Invoices_Countries">
+    <End Role="Countries" Type="Self.Countries" Multiplicity="0..1" />
+    <End Role="Invoices" Type="Self.Invoices" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Countries">
+        <PropertyRef Name="countryID" />
+      </Principal>
+      <Dependent Role="Invoices">
+        <PropertyRef Name="countryID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Customers_Nationality">
+    <End Role="Nationality" Type="Self.Nationality" Multiplicity="0..1" />
+    <End Role="Customers" Type="Self.Customers" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Nationality">
+        <PropertyRef Name="nationalityID" />
+      </Principal>
+      <Dependent Role="Customers">
+        <PropertyRef Name="nationalityID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Customers_RowStatus">
+    <End Role="RowStatus" Type="Self.RowStatus" Multiplicity="0..1" />
+    <End Role="Customers" Type="Self.Customers" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="RowStatus">
+        <PropertyRef Name="statusID" />
+      </Principal>
+      <Dependent Role="Customers">
+        <PropertyRef Name="statusID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Customers_Title">
+    <End Role="Title" Type="Self.Title" Multiplicity="0..1" />
+    <End Role="Customers" Type="Self.Customers" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Title">
+        <PropertyRef Name="titleID" />
+      </Principal>
+      <Dependent Role="Customers">
+        <PropertyRef Name="titleID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Invoices_Customers">
+    <End Role="Customers" Type="Self.Customers" Multiplicity="0..1" />
+    <End Role="Invoices" Type="Self.Invoices" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Customers">
+        <PropertyRef Name="customerID" />
+      </Principal>
+      <Dependent Role="Invoices">
+        <PropertyRef Name="customerID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Invoices_Delivery">
+    <End Role="Delivery" Type="Self.Delivery" Multiplicity="0..1" />
+    <End Role="Invoices" Type="Self.Invoices" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Delivery">
+        <PropertyRef Name="deliveryID" />
+      </Principal>
+      <Dependent Role="Invoices">
+        <PropertyRef Name="deliveryID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Invoices_DeliveryType">
+    <End Role="DeliveryType" Type="Self.DeliveryType" Multiplicity="0..1" />
+    <End Role="Invoices" Type="Self.Invoices" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DeliveryType">
+        <PropertyRef Name="deliveryTypeID" />
+      </Principal>
+      <Dependent Role="Invoices">
+        <PropertyRef Name="deliveryTypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Invoices_InvoiceStatus">
+    <End Role="InvoiceStatus" Type="Self.InvoiceStatus" Multiplicity="0..1" />
+    <End Role="Invoices" Type="Self.Invoices" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="InvoiceStatus">
+        <PropertyRef Name="invoiceStatusID" />
+      </Principal>
+      <Dependent Role="Invoices">
+        <PropertyRef Name="invoiceStatusID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Invoices_PaymentType">
+    <End Role="PaymentType" Type="Self.PaymentType" Multiplicity="0..1" />
+    <End Role="Invoices" Type="Self.Invoices" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PaymentType">
+        <PropertyRef Name="paymentTypeID" />
+      </Principal>
+      <Dependent Role="Invoices">
+        <PropertyRef Name="paymentTypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_products_Staff">
+    <End Role="Staff" Type="Self.Staff" Multiplicity="0..1" />
+    <End Role="products" Type="Self.products" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Staff">
+        <PropertyRef Name="staffID" />
+      </Principal>
+      <Dependent Role="products">
+        <PropertyRef Name="staffID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_products_Stores">
+    <End Role="Stores" Type="Self.Stores" Multiplicity="0..1" />
+    <End Role="products" Type="Self.products" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Stores">
+        <PropertyRef Name="storeID" />
+      </Principal>
+      <Dependent Role="products">
+        <PropertyRef Name="storeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_products_Units">
+    <End Role="Units" Type="Self.Units" Multiplicity="0..1" />
+    <End Role="products" Type="Self.products" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Units">
+        <PropertyRef Name="unitID" />
+      </Principal>
+      <Dependent Role="products">
+        <PropertyRef Name="unitID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PropertiesField_PropertyType">
+    <End Role="PropertyType" Type="Self.PropertyType" Multiplicity="0..1" />
+    <End Role="PropertiesField" Type="Self.PropertiesField" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PropertyType">
+        <PropertyRef Name="propertyTypeID" />
+      </Principal>
+      <Dependent Role="PropertiesField">
+        <PropertyRef Name="propertyTypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PropertiesField_Staff">
+    <End Role="Staff" Type="Self.Staff" Multiplicity="0..1" />
+    <End Role="PropertiesField" Type="Self.PropertiesField" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Staff">
+        <PropertyRef Name="staffID" />
+      </Principal>
+      <Dependent Role="PropertiesField">
+        <PropertyRef Name="staffID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PropertyValue_PropertiesField">
+    <End Role="PropertiesField" Type="Self.PropertiesField" Multiplicity="0..1" />
+    <End Role="PropertyValue" Type="Self.PropertyValue" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PropertiesField">
+        <PropertyRef Name="propertyFieldID" />
+      </Principal>
+      <Dependent Role="PropertyValue">
+        <PropertyRef Name="propertyFieldID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="taxiqco1_pointOfSaleEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="AboutUS" EntityType="Self.AboutUS" />
+    <EntitySet Name="Addresses" EntityType="Self.Addresses" />
+    <EntitySet Name="Branches" EntityType="Self.Branches" />
+    <EntitySet Name="Brands" EntityType="Self.Brands" />
+    <EntitySet Name="Category" EntityType="Self.Category" />
+    <EntitySet Name="Cities" EntityType="Self.Cities" />
+    <EntitySet Name="Companies" EntityType="Self.Companies" />
+    <EntitySet Name="Conditions" EntityType="Self.Conditions" />
+    <EntitySet Name="Countries" EntityType="Self.Countries" />
+    <EntitySet Name="Currency" EntityType="Self.Currency" />
+    <EntitySet Name="Customers" EntityType="Self.Customers" />
+    <EntitySet Name="Delivery" EntityType="Self.Delivery" />
+    <EntitySet Name="DeliveryType" EntityType="Self.DeliveryType" />
+    <EntitySet Name="InvoiceDetalis" EntityType="Self.InvoiceDetalis" />
+    <EntitySet Name="Invoices" EntityType="Self.Invoices" />
+    <EntitySet Name="InvoiceStatus" EntityType="Self.InvoiceStatus" />
+    <EntitySet Name="Nationality" EntityType="Self.Nationality" />
+    <EntitySet Name="PaymentType" EntityType="Self.PaymentType" />
+    <EntitySet Name="Premission" EntityType="Self.Premission" />
+    <EntitySet Name="products" EntityType="Self.products" />
+    <EntitySet Name="PropertiesField" EntityType="Self.PropertiesField" />
+    <EntitySet Name="PropertyType" EntityType="Self.PropertyType" />
+    <EntitySet Name="PropertyValue" EntityType="Self.PropertyValue" />
+    <EntitySet Name="RowStatus" EntityType="Self.RowStatus" />
+    <EntitySet Name="Staff" EntityType="Self.Staff" />
+    <EntitySet Name="Stores" EntityType="Self.Stores" />
+    <EntitySet Name="Title" EntityType="Self.Title" />
+    <EntitySet Name="Units" EntityType="Self.Units" />
+    <AssociationSet Name="FK_Invoices_Addresses" Association="Self.FK_Invoices_Addresses">
+      <End Role="Addresses" EntitySet="Addresses" />
+      <End Role="Invoices" EntitySet="Invoices" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Invoices_Branches" Association="Self.FK_Invoices_Branches">
+      <End Role="Branches" EntitySet="Branches" />
+      <End Role="Invoices" EntitySet="Invoices" />
+    </AssociationSet>
+    <AssociationSet Name="FK_products_Branches" Association="Self.FK_products_Branches">
+      <End Role="Branches" EntitySet="Branches" />
+      <End Role="products" EntitySet="products" />
+    </AssociationSet>
+    <AssociationSet Name="FK_products_Brands" Association="Self.FK_products_Brands">
+      <End Role="Brands" EntitySet="Brands" />
+      <End Role="products" EntitySet="products" />
+    </AssociationSet>
+    <AssociationSet Name="FK_products_Category" Association="Self.FK_products_Category">
+      <End Role="Category" EntitySet="Category" />
+      <End Role="products" EntitySet="products" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PropertiesField_Category" Association="Self.FK_PropertiesField_Category">
+      <End Role="Category" EntitySet="Category" />
+      <End Role="PropertiesField" EntitySet="PropertiesField" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Cities_Countries" Association="Self.FK_Cities_Countries">
+      <End Role="Countries" EntitySet="Countries" />
+      <End Role="Cities" EntitySet="Cities" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Customers_Cities" Association="Self.FK_Customers_Cities">
+      <End Role="Cities" EntitySet="Cities" />
+      <End Role="Customers" EntitySet="Customers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Invoices_Companies" Association="Self.FK_Invoices_Companies">
+      <End Role="Companies" EntitySet="Companies" />
+      <End Role="Invoices" EntitySet="Invoices" />
+    </AssociationSet>
+    <AssociationSet Name="FK_products_Companies" Association="Self.FK_products_Companies">
+      <End Role="Companies" EntitySet="Companies" />
+      <End Role="products" EntitySet="products" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Customers_Countries" Association="Self.FK_Customers_Countries">
+      <End Role="Countries" EntitySet="Countries" />
+      <End Role="Customers" EntitySet="Customers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Invoices_Countries" Association="Self.FK_Invoices_Countries">
+      <End Role="Countries" EntitySet="Countries" />
+      <End Role="Invoices" EntitySet="Invoices" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Customers_Nationality" Association="Self.FK_Customers_Nationality">
+      <End Role="Nationality" EntitySet="Nationality" />
+      <End Role="Customers" EntitySet="Customers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Customers_RowStatus" Association="Self.FK_Customers_RowStatus">
+      <End Role="RowStatus" EntitySet="RowStatus" />
+      <End Role="Customers" EntitySet="Customers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Customers_Title" Association="Self.FK_Customers_Title">
+      <End Role="Title" EntitySet="Title" />
+      <End Role="Customers" EntitySet="Customers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Invoices_Customers" Association="Self.FK_Invoices_Customers">
+      <End Role="Customers" EntitySet="Customers" />
+      <End Role="Invoices" EntitySet="Invoices" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Invoices_Delivery" Association="Self.FK_Invoices_Delivery">
+      <End Role="Delivery" EntitySet="Delivery" />
+      <End Role="Invoices" EntitySet="Invoices" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Invoices_DeliveryType" Association="Self.FK_Invoices_DeliveryType">
+      <End Role="DeliveryType" EntitySet="DeliveryType" />
+      <End Role="Invoices" EntitySet="Invoices" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Invoices_InvoiceStatus" Association="Self.FK_Invoices_InvoiceStatus">
+      <End Role="InvoiceStatus" EntitySet="InvoiceStatus" />
+      <End Role="Invoices" EntitySet="Invoices" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Invoices_PaymentType" Association="Self.FK_Invoices_PaymentType">
+      <End Role="PaymentType" EntitySet="PaymentType" />
+      <End Role="Invoices" EntitySet="Invoices" />
+    </AssociationSet>
+    <AssociationSet Name="FK_products_Staff" Association="Self.FK_products_Staff">
+      <End Role="Staff" EntitySet="Staff" />
+      <End Role="products" EntitySet="products" />
+    </AssociationSet>
+    <AssociationSet Name="FK_products_Stores" Association="Self.FK_products_Stores">
+      <End Role="Stores" EntitySet="Stores" />
+      <End Role="products" EntitySet="products" />
+    </AssociationSet>
+    <AssociationSet Name="FK_products_Units" Association="Self.FK_products_Units">
+      <End Role="Units" EntitySet="Units" />
+      <End Role="products" EntitySet="products" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PropertiesField_PropertyType" Association="Self.FK_PropertiesField_PropertyType">
+      <End Role="PropertyType" EntitySet="PropertyType" />
+      <End Role="PropertiesField" EntitySet="PropertiesField" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PropertiesField_Staff" Association="Self.FK_PropertiesField_Staff">
+      <End Role="Staff" EntitySet="Staff" />
+      <End Role="PropertiesField" EntitySet="PropertiesField" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PropertyValue_PropertiesField" Association="Self.FK_PropertyValue_PropertiesField">
+      <End Role="PropertiesField" EntitySet="PropertiesField" />
+      <End Role="PropertyValue" EntitySet="PropertyValue" />
+    </AssociationSet>
+    <FunctionImport Name="GetLastBranch" ReturnType="Collection(pointOfSaleModel.GetLastBranch_Result)" />
+    <FunctionImport Name="GetTree" ReturnType="Collection(pointOfSaleModel.GetTree_Result)">
+      <Parameter Name="cityID" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="GetTreeCategory" ReturnType="Collection(pointOfSaleModel.GetTreeCategory_Result)">
+      <Parameter Name="categoryID" Mode="In" Type="Int32" />
+    </FunctionImport>
+  </EntityContainer>
+  <ComplexType Name="GetLastBranch_Result">
+    <Property Type="Int32" Name="categoryID" Nullable="false" />
+    <Property Type="Int32" Name="staffID" Nullable="true" />
+    <Property Type="String" Name="categoryNameEn" Nullable="true" MaxLength="200" />
+    <Property Type="String" Name="categoryNameAr" Nullable="true" MaxLength="200" />
+    <Property Type="Int32" Name="parentID" Nullable="true" />
+    <Property Type="DateTime" Name="dateAdd" Nullable="true" />
+    <Property Type="Int32" Name="statusID" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="GetTree_Result">
+    <Property Type="Int32" Name="cityID" Nullable="true" />
+    <Property Type="String" Name="cityNameAr" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="cityNameEn" Nullable="true" MaxLength="100" />
+    <Property Type="Int32" Name="parentID" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="GetTreeCategory_Result">
+    <Property Type="Int32" Name="categoryID" Nullable="true" />
+    <Property Type="String" Name="categoryNameAr" Nullable="true" MaxLength="200" />
+    <Property Type="String" Name="categoryNameEn" Nullable="true" MaxLength="200" />
+    <Property Type="Int32" Name="parentID" Nullable="true" />
+  </ComplexType>
+</Schema>

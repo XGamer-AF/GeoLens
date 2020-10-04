@@ -1,0 +1,24 @@
+﻿body {
+    /*padding-top: 50px;*/
+    /*padding-bottom: 20px;*/
+}
+
+
+
+   /* journal css */
+
+#journalHeader {
+    background-color:#ff6a00;
+    color:#fff;
+}
+
+#journalHeader .menu {
+    background-color: #ff6a00;
+    color: #fff;
+}
+
+
+    #journalHeader .mainTitle {
+        background-color: #b6ff00;
+        color: #fff;
+    }

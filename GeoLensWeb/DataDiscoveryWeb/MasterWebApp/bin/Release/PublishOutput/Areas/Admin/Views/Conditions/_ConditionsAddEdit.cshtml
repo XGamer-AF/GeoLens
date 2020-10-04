@@ -1,0 +1,62 @@
+﻿@using Data.ViewModel;
+@using DataLayer;
+@using System.Net.Http;
+
+@using System.Web.Helpers;
+
+@model ConditionsAddViewModel
+@using (Html.BeginForm("ConditionsAddEdit", "Conditions", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    @Html.AntiForgeryToken()
+    <div class="form-horizontal">
+
+        @Html.ValidationSummary(true)
+
+        @Html.HiddenFor(x => x.conditions.conditionID)
+        @if (Model.conditions != null)
+        {
+
+            @Html.HiddenFor(model => model.conditions.statusID)
+
+        }
+
+
+
+
+        <div class="form-group">
+            <label>
+                @MasterWebApp.Resource.Conditions.consitionText
+
+
+            </label>
+
+            @Html.TextAreaFor(model => model.conditions.consitionText, new { @class = "form-control" })
+            @Html.ValidationMessageFor(model => model.conditions.consitionText)
+
+        </div>
+
+        <div class="form-group">
+            <label>
+                @MasterWebApp.Resource.Conditions.consitionTextEn
+
+
+            </label>
+
+            @Html.TextAreaFor(model => model.conditions.consitionTextEn, new { @class = "form-control" })
+            @Html.ValidationMessageFor(model => model.conditions.consitionTextEn)
+
+        </div>
+
+
+      
+
+        
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value=@MasterWebApp.Resource.CommonMessage.btnSave
+                       class="btn btn-primary" />
+            </div>
+        </div>
+    </div>
+}
+

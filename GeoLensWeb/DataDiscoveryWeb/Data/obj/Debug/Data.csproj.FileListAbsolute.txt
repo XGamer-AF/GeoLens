@@ -1,0 +1,104 @@
+Z:\Project\AdlWeb\Data\obj\Debug\Data.csproj.CoreCompileInputs.cache
+Z:\Project\AdlWeb\Data\bin\Debug\Data.dll.config
+Z:\Project\AdlWeb\Data\bin\Debug\Data.dll
+Z:\Project\AdlWeb\Data\bin\Debug\Data.pdb
+Z:\Project\AdlWeb\Data\bin\Debug\EntityFramework.dll
+Z:\Project\AdlWeb\Data\bin\Debug\EntityFramework.SqlServer.dll
+Z:\Project\AdlWeb\Data\bin\Debug\EntityFramework.xml
+Z:\Project\AdlWeb\Data\bin\Debug\EntityFramework.SqlServer.xml
+Z:\Project\AdlWeb\Data\obj\Debug\Data.csproj.CopyComplete
+Z:\Project\AdlWeb\Data\obj\Debug\Data.dll
+Z:\Project\AdlWeb\Data\obj\Debug\Data.pdb
+Z:\Project\AdlWeb\Data\obj\Debug\Data.csprojAssemblyReference.cache
+C:\Users\Adel\Dropbox\ADL\AdlWeb\Data\bin\Debug\Data.dll.config
+C:\Users\Adel\Dropbox\ADL\AdlWeb\Data\bin\Debug\Data.dll
+C:\Users\Adel\Dropbox\ADL\AdlWeb\Data\bin\Debug\Data.pdb
+C:\Users\Adel\Dropbox\ADL\AdlWeb\Data\bin\Debug\EntityFramework.dll
+C:\Users\Adel\Dropbox\ADL\AdlWeb\Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Adel\Dropbox\ADL\AdlWeb\Data\bin\Debug\EntityFramework.xml
+C:\Users\Adel\Dropbox\ADL\AdlWeb\Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Adel\Dropbox\ADL\AdlWeb\Data\obj\Debug\Data.csprojAssemblyReference.cache
+C:\Users\Adel\Dropbox\ADL\AdlWeb\Data\obj\Debug\Data.csproj.CoreCompileInputs.cache
+C:\Users\Adel\Dropbox\ADL\AdlWeb\Data\obj\Debug\Data.csproj.CopyComplete
+C:\Users\Adel\Dropbox\ADL\AdlWeb\Data\obj\Debug\Data.dll
+C:\Users\Adel\Dropbox\ADL\AdlWeb\Data\obj\Debug\Data.pdb
+C:\Users\m.rizk\Dropbox\ADL\AdlWeb\Data\bin\Debug\Data.dll.config
+C:\Users\m.rizk\Dropbox\ADL\AdlWeb\Data\bin\Debug\Data.dll
+C:\Users\m.rizk\Dropbox\ADL\AdlWeb\Data\bin\Debug\Data.pdb
+C:\Users\m.rizk\Dropbox\ADL\AdlWeb\Data\bin\Debug\EntityFramework.dll
+C:\Users\m.rizk\Dropbox\ADL\AdlWeb\Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\m.rizk\Dropbox\ADL\AdlWeb\Data\bin\Debug\EntityFramework.xml
+C:\Users\m.rizk\Dropbox\ADL\AdlWeb\Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\m.rizk\Dropbox\ADL\AdlWeb\Data\obj\Debug\Data.csprojAssemblyReference.cache
+C:\Users\m.rizk\Dropbox\ADL\AdlWeb\Data\obj\Debug\Data.csproj.CoreCompileInputs.cache
+C:\Users\m.rizk\Dropbox\ADL\AdlWeb\Data\obj\Debug\Data.csproj.CopyComplete
+C:\Users\m.rizk\Dropbox\ADL\AdlWeb\Data\obj\Debug\Data.dll
+C:\Users\m.rizk\Dropbox\ADL\AdlWeb\Data\obj\Debug\Data.pdb
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\Data\bin\Debug\Data.dll.config
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\Data\bin\Debug\Data.dll
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\Data\bin\Debug\Data.pdb
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\Data\bin\Debug\EntityFramework.dll
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\Data\bin\Debug\EntityFramework.xml
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\Data\obj\Debug\Data.dll
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\Data\obj\Debug\Data.pdb
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\Data\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\Data\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\Data\bin\Debug\Data.dll.config
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\Data\bin\Debug\Data.dll
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\Data\bin\Debug\Data.pdb
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\Data\bin\Debug\EntityFramework.dll
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\Data\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\Data\bin\Debug\EntityFramework.xml
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\Data\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\Data\obj\Debug\Data.csproj.CoreCompileInputs.cache
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\Data\obj\Debug\Data.csproj.CopyComplete
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\Data\obj\Debug\Data.dll
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\Data\obj\Debug\Data.pdb
+C:\Users\Eng.MostafaRizk\Dropbox (Personal)\ADL\AdlWeb\Data\obj\Debug\Data.csprojAssemblyReference.cache
+C:\Users\Mr.Mohammed\Dropbox\ADL\AdlWeb\Data\obj\Debug\Data.csprojResolveAssemblyReference.cache
+C:\Users\Fayoum Laptop\Dropbox\pointOfSale\PointOfSale\Data\bin\Debug\Data.dll.config
+C:\Users\Fayoum Laptop\Dropbox\pointOfSale\PointOfSale\Data\bin\Debug\Data.dll
+C:\Users\Fayoum Laptop\Dropbox\pointOfSale\PointOfSale\Data\bin\Debug\Data.pdb
+C:\Users\Fayoum Laptop\Dropbox\pointOfSale\PointOfSale\Data\bin\Debug\EntityFramework.dll
+C:\Users\Fayoum Laptop\Dropbox\pointOfSale\PointOfSale\Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Fayoum Laptop\Dropbox\pointOfSale\PointOfSale\Data\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Fayoum Laptop\Dropbox\pointOfSale\PointOfSale\Data\bin\Debug\PagedList.dll
+C:\Users\Fayoum Laptop\Dropbox\pointOfSale\PointOfSale\Data\bin\Debug\EntityFramework.xml
+C:\Users\Fayoum Laptop\Dropbox\pointOfSale\PointOfSale\Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Fayoum Laptop\Dropbox\pointOfSale\PointOfSale\Data\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Fayoum Laptop\Dropbox\pointOfSale\PointOfSale\Data\bin\Debug\PagedList.xml
+C:\Users\Fayoum Laptop\Dropbox\pointOfSale\PointOfSale\Data\obj\Debug\Data.dll
+C:\Users\Fayoum Laptop\Dropbox\pointOfSale\PointOfSale\Data\obj\Debug\Data.pdb
+C:\Users\Fayoum Laptop\Dropbox\pointOfSale\PointOfSale\Data\obj\Debug\Data.csprojResolveAssemblyReference.cache
+C:\Users\Mr.Mohammed\Dropbox\pointOfSale\PointOfSale\Data\bin\Debug\Data.dll.config
+C:\Users\Mr.Mohammed\Dropbox\pointOfSale\PointOfSale\Data\bin\Debug\Data.dll
+C:\Users\Mr.Mohammed\Dropbox\pointOfSale\PointOfSale\Data\bin\Debug\Data.pdb
+C:\Users\Mr.Mohammed\Dropbox\pointOfSale\PointOfSale\Data\bin\Debug\EntityFramework.dll
+C:\Users\Mr.Mohammed\Dropbox\pointOfSale\PointOfSale\Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Mr.Mohammed\Dropbox\pointOfSale\PointOfSale\Data\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Mr.Mohammed\Dropbox\pointOfSale\PointOfSale\Data\bin\Debug\PagedList.dll
+C:\Users\Mr.Mohammed\Dropbox\pointOfSale\PointOfSale\Data\bin\Debug\EntityFramework.xml
+C:\Users\Mr.Mohammed\Dropbox\pointOfSale\PointOfSale\Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Mr.Mohammed\Dropbox\pointOfSale\PointOfSale\Data\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Mr.Mohammed\Dropbox\pointOfSale\PointOfSale\Data\bin\Debug\PagedList.xml
+C:\Users\Mr.Mohammed\Dropbox\pointOfSale\PointOfSale\Data\obj\Debug\Data.dll
+C:\Users\Mr.Mohammed\Dropbox\pointOfSale\PointOfSale\Data\obj\Debug\Data.pdb
+C:\Users\Mr.Mohammed\Dropbox\pointOfSale\PointOfSale\Data\obj\Debug\Data.csprojResolveAssemblyReference.cache
+E:\OurProject\Flutter_Projects\NASASPACEAPPS\DataDiscoveryForEarthScience\DataDiscoveryWeb\Data\bin\Debug\Data.dll.config
+E:\OurProject\Flutter_Projects\NASASPACEAPPS\DataDiscoveryForEarthScience\DataDiscoveryWeb\Data\bin\Debug\Data.dll
+E:\OurProject\Flutter_Projects\NASASPACEAPPS\DataDiscoveryForEarthScience\DataDiscoveryWeb\Data\bin\Debug\Data.pdb
+E:\OurProject\Flutter_Projects\NASASPACEAPPS\DataDiscoveryForEarthScience\DataDiscoveryWeb\Data\bin\Debug\EntityFramework.dll
+E:\OurProject\Flutter_Projects\NASASPACEAPPS\DataDiscoveryForEarthScience\DataDiscoveryWeb\Data\bin\Debug\EntityFramework.SqlServer.dll
+E:\OurProject\Flutter_Projects\NASASPACEAPPS\DataDiscoveryForEarthScience\DataDiscoveryWeb\Data\bin\Debug\Newtonsoft.Json.dll
+E:\OurProject\Flutter_Projects\NASASPACEAPPS\DataDiscoveryForEarthScience\DataDiscoveryWeb\Data\bin\Debug\PagedList.dll
+E:\OurProject\Flutter_Projects\NASASPACEAPPS\DataDiscoveryForEarthScience\DataDiscoveryWeb\Data\bin\Debug\EntityFramework.xml
+E:\OurProject\Flutter_Projects\NASASPACEAPPS\DataDiscoveryForEarthScience\DataDiscoveryWeb\Data\bin\Debug\EntityFramework.SqlServer.xml
+E:\OurProject\Flutter_Projects\NASASPACEAPPS\DataDiscoveryForEarthScience\DataDiscoveryWeb\Data\bin\Debug\Newtonsoft.Json.xml
+E:\OurProject\Flutter_Projects\NASASPACEAPPS\DataDiscoveryForEarthScience\DataDiscoveryWeb\Data\bin\Debug\PagedList.xml
+E:\OurProject\Flutter_Projects\NASASPACEAPPS\DataDiscoveryForEarthScience\DataDiscoveryWeb\Data\obj\Debug\Data.dll
+E:\OurProject\Flutter_Projects\NASASPACEAPPS\DataDiscoveryForEarthScience\DataDiscoveryWeb\Data\obj\Debug\Data.pdb
+E:\OurProject\Flutter_Projects\NASASPACEAPPS\DataDiscoveryForEarthScience\DataDiscoveryWeb\Data\obj\Debug\Data.csprojResolveAssemblyReference.cache

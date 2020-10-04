@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="e36e8c98b1cc4fcda6547433d2920feb" Name="Diagram1">
+        <EntityTypeShape EntityType="DiscoveryEventModel.AboutUs" Width="1.5" PointX="5.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DiscoveryEventModel.Countries" Width="1.5" PointX="3" PointY="5.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DiscoveryEventModel.EventTypes" Width="1.5" PointX="3" PointY="8.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DiscoveryEventModel.sysdiagrams" Width="1.5" PointX="7.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DiscoveryEventModel.Users" Width="1.5" PointX="3" PointY="1.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="DiscoveryEventModel.UserType" Width="1.5" PointX="0.75" PointY="2" IsExpanded="true" />
+        <AssociationConnector Association="DiscoveryEventModel.FK_Users_UserType" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="DiscoveryEventModel.EventRefrences" Width="1.5" PointX="7.5" PointY="9" />
+        <EntityTypeShape EntityType="DiscoveryEventModel.EventImage" Width="1.5" PointX="7.5" PointY="12.25" />
+        <EntityTypeShape EntityType="DiscoveryEventModel.EventInfo" Width="1.5" PointX="5.25" PointY="0.75" />
+        <AssociationConnector Association="DiscoveryEventModel.FK_EventInfo_Countries" />
+        <AssociationConnector Association="DiscoveryEventModel.FK_EventImage_EventInfo" />
+        <AssociationConnector Association="DiscoveryEventModel.FK_EventInfo_EventTypes" />
+        <AssociationConnector Association="DiscoveryEventModel.FK_EventInfo_Users" />
+        <AssociationConnector Association="DiscoveryEventModel.FK_EventRefrences_EventInfo" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
